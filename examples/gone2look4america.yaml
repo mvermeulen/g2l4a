@@ -1,0 +1,39 @@
+scenario_name: Gone2Look4America Benchmark (Fixed Date)
+
+start_city: Washington, DC
+completion_city: Olympia, Washington
+start_date: "2023-04-29"
+
+via_cities:
+  - Annapolis, Maryland
+  - Dover, Delaware
+  - Trenton, New Jersey
+  - Hartford, Connecticut
+  - Providence, Rhode Island
+  - Boston, Massachusetts
+  - Concord, New Hampshire
+  - Augusta, Maine
+  - Montpelier, Vermont
+  - Albany, New York
+  - Columbus, Ohio
+  - Indianapolis, Indiana
+  - Springfield, Illinois
+  - Lansing, Michigan
+  - Madison, Wisconsin
+  - St. Paul, Minnesota
+  - Des Moines, Iowa
+  - Lincoln, Nebraska
+  - Pierre, South Dakota
+  - Bismarck, North Dakota
+  - Cheyenne, Wyoming
+  - Denver, Colorado
+  - Salt Lake City, Utah
+  - Boise, Idaho
+  - Salem, Oregon
+
+weather_constraints:
+  max_avg_high_f: 90
+  min_avg_high_f: 32
+
+output:
+  alternatives_count: 4

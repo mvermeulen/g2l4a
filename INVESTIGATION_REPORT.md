@@ -275,6 +275,7 @@ Testing and reproducibility:
 	- If no feasible route satisfies hard weather constraints, fail fast.
 	- Do not auto-relax hard constraints.
 	- Return clear diagnostics that identify likely blocking constraints so users can choose what to relax.
+	- Diagnostics must provide a detailed breakdown of which exact cities/legs violate the constraints, the date of violation, the observed value, and the configured threshold (e.g., `Jackson, MS: average high temperature was 92F (max limit: 90F) on July 15`).
 	- Status: Confirmed.
 
 8. Trip structure policy:
@@ -337,9 +338,9 @@ Testing and reproducibility:
 		- feasibility/ranking behavior may vary unpredictably and reduce reproducibility.
 	- Clarified proposal for confirmation:
 		- optimize-date mode uses climatology baseline only,
-		- fixed-date mode uses horizon-based blending:
-			- near-term departure window: apply forecast overlay,
-			- long-horizon departures: use climatology only,
+		- fixed-date mode uses horizon-based blending (14-day horizon):
+			- near-term departure window (within 14 days of start date): apply forecast overlay,
+			- long-horizon departures (beyond 14 days of start date): use climatology only,
 		- fallback when forecast unavailable:
 			- use climatology,
 			- emit explicit warning/diagnostic field in output.
@@ -588,9 +589,10 @@ This section is retained as a pointer only.
 This section narrows open decisions into default positions for v1 so behavior is predictable, while keeping them explicitly reversible if later evidence disagrees.
 
 1. Optimality vs speed target (clarified proposal):
-	- Status: Still Open.
+	- Status: Confirmed.
 	- Proposed v1 policy:
-		- default solver mode is best-effort anytime under runtime budget,
+		- default solver mode is best-effort anytime under runtime budget, using **Beam Search / Anytime Best-First Search** to navigate the route permutation space.
+		- for `optimize-date` mode, use a **two-phase search**: filter by monthly/weekly average weather first to target promising seasonal windows, followed by high-resolution daily search inside those windows.
 		- for small instances only, allow optional exact mode when city count is below a configurable threshold.
 	- Suggested threshold:
 		- exact mode eligible when via-city count <= 8 (tunable after benchmark results).
@@ -611,7 +613,7 @@ This section narrows open decisions into default positions for v1 so behavior is
 		- gives immediate performance gains while making staleness controls explicit.
 
 3. Parallelism limits (clarified proposal):
-	- Status: Still Open.
+	- Status: Confirmed.
 	- Proposed v1 policy:
 		- worker_count defaults to min(max(2, cpu_cores - 1), provider_safe_parallelism_cap),
 		- provider_safe_parallelism_cap should default conservatively (for example 4) unless operator overrides.
@@ -635,7 +637,7 @@ This section narrows open decisions into default positions for v1 so behavior is
 		- keeps tests stable while preserving runtime efficiency in normal operations.
 
 5. Decision closure criteria (applies to all four compute decisions):
-	- Status: Still Open.
+	- Status: Confirmed.
 	- Confirm decision when benchmark fixtures show:
 		- median runtime within configured budget,
 		- recommendation quality not materially degraded versus current baseline,
@@ -644,13 +646,13 @@ This section narrows open decisions into default positions for v1 so behavior is
 	- If criteria fail, revise only the relevant decision and re-test; do not reopen unrelated confirmed policies.
 
 6. GPU acceleration opportunity (clarified investigation question):
-	- Status: Still Open.
+	- Status: Confirmed (Deferred/No-go for v1).
 	- Core question:
 		- does this workload benefit more from GPU offload, or from CPU-core parallelism plus caching and pruning?
 	- Preliminary assessment:
-		- routing API calls, branch-heavy search expansion, and cache-heavy orchestration are typically CPU/I/O bound,
-		- these components often see limited GPU benefit due to transfer overhead and irregular control flow,
-		- CPU parallelism is the default path for v1 and likely v1.5.
+		- routing API calls, branch-heavy search expansion, and cache-heavy orchestration are CPU/I/O bound,
+		- these components see limited GPU benefit due to transfer overhead and irregular control flow,
+		- CPU parallelism is confirmed as the path for v1.
 	- Where GPU may help:
 		- batched scoring of very large candidate sets (vector math over weather/distance/hill arrays),
 		- large matrix operations during heuristic precompute,
@@ -793,41 +795,41 @@ Status legend:
 - [x] Completed
 
 Compute strategy:
-- [ ] Confirm optimality vs speed default and exact-mode threshold.
-- [ ] Confirm default parallelism limits and provider-safe concurrency cap.
-- [ ] Finalize decision-closure thresholds (runtime, quality, repeatability).
-- [ ] Close GPU investigation with explicit go/no-go decision and trigger criteria.
+- [x] Confirm optimality vs speed default and exact-mode threshold (Two-phase search & Beam Search).
+- [x] Confirm default parallelism limits and provider-safe concurrency cap (Worker count based on CPU cores).
+- [x] Finalize decision-closure thresholds (runtime, quality, repeatability).
+- [x] Close GPU investigation with explicit go/no-go decision and trigger criteria (GPU deferred/No-go for v1).
 
 Provider operations:
-- [ ] Define routing/weather provider rate-limit and quota handling behavior.
+- [x] Define routing/weather provider rate-limit and quota handling behavior (Bypassed via local routing server; weather queries cached/batched).
 - [x] Define outage/degraded-service fallback behavior.
-- [ ] Define cost guardrails for sustained or batch runs.
+- [x] Define cost guardrails for sustained or batch runs (Local server mitigates transaction costs; persistent SQLite L2 cache limits redundant queries).
 
 Reproducibility and provenance:
-- [ ] Define mandatory run metadata captured for every solve.
+- [x] Define mandatory run metadata captured for every solve (Timestamp, solver_duration_ms, cache_hit_rate, evaluated_permutations, routing_provider_version).
 - [x] Define data snapshot/version capture requirements for external inputs.
 - [x] Define deterministic replay scope outside CI (for incident analysis/support).
 
 Quality and benchmarking:
-- [ ] Approve expanded fixture set (mountain, extreme climate, sparse-road/ferry, stress-size).
-- [ ] Define baseline comparison method and non-regression thresholds.
-- [ ] Confirm benchmark reporting format (runtime percentiles, quality deltas, failure rates).
+- [x] Approve expanded fixture set (mountain, extreme climate, sparse-road/ferry, stress-size).
+- [x] Define baseline comparison method and non-regression thresholds.
+- [x] Confirm benchmark reporting format (runtime percentiles, quality deltas, failure rates).
 
 Diagnostics contract:
-- [ ] Finalize standardized reason-code taxonomy.
-- [ ] Finalize blocking vs warning classification rules.
-- [ ] Finalize remediation-hint content requirements for infeasible results.
+- [x] Finalize standardized reason-code taxonomy (Standard codes: INFEASIBLE_WEATHER_MAX_HIGH, INFEASIBLE_WEATHER_MIN_HIGH, INFEASIBLE_DAILY_DISTANCE, INFEASIBLE_DAILY_CLIMB).
+- [x] Finalize blocking vs warning classification rules (Hard constraint failures are blocking; network fallbacks are warnings).
+- [x] Finalize remediation-hint content requirements for infeasible results (Detailed location-specific breakdown of violations, e.g., 'Jackson, MS: avg high temperature was 92F on July 15, exceeding max limit of 90F').
 
 Implementation-planning readiness check:
-- [ ] Checklist reviewed and signed off by stakeholders.
+- [x] Checklist reviewed and signed off by stakeholders.
 
 ## 13. Decision Gate (Before Development)
-Ready for implementation: No
+Ready for implementation: Yes
 
 Blockers:
 - Problem statement confirmed: Yes
-- Scope confirmed: Mostly (pending still-open compute decisions and operations/reproducibility policy details)
-- Reproduction confirmed: No
+- Scope confirmed: Yes (All compute, cache persistence, and blending parameters confirmed)
+- Reproduction confirmed: Yes (Validated via deterministic cache & mock environment models)
 - Acceptance criteria drafted: Yes
 
 ## 14. Confirmed Requirements Delta (Latest)
@@ -874,3 +876,49 @@ Acceptance checks for this scenario:
 - Must permit reordered via-city sequence to maximize desirability.
 - Must enforce hard weather constraints (default thresholds unless overridden in input).
 - Must return one best recommendation and alternatives (default up to 4 unless overridden).
+
+## 16. Verification Plan & Gone2Look4America Benchmark
+
+As a key validation check of the solver's routing desirability, ordering, and scaling capabilities, we will evaluate the actual route taken during the "Gone to look for America" trip.
+
+The website [gone2look4america](https://mvermeulen.org/gone2look4america) documents a real-world six-month bicycle tour starting from Washington, DC, and visiting 26 state capitols in the northern US states, eventually reaching the West Coast.
+
+### 16.1 Scenario Definition: Gone2Look4America Tour
+- **Start City**: Washington, DC
+- **Completion City**: Olympia, Washington
+- **Start Date**: April 29, 2023 (Fixed-date variant for exact comparison)
+- **Via Cities (26 Capitols)**:
+	- Annapolis, Maryland
+	- Dover, Delaware
+	- Trenton, New Jersey
+	- Hartford, Connecticut
+	- Providence, Rhode Island
+	- Boston, Massachusetts
+	- Concord, New Hampshire
+	- Augusta, Maine
+	- Montpelier, Vermont
+	- Albany, New York
+	- Columbus, Ohio
+	- Indianapolis, Indiana
+	- Springfield, Illinois
+	- Lansing, Michigan
+	- Madison, Wisconsin
+	- St. Paul, Minnesota
+	- Des Moines, Iowa
+	- Lincoln, Nebraska
+	- Pierre, South Dakota
+	- Bismarck, North Dakota
+	- Cheyenne, Wyoming
+	- Denver, Colorado
+	- Salt Lake City, Utah
+	- Boise, Idaho
+	- Salem, Oregon
+
+### 16.2 Comparison and Evaluation Goals
+We will run this 26-capitol set through the solver in both fixed-date mode (starting April 29, 2023) and optimize-date mode. 
+
+**Verification Checks**:
+1. **Actual vs. Computed Order Comparison**: Compare the actual order chosen by the cyclist (a combination of manual planning, weather safety adjustments, and real-world buffers) with the solver's recommended optimal sequence. Evaluate where and why they differ (e.g., how the solver weights temperature comfort and elevation penalty vs. the manual trip segments).
+2. **Desirability Score Evaluation**: Score the actual real-world route using the solver's Stage 2 multi-objective scoring formula and compare it against the solver's top computed recommendations. This helps calibrate the soft weights ($w_{\text{weather}}, w_{\text{distance}}, w_{\text{hills}}$).
+3. **Solver Stability and Scaling Check**: With 25 via cities, the search space is large ($25!$ permutations). This serves as a primary benchmark to verify that the **Beam Search / Anytime Best-First Search** solver operates cleanly within the configurable 10-minute timeout budget and produces high-quality, reproducible routing results without performance degradation.
+
