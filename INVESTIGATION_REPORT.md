@@ -215,41 +215,41 @@ Testing and reproducibility:
 19. Do we need deterministic replay mode with pinned data snapshots for regression testing?
 20. What minimum fixture set is required beyond the US Capitals scenario (for example mountain-heavy case, hot-climate case, sparse-via case)?
 
-### 8.2 Tentative Decisions (Finalize Later)
-1. Routing provider strategy (tentative):
+### 8.2 Decision Status Snapshot
+1. Routing provider strategy:
 	- MVP provider: hosted OpenRouteService for quick startup.
 	- Production target: self-hosted GraphHopper (or Valhalla) for reliability and quota independence.
-	- Status: Tentative now, finalize later.
+	- Status: Tentative.
 	- Finalization criteria:
 		- bike-routing quality on fixture scenarios,
 		- acceptable latency and uptime expectations,
 		- operational complexity and maintenance burden.
 
-2. Weather-data strategy (tentative, free-first):
+2. Weather-data strategy:
 	- Baseline climatology source: NOAA/NCEI (US-focused) or Meteostat historical normals for seasonality and optimize-date scoring.
 	- Forecast overlay source: Open-Meteo for near-term fixed-date planning adjustments.
 	- Combination approach:
 		- far-future or unspecified date optimization relies primarily on climatology,
 		- near-term fixed-date planning increases forecast influence.
-	- Status: Tentative now, finalize later.
+	- Status: Tentative.
 	- Finalization criteria:
 		- coverage completeness for required cities/routes,
 		- consistency of metric definitions (avg highs/lows) across sources,
 		- API reliability/rate limits and ease of integration,
 		- reproducibility support via data snapshot pinning for tests.
 
-3. Elevation-data strategy (tentative):
+3. Elevation-data strategy:
 	- Primary source: use elevation/ascent metrics returned by the selected routing provider.
 	- Fallback: if elevation is unavailable or low quality for a segment, use a DEM-based source for recomputation.
 	- Operational rule: prefer one canonical ascent metric pipeline per run to avoid mixed-source scoring artifacts.
-	- Status: Tentative now, finalize later.
+	- Status: Tentative.
 	- Finalization criteria:
 		- coverage across all fixture routes,
 		- consistency of total ascent values between repeated runs,
 		- acceptable correlation with sampled ground-truth checks,
 		- latency impact within runtime targets.
 
-4. Route safety/legality policy (confirmed):
+4. Route safety/legality policy:
 	- Default routing preference should mirror "avoid highways" behavior.
 	- Exclude freeway/interstate segments and other non-bicycle-legal roads from candidate generation.
 	- International border crossings and ferry crossings are allowed.
@@ -257,7 +257,7 @@ Testing and reproducibility:
 	- Objective is a rough costed planning recommendation; exact final roads may be refined manually outside the tool.
 	- Status: Confirmed.
 
-5. Distance/climb/duration policy (confirmed):
+5. Distance/climb/duration policy:
 	- Daily limits are configurable with defaults:
 		- max miles per day: 80
 		- max climb per day: 5000 ft
@@ -265,45 +265,46 @@ Testing and reproducibility:
 	- Planner continues to optimize for route desirability, including shorter overall distance.
 	- Status: Confirmed.
 
-6. Scale/runtime policy (confirmed):
+6. Scale/runtime policy:
 	- Maximum cities per request: 50 (configurable).
 	- Solver runtime budget default: 10 minutes (configurable timeout).
 	- Solver should return best-found recommendations within the runtime budget.
 	- Status: Confirmed.
 
-7. Infeasibility handling policy (confirmed):
+7. Infeasibility handling policy:
 	- If no feasible route satisfies hard weather constraints, fail fast.
 	- Do not auto-relax hard constraints.
 	- Return clear diagnostics that identify likely blocking constraints so users can choose what to relax.
 	- Status: Confirmed.
 
-8. Trip structure policy (confirmed):
+8. Trip structure policy:
 	- Treat each plan as one overall staged multi-day trip.
 	- Apply daily caps per stage/day (distance and climbing).
 	- No hard max total duration; trip length emerges from route geometry plus daily constraints.
 	- Status: Confirmed.
 
-9. Scoring semantics policy (confirmed):
+9. Scoring semantics policy:
 	- Weather preference scoring within feasible bounds is linear for v1.
 	- Hill penalty metric uses total ascent only for v1.
 	- Distance metric uses route mileage for v1.
 	- Status: Confirmed.
 
-10. Output evolution policy (confirmed):
+10. Output evolution policy:
 	- Defer strict output schema decisions until example outputs are produced.
 	- V1 output must be human-readable and include ordered cities, planned dates, and average weather context in tabular form where practical.
 	- Uncertainty indicators are not required for v1.
 	- Status: Confirmed.
 
-11. Schema/versioning and error-handling policy (confirmed):
+11. Schema/versioning and error-handling policy:
 	- Backward-compatible YAML versioning is not required for v1.
 	- Do not block on schema-version architecture upfront; evolve format pragmatically.
 	- Work through validation/runtime errors as they appear during iterative testing.
 	- Status: Confirmed.
 
-### 8.3 Decision Needed Now
+### 8.3 Decision Log (Current Status)
 1. Scoring weights/profile lock for v1:
-	- Decision needed:
+	- Status: Confirmed.
+	- Decision resolved:
 		- whether to launch with one fixed default profile only, or support multiple named profiles in v1.
 		- whether user-specified custom weights are allowed in v1.
 	- Proposed default if undecided:
@@ -312,9 +313,19 @@ Testing and reproducibility:
 		- allow custom weights only if non-negative and sum to 1.
 	- Impact if unresolved:
 		- ranking behavior remains ambiguous and can cause implementation churn.
+	- Clarified proposal for confirmation:
+		- v1 ships with one fixed default profile only (no named profiles in v1 output contract),
+		- keep custom weights optional but gated by validation:
+			- all weights >= 0,
+			- sum exactly 1 within tolerance,
+			- reject invalid configs with clear error diagnostics.
+	- Closure criteria:
+		- defaults produce stable, domain-acceptable ranking on fixed-date and optimize-date fixtures,
+		- custom-weight validation behavior is deterministic and test-covered.
 
 2. Weather data blending and resolution rule for v1:
-	- Decision needed:
+	- Status: Confirmed.
+	- Decision resolved:
 		- exact rule for climatology vs forecast blending by planning horizon,
 		- required data granularity (city-level monthly/daily vs segment-level),
 		- fallback behavior when forecast provider is unavailable.
@@ -324,17 +335,34 @@ Testing and reproducibility:
 		- if forecast unavailable, fallback to climatology and emit a warning.
 	- Impact if unresolved:
 		- feasibility/ranking behavior may vary unpredictably and reduce reproducibility.
+	- Clarified proposal for confirmation:
+		- optimize-date mode uses climatology baseline only,
+		- fixed-date mode uses horizon-based blending:
+			- near-term departure window: apply forecast overlay,
+			- long-horizon departures: use climatology only,
+		- fallback when forecast unavailable:
+			- use climatology,
+			- emit explicit warning/diagnostic field in output.
+	- Resolution level for v1:
+		- city-level daily/monthly representation is acceptable for v1,
+		- defer segment-level weather modeling to a later phase.
+	- Closure criteria:
+		- identical inputs and data snapshot produce reproducible feasibility/rank outcomes,
+		- fallback behavior is observable and test-covered.
 
-Output rule (confirmed):
+Output rule:
+- Status: Confirmed.
 - Return one best recommendation plus alternatives.
 - Default alternatives count: up to 4.
 - Alternatives count must be configurable in YAML input, with default applied when omitted.
 
-Start-date rule (confirmed):
+Start-date rule:
+- Status: Confirmed.
 - input.start_date present: enforce exact start date.
 - input.start_date absent: optimize across full-year date domain.
 
-Proposed YAML defaults (confirmed):
+Proposed YAML defaults:
+- Status: Confirmed.
 - weather_constraints.max_avg_high_f: 90
 - weather_constraints.min_avg_high_f: 32
 - Behavior: if omitted in input, solver uses defaults above.
@@ -344,7 +372,8 @@ Proposed YAML defaults (confirmed):
 - solver_constraints.max_total_cities: 50
 - solver_constraints.max_search_minutes: 10
 
-Hierarchical YAML defaults model (confirmed):
+Hierarchical YAML defaults model:
+- Status: Confirmed.
 - Source order (highest precedence first):
 	1. user input YAML
 	2. system defaults YAML
@@ -399,7 +428,243 @@ Effective configuration behavior:
 - If both are missing, planner uses built-in fallback defaults.
 - This allows the same schema to be used for both global config and per-request input.
 
-## 9. Scoring Method (Draft)
+## 9. Compute-Time Optimization Analysis
+
+Context:
+- The route-search space grows combinatorially with the number of required via cities.
+- If there are $n$ via cities and we test every ordering, permutations alone are $n!$ (before date choices and alternative route variants per leg).
+- For the US capitals example with 15 via cities, exhaustive permutation search is infeasible ($15! = 1,307,674,368,000$ possible orderings).
+
+### 9.1 Reduce Cost of Individual Route Evaluation (Caching and Reuse)
+
+Objective:
+- Cut repeated work in segment-level evaluation so each candidate route is cheaper to score.
+
+Techniques:
+1. Pairwise route cache (city A -> city B):
+	- Cache deterministic outputs that rarely change:
+		- distance,
+		- ascent,
+		- route geometry summary,
+		- legality/safety flags (bike-legal, toll/highway avoidance).
+	- Canonicalize city identifiers (stable IDs/coordinates) to avoid cache misses from naming variations.
+	- Include routing profile in cache key (bike mode, avoid_highways, avoid_tolls, allow_ferries).
+
+2. Direction-aware caching:
+	- Keep separate entries for A -> B and B -> A because climb and recommended roads can differ by direction.
+	- Distance may be similar; ascent and legality can differ materially.
+
+3. Weather/climate memoization by (location, time bucket):
+	- Cache climatology data by city and month/day bucket.
+	- Cache forecast snapshots with explicit timestamp/version so stale forecasts are not reused silently.
+	- For optimize-date mode, precompute weather score tables per city across date buckets once, then reuse across many route candidates.
+
+4. Segment-feasibility precheck cache:
+	- Memoize whether a segment can satisfy daily caps (miles/climb) and weather hard constraints for a given date bucket.
+	- If a segment is infeasible under current constraints, prune any candidate containing it without full rescoring.
+
+5. In-memory + persistent cache layers:
+	- L1: process-memory cache for fast repeated lookups within one run.
+	- L2: local persistent cache (disk/SQLite/LMDB) shared across runs.
+	- Use TTL/versioning keyed to provider version and routing-policy hash.
+
+Expected impact:
+- Large reduction in API calls and repeated route computations.
+- Biggest gains when evaluating many permutations that reuse the same city-pair legs.
+
+Risks/notes:
+- Cache invalidation is critical when routing policy or data source changes.
+- Must track provenance (provider, profile, timestamp) for reproducibility.
+
+### 9.2 Search More Effectively (Find Good Solutions Faster)
+
+Objective:
+- Avoid exhaustive search; spend compute on promising regions of the solution space.
+
+Techniques:
+1. Two-phase optimization:
+	- Phase A (cheap): build/score approximate pairwise cost matrix using cached segment metrics and simplified weather model.
+	- Phase B (expensive): run full route and schedule evaluation only on top-K candidate orderings.
+
+2. Branch-and-bound with admissible lower bounds:
+	- Build partial routes incrementally.
+	- Compute lower bound using optimistic remaining distance/weather/hill cost.
+	- Prune branches whose bound is worse than current best.
+
+3. Beam search / best-first search:
+	- Keep only the best B partial routes at each depth (beam width B is tunable).
+	- Often reaches high-quality solutions quickly under strict runtime budgets.
+
+4. Metaheuristics for large N:
+	- Seed with constructive heuristic (nearest-neighbor or regret insertion).
+	- Improve with local search (2-opt/3-opt/swap/relocate).
+	- Use simulated annealing or tabu search when local minima become problematic.
+
+5. Candidate-list restriction:
+	- For each city, only consider next-city choices from a nearest/promising subset under weighted proxy cost.
+	- Dramatically reduces branching factor with limited quality loss when tuned well.
+
+6. Dominance rules and early infeasibility pruning:
+	- If two partial states end at same city/date bucket and one is no better on all objectives, discard dominated state.
+	- Reject partial plans as soon as hard weather or daily-cap infeasibility is detected.
+
+7. Anytime solver behavior:
+	- Continuously keep best-so-far solution.
+	- Return best available plan when runtime budget expires (default 10 minutes), with quality/confidence metadata.
+
+Expected impact:
+- Orders-of-magnitude fewer full evaluations than brute force.
+- Predictable performance under configurable time budgets.
+
+Risks/notes:
+- Heuristic bias can miss globally optimal routes; mitigate with diversification/restarts.
+- Need calibration so pruning is aggressive but not over-pruning feasible high-quality regions.
+
+### 9.3 Hardware-Aware Programming (Parallelism and Systems Techniques)
+
+Objective:
+- Increase throughput by evaluating independent work concurrently and minimizing overhead.
+
+Techniques:
+1. Parallel candidate evaluation:
+	- Evaluate independent route candidates across CPU cores using a worker pool.
+	- Use chunked work-stealing to keep cores busy as task durations vary.
+
+2. Parallel segment precomputation:
+	- Precompute pairwise city metrics concurrently at startup (bounded by provider rate limits).
+	- Store results in shared cache used by all search workers.
+
+3. Hybrid concurrency model:
+	- Async I/O for API-bound steps (routing/weather fetches).
+	- Multi-process or native-thread parallelism for CPU-heavy scoring/search steps.
+
+4. Batched/vectorized scoring:
+	- Evaluate weather and objective components for multiple candidates in batches to reduce per-item overhead.
+	- Useful if using NumPy/polars-like vector operations.
+
+5. Multi-level budget control:
+	- Global timeout (already defined), plus per-stage budgets:
+		- precompute budget,
+		- search budget,
+		- refinement budget.
+	- Prevents one phase from starving others.
+
+6. Deterministic parallel mode (for tests):
+	- Fixed RNG seeds and deterministic reduction order when required for regression stability.
+	- Non-deterministic high-throughput mode for production runs.
+
+Expected impact:
+- Near-linear speedups for embarrassingly parallel portions until bottleneck shifts to I/O or synchronization.
+- Better hardware utilization on multi-core systems.
+
+Risks/notes:
+- External API rate limits can dominate performance if not throttled.
+- Shared-cache contention and serialization costs can erode gains; design lock strategy carefully.
+
+### 9.4 Suggested v1.5 Experiment Plan (Low Risk, High Return)
+
+1. Add pairwise segment cache with profile-aware keys and directional entries.
+2. Add cheap-matrix precompute plus two-phase search (top-K full evaluations).
+3. Introduce beam search with configurable beam width and runtime budget.
+4. Parallelize full-candidate evaluation using worker pool.
+5. Instrument metrics:
+	- cache hit rate,
+	- route evaluations per second,
+	- pruned-branch count,
+	- time spent by phase,
+	- best-score improvement over time.
+
+Success criteria:
+- Achieve at least 5x reduction in median solve time on benchmark fixtures, while preserving recommendation quality within an agreed tolerance.
+
+### 9.5 Open Decisions for Compute Strategy
+
+This section is retained as a pointer only.
+- Canonical decision statuses are tracked in Section 9.6.
+- Keep updates in one place to avoid drift.
+
+### 9.6 Clarified Decision Proposals (For Confirmation)
+
+This section narrows open decisions into default positions for v1 so behavior is predictable, while keeping them explicitly reversible if later evidence disagrees.
+
+1. Optimality vs speed target (clarified proposal):
+	- Status: Still Open.
+	- Proposed v1 policy:
+		- default solver mode is best-effort anytime under runtime budget,
+		- for small instances only, allow optional exact mode when city count is below a configurable threshold.
+	- Suggested threshold:
+		- exact mode eligible when via-city count <= 8 (tunable after benchmark results).
+	- Why this clarifies ambiguity:
+		- establishes predictable runtime behavior for realistic workloads,
+		- preserves a path to exactness on tractable small cases.
+
+2. Cache persistence policy (clarified proposal):
+	- Status: Confirmed.
+	- Proposed v1 policy:
+		- persistent cache enabled by default across runs,
+		- cache key includes provider, routing profile, constraints hash, and data-version stamp.
+	- Invalidation defaults:
+		- hard invalidate on provider/profile/schema version change,
+		- soft TTL for weather forecast entries (for example 6-24 hours),
+		- longer TTL (or no TTL) for static route geometry unless provider version changes.
+	- Why this clarifies ambiguity:
+		- gives immediate performance gains while making staleness controls explicit.
+
+3. Parallelism limits (clarified proposal):
+	- Status: Still Open.
+	- Proposed v1 policy:
+		- worker_count defaults to min(max(2, cpu_cores - 1), provider_safe_parallelism_cap),
+		- provider_safe_parallelism_cap should default conservatively (for example 4) unless operator overrides.
+	- Additional guardrails:
+		- separate I/O concurrency limit from CPU worker count,
+		- use adaptive backoff when provider rate-limit responses are detected.
+	- Why this clarifies ambiguity:
+		- avoids overloading external APIs while still using available local CPU.
+
+4. Reproducibility mode (clarified proposal):
+	- Status: Confirmed.
+	- Proposed v1 policy:
+		- deterministic mode mandatory for CI/regression test runs,
+		- production defaults to non-deterministic high-throughput mode,
+		- deterministic mode can be enabled in production for incident replay.
+	- Deterministic guarantees should include:
+		- fixed RNG seed,
+		- stable tie-breaking,
+		- deterministic result ordering before output.
+	- Why this clarifies ambiguity:
+		- keeps tests stable while preserving runtime efficiency in normal operations.
+
+5. Decision closure criteria (applies to all four compute decisions):
+	- Status: Still Open.
+	- Confirm decision when benchmark fixtures show:
+		- median runtime within configured budget,
+		- recommendation quality not materially degraded versus current baseline,
+		- stable repeatability in deterministic mode,
+		- acceptable provider error/rate-limit behavior.
+	- If criteria fail, revise only the relevant decision and re-test; do not reopen unrelated confirmed policies.
+
+6. GPU acceleration opportunity (clarified investigation question):
+	- Status: Still Open.
+	- Core question:
+		- does this workload benefit more from GPU offload, or from CPU-core parallelism plus caching and pruning?
+	- Preliminary assessment:
+		- routing API calls, branch-heavy search expansion, and cache-heavy orchestration are typically CPU/I/O bound,
+		- these components often see limited GPU benefit due to transfer overhead and irregular control flow,
+		- CPU parallelism is the default path for v1 and likely v1.5.
+	- Where GPU may help:
+		- batched scoring of very large candidate sets (vector math over weather/distance/hill arrays),
+		- large matrix operations during heuristic precompute,
+		- Monte Carlo/sensitivity sweeps run offline at high volume.
+	- Decision gate for GPU adoption:
+		- adopt GPU only if profiling shows at least 40% runtime in vectorizable numeric kernels and projected end-to-end speedup >= 2x on target hardware after transfer overhead.
+	- Investigation method:
+		- profile phase-level runtime split (I/O vs search control vs numeric scoring),
+		- prototype one isolated GPU-friendly kernel (batched scoring),
+		- compare total wall-clock and cost/performance against optimized CPU baseline.
+	- Tentative default:
+		- CPU-first architecture with pluggable scoring backend so GPU can be added later without redesign.
+
+## 10. Scoring Method (Draft)
 Scoring model overview:
 - Use a two-stage evaluation pipeline:
 	- Stage 1 feasibility filtering: reject candidates violating hard constraints (for example weather limits).
@@ -445,7 +710,7 @@ Calibration process:
 - Adjust defaults in 0.05 increments when ranking outcomes conflict with domain expectations.
 - Optionally define named profiles later (for example balanced, comfort-first, low-climb).
 
-### 9.1 Acceptance Criteria for Scoring (Pass/Fail)
+### 10.1 Acceptance Criteria for Scoring (Pass/Fail)
 Test set:
 - Use the US Capitals Corridor Example fixtures:
 	- fixed-date variant (start_date present),
@@ -496,22 +761,76 @@ Scoring acceptance threshold for release readiness:
 - Required to pass: tests 1 through 8.
 - Recommended to pass before production hardening: tests 9 and 10.
 
-## 10. Recommended Next Investigation Steps
-1. Finalize objective scoring weights (weather vs distance vs hills) and whether profiles are user-configurable.
-2. Finalize weather data source strategy for v1 (historical normals, forecast, or hybrid by lead time).
-3. Lock YAML schema fields for constraints, preferences, and output configuration.
-4. Convert the Austin to Washington, DC scenario into executable test fixtures for both fixed-date and optimize-date modes.
+## 11. Recommended Next Investigation Steps
+1. Resolve still-open compute policies in Section 9.6:
+	- optimality vs speed threshold,
+	- parallelism default limits,
+	- decision-closure criteria,
+	- GPU investigation outcome.
+2. Define provider operations policy:
+	- API quota/rate-limit handling,
+	- outage fallback behavior,
+	- cost guardrails for sustained runs.
+3. Define reproducibility and provenance envelope:
+	- required run metadata,
+	- data snapshot/version capture,
+	- deterministic replay requirements beyond CI.
+4. Expand benchmark fixture coverage beyond US capitals:
+	- mountain-heavy case,
+	- extreme heat/cold case,
+	- sparse-road/ferry-dependent case,
+	- larger-city-count stress case.
+5. Specify failure taxonomy and user-facing diagnostics contract:
+	- standardized reason codes,
+	- blocking vs warning classification,
+	- remediation hints in infeasibility output.
 
-## 11. Decision Gate (Before Development)
+## 12. Pre-Implementation Checklist
+Use this checklist to confirm investigation completeness before starting implementation planning.
+
+Status legend:
+- [ ] Open
+- [x] Completed
+
+Compute strategy:
+- [ ] Confirm optimality vs speed default and exact-mode threshold.
+- [ ] Confirm default parallelism limits and provider-safe concurrency cap.
+- [ ] Finalize decision-closure thresholds (runtime, quality, repeatability).
+- [ ] Close GPU investigation with explicit go/no-go decision and trigger criteria.
+
+Provider operations:
+- [ ] Define routing/weather provider rate-limit and quota handling behavior.
+- [x] Define outage/degraded-service fallback behavior.
+- [ ] Define cost guardrails for sustained or batch runs.
+
+Reproducibility and provenance:
+- [ ] Define mandatory run metadata captured for every solve.
+- [x] Define data snapshot/version capture requirements for external inputs.
+- [x] Define deterministic replay scope outside CI (for incident analysis/support).
+
+Quality and benchmarking:
+- [ ] Approve expanded fixture set (mountain, extreme climate, sparse-road/ferry, stress-size).
+- [ ] Define baseline comparison method and non-regression thresholds.
+- [ ] Confirm benchmark reporting format (runtime percentiles, quality deltas, failure rates).
+
+Diagnostics contract:
+- [ ] Finalize standardized reason-code taxonomy.
+- [ ] Finalize blocking vs warning classification rules.
+- [ ] Finalize remediation-hint content requirements for infeasible results.
+
+Implementation-planning readiness check:
+- [ ] Checklist reviewed and signed off by stakeholders.
+
+## 13. Decision Gate (Before Development)
 Ready for implementation: No
 
 Blockers:
 - Problem statement confirmed: Yes
-- Scope confirmed: Mostly (pending weather data-source decision and scoring weights)
+- Scope confirmed: Mostly (pending still-open compute decisions and operations/reproducibility policy details)
 - Reproduction confirmed: No
 - Acceptance criteria drafted: Yes
 
-## 12. Confirmed Requirements Delta (Latest)
+## 14. Confirmed Requirements Delta (Latest)
 - Via cities are reorderable and ordering optimization is central.
 - Weather model is bi-level:
 	- Level 1 hard constraints: exclude candidates violating temperature thresholds.
@@ -522,7 +841,7 @@ Blockers:
 - Fixed-date semantics are strict (exact date if provided); optimize-date search window defaults to full year when not provided.
 - Output semantics are one best plan plus up to four alternatives by default, with configurable alternative count.
 
-## 13. Practical Test Scenario (Provided)
+## 15. Practical Test Scenario (Provided)
 Scenario name:
 - US Capitals Corridor Example
 
