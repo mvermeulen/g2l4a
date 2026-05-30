@@ -1,0 +1,30 @@
+# System-wide defaults for the g2l4a bicycle tour planning solver.
+# User requests will deep-merge with these values, overriding specific keys.
+
+defaults:
+  weather_constraints:
+    max_avg_high_f: 90.0
+    min_avg_high_f: 32.0
+
+  daily_constraints:
+    max_miles_per_day: 80.0
+    max_climb_ft_per_day: 5000.0
+
+  duration_constraints:
+    max_total_days: null
+
+  solver_constraints:
+    max_total_cities: 50
+    max_search_minutes: 10.0
+
+  scoring:
+    weights:
+      weather: 0.45
+      distance: 0.30
+      hills: 0.25
+
+  routing_preferences:
+    avoid_highways: true
+    avoid_tolls: true
+    allow_ferries: true
+    allow_international_borders: true

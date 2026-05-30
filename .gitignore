@@ -1,0 +1,33 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Bytecode and Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Operating System Metadata
+.DS_Store
+Thumbs.db
+
+# Databases and Local Caches
+*.db
+*.sqlite
+.cache/
+data_cache/
+
+# Local Environment Variables
+.env
+.env.local
+.env.*.local
