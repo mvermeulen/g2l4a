@@ -81,13 +81,16 @@ Goal:
 
 Scope:
 - Implement provider interfaces and one concrete integration path.
-- Add L1 in-memory cache and L2 persistent cache.
+- Add L1 in-memory cache and L2 persistent cache (using SQLite).
+- Implement profile-aware composite L2 cache keys: `(origin_id, destination_id, routing_engine_version, profile_hash)`, where `profile_hash` covers routing preferences (`avoid_highways`, `avoid_tolls`, `allow_ferries`, `allow_borders`).
 - Implement directional route cache keys and weather snapshot versioning.
+- Implement **Leg Matrix / Bulk Leg fetcher** to resolve multiple cold leg segments concurrently via bulk APIs or parallel worker pools, avoiding startup latency on large runs.
 - Add rate-limit handling and retry/backoff policy.
 
 Verification gate:
 - Integration tests pass against mocked and live-sandbox providers.
 - Cache hit rate improves repeat-run latency on fixtures.
+- Bulk leg queries successfully resolve within timing limits without triggering rate limit blocks.
 - Provider outage simulation returns controlled warnings/failures (no silent corruption).
 
 Documentation milestone:
@@ -102,11 +105,13 @@ Goal:
 Scope:
 - Implement hard weather checks and daily-cap feasibility checks.
 - Implement precheck memoization for repeated segment/date evaluations.
+- Define a standardized `ConstraintViolation` data contract and structured schema list in the output:
+  - Fields: `code` (e.g., INFEASIBLE_WEATHER_MAX_HIGH), `location`, `date`, `observed_value`, `threshold_limit`, and `remediation_hint`.
 - Implement standardized infeasibility reason codes and detailed breakdown output.
 
 Verification gate:
 - Returned plans never violate hard constraints.
-- Infeasible scenarios fail fast with city/leg/date/value/threshold details.
+- Infeasible scenarios fail fast with structured city/leg/date/value/threshold details.
 - Regression tests cover all confirmed blocking reason codes.
 
 Documentation milestone:
@@ -138,6 +143,7 @@ Goal:
 - Produce high-quality routes within runtime budgets using anytime/beam strategy.
 
 Scope:
+- Implement **Warm-Start Seeding Heuristic**: run a cheap constructive heuristic first (e.g., greedy nearest-neighbor TSP or 2-opt search) on the distance/ascent leg matrix under monthly averages to set tight bounds and seed the beam queue.
 - Implement two-phase search:
   - cheap candidate filtering
   - full evaluation of top-K candidates
@@ -148,6 +154,7 @@ Scope:
 Verification gate:
 - US Capitals fixtures complete within configured time budget.
 - Gone2Look4America benchmark completes within budget with reproducible deterministic output.
+- Warm-start heuristic seeds valid high-quality bounds instantly on high-capitol fixtures.
 - Performance metrics captured: eval/sec, prune counts, cache hit rate, best-score-over-time.
 
 Documentation milestone:
@@ -182,10 +189,12 @@ Scope:
 - Add CI gates for unit/integration/regression/performance smoke tests.
 - Add deterministic replay workflow for incidents.
 - Finalize run metadata/provenance recording.
+- Implement **Gone2Look4America Quality Calibration Gate**: score the cyclist's actual real-world route using the solver's Stage 2 soft scoring formulas and compare it directly to computed recommendations to validate and tune weights ($w_{\text{weather}}, w_{\text{distance}}, w_{\text{hills}}$).
 - Conduct release candidate validation on benchmark fixture suite.
 
 Verification gate:
 - All required acceptance tests (from investigation) pass in CI.
+- Quality calibration gate successfully establishes soft weight sensitivity boundaries on real-world benchmark data.
 - Deterministic replay reproduces prior ranked outputs for snapshot data.
 - No open P0/P1 defects; release checklist complete.
 
