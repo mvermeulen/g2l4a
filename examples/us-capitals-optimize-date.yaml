@@ -20,6 +20,7 @@ via_cities:
   - Richmond, Virginia
   - Charleston, West Virginia
   - Harrisburg, Pennsylvania
+  - Oklahoma City, Oklahoma
 
 weather_constraints:
   max_avg_high_f: 90
