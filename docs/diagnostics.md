@@ -26,7 +26,7 @@ When an itinerary violates hard constraints, `Itinerary.is_feasible` is marked `
 | Code | Severity | Context | Description |
 | :--- | :--- | :--- | :--- |
 | `INFEASIBLE_WEATHER_MAX_HIGH` | Blocking | Weather | Travel destination high temperature exceeds the maximum comfortable limit. |
-| `INFEASIBLE_WEATHER_MIN_HIGH` | Blocking | Weather | Travel destination high temperature falls below the minimum comfortable limit. |
+| `INFEASIBLE_WEATHER_MIN_LOW` | Blocking | Weather | Travel destination low temperature falls below the minimum comfortable limit. |
 | `INFEASIBLE_DAILY_MILEAGE` | Blocking | Mileage | A single travel day segment distance exceeds the maximum daily mileage cap. |
 | `INFEASIBLE_DAILY_ASCENT` | Blocking | Ascent | A single travel day total climbing elevation exceeds the maximum daily ascent cap. |
 

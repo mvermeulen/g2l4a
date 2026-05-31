@@ -58,7 +58,8 @@ To prevent routing optimization runs from failing due to temporary provider outa
 
 ## 4. Open-Meteo Weather Provider
 
-The solver now supports selecting Open-Meteo as the weather source through config:
+The solver defaults to the deterministic `mock` weather provider for fast local runs.
+You can opt in to Open-Meteo as the weather source through config:
 
 ```yaml
 weather_provider:

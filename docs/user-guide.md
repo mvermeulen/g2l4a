@@ -60,9 +60,9 @@ If the optimizer returns itineraries marked as `is_feasible: False` (or outputs 
 * **Why**: A leg segment exceeds your `max_miles_per_day` limit.
 * **Fix**: Increase the `max_miles_per_day` cap in your request, introduce rest days in your schedule, or select endpoints closer together.
 
-#### 2. `INFEASIBLE_WEATHER_MAX_HIGH` / `INFEASIBLE_WEATHER_MIN_HIGH`
-* **Why**: The target date high temperature violates comfort bounds (e.g. riding through Montgomery in August heat).
-* **Fix**: Change your `start_date` to a milder travel season, broaden the comfort temperature boundaries (`max_avg_high_f` or `min_avg_high_f`), or route around extreme climate zones.
+#### 2. `INFEASIBLE_WEATHER_MAX_HIGH` / `INFEASIBLE_WEATHER_MIN_LOW`
+* **Why**: The target date high/low temperatures violate comfort bounds (e.g. excessive daytime heat or overnight cold).
+* **Fix**: Change your `start_date` to a milder travel season, broaden the comfort temperature boundaries (`max_avg_high_f` or `min_avg_low_f`), or route around extreme climate zones.
 
 #### 3. `INFEASIBLE_DAILY_ASCENT`
 * **Why**: A segment climb exceeds your `max_climb_ft_per_day` cap.

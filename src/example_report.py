@@ -22,7 +22,7 @@ def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> 
 
 
 def _build_data_attribution(config: dict) -> Optional[dict]:
-    provider_name = str(config.get("weather_provider", {}).get("name", "open_meteo"))
+    provider_name = str(config.get("weather_provider", {}).get("name", "mock"))
     if provider_name != "open_meteo":
         return None
 

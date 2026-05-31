@@ -17,7 +17,7 @@ Below is the stable taxonomy of validation error codes returned by the solver, a
 | **`INVALID_DATE`** | `start_date` | The provided start date is not in `YYYY-MM-DD` format. | Format the start date exactly as `YYYY-MM-DD` (e.g. `start_date: "2026-06-15"`). |
 | **`CITY_COUNT_EXCEEDED`** | `via_cities` | Total requested cities exceeds `max_total_cities`. | Reduce the number of via capitals or raise `solver_constraints.max_total_cities` in overrides. |
 | **`INVALID_SCORING_WEIGHTS`** | `scoring.weights` | Desirability weights are negative or do not sum to 1.0. | Ensure all weights are `>= 0.0` and `weather + distance + hills` sums to exactly `1.0`. |
-| **`INVALID_WEATHER_RANGE`** | `weather_constraints` | The `max_avg_high_f` is less than `min_avg_high_f`. | Adjust temperature bounds so maximum high is greater than minimum high. |
+| **`INVALID_WEATHER_RANGE`** | `weather_constraints` | The `max_avg_high_f` is less than `min_avg_low_f`. | Adjust temperature bounds so maximum high is greater than minimum low. |
 | **`INVALID_DAILY_LIMIT`** | `daily_constraints` | The daily mileage or climbing cap is zero or negative. | Set `max_miles_per_day` and `max_climb_ft_per_day` to positive values. |
 | **`FILE_NOT_FOUND`** | file path | The request file path does not exist. | Double check that the requested YAML file path is correct. |
 | **`YAML_PARSE_ERROR`** | file payload | The file is syntactically invalid YAML. | Run your request through a YAML linter to fix formatting issues (such as mismatched list brackets). |

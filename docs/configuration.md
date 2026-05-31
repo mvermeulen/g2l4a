@@ -50,7 +50,7 @@ Below is the absolute default schema used by the system when a setting is omitte
 | Category | Parameter | Type | Default Value | Description |
 |---|---|---|---|---|
 | **Weather** | `max_avg_high_f` | float | `90.0` | Maximum average high temperature allowed for a city. |
-| | `min_avg_high_f` | float | `32.0` | Minimum average high temperature allowed for a city. |
+| | `min_avg_low_f` | float | `24.0` | Minimum average low temperature allowed for a city. |
 | **Daily limits** | `max_miles_per_day`| float | `80.0` | Absolute daily distance mileage cap. |
 | | `max_climb_ft_per_day`| float | `5000.0` | Absolute daily climbing ascent cap. |
 | **Duration** | `max_total_days` | int/null | `null` | Optional total trip duration limit (no cap by default). |

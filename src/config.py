@@ -6,7 +6,7 @@ from typing import Dict, Any, Optional
 BUILTIN_DEFAULTS: Dict[str, Any] = {
     "weather_constraints": {
         "max_avg_high_f": 90.0,
-        "min_avg_high_f": 32.0,
+        "min_avg_low_f": 24.0,
     },
     "daily_constraints": {
         "max_miles_per_day": 80.0,
@@ -37,7 +37,7 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "allow_international_borders": True,
     },
     "weather_provider": {
-        "name": "open_meteo",
+        "name": "mock",
         "timeout_seconds": 8.0,
         "climate_model": "CMCC_CM2_VHR4",
     },

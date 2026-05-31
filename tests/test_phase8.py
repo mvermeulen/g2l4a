@@ -36,7 +36,7 @@ def test_generate_report_for_example_writes_markdown(tmp_path):
                 "  - Oklahoma City, Oklahoma",
                 "weather_constraints:",
                 "  max_avg_high_f: 95",
-                "  min_avg_high_f: 20",
+                "  min_avg_low_f: 20",
             ]
         )
         + "\n",
@@ -71,7 +71,7 @@ def test_generate_report_for_example_writes_json(tmp_path):
                 "  - Oklahoma City, Oklahoma",
                 "weather_constraints:",
                 "  max_avg_high_f: 95",
-                "  min_avg_high_f: 20",
+                "  min_avg_low_f: 20",
             ]
         )
         + "\n",

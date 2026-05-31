@@ -32,7 +32,7 @@ class Leg:
 @dataclass(frozen=True)
 class WeatherConstraints:
     max_avg_high_f: float
-    min_avg_high_f: float
+    min_avg_low_f: float
 
 
 @dataclass(frozen=True)

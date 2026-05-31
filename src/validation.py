@@ -172,12 +172,12 @@ class RequestParser:
         # 7. Validate Constraints sanity
         weather_conf = effective_config.get("weather_constraints", {})
         max_high = weather_conf.get("max_avg_high_f")
-        min_high = weather_conf.get("min_avg_high_f")
-        if max_high is not None and min_high is not None:
-            if max_high < min_high:
+        min_low = weather_conf.get("min_avg_low_f")
+        if max_high is not None and min_low is not None:
+            if max_high < min_low:
                 raise ValidationError(
                     code="INVALID_WEATHER_RANGE",
-                    message=f"max_avg_high_f ({max_high}) cannot be less than min_avg_high_f ({min_high}).",
+                    message=f"max_avg_high_f ({max_high}) cannot be less than min_avg_low_f ({min_low}).",
                     location="weather_constraints"
                 )
                 

@@ -365,7 +365,7 @@ Start-date rule:
 Proposed YAML defaults:
 - Status: Confirmed.
 - weather_constraints.max_avg_high_f: 90
-- weather_constraints.min_avg_high_f: 32
+- weather_constraints.min_avg_low_f: 24
 - Behavior: if omitted in input, solver uses defaults above.
 - daily_constraints.max_miles_per_day: 80
 - daily_constraints.max_climb_ft_per_day: 5000
@@ -386,7 +386,7 @@ Example system defaults YAML (for example config/defaults.yaml):
 defaults:
 	weather_constraints:
 		max_avg_high_f: 90
-		min_avg_high_f: 32
+		min_avg_low_f: 24
 
 	daily_constraints:
 		max_miles_per_day: 80
@@ -816,7 +816,7 @@ Quality and benchmarking:
 - [x] Confirm benchmark reporting format (runtime percentiles, quality deltas, failure rates).
 
 Diagnostics contract:
-- [x] Finalize standardized reason-code taxonomy (Standard codes: INFEASIBLE_WEATHER_MAX_HIGH, INFEASIBLE_WEATHER_MIN_HIGH, INFEASIBLE_DAILY_DISTANCE, INFEASIBLE_DAILY_CLIMB).
+- [x] Finalize standardized reason-code taxonomy (Standard codes: INFEASIBLE_WEATHER_MAX_HIGH, INFEASIBLE_WEATHER_MIN_LOW, INFEASIBLE_DAILY_DISTANCE, INFEASIBLE_DAILY_CLIMB).
 - [x] Finalize blocking vs warning classification rules (Hard constraint failures are blocking; network fallbacks are warnings).
 - [x] Finalize remediation-hint content requirements for infeasible results (Detailed location-specific breakdown of violations, e.g., 'Jackson, MS: avg high temperature was 92F on July 15, exceeding max limit of 90F').
 
@@ -837,7 +837,7 @@ Blockers:
 - Weather model is bi-level:
 	- Level 1 hard constraints: exclude candidates violating temperature thresholds.
 	- Level 2 soft preferences: score/rank candidates within allowed weather ranges.
-- Hard weather defaults are 90F (max average high) and 32F (min average high), and both are configurable via YAML fields.
+- Hard weather defaults are 90F (max average high) and 24F (min average low), and both are configurable via YAML fields.
 - Hills/elevation is a preference objective, including directional climbing differences.
 - Start-date support must include both fixed-date and optimize-date planning modes.
 - Fixed-date semantics are strict (exact date if provided); optimize-date search window defaults to full year when not provided.

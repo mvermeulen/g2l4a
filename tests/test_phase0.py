@@ -67,7 +67,7 @@ defaults:
         # Test 1: No overrides (merges system defaults with built-in fallbacks)
         config1 = manager.get_effective_config()
         assert config1["weather_constraints"]["max_avg_high_f"] == 85.0  # System default
-        assert config1["weather_constraints"]["min_avg_high_f"] == 32.0  # Built-in fallback
+        assert config1["weather_constraints"]["min_avg_low_f"] == 24.0  # Built-in fallback
         assert config1["daily_constraints"]["max_miles_per_day"] == 75.0 # System default
         assert config1["daily_constraints"]["max_climb_ft_per_day"] == 5000.0 # Built-in fallback
         
@@ -82,7 +82,7 @@ defaults:
         }
         config2 = manager.get_effective_config(user_overrides)
         assert config2["weather_constraints"]["max_avg_high_f"] == 80.0  # User override
-        assert config2["weather_constraints"]["min_avg_high_f"] == 32.0  # Built-in fallback
+        assert config2["weather_constraints"]["min_avg_low_f"] == 24.0  # Built-in fallback
         assert config2["daily_constraints"]["max_miles_per_day"] == 75.0 # System default
         assert config2["routing_preferences"]["avoid_highways"] is False # User override
         assert config2["routing_preferences"]["avoid_tolls"] is True   # Built-in fallback

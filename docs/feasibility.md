@@ -9,14 +9,15 @@ This document outlines the validation algorithms, mathematical thresholds, rest 
 The feasibility engine checks candidate itineraries against system constraints to reject unworkable plans as early in the search process as possible.
 
 ### A. Weather Comfort Violations
-For each day in the schedule, the engine validates the destination's high temperature $T_{\text{high}}$ against the user's bounds:
-$$\min T_{\text{high}} \le T_{\text{high}} \le \max T_{\text{high}}$$
+For each day in the schedule, the engine validates the destination's high and low temperatures against configured bounds:
+$$T_{\text{high}} \le \max T_{\text{high}}$$
+$$\min T_{\text{low}} \le T_{\text{low}}$$
 
 * **Code: `INFEASIBLE_WEATHER_MAX_HIGH`**
   - Triggered if: $T_{\text{high}} > \max T_{\text{high}}$
   - Hint: Suggests adjusting start dates to cooler months or routing around extreme climate zones.
-* **Code: `INFEASIBLE_WEATHER_MIN_HIGH`**
-  - Triggered if: $T_{\text{high}} < \min T_{\text{high}}$
+* **Code: `INFEASIBLE_WEATHER_MIN_LOW`**
+  - Triggered if: $T_{\text{low}} < \min T_{\text{low}}$
   - Hint: Suggests scheduling tours in warmer months or lower elevations.
 
 ### B. Daily Effort Violations
@@ -46,11 +47,11 @@ To accommodate long-distance bicycle touring realities, the engine supports **Re
 In beam searches, path branches frequently share segments and dates. Validating these repeatedly introduces massive compute bottlenecks. The `FeasibilityEngine` includes precheck memoization tables:
 
 ```python
-self._weather_memo: Dict[Tuple[str, str], List[ConstraintViolation]]
+self._weather_memo: Dict[Tuple[str, str, float, float], List[ConstraintViolation]]
 self._daily_memo: Dict[Tuple[str, str, str], List[ConstraintViolation]]
 ```
 
-1. **Weather Memoization**: Keyed by `(city_name, date_iso)`. Weather evaluations are cached globally so that other routes checking the same destination on that day receive instant diagnostic lookups.
+1. **Weather Memoization**: Keyed by `(city_name, date_iso, high_temp_f, low_temp_f)`. Weather evaluations are cached globally so that equivalent checks receive instant diagnostic lookups.
 2. **Segment Memoization**: Keyed by `(origin_name, dest_name, date_iso)`. Evaluates efforts for specific directional leg segments.
 
 This memoization reduces itinerary constraint checks to $O(1)$ operations during hot search iterations.

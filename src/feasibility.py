@@ -11,7 +11,7 @@ class FeasibilityEngine:
         self.daily_constraints = self.config.get("daily_constraints", {})
         
         # Segment precheck memoization tables
-        self._weather_memo: Dict[Tuple[str, str], List[ConstraintViolation]] = {}
+        self._weather_memo: Dict[Tuple[str, str, float, float], List[ConstraintViolation]] = {}
         self._daily_memo: Dict[Tuple[str, str, str], List[ConstraintViolation]] = {}
 
     def clear_cache(self):
@@ -19,15 +19,15 @@ class FeasibilityEngine:
         self._weather_memo.clear()
         self._daily_memo.clear()
 
-    def check_weather_feasibility(self, city_name: str, travel_date: date, high_temp: float) -> List[ConstraintViolation]:
-        """Validates high temperature bounds for a city on a travel date."""
-        key = (city_name, travel_date.isoformat())
+    def check_weather_feasibility(self, city_name: str, travel_date: date, high_temp: float, low_temp: float) -> List[ConstraintViolation]:
+        """Validates configured weather bounds for a city on a travel date."""
+        key = (city_name, travel_date.isoformat(), high_temp, low_temp)
         if key in self._weather_memo:
             return self._weather_memo[key]
 
         violations = []
         max_high = self.weather_constraints.get("max_avg_high_f")
-        min_high = self.weather_constraints.get("min_avg_high_f")
+        min_low = self.weather_constraints.get("min_avg_low_f")
 
         if max_high is not None and high_temp > max_high:
             violations.append(ConstraintViolation(
@@ -39,13 +39,13 @@ class FeasibilityEngine:
                 remediation_hint=f"Consider traveling during a cooler season or modifying the route to bypass {city_name}."
             ))
 
-        if min_high is not None and high_temp < min_high:
+        if min_low is not None and low_temp < min_low:
             violations.append(ConstraintViolation(
-                code="INFEASIBLE_WEATHER_MIN_HIGH",
+                code="INFEASIBLE_WEATHER_MIN_LOW",
                 location=city_name,
                 date=travel_date.isoformat(),
-                observed_value=high_temp,
-                threshold_limit=min_high,
+                observed_value=low_temp,
+                threshold_limit=min_low,
                 remediation_hint=f"Consider traveling during a warmer season or modifying the route to bypass {city_name}."
             ))
 
@@ -102,7 +102,8 @@ class FeasibilityEngine:
             weather_violations = self.check_weather_feasibility(
                 day.destination.name,
                 day.date,
-                day.high_temp_f
+                day.high_temp_f,
+                day.low_temp_f
             )
             violations.extend(weather_violations)
 

@@ -141,10 +141,10 @@ def test_weather_range_validation():
         "completion_city": "Washington, DC",
         "weather_constraints": {
             "max_avg_high_f": 40.0,
-            "min_avg_high_f": 60.0
+            "min_avg_low_f": 60.0
         }
     }
-    with pytest.raises(ValidationError, match="max_avg_high_f \\(40.0\\) cannot be less than min_avg_high_f \\(60.0\\)") as exc_info:
+    with pytest.raises(ValidationError, match="max_avg_high_f \\(40.0\\) cannot be less than min_avg_low_f \\(60.0\\)") as exc_info:
         parser.parse_request_dict(payload_bad_range)
     assert exc_info.value.code == "INVALID_WEATHER_RANGE"
 

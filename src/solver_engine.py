@@ -57,7 +57,7 @@ class BeamSearchSolver(Solver):
         if isinstance(weather_provider_override, WeatherProvider):
             base_weather = weather_provider_override
         else:
-            weather_provider_name = weather_provider_cfg.get("name", "open_meteo")
+            weather_provider_name = weather_provider_cfg.get("name", "mock")
             if weather_provider_name == "open_meteo":
                 base_weather = OpenMeteoWeatherProvider(
                     timeout_seconds=float(weather_provider_cfg.get("timeout_seconds", 8.0)),
@@ -159,7 +159,10 @@ class BeamSearchSolver(Solver):
                             
                             # Check weather feasibility on each day
                             weather_viols = feasibility_eng.check_weather_feasibility(
-                                curr_dest.name, day_date, weather["high_temp_f"]
+                                curr_dest.name,
+                                day_date,
+                                weather["high_temp_f"],
+                                weather["low_temp_f"],
                             )
                             # Daily feasibility checks (since we split it, this will always be within limits)
                             daily_viols = feasibility_eng.check_daily_feasibility(

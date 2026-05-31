@@ -8,7 +8,7 @@ def base_config():
     return {
         "weather_constraints": {
             "max_avg_high_f": 90.0,
-            "min_avg_high_f": 32.0,
+            "min_avg_low_f": 24.0,
         },
         "daily_constraints": {
             "max_miles_per_day": 80.0,
@@ -83,7 +83,7 @@ def test_feasibility_engine_weather_violations(engine):
     assert violation["threshold_limit"] == 90.0
     assert "cooler season" in violation["remediation_hint"]
 
-    # Test Min High violation
+    # Test Min Low violation
     engine.clear_cache()
     it_cold = Itinerary(
         start_city=c1,
@@ -97,8 +97,8 @@ def test_feasibility_engine_weather_violations(engine):
                 destination=c2,
                 distance_miles=40.0,
                 ascent_feet=500.0,
-                high_temp_f=28.0, # Too cold! Limit is 32.0
-                low_temp_f=10.0
+                high_temp_f=40.0,
+                low_temp_f=10.0  # Too cold! Limit is 24.0
             )
         ]
     )
@@ -108,10 +108,10 @@ def test_feasibility_engine_weather_violations(engine):
     assert len(validated_cold.violation_details) == 1
     
     violation_c = validated_cold.violation_details[0]
-    assert violation_c["code"] == "INFEASIBLE_WEATHER_MIN_HIGH"
+    assert violation_c["code"] == "INFEASIBLE_WEATHER_MIN_LOW"
     assert violation_c["location"] == "Cold City"
-    assert violation_c["observed_value"] == 28.0
-    assert violation_c["threshold_limit"] == 32.0
+    assert violation_c["observed_value"] == 10.0
+    assert violation_c["threshold_limit"] == 24.0
     assert "warmer season" in violation_c["remediation_hint"]
 
 def test_feasibility_engine_daily_effort_violations(engine):
@@ -251,10 +251,10 @@ def test_feasibility_engine_memoization_cache(engine):
     orig_check_weather = engine.check_weather_feasibility
     orig_check_daily = engine.check_daily_feasibility
     
-    def counted_check_weather(city_name, travel_date, high_temp):
+    def counted_check_weather(city_name, travel_date, high_temp, low_temp):
         nonlocal weather_checks
         weather_checks += 1
-        return orig_check_weather(city_name, travel_date, high_temp)
+        return orig_check_weather(city_name, travel_date, high_temp, low_temp)
         
     def counted_check_daily(origin_name, dest_name, travel_date, distance, ascent):
         nonlocal daily_checks
@@ -292,7 +292,7 @@ def test_feasibility_engine_memoization_cache(engine):
     # Actually, because we patched check_weather_feasibility itself, it will still increment weather_checks,
     # but the memoization will bypass the inner logic!
     # Let's test that the cache is actually populated:
-    key_weather = ("B", date(2026, 6, 1).isoformat())
+    key_weather = ("B", date(2026, 6, 1).isoformat(), 70.0, 50.0)
     key_daily = ("A", "B", date(2026, 6, 1).isoformat())
     assert key_weather in engine._weather_memo
     assert key_daily in engine._daily_memo

@@ -24,7 +24,7 @@ via_cities:
 
 weather_constraints:
   max_avg_high_f: 90
-  min_avg_high_f: 32
+  min_avg_low_f: 24
 
 output:
   alternatives_count: 4
