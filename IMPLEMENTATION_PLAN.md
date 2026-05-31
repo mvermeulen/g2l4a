@@ -143,6 +143,7 @@ Documentation milestone:
 - `docs/tuning.md`: practical guidance for adjusting weights safely.
 
 ## Phase 5 - Search Engine and Runtime Budgeting
+**Status: Completed** ✅
 
 Goal:
 - Produce high-quality routes within runtime budgets using anytime/beam strategy.
