@@ -95,6 +95,7 @@ class Itinerary:
     scores: Scores = field(default_factory=Scores)
     is_feasible: bool = True
     violation_details: List[Dict] = field(default_factory=list)
+    original_geodesic_baseline: Optional[float] = None
 
 
 @dataclass(frozen=True)

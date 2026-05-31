@@ -199,6 +199,9 @@ class RequestParser:
             start_date=start_date
         )
         
+        from src.scoring import compute_geodesic_baseline
+        itinerary.original_geodesic_baseline = compute_geodesic_baseline(itinerary)
+        
         return itinerary, effective_config
 
     def parse_request_file(self, file_path: str) -> Tuple[Itinerary, Dict[str, Any]]:

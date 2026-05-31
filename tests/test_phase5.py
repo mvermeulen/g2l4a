@@ -138,15 +138,15 @@ def test_solver_early_pruning_constraints(clean_solver):
         start_date=date(2026, 6, 1)
     )
     
-    # Restrict maximum mileage per day to 10 miles.
-    # Since Montgomery to Atlanta is >10 miles, the branch will be pruned instantly!
+    # Restrict weather constraints to be extremely cold/impossible.
+    # The search branches will be pruned instantly due to weather infeasibility!
     config = {
         "routing_provider": MockRoutingProvider(),
         "weather_provider": MockWeatherProvider(),
         "elevation_provider": MockElevationProvider(),
         "routing_engine_name": "mock",
-        "daily_constraints": {
-            "max_miles_per_day": 10.0
+        "weather_constraints": {
+            "max_avg_high_f": 10.0
         },
         "solver_constraints": {
             "beam_width": 5,
@@ -156,7 +156,7 @@ def test_solver_early_pruning_constraints(clean_solver):
     
     results = clean_solver.solve(it, config)
     assert len(results) > 0
-    # The search branches were pruned, so only the fallback warm-start seed (which is marked unfeasible) is returned!
+    # The search branches were pruned, so only the fallback warm-start seed (which is marked unfeasible due to weather) is returned!
     assert results[0].is_feasible is False
 
 def test_solver_deterministic_replay(clean_solver):

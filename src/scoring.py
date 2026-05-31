@@ -64,7 +64,10 @@ class ScoringEngine:
         if actual <= 0:
             return 0.0
 
-        base = compute_geodesic_baseline(itinerary)
+        if itinerary.original_geodesic_baseline is not None and itinerary.original_geodesic_baseline > 0.0:
+            base = itinerary.original_geodesic_baseline
+        else:
+            base = compute_geodesic_baseline(itinerary)
         return min(1.0, base / actual)
 
     def compute_hills_score(self, itinerary: Itinerary) -> float:

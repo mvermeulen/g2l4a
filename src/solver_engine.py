@@ -1,4 +1,5 @@
 import time
+import math
 from datetime import datetime, date, timedelta
 from typing import List, Dict, Any, Tuple, Set
 from src.domain import City, Leg, Itinerary, DailySchedule, Scores
@@ -83,7 +84,7 @@ class BeamSearchSolver(Solver):
             # A. Warm-Start: Construct a greedy TSP sequential seed path
             seed_itinerary = self._run_greedy_tsp_seed(
                 itinerary, start_date, routing_prov, weather_prov,
-                current_run_date, feasibility_eng, scoring_eng, prefs
+                current_run_date, feasibility_eng, scoring_eng, effective_config
             )
             eval_count += 1
             completed_itineraries.append(seed_itinerary)
@@ -117,38 +118,61 @@ class BeamSearchSolver(Solver):
                         # 1. Fetch Leg metrics
                         leg = routing_prov.get_leg_metrics(last_city, next_city, prefs)
                         
-                        # 2. Fetch Weather metrics
-                        weather = weather_prov.get_weather_metrics(next_city, curr_date, current_run_date)
+                        # Calculate days needed for this transition
+                        max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+                        max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
                         
-                        # 3. Create schedule entry
-                        new_day = DailySchedule(
-                            day_number=len(schedule) + 1,
-                            date=curr_date,
-                            origin=last_city,
-                            destination=next_city,
-                            distance_miles=leg.distance_miles,
-                            ascent_feet=leg.ascent_feet,
-                            high_temp_f=weather["high_temp_f"],
-                            low_temp_f=weather["low_temp_f"]
-                        )
+                        days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
+                        days_needed_climb = math.ceil(leg.ascent_feet / max_climb) if max_climb > 0 else 1
+                        days_needed = max(1, days_needed_miles, days_needed_climb)
                         
-                        # 4. Early Pruning Checks (Fail-Fast)
-                        weather_viols = feasibility_eng.check_weather_feasibility(
-                            next_city.name, curr_date, weather["high_temp_f"]
-                        )
-                        daily_viols = feasibility_eng.check_daily_feasibility(
-                            last_city.name, next_city.name, curr_date, leg.distance_miles, leg.ascent_feet
-                        )
+                        day_dist = leg.distance_miles / days_needed
+                        day_ascent = leg.ascent_feet / days_needed
                         
-                        if weather_viols or daily_viols:
+                        new_sched = list(schedule)
+                        is_pruned = False
+                        
+                        # Build schedule entries for this transition
+                        for d in range(days_needed):
+                            day_date = curr_date + timedelta(days=d)
+                            is_last_day = (d == days_needed - 1)
+                            curr_dest = next_city if is_last_day else last_city
+                            
+                            weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
+                            
+                            # Check weather feasibility on each day
+                            weather_viols = feasibility_eng.check_weather_feasibility(
+                                curr_dest.name, day_date, weather["high_temp_f"]
+                            )
+                            # Daily feasibility checks (since we split it, this will always be within limits)
+                            daily_viols = feasibility_eng.check_daily_feasibility(
+                                last_city.name, curr_dest.name, day_date, day_dist, day_ascent
+                            )
+                            
+                            if weather_viols or daily_viols:
+                                is_pruned = True
+                                break
+                                
+                            new_day = DailySchedule(
+                                day_number=len(new_sched) + 1,
+                                date=day_date,
+                                origin=last_city,
+                                destination=curr_dest,
+                                distance_miles=day_dist,
+                                ascent_feet=day_ascent,
+                                high_temp_f=weather["high_temp_f"],
+                                low_temp_f=weather["low_temp_f"]
+                            )
+                            new_sched.append(new_day)
+                            
+                        if is_pruned:
                             pruned_count += 1
                             continue
                             
                         # Save candidate state
                         new_visited = visited + (next_city,)
-                        new_date = curr_date + timedelta(days=1)
+                        new_date = curr_date + timedelta(days=days_needed)
                         new_legs = legs + [leg]
-                        new_sched = schedule + [new_day]
                         
                         # Score partial itinerary for beam sorting
                         partial_it = Itinerary(
@@ -156,7 +180,8 @@ class BeamSearchSolver(Solver):
                             completion_city=itinerary.completion_city,
                             via_cities=list(new_visited[1:]),
                             legs=new_legs,
-                            schedule=new_sched
+                            schedule=new_sched,
+                            original_geodesic_baseline=itinerary.original_geodesic_baseline
                         )
                         scoring_eng.score_itinerary(partial_it)
                         
@@ -177,26 +202,46 @@ class BeamSearchSolver(Solver):
                     
                 last_city = visited[-1]
                 leg = routing_prov.get_leg_metrics(last_city, itinerary.completion_city, prefs)
-                weather = weather_prov.get_weather_metrics(itinerary.completion_city, curr_date, current_run_date)
                 
-                new_day = DailySchedule(
-                    day_number=len(schedule) + 1,
-                    date=curr_date,
-                    origin=last_city,
-                    destination=itinerary.completion_city,
-                    distance_miles=leg.distance_miles,
-                    ascent_feet=leg.ascent_feet,
-                    high_temp_f=weather["high_temp_f"],
-                    low_temp_f=weather["low_temp_f"]
-                )
+                max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+                max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
                 
+                days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
+                days_needed_climb = math.ceil(leg.ascent_feet / max_climb) if max_climb > 0 else 1
+                days_needed = max(1, days_needed_miles, days_needed_climb)
+                
+                day_dist = leg.distance_miles / days_needed
+                day_ascent = leg.ascent_feet / days_needed
+                
+                new_sched = list(schedule)
+                
+                for d in range(days_needed):
+                    day_date = curr_date + timedelta(days=d)
+                    is_last_day = (d == days_needed - 1)
+                    curr_dest = itinerary.completion_city if is_last_day else last_city
+                    
+                    weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
+                    
+                    new_day = DailySchedule(
+                        day_number=len(new_sched) + 1,
+                        date=day_date,
+                        origin=last_city,
+                        destination=curr_dest,
+                        distance_miles=day_dist,
+                        ascent_feet=day_ascent,
+                        high_temp_f=weather["high_temp_f"],
+                        low_temp_f=weather["low_temp_f"]
+                    )
+                    new_sched.append(new_day)
+                    
                 final_itinerary = Itinerary(
                     start_city=itinerary.start_city,
                     completion_city=itinerary.completion_city,
                     via_cities=list(visited[1:]),
                     legs=legs + [leg],
-                    schedule=schedule + [new_day],
-                    start_date=start_date
+                    schedule=new_sched,
+                    start_date=start_date,
+                    original_geodesic_baseline=itinerary.original_geodesic_baseline
                 )
                 
                 # Full validation and final scoring
@@ -232,7 +277,7 @@ class BeamSearchSolver(Solver):
     def _run_greedy_tsp_seed(self, itinerary: Itinerary, start_date: date,
                             routing_prov: CachedRoutingProvider, weather_prov: CachedWeatherProvider,
                             current_run_date: date, feasibility_eng: FeasibilityEngine,
-                            scoring_eng: ScoringEngine, preferences: Dict[str, Any]) -> Itinerary:
+                            scoring_eng: ScoringEngine, effective_config: Dict[str, Any]) -> Itinerary:
         """Runs a fast constructive Nearest-Neighbor TSP heuristic to establish a seed itinerary."""
         unvisited = list(itinerary.via_cities)
         sequence: List[City] = [itinerary.start_city]
@@ -251,28 +296,45 @@ class BeamSearchSolver(Solver):
         legs: List[Leg] = []
         schedule: List[DailySchedule] = []
         curr_date = start_date
+        preferences = effective_config.get("routing_preferences", {})
         
         for i in range(len(sequence) - 1):
             c_from = sequence[i]
             c_to = sequence[i + 1]
             
             leg = routing_prov.get_leg_metrics(c_from, c_to, preferences)
-            weather = weather_prov.get_weather_metrics(c_to, curr_date, current_run_date)
             
-            day = DailySchedule(
-                day_number=i + 1,
-                date=curr_date,
-                origin=c_from,
-                destination=c_to,
-                distance_miles=leg.distance_miles,
-                ascent_feet=leg.ascent_feet,
-                high_temp_f=weather["high_temp_f"],
-                low_temp_f=weather["low_temp_f"]
-            )
+            max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+            max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
             
+            days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
+            days_needed_climb = math.ceil(leg.ascent_feet / max_climb) if max_climb > 0 else 1
+            days_needed = max(1, days_needed_miles, days_needed_climb)
+            
+            day_dist = leg.distance_miles / days_needed
+            day_ascent = leg.ascent_feet / days_needed
+            
+            for d in range(days_needed):
+                day_date = curr_date + timedelta(days=d)
+                is_last_day = (d == days_needed - 1)
+                curr_dest = c_to if is_last_day else c_from
+                
+                weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
+                
+                day = DailySchedule(
+                    day_number=len(schedule) + 1,
+                    date=day_date,
+                    origin=c_from,
+                    destination=curr_dest,
+                    distance_miles=day_dist,
+                    ascent_feet=day_ascent,
+                    high_temp_f=weather["high_temp_f"],
+                    low_temp_f=weather["low_temp_f"]
+                )
+                schedule.append(day)
+                
             legs.append(leg)
-            schedule.append(day)
-            curr_date += timedelta(days=1)
+            curr_date += timedelta(days=days_needed)
             
         seed_itinerary = Itinerary(
             start_city=itinerary.start_city,
@@ -280,7 +342,8 @@ class BeamSearchSolver(Solver):
             via_cities=sequence[1:-1],
             legs=legs,
             schedule=schedule,
-            start_date=start_date
+            start_date=start_date,
+            original_geodesic_baseline=itinerary.original_geodesic_baseline
         )
         
         feasibility_eng.validate_itinerary(seed_itinerary)
