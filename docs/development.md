@@ -49,3 +49,22 @@ PYTHONPATH=. .venv/bin/pytest -v -s
 ```
 
 All new features and optimizations must be verified locally through this test harness before commit, ensuring no regression on our core deterministic fixtures.
+
+---
+
+## Generate Example Reports
+
+Use the report generator module to convert YAML requests in examples/ into markdown reports in docs/:
+
+```bash
+# One example config -> one report file
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml
+
+# Explicit output path
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-march.yaml --output docs/us-capitals-fixed-date-march-report.md
+
+# Generate reports for all examples/*.yaml
+PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples
+```
+
+By default, output files are named docs/<example-stem>-report.md.
