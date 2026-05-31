@@ -271,11 +271,11 @@ def main():
     
     # Save the report
     report_content = "\n".join(report) + "\n"
-    os.makedirs("docs", exist_ok=True)
-    with open("docs/calibration-report.md", "w") as f:
+    os.makedirs("reports", exist_ok=True)
+    with open("reports/calibration-report.md", "w") as f:
         f.write(report_content)
         
-    print("Calibration benchmarking complete! Report saved to docs/calibration-report.md")
+    print("Calibration benchmarking complete! Report saved to reports/calibration-report.md")
     
     solver.close()
     if os.path.exists("tests/calibration_cache.db"):

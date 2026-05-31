@@ -101,7 +101,7 @@ def test_run_sensitivity_analysis():
 
 def test_main_execution():
     # Verify that calling main completes successfully and generates the report
-    report_path = "docs/calibration-report.md"
+    report_path = "reports/calibration-report.md"
     if os.path.exists(report_path):
         os.remove(report_path)
         

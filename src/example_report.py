@@ -8,15 +8,15 @@ from src.validation import RequestParser
 
 
 def _default_output_path(example_path: Path) -> Path:
-    return Path("docs") / f"{example_path.stem}-report.md"
+    return Path("reports") / f"{example_path.stem}-report.md"
 
 
 def _default_json_output_path(example_path: Path) -> Path:
-    return Path("docs") / f"{example_path.stem}-report.json"
+    return Path("reports") / f"{example_path.stem}-report.json"
 
 
 def _default_txt_output_path(example_path: Path) -> Path:
-    return Path("docs") / f"{example_path.stem}-report.txt"
+    return Path("reports") / f"{example_path.stem}-report.txt"
 
 
 def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> List[Path]:

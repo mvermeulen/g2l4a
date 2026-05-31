@@ -10,7 +10,7 @@ This checklist specifies the exit criteria, quality gates, and rollback plans re
   ```bash
   PYTHONPATH=. .venv/bin/pytest tests/test_phase5.py -k test_solver_deterministic_replay
   ```
-- [x] **Gone2Look4America Calibration**: The soft desirability scoring and anytime beam search solver must validate successfully against the historical G2L4A benchmark and produce `docs/calibration-report.md`:
+- [x] **Gone2Look4America Calibration**: The soft desirability scoring and anytime beam search solver must validate successfully against the historical G2L4A benchmark and produce `reports/calibration-report.md`:
   ```bash
   PYTHONPATH=. .venv/bin/python -m src.calibration
   ```

@@ -15,19 +15,19 @@ from src.example_report import (
 from src.output import OutputFormatter
 
 
-def test_default_output_path_uses_docs_and_stem():
+def test_default_output_path_uses_reports_and_stem():
     out = _default_output_path(Path("examples/us-capitals-fixed-date.yaml"))
-    assert str(out) == "docs/us-capitals-fixed-date-report.md"
+    assert str(out) == "reports/us-capitals-fixed-date-report.md"
 
 
-def test_default_json_output_path_uses_docs_and_stem():
+def test_default_json_output_path_uses_reports_and_stem():
     out = _default_json_output_path(Path("examples/us-capitals-fixed-date.yaml"))
-    assert str(out) == "docs/us-capitals-fixed-date-report.json"
+    assert str(out) == "reports/us-capitals-fixed-date-report.json"
 
 
-def test_default_txt_output_path_uses_docs_and_stem():
+def test_default_txt_output_path_uses_reports_and_stem():
     out = _default_txt_output_path(Path("examples/us-capitals-fixed-date.yaml"))
-    assert str(out) == "docs/us-capitals-fixed-date-report.txt"
+    assert str(out) == "reports/us-capitals-fixed-date-report.txt"
 
 
 def test_generate_report_for_example_writes_markdown(tmp_path):
@@ -207,8 +207,8 @@ def test_main_with_format_both_writes_markdown_and_json(monkeypatch):
     exit_code = example_report.main()
 
     assert exit_code == 0
-    assert captured["output_path"] == Path("docs/us-capitals-fixed-date-report.md")
-    assert captured["json_output_path"] == Path("docs/us-capitals-fixed-date-report.json")
+    assert captured["output_path"] == Path("reports/us-capitals-fixed-date-report.md")
+    assert captured["json_output_path"] == Path("reports/us-capitals-fixed-date-report.json")
 
 
 def test_main_with_format_json_writes_only_json(monkeypatch):
@@ -240,7 +240,7 @@ def test_main_with_format_json_writes_only_json(monkeypatch):
 
     assert exit_code == 0
     assert captured["output_path"] is None
-    assert captured["json_output_path"] == Path("docs/us-capitals-fixed-date-report.json")
+    assert captured["json_output_path"] == Path("reports/us-capitals-fixed-date-report.json")
 
 
 def test_main_with_format_txt_writes_only_txt(monkeypatch):
@@ -274,7 +274,7 @@ def test_main_with_format_txt_writes_only_txt(monkeypatch):
     assert exit_code == 0
     assert captured["output_path"] is None
     assert captured["json_output_path"] is None
-    assert captured["txt_output_path"] == Path("docs/us-capitals-fixed-date-report.txt")
+    assert captured["txt_output_path"] == Path("reports/us-capitals-fixed-date-report.txt")
 
 
 def test_markdown_to_aligned_text_formats_pipe_tables():

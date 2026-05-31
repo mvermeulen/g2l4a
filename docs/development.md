@@ -54,14 +54,14 @@ All new features and optimizations must be verified locally through this test ha
 
 ## Generate Example Reports
 
-Use the report generator module to convert YAML requests in examples/ into markdown reports in docs/:
+Use the report generator module to convert YAML requests in examples/ into markdown reports in reports/:
 
 ```bash
 # One example config -> one report file
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml
 
 # Explicit output path
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-march.yaml --output docs/us-capitals-fixed-date-march-report.md
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-march.yaml --output reports/us-capitals-fixed-date-march-report.md
 
 # Write JSON only for one example
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format json
@@ -70,7 +70,7 @@ PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-d
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format both
 
 # Explicit JSON output path (single example only)
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --json-output docs/us-capitals-fixed-date-report.json
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --json-output reports/us-capitals-fixed-date-report.json
 
 # Generate reports for all examples/*.yaml
 PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples
@@ -79,6 +79,6 @@ PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples
 PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples --format both
 ```
 
-By default, output files are named docs/<example-stem>-report.md.
-When --format is json or both, JSON files are named docs/<example-stem>-report.json.
+By default, output files are named reports/<example-stem>-report.md.
+When --format is json or both, JSON files are named reports/<example-stem>-report.json.
 Use --json-output only with --format json or --format both.
