@@ -1,0 +1,30 @@
+scenario_name: US Capitals Corridor Example (Fixed Date March)
+
+start_city: Austin, Texas
+completion_city: Washington, DC
+start_date: "2026-03-01"
+
+via_cities:
+  - Montgomery, Alabama
+  - Little Rock, Arkansas
+  - Tallahassee, Florida
+  - Atlanta, Georgia
+  - Topeka, Kansas
+  - Frankfort, Kentucky
+  - Baton Rouge, Louisiana
+  - Jackson, Mississippi
+  - Jefferson City, Missouri
+  - Raleigh, North Carolina
+  - Columbia, South Carolina
+  - Nashville, Tennessee
+  - Richmond, Virginia
+  - Charleston, West Virginia
+  - Harrisburg, Pennsylvania
+  - Oklahoma City, Oklahoma
+
+weather_constraints:
+  max_avg_high_f: 90
+  min_avg_high_f: 32
+
+output:
+  alternatives_count: 4
