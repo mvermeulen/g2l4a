@@ -8,15 +8,15 @@ def test_positive_fixtures_loading():
     parser = RequestParser(system_defaults_path="config/defaults.yaml")
     
     # 1. Load US Capitals fixed date example
-    itinerary_fixed, config_fixed = parser.parse_request_file("examples/us-capitals-fixed-date-february.yaml")
+    itinerary_fixed, config_fixed = parser.parse_request_file("examples/eastern-capitals-fixed-date-february.yaml")
     assert itinerary_fixed.start_city.name == "Austin, Texas"
     assert itinerary_fixed.completion_city.name == "Washington, DC"
-    assert itinerary_fixed.start_date == date(2026, 2, 1)
+    assert itinerary_fixed.start_date == date(2027, 2, 1)
     assert len(itinerary_fixed.via_cities) == 16
     assert config_fixed["weather_constraints"]["max_avg_high_f"] == 90.0
     
     # 2. Load US Capitals optimize date example
-    itinerary_opt, config_opt = parser.parse_request_file("examples/us-capitals-optimize-date.yaml")
+    itinerary_opt, config_opt = parser.parse_request_file("examples/eastern-capitals-optimize-date.yaml")
     assert itinerary_opt.start_city.name == "Austin, Texas"
     assert itinerary_opt.start_date is None
     assert len(itinerary_opt.via_cities) == 16

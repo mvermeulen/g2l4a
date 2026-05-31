@@ -16,18 +16,18 @@ from src.output import OutputFormatter
 
 
 def test_default_output_path_uses_reports_and_stem():
-    out = _default_output_path(Path("examples/us-capitals-fixed-date-february.yaml"))
-    assert str(out) == "reports/us-capitals-fixed-date-february-report.md"
+    out = _default_output_path(Path("examples/eastern-capitals-fixed-date-february.yaml"))
+    assert str(out) == "reports/eastern-capitals-fixed-date-february-report.md"
 
 
 def test_default_json_output_path_uses_reports_and_stem():
-    out = _default_json_output_path(Path("examples/us-capitals-fixed-date-february.yaml"))
-    assert str(out) == "reports/us-capitals-fixed-date-february-report.json"
+    out = _default_json_output_path(Path("examples/eastern-capitals-fixed-date-february.yaml"))
+    assert str(out) == "reports/eastern-capitals-fixed-date-february-report.json"
 
 
 def test_default_txt_output_path_uses_reports_and_stem():
-    out = _default_txt_output_path(Path("examples/us-capitals-fixed-date-february.yaml"))
-    assert str(out) == "reports/us-capitals-fixed-date-february-report.txt"
+    out = _default_txt_output_path(Path("examples/eastern-capitals-fixed-date-february.yaml"))
+    assert str(out) == "reports/eastern-capitals-fixed-date-february-report.txt"
 
 
 def test_generate_report_for_example_writes_markdown(tmp_path):
@@ -169,13 +169,13 @@ def test_build_data_attribution_for_non_open_meteo():
 
 def test_build_argument_parser_supports_format_option():
     parser = build_argument_parser()
-    args = parser.parse_args(["examples/us-capitals-fixed-date-february.yaml", "--format", "both"])
+    args = parser.parse_args(["examples/eastern-capitals-fixed-date-february.yaml", "--format", "both"])
     assert args.format == "both"
 
 
 def test_build_argument_parser_supports_txt_format_option():
     parser = build_argument_parser()
-    args = parser.parse_args(["examples/us-capitals-fixed-date-february.yaml", "--format", "txt"])
+    args = parser.parse_args(["examples/eastern-capitals-fixed-date-february.yaml", "--format", "txt"])
     assert args.format == "txt"
 
 
@@ -191,14 +191,14 @@ def test_main_with_format_both_writes_markdown_and_json(monkeypatch):
     monkeypatch.setattr(
         example_report,
         "_resolve_example_paths",
-        lambda example_paths, all_examples: [Path("examples/us-capitals-fixed-date-february.yaml")],
+        lambda example_paths, all_examples: [Path("examples/eastern-capitals-fixed-date-february.yaml")],
     )
     monkeypatch.setattr(
         sys,
         "argv",
         [
             "example_report",
-            "examples/us-capitals-fixed-date-february.yaml",
+            "examples/eastern-capitals-fixed-date-february.yaml",
             "--format",
             "both",
         ],
@@ -207,8 +207,8 @@ def test_main_with_format_both_writes_markdown_and_json(monkeypatch):
     exit_code = example_report.main()
 
     assert exit_code == 0
-    assert captured["output_path"] == Path("reports/us-capitals-fixed-date-february-report.md")
-    assert captured["json_output_path"] == Path("reports/us-capitals-fixed-date-february-report.json")
+    assert captured["output_path"] == Path("reports/eastern-capitals-fixed-date-february-report.md")
+    assert captured["json_output_path"] == Path("reports/eastern-capitals-fixed-date-february-report.json")
 
 
 def test_main_with_format_json_writes_only_json(monkeypatch):
@@ -223,14 +223,14 @@ def test_main_with_format_json_writes_only_json(monkeypatch):
     monkeypatch.setattr(
         example_report,
         "_resolve_example_paths",
-        lambda example_paths, all_examples: [Path("examples/us-capitals-fixed-date-february.yaml")],
+        lambda example_paths, all_examples: [Path("examples/eastern-capitals-fixed-date-february.yaml")],
     )
     monkeypatch.setattr(
         sys,
         "argv",
         [
             "example_report",
-            "examples/us-capitals-fixed-date-february.yaml",
+            "examples/eastern-capitals-fixed-date-february.yaml",
             "--format",
             "json",
         ],
@@ -240,7 +240,7 @@ def test_main_with_format_json_writes_only_json(monkeypatch):
 
     assert exit_code == 0
     assert captured["output_path"] is None
-    assert captured["json_output_path"] == Path("reports/us-capitals-fixed-date-february-report.json")
+    assert captured["json_output_path"] == Path("reports/eastern-capitals-fixed-date-february-report.json")
 
 
 def test_main_with_format_txt_writes_only_txt(monkeypatch):
@@ -256,14 +256,14 @@ def test_main_with_format_txt_writes_only_txt(monkeypatch):
     monkeypatch.setattr(
         example_report,
         "_resolve_example_paths",
-        lambda example_paths, all_examples: [Path("examples/us-capitals-fixed-date-february.yaml")],
+        lambda example_paths, all_examples: [Path("examples/eastern-capitals-fixed-date-february.yaml")],
     )
     monkeypatch.setattr(
         sys,
         "argv",
         [
             "example_report",
-            "examples/us-capitals-fixed-date-february.yaml",
+            "examples/eastern-capitals-fixed-date-february.yaml",
             "--format",
             "txt",
         ],
@@ -274,7 +274,7 @@ def test_main_with_format_txt_writes_only_txt(monkeypatch):
     assert exit_code == 0
     assert captured["output_path"] is None
     assert captured["json_output_path"] is None
-    assert captured["txt_output_path"] == Path("reports/us-capitals-fixed-date-february-report.txt")
+    assert captured["txt_output_path"] == Path("reports/eastern-capitals-fixed-date-february-report.txt")
 
 
 def test_markdown_to_aligned_text_formats_pipe_tables():
