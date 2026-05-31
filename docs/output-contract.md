@@ -11,10 +11,10 @@ The `OutputFormatter.format_recommendations_markdown` generates a comprehensive 
 ### A. Overview Comparison Table
 Compares the total desirability scores, individual comfort/efficiency attributes, and overall itinerary stats across all candidates:
 
-| Option | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb |
-|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | Yes | 0.9000 | 1.0000 | 1.0000 | 0.5000 | 60.0 mi | 2000 ft |
-| Alternative 1 | Yes | 0.8500 | 0.8000 | 0.9000 | 0.9000 | 65.0 mi | 400 ft |
+| Option | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb |
+|---|---|---|---|---|---|---|---|---|
+| **Best Recommendation** | Yes | 0.9000 | 1.0000 | 1.0000 | 0.5000 | 60.0 mi | graphhopper | 2000 ft |
+| Alternative 1 | Yes | 0.8500 | 0.8000 | 0.9000 | 0.9000 | 65.0 mi | mockroutingprovider | 400 ft |
 
 ### B. Detailed Section with Collapsible Schedules
 Each itinerary displays its scoring or constraint breaches, and wraps the detailed daily travel schedule in an elegant collapsible HTML block:
@@ -23,6 +23,7 @@ Each itinerary displays its scoring or constraint breaches, and wraps the detail
 ### Best Recommendation
 **Feasible**: Yes
 - **Total Distance**: 60.0 miles
+- **Distance Source**: graphhopper
 - **Total Climbing**: 2000 ft
 - **Desirability Scores**:
   - Weather Preference: 1.000
@@ -33,9 +34,9 @@ Each itinerary displays its scoring or constraint breaches, and wraps the detail
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | 2026-06-01 | A | B | 60.0 | 2000 | Avg High: 70.0°F, Low: 50.0°F | |
+| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2026-06-01 | A | B | 60.0 | graphhopper | 2000 | Avg High: 70.0°F, Low: 50.0°F | |
 
 </details>
 ```
@@ -71,12 +72,14 @@ The `OutputFormatter.serialize_recommendations_json` returns a complete, predict
         "hills": 0.5,
         "total": 0.9
       },
+      "routing_distance_source": "graphhopper",
       "legs": [
         {
           "origin": "A",
           "destination": "B",
           "distance_miles": 60.0,
-          "ascent_feet": 2000.0
+          "ascent_feet": 2000.0,
+          "distance_source": "graphhopper"
         }
       ],
       "schedule": [

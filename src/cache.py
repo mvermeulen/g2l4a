@@ -54,6 +54,7 @@ class SQLiteCacheManager:
                     dest_lon REAL,
                     routing_engine TEXT,
                     profile_hash TEXT,
+                    source TEXT,
                     distance_miles REAL,
                     ascent_feet REAL,
                     is_bicycle_legal INTEGER,
@@ -65,6 +66,14 @@ class SQLiteCacheManager:
                     PRIMARY KEY (origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash)
                 )
             """)
+            # Lightweight schema migration for older caches created before `source` existed.
+            cols = {
+                row["name"]
+                for row in conn.execute("PRAGMA table_info(routing_cache)")
+            }
+            if "source" not in cols:
+                conn.execute("ALTER TABLE routing_cache ADD COLUMN source TEXT")
+            conn.execute("UPDATE routing_cache SET source = 'unknown' WHERE source IS NULL")
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS weather_cache (
                     city_lat REAL,
@@ -99,7 +108,14 @@ class SQLiteCacheManager:
 
     # --- Routing Cache Operations ---
 
-    def get_leg(self, origin: City, destination: City, routing_engine: str, preferences: Dict[str, Any]) -> Optional[Leg]:
+    def get_leg(
+        self,
+        origin: City,
+        destination: City,
+        routing_engine: str,
+        preferences: Dict[str, Any],
+        source: Optional[str] = None,
+    ) -> Optional[Leg]:
         """Retrieves a cached Leg if available."""
         conn = self._get_conn()
         o_lat = round_coord(origin.latitude)
@@ -109,12 +125,26 @@ class SQLiteCacheManager:
         p_hash = compute_profile_hash(preferences)
 
         cursor = conn.cursor()
-        cursor.execute("""
-            SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders
-            FROM routing_cache
-            WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
-              AND routing_engine = ? AND profile_hash = ?
-        """, (o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash))
+        if source is None:
+            cursor.execute(
+                """
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders
+                FROM routing_cache
+                WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
+                  AND routing_engine = ? AND profile_hash = ?
+                """,
+                (o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash),
+            )
+        else:
+            cursor.execute(
+                """
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders
+                FROM routing_cache
+                WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
+                  AND routing_engine = ? AND profile_hash = ? AND source = ?
+                """,
+                (o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash, source),
+            )
         
         row = cursor.fetchone()
         if row:
@@ -131,7 +161,7 @@ class SQLiteCacheManager:
             )
         return None
 
-    def save_leg(self, leg: Leg, routing_engine: str, preferences: Dict[str, Any]):
+    def save_leg(self, leg: Leg, routing_engine: str, preferences: Dict[str, Any], source: str = "unknown"):
         """Saves a Leg into the cache."""
         conn = self._get_conn()
         o_lat = round_coord(leg.origin.latitude)
@@ -144,15 +174,36 @@ class SQLiteCacheManager:
             conn.execute("""
                 INSERT OR REPLACE INTO routing_cache (
                     origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash,
-                    distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls,
+                    source, distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls,
                     allowed_ferries, allowed_borders, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             """, (
                 o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash,
+                source,
                 leg.distance_miles, leg.ascent_feet, int(leg.is_bicycle_legal),
                 int(leg.avoided_highways), int(leg.avoided_tolls),
                 int(leg.allowed_ferries), int(leg.allowed_borders)
             ))
+
+    def purge_routing_cache_by_engine(self, routing_engine: str) -> int:
+        """Deletes cached routing rows for an exact routing engine key."""
+        conn = self._get_conn()
+        with conn:
+            cursor = conn.execute(
+                "DELETE FROM routing_cache WHERE routing_engine = ?",
+                (routing_engine,),
+            )
+        return int(cursor.rowcount)
+
+    def purge_routing_cache_by_source(self, source: str) -> int:
+        """Deletes cached routing rows for a given source/provider tag."""
+        conn = self._get_conn()
+        with conn:
+            cursor = conn.execute(
+                "DELETE FROM routing_cache WHERE source = ?",
+                (source,),
+            )
+        return int(cursor.rowcount)
 
     # --- Weather Cache Operations ---
 

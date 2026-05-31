@@ -92,13 +92,15 @@ class OutputFormatter:
             return "No travel schedule generated.\n"
             
         lines = []
-        lines.append("| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |")
-        lines.append("|---|---|---|---|---|---|---|---|")
+        lines.append("| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |")
+        lines.append("|---|---|---|---|---|---|---|---|---|")
+
+        distance_source = itinerary.routing_distance_source or "unknown"
         
         for i, item in enumerate(itinerary.schedule):
             weather_str = f"Avg High: {item.high_temp_f}°F, Low: {item.low_temp_f}°F ({item.weather_source})"
             notes = ""
-            lines.append(f"| {i+1} | {item.date.strftime('%Y-%m-%d')} | {item.origin.name} | {item.destination.name} | {item.distance_miles:.1f} | {item.ascent_feet:.0f} | {weather_str} | {notes} |")
+            lines.append(f"| {i+1} | {item.date.strftime('%Y-%m-%d')} | {item.origin.name} | {item.destination.name} | {item.distance_miles:.1f} | {distance_source} | {item.ascent_feet:.0f} | {weather_str} | {notes} |")
         return "\n".join(lines)
 
     @staticmethod
@@ -118,6 +120,7 @@ class OutputFormatter:
         start_date_str = itinerary.start_date.isoformat() if itinerary.start_date else "N/A"
         lines.append(f"- **Start Date**: {start_date_str}")
         lines.append(f"- **Total Distance**: {total_dist:.1f} miles")
+        lines.append(f"- **Distance Source**: {itinerary.routing_distance_source or 'unknown'}")
         lines.append(f"- **Total Climbing**: {total_climb:.0f} ft")
         
         if itinerary.is_feasible and itinerary.scores:
@@ -173,8 +176,8 @@ class OutputFormatter:
         
         # 1. Comparison Header Table
         lines.append("## Overview Comparison")
-        lines.append("| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference |")
-        lines.append("|---|---|---|---|---|---|---|---|---|---|")
+        lines.append("| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |")
+        lines.append("|---|---|---|---|---|---|---|---|---|---|---|")
         
         best_it = itineraries[0]
         for idx, it in enumerate(itineraries):
@@ -205,7 +208,7 @@ class OutputFormatter:
                 
             lines.append(
                 f"| {name} | {start_date_str} | {feasible_str} | {sc_total} | {sc_weather} | {sc_dist} | {sc_hills} | "
-                f"{total_dist:.1f} mi | {total_climb:.0f} ft | {key_diff} |"
+                f"{total_dist:.1f} mi | {it.routing_distance_source or 'unknown'} | {total_climb:.0f} ft | {key_diff} |"
             )
         lines.append("")
         
@@ -254,12 +257,14 @@ class OutputFormatter:
                 "hills": itinerary.scores.hills if itinerary.is_feasible and itinerary.scores else None,
                 "total": itinerary.scores.total if itinerary.is_feasible and itinerary.scores else None,
             },
+            "routing_distance_source": itinerary.routing_distance_source,
             "legs": [
                 {
                     "origin": leg.origin.name,
                     "destination": leg.destination.name,
                     "distance_miles": leg.distance_miles,
                     "ascent_feet": leg.ascent_feet,
+                    "distance_source": itinerary.routing_distance_source,
                 } for leg in itinerary.legs
             ],
             "schedule": [
@@ -302,12 +307,14 @@ class OutputFormatter:
                     "hills": it.scores.hills if it.is_feasible and it.scores else None,
                     "total": it.scores.total if it.is_feasible and it.scores else None,
                 },
+                "routing_distance_source": it.routing_distance_source,
                 "legs": [
                     {
                         "origin": leg.origin.name,
                         "destination": leg.destination.name,
                         "distance_miles": leg.distance_miles,
                         "ascent_feet": leg.ascent_feet,
+                        "distance_source": it.routing_distance_source,
                     } for leg in it.legs
                 ],
                 "schedule": [

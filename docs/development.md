@@ -56,6 +56,9 @@ All new features and optimizations must be verified locally through this test ha
 
 Use the report generator module to convert YAML requests in examples/ into markdown reports in reports/:
 
+Primary scenario files in `examples/` now default to GraphHopper-backed routing and require a ready local GraphHopper endpoint.
+For deterministic no-server runs, copy an example file and remove the `routing_provider` block.
+
 ```bash
 # One example config -> one report file
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/eastern-capitals-fixed-date-february.yaml

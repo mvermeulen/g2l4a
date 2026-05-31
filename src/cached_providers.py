@@ -7,10 +7,17 @@ from src.cache import SQLiteCacheManager
 class CachedRoutingProvider(RoutingProvider):
     """Wrapper that adds L1 memory and L2 SQLite caching to any RoutingProvider."""
     
-    def __init__(self, base_provider: RoutingProvider, cache_manager: SQLiteCacheManager, routing_engine: str = "mock"):
+    def __init__(
+        self,
+        base_provider: RoutingProvider,
+        cache_manager: SQLiteCacheManager,
+        routing_engine: str = "mock",
+        source: Optional[str] = None,
+    ):
         self.base_provider = base_provider
         self.cache_manager = cache_manager
         self.routing_engine = routing_engine
+        self.source = source or self.base_provider.__class__.__name__.lower()
         # L1 cache key: (origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash)
         self._l1_cache: Dict[Tuple[float, float, float, float, str, str], Leg] = {}
 
@@ -29,7 +36,13 @@ class CachedRoutingProvider(RoutingProvider):
             return self._l1_cache[l1_key]
 
         # 2. Check L2 SQLite cache
-        leg = self.cache_manager.get_leg(origin, destination, self.routing_engine, preferences)
+        leg = self.cache_manager.get_leg(
+            origin,
+            destination,
+            self.routing_engine,
+            preferences,
+            source=self.source,
+        )
         if leg:
             self._l1_cache[l1_key] = leg
             return leg
@@ -38,7 +51,12 @@ class CachedRoutingProvider(RoutingProvider):
         leg = self.base_provider.get_leg_metrics(origin, destination, preferences)
 
         # 4. Save to L2 SQLite and L1 in-memory
-        self.cache_manager.save_leg(leg, self.routing_engine, preferences)
+        self.cache_manager.save_leg(
+            leg,
+            self.routing_engine,
+            preferences,
+            source=self.source,
+        )
         self._l1_cache[l1_key] = leg
 
         return leg

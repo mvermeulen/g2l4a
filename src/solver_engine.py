@@ -8,11 +8,12 @@ from src.metrics import SolverMetrics
 from src.config import ConfigManager
 from src.validation import CITY_REGISTRY
 from src.mocks import MockRoutingProvider, MockWeatherProvider, MockElevationProvider
+from src.graphhopper_routing import GraphHopperRoutingProvider
 from src.open_meteo_weather import OpenMeteoWeatherProvider
 from src.monthly_normals_weather import StateCapitalMonthlyNormalsWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.cached_providers import CachedRoutingProvider, CachedWeatherProvider, CachedElevationProvider
-from src.providers import WeatherProvider
+from src.providers import RoutingProvider, WeatherProvider
 from src.feasibility import FeasibilityEngine
 from src.scoring import ScoringEngine, haversine_distance
 
@@ -50,7 +51,35 @@ class BeamSearchSolver(Solver):
         })
         
         # 2. Initialize cached providers
-        base_routing = config.get("routing_provider") or MockRoutingProvider()
+        routing_provider_cfg = effective_config.get("routing_provider", {})
+        routing_provider_override = config.get("routing_provider")
+
+        if isinstance(routing_provider_override, RoutingProvider):
+            base_routing = routing_provider_override
+            routing_source = routing_provider_override.__class__.__name__.lower()
+            routing_engine = str(config.get("routing_engine_name", routing_source))
+        else:
+            routing_provider_name = str(routing_provider_cfg.get("name", "mock")).lower()
+            if routing_provider_name == "graphhopper":
+                gh_base_url = str(routing_provider_cfg.get("base_url", "http://localhost:8989"))
+                gh_profile = str(routing_provider_cfg.get("profile", "bike"))
+                gh_timeout = float(routing_provider_cfg.get("timeout_seconds", 12.0))
+                base_routing = GraphHopperRoutingProvider(
+                    base_url=gh_base_url,
+                    profile=gh_profile,
+                    timeout_seconds=gh_timeout,
+                )
+                routing_source = "graphhopper"
+                default_routing_engine = f"graphhopper:{gh_profile}:{gh_base_url}"
+                routing_engine = str(routing_provider_cfg.get("routing_engine_name", default_routing_engine))
+
+                if bool(routing_provider_cfg.get("purge_mock_cache", False)):
+                    self._cache_manager.purge_routing_cache_by_source("mockroutingprovider")
+                    self._cache_manager.purge_routing_cache_by_engine("mock")
+            else:
+                base_routing = MockRoutingProvider()
+                routing_source = "mockroutingprovider"
+                routing_engine = str(routing_provider_cfg.get("routing_engine_name", "mock"))
 
         weather_provider_cfg = effective_config.get("weather_provider", {})
         weather_provider_override = config.get("weather_provider")
@@ -86,9 +115,12 @@ class BeamSearchSolver(Solver):
 
         base_elevation = config.get("elevation_provider") or MockElevationProvider()
         
-        routing_engine = config.get("routing_engine_name", "mock")
-        
-        routing_prov = CachedRoutingProvider(base_routing, self._cache_manager, routing_engine)
+        routing_prov = CachedRoutingProvider(
+            base_routing,
+            self._cache_manager,
+            routing_engine,
+            source=routing_source,
+        )
         weather_prov = CachedWeatherProvider(
             base_weather, self._cache_manager,
             forecast_ttl_hours=effective_config.get("cache", {}).get("forecast_ttl_hours", 24),
@@ -119,7 +151,7 @@ class BeamSearchSolver(Solver):
             # A. Warm-Start: Construct a greedy TSP sequential seed path
             seed_itinerary = self._run_greedy_tsp_seed(
                 itinerary, start_date, routing_prov, weather_prov,
-                current_run_date, feasibility_eng, scoring_eng, effective_config
+                current_run_date, feasibility_eng, scoring_eng, effective_config, routing_source
             )
             eval_count += 1
             completed_itineraries.append(seed_itinerary)
@@ -219,7 +251,8 @@ class BeamSearchSolver(Solver):
                             via_cities=list(new_visited[1:]),
                             legs=new_legs,
                             schedule=new_sched,
-                            original_geodesic_baseline=itinerary.original_geodesic_baseline
+                            original_geodesic_baseline=itinerary.original_geodesic_baseline,
+                            routing_distance_source=routing_source,
                         )
                         scoring_eng.score_itinerary(partial_it)
                         
@@ -279,7 +312,8 @@ class BeamSearchSolver(Solver):
                     legs=legs + [leg],
                     schedule=new_sched,
                     start_date=start_date,
-                    original_geodesic_baseline=itinerary.original_geodesic_baseline
+                    original_geodesic_baseline=itinerary.original_geodesic_baseline,
+                    routing_distance_source=routing_source,
                 )
                 
                 # Full validation and final scoring
@@ -315,7 +349,8 @@ class BeamSearchSolver(Solver):
     def _run_greedy_tsp_seed(self, itinerary: Itinerary, start_date: date,
                             routing_prov: CachedRoutingProvider, weather_prov: CachedWeatherProvider,
                             current_run_date: date, feasibility_eng: FeasibilityEngine,
-                            scoring_eng: ScoringEngine, effective_config: Dict[str, Any]) -> Itinerary:
+                            scoring_eng: ScoringEngine, effective_config: Dict[str, Any],
+                            routing_source: str) -> Itinerary:
         """Runs a fast constructive Nearest-Neighbor TSP heuristic to establish a seed itinerary."""
         unvisited = list(itinerary.via_cities)
         sequence: List[City] = [itinerary.start_city]
@@ -404,7 +439,8 @@ class BeamSearchSolver(Solver):
             legs=legs,
             schedule=schedule,
             start_date=start_date,
-            original_geodesic_baseline=itinerary.original_geodesic_baseline
+            original_geodesic_baseline=itinerary.original_geodesic_baseline,
+            routing_distance_source=routing_source,
         )
         
         feasibility_eng.validate_itinerary(seed_itinerary)

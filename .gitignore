@@ -26,6 +26,7 @@ Thumbs.db
 *.sqlite
 .cache/
 data_cache/
+.graphhopper/
 
 # Local Environment Variables
 .env

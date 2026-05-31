@@ -103,3 +103,155 @@ Open-Meteo data is published under CC BY 4.0 and requires attribution with a lin
 - Link to Open-Meteo: `https://open-meteo.com/`
 - Link to CC BY 4.0 licence: `https://creativecommons.org/licenses/by/4.0/`
 - Note that data is transformed into itinerary-level summaries.
+
+---
+
+## 5. GraphHopper Routing Provider (Self-Hosted)
+
+The solver can now use GraphHopper for distance and ascent instead of deterministic mock routing.
+
+### Local GraphHopper Startup (Docker Compose)
+
+This repository includes a Compose setup in `docker-compose.graphhopper.yml` and a container entrypoint script in `docker/graphhopper/entrypoint.sh`.
+
+```bash
+# Standalone docker-compose binary
+GH_OSM_URL=https://download.geofabrik.de/north-america/us/texas-latest.osm.pbf \
+docker-compose -f docker-compose.graphhopper.yml up -d --build
+
+# Or, if your system provides `docker compose`
+GH_OSM_URL=https://download.geofabrik.de/north-america/us/texas-latest.osm.pbf \
+docker compose -f docker-compose.graphhopper.yml up -d --build
+```
+
+Notes:
+- Data and graph cache are persisted under `.graphhopper/`.
+- If `GH_OSM_FILE` is not present in the mounted volume, set `GH_OSM_URL` so the container can download an extract.
+- The first import can take minutes to hours depending on extract size.
+- If you hit `permission denied` on `/var/run/docker.sock`, add your user to the `docker` group or run with elevated privileges.
+
+### g2l4a Request Configuration
+
+```yaml
+routing_provider:
+    name: graphhopper
+    base_url: "http://localhost:8989"
+    profile: "car"
+    timeout_seconds: 12.0
+    purge_mock_cache: false
+```
+
+Notes:
+- `profile` maps directly to the GraphHopper route profile. The Compose bootstrap uses upstream config defaults, which include `car`.
+- Use `bike` only if your GraphHopper config enables a bike profile.
+- Distances come from `paths[0].distance` (meters) and are converted to miles.
+- Climbing comes from `paths[0].ascend` (meters) and is converted to feet.
+
+### Route Cache Provenance and Purge
+
+Routing cache rows now store a `source` tag in addition to `routing_engine`.
+
+- Example sources: `mockroutingprovider`, `graphhopper`.
+- Cache lookups for routing are source-aware to avoid cross-provider reuse.
+- Optional purge behavior: set `routing_provider.purge_mock_cache: true` to remove legacy mock route rows when running GraphHopper.
+
+### Example and Test Commands
+
+Default Heartland scenario:
+
+```bash
+/home/mev/source/g2l4a/.venv/bin/python -m src.example_report \
+    examples/heartland-fixed-date.yaml \
+    --format all \
+    --cache-db .g2l4a_graphhopper_cache.db
+```
+
+If you need a no-server fallback, copy an example and remove its `routing_provider` block.
+
+Integration test (auto-skips when local GraphHopper is unavailable):
+
+```bash
+/home/mev/source/g2l4a/.venv/bin/python -m pytest tests/test_graphhopper_integration.py -q
+```
+
+### GraphHopper Operations Runbook
+
+Use this checklist when running scenario analysis with self-hosted routing:
+
+1. Ensure GraphHopper is running before any solver/report command that uses `routing_provider.name: graphhopper`.
+2. Verify readiness with:
+
+```bash
+curl -fsS http://localhost:8989/info | head -c 300 && echo
+```
+
+3. Run reports only after `/info` returns JSON payload.
+
+#### Start/Stop Workflow
+
+```bash
+# Start using existing downloaded/imported data (fast path)
+docker-compose -f docker-compose.graphhopper.yml up -d
+
+# Stop service
+docker-compose -f docker-compose.graphhopper.yml down
+```
+
+Helper one-liners (equivalent wrappers):
+
+```bash
+./scripts/graphhopper-stop.sh
+./scripts/graphhopper-start.sh
+./scripts/graphhopper-status.sh
+```
+
+Memory preset examples:
+
+```bash
+./scripts/graphhopper-start.sh --mem-preset high
+./scripts/graphhopper-start.sh --mem-preset xlarge --build
+./scripts/graphhopper-start.sh --mem-preset xxlarge --build
+```
+
+Supported presets: `low`, `medium`, `high`, `xlarge`, `xxlarge`.
+The `xxlarge` preset maps to `-Xms24g -Xmx48g`, which fits a host budget where about 64 GB remains available for CPU-side workloads.
+The alias `./scripts/grasshopper-start.sh` forwards to the same helper.
+
+Because `.graphhopper/` is bind-mounted, the downloaded OSM file and imported graph are reused across restarts.
+
+#### One-Time Regional Bootstrap vs Reuse
+
+- First startup for a new region can take minutes to hours (download + import + CH preparation).
+- Subsequent restarts are much faster if both files remain:
+    - `.graphhopper/map.osm.pbf`
+    - `.graphhopper/graph-cache/`
+- Keep these files to reuse the same regional graph for many scenarios.
+
+#### Updating OSM Data (Occasional Refresh)
+
+To refresh routing data with a newer extract (for example monthly or quarterly):
+
+```bash
+docker-compose -f docker-compose.graphhopper.yml down
+rm -rf .graphhopper/graph-cache
+rm -f .graphhopper/map.osm.pbf
+GH_OSM_URL=https://download.geofabrik.de/north-america-latest.osm.pbf \
+docker-compose -f docker-compose.graphhopper.yml up -d --build
+```
+
+Helper one-liner (requires explicit confirmation):
+
+```bash
+./scripts/graphhopper-refresh.sh --yes
+```
+
+Notes:
+- Deleting `graph-cache` forces graph rebuild for the current OSM file.
+- Deleting both `graph-cache` and `map.osm.pbf` forces fresh download and rebuild.
+- Use a broad extract (for example North America) when scenarios may cross US/Canada borders.
+
+#### Route Cache Reuse Expectations
+
+- Solver route cache is persisted in SQLite (`.g2l4a_cache.db` by default, or your selected `--cache-db`).
+- Repeated city-pair legs benefit from cache hits, reducing GraphHopper API calls in later runs.
+- Cache entries are source-scoped (`graphhopper` vs mock) to avoid cross-provider contamination.

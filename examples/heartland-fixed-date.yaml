@@ -2,7 +2,7 @@ scenario_name: Heartland Corridor Example (Fixed Date)
 
 start_city: Austin, Texas
 completion_city: Chicago, Illinois
-start_date: "2027-04-15"
+start_date: "2027-04-09"
 
 via_cities:
   - Oklahoma City, Oklahoma
@@ -19,6 +19,13 @@ weather_constraints:
 
 weather_provider:
   name: state_capital_monthly_normals
+
+routing_provider:
+  name: graphhopper
+  base_url: http://localhost:8989
+  profile: car
+  timeout_seconds: 12.0
+  purge_mock_cache: true
 
 output:
   alternatives_count: 4

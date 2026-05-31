@@ -97,6 +97,7 @@ class Itinerary:
     is_feasible: bool = True
     violation_details: List[Dict] = field(default_factory=list)
     original_geodesic_baseline: Optional[float] = None
+    routing_distance_source: str = "unknown"
 
 
 @dataclass(frozen=True)

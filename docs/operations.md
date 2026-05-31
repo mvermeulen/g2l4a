@@ -54,3 +54,85 @@ When running the solver, serialize recommendation performance telemetry combinin
 }
 ```
 Use these telemetry payloads to trigger operational alerts or tune solver `beam_width` variables dynamically.
+
+## 4. GraphHopper Service Lifecycle
+
+When using `routing_provider.name: graphhopper`, GraphHopper must be running and ready before solver/report execution.
+
+### Startup and Readiness
+
+```bash
+docker-compose -f docker-compose.graphhopper.yml up -d
+curl -fsS http://localhost:8989/info | head -c 300 && echo
+```
+
+Helper scripts:
+
+```bash
+./scripts/graphhopper-stop.sh
+./scripts/graphhopper-start.sh
+./scripts/graphhopper-status.sh
+```
+
+OOM restart flow (without deleting downloaded data):
+
+```bash
+./scripts/graphhopper-stop.sh
+./scripts/graphhopper-start.sh --mem-preset high --build
+./scripts/graphhopper-status.sh
+```
+
+Start helper memory presets:
+
+```bash
+./scripts/graphhopper-start.sh --mem-preset medium
+./scripts/graphhopper-start.sh --mem-preset high --build
+./scripts/graphhopper-start.sh --mem-preset xxlarge --build
+```
+
+Supported presets: `low`, `medium`, `high`, `xlarge`, `xxlarge`.
+`xxlarge` is tuned for a machine where roughly 64 GB RAM is available to Docker/CPU workloads, leaving headroom for the OS, page cache, and background services.
+You can also set `GRAPHHOPPER_JAVA_OPTS` directly for custom heap sizes.
+
+Example custom override above the built-in presets:
+
+```bash
+GRAPHHOPPER_JAVA_OPTS="-Xms32g -Xmx56g" ./scripts/graphhopper-start.sh --build
+```
+
+If `/info` does not return JSON yet, the server is still initializing.
+
+### Reuse Across Scenarios
+
+The Compose stack bind-mounts `.graphhopper/`, so OSM downloads and graph imports are persistent.
+
+Keep these artifacts to avoid expensive rebuilds:
+- `.graphhopper/map.osm.pbf`
+- `.graphhopper/graph-cache/`
+
+This allows repeated scenario runs with high route-cache hit rates in SQLite and faster end-to-end report generation.
+
+### Periodic OSM Refresh Procedure
+
+Use this when you want newer road network data:
+
+```bash
+docker-compose -f docker-compose.graphhopper.yml down
+rm -rf .graphhopper/graph-cache
+rm -f .graphhopper/map.osm.pbf
+GH_OSM_URL=https://download.geofabrik.de/north-america-latest.osm.pbf \
+docker-compose -f docker-compose.graphhopper.yml up -d --build
+```
+
+Equivalent helper script (safe by default):
+
+```bash
+./scripts/graphhopper-refresh.sh --yes
+```
+
+The refresh helper refuses to run unless `--yes` is supplied, to avoid interrupting an active download/import accidentally.
+
+Guidance:
+- Refresh cadence: monthly or quarterly for general touring use.
+- Rebuild cost: expect long first startup after refresh (download + import + CH preparation).
+- Coverage: choose a broader extract (for example North America) when routes may cross US/Canada borders.

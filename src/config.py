@@ -36,6 +36,14 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "allow_ferries": True,
         "allow_international_borders": True,
     },
+    "routing_provider": {
+        "name": "mock",
+        "routing_engine_name": "mock",
+        "base_url": "http://localhost:8989",
+        "profile": "car",
+        "timeout_seconds": 12.0,
+        "purge_mock_cache": False,
+    },
     "weather_provider": {
         "name": "mock",
         "timeout_seconds": 8.0,
