@@ -5,29 +5,29 @@ This report documents the calibration of the `g2l4a` multi-objective route optim
 ## Route Comparison Overview
 | Route Metric | Cyclist Actual Path | Solver Optimized Path | Difference |
 | :--- | :---: | :---: | :---: |
-| **Total Distance (mi)** | 5115.2 | 8728.3 | +3613.1 |
-| **Total Ascent (ft)** | 30,680 | 28,680 | -2,000 |
-| **Weather Comfort Score** | 0.4504 | 0.7278 | +0.2774 |
-| **Distance Detour Score** | 1.0000 | 0.9969 | -0.0031 |
-| **Hill Climb Score** | 0.7640 | 0.7794 | +0.0154 |
-| **Total Desirability Score** | **0.6937** | **0.8214** | **+0.1277** |
-| **Feasibility Status** | Infeasible ❌ | Feasible ✅ | - |
+| **Total Distance (mi)** | 5115.2 | 5085.7 | -29.5 |
+| **Total Ascent (ft)** | 30,680 | 24,680 | -6,000 |
+| **Weather Comfort Score** | 0.6709 | 0.6789 | +0.0080 |
+| **Distance Detour Score** | 0.9908 | 1.0000 | +0.0092 |
+| **Hill Climb Score** | 0.7640 | 0.8102 | +0.0462 |
+| **Total Desirability Score** | **0.7901** | **0.8081** | **+0.0180** |
+| **Feasibility Status** | Feasible ✅ | Feasible ✅ | - |
 
 ## Weight Sensitivity Analysis
 Each weight perturbed by +/- 0.10 and normalized to sum to 1.0.
 
 | Weight Shift / Label | Weights (W_w / W_d / W_h) | Cyclist Actual Score | Solver Optimized Score | Improvement |
 | :--- | :---: | :---: | :---: | :---: |
-| Baseline | 0.45 / 0.30 / 0.25 | 0.6937 | 0.8214 | +0.1277 |
-| Shift weather by -0.10 | 0.39 / 0.33 / 0.28 | 0.7207 | 0.8318 | +0.1111 |
-| Shift weather by +0.10 | 0.50 / 0.27 / 0.23 | 0.6715 | 0.8129 | +0.1414 |
-| Shift distance by -0.10 | 0.50 / 0.22 / 0.28 | 0.6596 | 0.8019 | +0.1423 |
-| Shift distance by +0.10 | 0.41 / 0.36 / 0.23 | 0.7215 | 0.8374 | +0.1159 |
-| Shift hills by -0.10 | 0.50 / 0.33 / 0.17 | 0.6859 | 0.8261 | +0.1402 |
-| Shift hills by +0.10 | 0.41 / 0.27 / 0.32 | 0.7001 | 0.8176 | +0.1175 |
+| Baseline | 0.45 / 0.30 / 0.25 | 0.7901 | 0.8081 | +0.0180 |
+| Shift weather by -0.10 | 0.39 / 0.33 / 0.28 | 0.8034 | 0.8224 | +0.0190 |
+| Shift weather by +0.10 | 0.50 / 0.27 / 0.23 | 0.7793 | 0.7963 | +0.0170 |
+| Shift distance by -0.10 | 0.50 / 0.22 / 0.28 | 0.7678 | 0.7867 | +0.0189 |
+| Shift distance by +0.10 | 0.41 / 0.36 / 0.23 | 0.8084 | 0.8255 | +0.0171 |
+| Shift hills by -0.10 | 0.50 / 0.33 / 0.17 | 0.7930 | 0.8078 | +0.0148 |
+| Shift hills by +0.10 | 0.41 / 0.27 / 0.32 | 0.7878 | 0.8082 | +0.0204 |
 
 ## Solver Execution Performance
-- **Execution Duration**: 4752.9 ms
+- **Execution Duration**: 4172.7 ms
 - **Evaluated Candidates**: 5 recommendations returned
 
 ## Sequence Ordered Visits Comparison
@@ -36,4 +36,4 @@ Each weight perturbed by +/- 0.10 and normalized to sum to 1.0.
 Annapolis, Maryland, Dover, Delaware, Trenton, New Jersey, Hartford, Connecticut, Providence, Rhode Island, Boston, Massachusetts, Concord, New Hampshire, Augusta, Maine, Montpelier, Vermont, Albany, New York, Columbus, Ohio, Indianapolis, Indiana, Springfield, Illinois, Lansing, Michigan, Madison, Wisconsin, St. Paul, Minnesota, Des Moines, Iowa, Lincoln, Nebraska, Pierre, South Dakota, Bismarck, North Dakota, Cheyenne, Wyoming, Denver, Colorado, Salt Lake City, Utah, Boise, Idaho, Salem, Oregon
 
 ### Solver Recommended Via Cities Order:
-Annapolis, Maryland, Dover, Delaware, Trenton, New Jersey, Hartford, Connecticut, Providence, Rhode Island, Boston, Massachusetts, Concord, New Hampshire, Montpelier, Vermont, Albany, New York, Augusta, Maine, Columbus, Ohio, Indianapolis, Indiana, Springfield, Illinois, Madison, Wisconsin, St. Paul, Minnesota, Des Moines, Iowa, Lincoln, Nebraska, Pierre, South Dakota, Bismarck, North Dakota, Cheyenne, Wyoming, Denver, Colorado, Salt Lake City, Utah, Boise, Idaho, Salem, Oregon, Lansing, Michigan
+Annapolis, Maryland, Dover, Delaware, Trenton, New Jersey, Hartford, Connecticut, Providence, Rhode Island, Boston, Massachusetts, Concord, New Hampshire, Augusta, Maine, Montpelier, Vermont, Albany, New York, Lansing, Michigan, Columbus, Ohio, Indianapolis, Indiana, Springfield, Illinois, Madison, Wisconsin, Des Moines, Iowa, Lincoln, Nebraska, St. Paul, Minnesota, Bismarck, North Dakota, Pierre, South Dakota, Cheyenne, Wyoming, Denver, Colorado, Salt Lake City, Utah, Boise, Idaho, Salem, Oregon

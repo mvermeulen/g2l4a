@@ -135,8 +135,7 @@ class BeamSearchSolver(Solver):
                         # Build schedule entries for this transition
                         for d in range(days_needed):
                             day_date = curr_date + timedelta(days=d)
-                            is_last_day = (d == days_needed - 1)
-                            curr_dest = next_city if is_last_day else last_city
+                            curr_dest = next_city
                             
                             weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
                             
@@ -217,8 +216,7 @@ class BeamSearchSolver(Solver):
                 
                 for d in range(days_needed):
                     day_date = curr_date + timedelta(days=d)
-                    is_last_day = (d == days_needed - 1)
-                    curr_dest = itinerary.completion_city if is_last_day else last_city
+                    curr_dest = itinerary.completion_city
                     
                     weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
                     
@@ -292,6 +290,29 @@ class BeamSearchSolver(Solver):
             
         sequence.append(itinerary.completion_city)
         
+        # 2-opt refinement pass on the seed sequence
+        n = len(sequence)
+        if n > 3:
+            def path_dist(seq: List[City]) -> float:
+                return sum(haversine_distance(seq[idx], seq[idx+1]) for idx in range(len(seq) - 1))
+                
+            best_dist = path_dist(sequence)
+            improved = True
+            
+            while improved:
+                improved = False
+                for i in range(1, n - 2):
+                    for j in range(i + 1, n - 1):
+                        new_sequence = sequence[:i] + sequence[i:j+1][::-1] + sequence[j+1:]
+                        new_dist = path_dist(new_sequence)
+                        if new_dist < best_dist - 1e-2:
+                            sequence = new_sequence
+                            best_dist = new_dist
+                            improved = True
+                            break
+                    if improved:
+                        break
+        
         # Build legs and schedule
         legs: List[Leg] = []
         schedule: List[DailySchedule] = []
@@ -316,8 +337,7 @@ class BeamSearchSolver(Solver):
             
             for d in range(days_needed):
                 day_date = curr_date + timedelta(days=d)
-                is_last_day = (d == days_needed - 1)
-                curr_dest = c_to if is_last_day else c_from
+                curr_dest = c_to
                 
                 weather = weather_prov.get_weather_metrics(curr_dest, day_date, current_run_date)
                 

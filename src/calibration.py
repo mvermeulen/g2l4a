@@ -33,27 +33,41 @@ def build_actual_itinerary(
     schedule: List[DailySchedule] = []
     curr_date = start_date
     
+    max_miles = feasibility_eng.daily_constraints.get("max_miles_per_day", 80.0) or 80.0
+    max_climb = feasibility_eng.daily_constraints.get("max_climb_ft_per_day", 5000.0) or 5000.0
+    
     for i in range(len(sequence) - 1):
         c_from = sequence[i]
         c_to = sequence[i + 1]
         
         leg = routing_prov.get_leg_metrics(c_from, c_to, preferences)
-        weather = weather_prov.get_weather_metrics(c_to, curr_date, current_run_date)
         
-        day = DailySchedule(
-            day_number=i + 1,
-            date=curr_date,
-            origin=c_from,
-            destination=c_to,
-            distance_miles=leg.distance_miles,
-            ascent_feet=leg.ascent_feet,
-            high_temp_f=weather["high_temp_f"],
-            low_temp_f=weather["low_temp_f"]
-        )
+        import math
+        days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
+        days_needed_climb = math.ceil(leg.ascent_feet / max_climb) if max_climb > 0 else 1
+        days_needed = max(1, days_needed_miles, days_needed_climb)
         
+        day_dist = leg.distance_miles / days_needed
+        day_ascent = leg.ascent_feet / days_needed
+        
+        for d in range(days_needed):
+            day_date = curr_date + timedelta(days=d)
+            weather = weather_prov.get_weather_metrics(c_to, day_date, current_run_date)
+            
+            day = DailySchedule(
+                day_number=len(schedule) + 1,
+                date=day_date,
+                origin=c_from,
+                destination=c_to,
+                distance_miles=day_dist,
+                ascent_feet=day_ascent,
+                high_temp_f=weather["high_temp_f"],
+                low_temp_f=weather["low_temp_f"]
+            )
+            schedule.append(day)
+            
         legs.append(leg)
-        schedule.append(day)
-        curr_date += timedelta(days=1)
+        curr_date += timedelta(days=days_needed)
         
     actual_itinerary = Itinerary(
         start_city=itinerary.start_city,

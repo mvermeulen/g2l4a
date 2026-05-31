@@ -17,11 +17,38 @@ class OutputFormatter:
         lines.append("| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |")
         lines.append("|---|---|---|---|---|---|---|---|")
         
-        for item in itinerary.schedule:
+        for i, item in enumerate(itinerary.schedule):
             weather_str = f"Avg High: {item.high_temp_f}°F, Low: {item.low_temp_f}°F"
-            notes = "Rest Day" if item.is_rest_day else ""
+            notes = ""
+            origin_name = item.origin.name
+            destination_name = item.destination.name
+            
+            if item.is_rest_day:
+                notes = "Rest Day"
+            else:
+                is_last_day_of_leg = True
+                if i < len(itinerary.schedule) - 1:
+                    next_item = itinerary.schedule[i + 1]
+                    if next_item.origin.name == item.origin.name and next_item.destination.name == item.destination.name:
+                        is_last_day_of_leg = False
+                
+                # Count consecutive matching transit days for this specific leg
+                matching_days = [d for d in itinerary.schedule if d.origin.name == item.origin.name and d.destination.name == item.destination.name and not d.is_rest_day]
+                if len(matching_days) > 1:
+                    curr_idx = matching_days.index(item) + 1
+                    if is_last_day_of_leg:
+                        notes = f"Arrived (Day {curr_idx} of {len(matching_days)})"
+                        origin_name = f"In Transit (from {item.origin.name})"
+                    else:
+                        notes = f"Transit (Day {curr_idx} of {len(matching_days)})"
+                        if curr_idx == 1:
+                            destination_name = f"In Transit (to {item.destination.name})"
+                        else:
+                            origin_name = f"In Transit (from {item.origin.name})"
+                            destination_name = f"In Transit (to {item.destination.name})"
+            
             lines.append(
-                f"| {item.day_number} | {item.date} | {item.origin.name} | {item.destination.name} | "
+                f"| {item.day_number} | {item.date} | {origin_name} | {destination_name} | "
                 f"{item.distance_miles:.1f} | {item.ascent_feet:.0f} | {weather_str} | {notes} |"
             )
             
@@ -41,6 +68,8 @@ class OutputFormatter:
         if total_climb <= 0:
             total_climb = sum(day.ascent_feet for day in itinerary.schedule)
 
+        start_date_str = itinerary.start_date.isoformat() if itinerary.start_date else "N/A"
+        lines.append(f"- **Start Date**: {start_date_str}")
         lines.append(f"- **Total Distance**: {total_dist:.1f} miles")
         lines.append(f"- **Total Climbing**: {total_climb:.0f} ft")
         
@@ -61,6 +90,32 @@ class OutputFormatter:
         return "\n".join(lines)
 
     @staticmethod
+    def _compute_key_difference(current: Itinerary, best: Itinerary) -> str:
+        """Determines a succinct description of why the itinerary differs from the best recommendation."""
+        if current is best:
+            return "Baseline / Optimal Route"
+            
+        date_diff = False
+        if current.start_date != best.start_date:
+            date_diff = True
+            
+        # Check order of via cities
+        curr_sequence = [c.name for c in current.via_cities]
+        best_sequence = [c.name for c in best.via_cities]
+        order_diff = (curr_sequence != best_sequence)
+        
+        if date_diff and order_diff:
+            date_str = current.start_date.isoformat() if current.start_date else "N/A"
+            return f"Different start date ({date_str}) & alternative sequence"
+        elif date_diff:
+            date_str = current.start_date.isoformat() if current.start_date else "N/A"
+            return f"Different start date ({date_str}), same sequence"
+        elif order_diff:
+            return "Alternative via-city sequence, same date"
+        else:
+            return "Alternative metrics/scores, same date & sequence"
+
+    @staticmethod
     def format_recommendations_markdown(itineraries: List[Itinerary], metrics: Any = None) -> str:
         """Formats the complete list of ranked itineraries and metrics into a comparison document."""
         if not itineraries:
@@ -71,12 +126,15 @@ class OutputFormatter:
         
         # 1. Comparison Header Table
         lines.append("## Overview Comparison")
-        lines.append("| Option | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb |")
-        lines.append("|---|---|---|---|---|---|---|---|")
+        lines.append("| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference |")
+        lines.append("|---|---|---|---|---|---|---|---|---|---|")
         
+        best_it = itineraries[0]
         for idx, it in enumerate(itineraries):
             name = "**Best Recommendation**" if idx == 0 else f"Alternative {idx}"
             feasible_str = "Yes" if it.is_feasible else "No ❌"
+            start_date_str = it.start_date.isoformat() if it.start_date else "N/A"
+            key_diff = OutputFormatter._compute_key_difference(it, best_it)
             
             # Scores & metrics
             if it.is_feasible and it.scores:
@@ -99,8 +157,8 @@ class OutputFormatter:
                 total_climb = sum(day.ascent_feet for day in it.schedule)
                 
             lines.append(
-                f"| {name} | {feasible_str} | {sc_total} | {sc_weather} | {sc_dist} | {sc_hills} | "
-                f"{total_dist:.1f} mi | {total_climb:.0f} ft |"
+                f"| {name} | {start_date_str} | {feasible_str} | {sc_total} | {sc_weather} | {sc_dist} | {sc_hills} | "
+                f"{total_dist:.1f} mi | {total_climb:.0f} ft | {key_diff} |"
             )
         lines.append("")
         

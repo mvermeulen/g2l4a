@@ -28,22 +28,47 @@ def compute_geodesic_baseline(itinerary: Itinerary) -> float:
     return total
 
 def compute_shortest_geodesic_baseline(itinerary: Itinerary) -> float:
-    """Calculates the baseline sequential geodesic distance along the shortest greedy NN TSP path."""
+    """Calculates the baseline sequential geodesic distance along the shortest 2-opt refined TSP path."""
     unvisited = list(itinerary.via_cities)
     sequence = [itinerary.start_city]
     
+    # 1. Greedy NN seed
     while unvisited:
         current = sequence[-1]
         best_city = min(unvisited, key=lambda c: haversine_distance(current, c))
         unvisited.remove(best_city)
         sequence.append(best_city)
-        
     sequence.append(itinerary.completion_city)
     
-    total = 0.0
-    for i in range(len(sequence) - 1):
-        total += haversine_distance(sequence[i], sequence[i+1])
-    return total
+    # 2. 2-opt refinement
+    n = len(sequence)
+    if n <= 3:
+        total = 0.0
+        for i in range(n - 1):
+            total += haversine_distance(sequence[i], sequence[i+1])
+        return total
+
+    def path_dist(seq: List[City]) -> float:
+        return sum(haversine_distance(seq[idx], seq[idx+1]) for idx in range(len(seq) - 1))
+        
+    best_dist = path_dist(sequence)
+    improved = True
+    
+    while improved:
+        improved = False
+        for i in range(1, n - 2):
+            for j in range(i + 1, n - 1):
+                new_sequence = sequence[:i] + sequence[i:j+1][::-1] + sequence[j+1:]
+                new_dist = path_dist(new_sequence)
+                if new_dist < best_dist - 1e-2:
+                    sequence = new_sequence
+                    best_dist = new_dist
+                    improved = True
+                    break
+            if improved:
+                break
+                
+    return best_dist
 
 class ScoringEngine:
     """Computes soft objective desirability scores and deterministically ranks itineraries."""
@@ -74,7 +99,7 @@ class ScoringEngine:
         return total_score / len(itinerary.schedule)
 
     def compute_distance_score(self, itinerary: Itinerary) -> float:
-        """Computes the detour distance efficiency score [0.0, 1.0]."""
+        """Computes the detour distance efficiency score [0.0, 1.0] using a quadratic relationship."""
         actual = sum(leg.distance_miles for leg in itinerary.legs)
         if actual <= 0 and itinerary.schedule:
             actual = sum(day.distance_miles for day in itinerary.schedule)
@@ -86,7 +111,9 @@ class ScoringEngine:
             base = itinerary.original_geodesic_baseline
         else:
             base = compute_geodesic_baseline(itinerary)
-        return min(1.0, base / actual)
+        
+        ratio = min(1.0, base / actual)
+        return ratio ** 2
 
     def compute_hills_score(self, itinerary: Itinerary) -> float:
         """Computes the climbing burden score [0.0, 1.0]."""

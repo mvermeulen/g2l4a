@@ -114,7 +114,7 @@ def test_scoring_distance_detour(engine):
     score_p = engine.compute_distance_score(it_perfect)
     assert score_p == 1.0
 
-    # 2. Path with double distance -> 0.5
+    # 2. Path with double distance -> 0.25 (quadratic)
     it_detour = Itinerary(
         start_city=c1,
         completion_city=c2,
@@ -124,7 +124,7 @@ def test_scoring_distance_detour(engine):
         ]
     )
     score_d = engine.compute_distance_score(it_detour)
-    assert score_d == 0.5
+    assert score_d == 0.25
 
 def test_scoring_hills_burden(engine):
     c1 = City(name="A", latitude=30.0, longitude=-90.0)

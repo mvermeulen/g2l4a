@@ -59,7 +59,7 @@ def test_build_actual_itinerary():
     assert actual_it.completion_city == c3
     assert len(actual_it.via_cities) == 1
     assert actual_it.via_cities[0] == c2
-    assert len(actual_it.schedule) == 2
+    assert len(actual_it.schedule) == 32
     assert actual_it.scores is not None
     assert actual_it.scores.total > 0.0
     
