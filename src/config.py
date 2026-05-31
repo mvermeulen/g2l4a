@@ -40,6 +40,7 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "name": "mock",
         "timeout_seconds": 8.0,
         "climate_model": "CMCC_CM2_VHR4",
+        "capital_monthly_normals_path": "data/state_capitals_monthly_normals.json",
     },
     "cache": {
         "db_path": ".g2l4a_cache.db",

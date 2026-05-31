@@ -71,7 +71,29 @@ weather_provider:
 Runtime behavior:
 - For travel dates within 14 days of the run date, the provider uses Open-Meteo forecast temperatures.
 - For dates outside that horizon, it uses the Open-Meteo climate endpoint.
-- On any Open-Meteo failure (network, payload, parsing), it falls back to the deterministic mock provider so solver runs do not fail.
+- On any Open-Meteo failure (network, payload, parsing), it now falls back to state-capital monthly normals first, then to deterministic mock weather.
+
+### State-Capital Monthly Normals Fallback
+
+The intermediate fallback provider reads monthly average high/low temperatures for all 50 US state capitals from a local dataset:
+
+```yaml
+weather_provider:
+    name: "open_meteo"
+    capital_monthly_normals_path: "data/state_capitals_monthly_normals.json"
+```
+
+You can also select this provider directly:
+
+```yaml
+weather_provider:
+    name: "state_capital_monthly_normals"
+```
+
+Dataset refresh tooling:
+- Script: `scripts/build_state_capitals_monthly_normals.py`
+- Source approach: fetch each capital's Wikipedia climate table and extract monthly Fahrenheit high/low normals.
+- Output: `data/state_capitals_monthly_normals.json`
 
 The existing L1/L2 caching layer still applies to Open-Meteo responses, preventing repeated calls for the same city/date/forecast mode and reducing API quota consumption.
 

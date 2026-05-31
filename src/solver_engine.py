@@ -9,6 +9,7 @@ from src.config import ConfigManager
 from src.validation import CITY_REGISTRY
 from src.mocks import MockRoutingProvider, MockWeatherProvider, MockElevationProvider
 from src.open_meteo_weather import OpenMeteoWeatherProvider
+from src.monthly_normals_weather import StateCapitalMonthlyNormalsWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.cached_providers import CachedRoutingProvider, CachedWeatherProvider, CachedElevationProvider
 from src.providers import WeatherProvider
@@ -58,10 +59,26 @@ class BeamSearchSolver(Solver):
             base_weather = weather_provider_override
         else:
             weather_provider_name = weather_provider_cfg.get("name", "mock")
+            monthly_normals_path = str(
+                weather_provider_cfg.get(
+                    "capital_monthly_normals_path",
+                    "data/state_capitals_monthly_normals.json",
+                )
+            )
             if weather_provider_name == "open_meteo":
+                # Fallback order: Open-Meteo -> state-capital monthly normals -> deterministic mock.
+                monthly_fallback = StateCapitalMonthlyNormalsWeatherProvider(
+                    dataset_path=monthly_normals_path,
+                    fallback_provider=MockWeatherProvider(),
+                )
                 base_weather = OpenMeteoWeatherProvider(
                     timeout_seconds=float(weather_provider_cfg.get("timeout_seconds", 8.0)),
                     climate_model=str(weather_provider_cfg.get("climate_model", "CMCC_CM2_VHR4")),
+                    fallback_provider=monthly_fallback,
+                )
+            elif weather_provider_name == "state_capital_monthly_normals":
+                base_weather = StateCapitalMonthlyNormalsWeatherProvider(
+                    dataset_path=monthly_normals_path,
                     fallback_provider=MockWeatherProvider(),
                 )
             else:

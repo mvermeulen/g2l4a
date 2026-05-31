@@ -1,5 +1,6 @@
 # Core Dependencies
 pyyaml>=6.0.0
+beautifulsoup4>=4.14.0
 
 # Development, Testing, and Linting
 pytest>=9.0.0

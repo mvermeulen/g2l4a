@@ -1,10 +1,12 @@
 from datetime import date
+import json
 
 from src.cached_providers import CachedWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.domain import City
 from src.providers import WeatherProvider
 from src.open_meteo_weather import OpenMeteoWeatherProvider
+from src.monthly_normals_weather import StateCapitalMonthlyNormalsWeatherProvider
 
 
 def test_open_meteo_weather_provider_success(monkeypatch):
@@ -113,3 +115,58 @@ def test_provider_aware_cache_keys_isolate_entries(tmp_path):
     assert b_metrics["high_temp_f"] == 61.0
 
     manager.close()
+
+
+def test_state_capital_monthly_normals_provider_reads_dataset(tmp_path):
+    dataset = {
+        "metadata": {"source": "test"},
+        "cities": {
+            "Phoenix, Arizona": {
+                "aliases": ["Phoenix, Arizona", "phoenix, arizona"],
+                "monthly": {
+                    "8": {"high_temp_f": 105.1, "low_temp_f": 83.6}
+                },
+            }
+        },
+    }
+    dataset_path = tmp_path / "state_capitals_monthly_normals.json"
+    dataset_path.write_text(json.dumps(dataset), encoding="utf-8")
+
+    provider = StateCapitalMonthlyNormalsWeatherProvider(dataset_path=str(dataset_path))
+    city = City(name="Phoenix, Arizona", latitude=33.4484, longitude=-112.0740)
+
+    metrics = provider.get_weather_metrics(city, date(2026, 8, 18), date(2026, 8, 1))
+    assert metrics["high_temp_f"] == 105.1
+    assert metrics["low_temp_f"] == 83.6
+    assert metrics["is_forecast"] is False
+
+
+def test_open_meteo_falls_back_to_monthly_normals_before_mock(tmp_path, monkeypatch):
+    dataset = {
+        "metadata": {"source": "test"},
+        "cities": {
+            "Phoenix, Arizona": {
+                "aliases": ["Phoenix, Arizona", "phoenix, arizona"],
+                "monthly": {
+                    "8": {"high_temp_f": 105.1, "low_temp_f": 83.6}
+                },
+            }
+        },
+    }
+    dataset_path = tmp_path / "state_capitals_monthly_normals.json"
+    dataset_path.write_text(json.dumps(dataset), encoding="utf-8")
+
+    monthly_provider = StateCapitalMonthlyNormalsWeatherProvider(dataset_path=str(dataset_path))
+    provider = OpenMeteoWeatherProvider(fallback_provider=monthly_provider)
+
+    def raise_request_error(_url, _params):
+        raise RuntimeError("open-meteo unavailable")
+
+    monkeypatch.setattr(provider, "_request_json", raise_request_error)
+
+    city = City(name="Phoenix, Arizona", latitude=33.4484, longitude=-112.0740)
+    metrics = provider.get_weather_metrics(city, date(2026, 8, 18), date(2026, 8, 1))
+
+    assert metrics["high_temp_f"] == 105.1
+    assert metrics["low_temp_f"] == 83.6
+    assert metrics["is_forecast"] is False

@@ -2,7 +2,7 @@
   "solver_metrics": null,
   "recommendations": [
     {
-      "is_feasible": true,
+      "is_feasible": false,
       "start_city": "Salem, Oregon",
       "completion_city": "Austin, Texas",
       "via_cities": [
@@ -11,12 +11,12 @@
         "Phoenix, Arizona",
         "Santa Fe, New Mexico"
       ],
-      "start_date": "2026-08-01",
+      "start_date": "2026-03-01",
       "scores": {
-        "weather": 0.8485,
-        "distance": 1.0,
-        "hills": 0.8764,
-        "total": 0.9009
+        "weather": null,
+        "distance": null,
+        "hills": null,
+        "total": null
       },
       "legs": [
         {
@@ -53,2033 +53,2117 @@
       "schedule": [
         {
           "day_number": 1,
-          "date": "2026-08-01",
+          "date": "2026-03-01",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 69.2,
-          "low_temp_f": 49.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 2,
-          "date": "2026-08-02",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 69.7,
+          "high_temp_f": 63.2,
           "low_temp_f": 49.7,
           "is_rest_day": false
         },
         {
-          "day_number": 3,
-          "date": "2026-08-03",
+          "day_number": 2,
+          "date": "2026-03-02",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 70.2,
-          "low_temp_f": 50.2,
+          "high_temp_f": 61.0,
+          "low_temp_f": 50.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2026-03-03",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 58.7,
+          "low_temp_f": 51.9,
           "is_rest_day": false
         },
         {
           "day_number": 4,
-          "date": "2026-08-04",
+          "date": "2026-03-04",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 70.7,
-          "low_temp_f": 50.7,
+          "high_temp_f": 58.4,
+          "low_temp_f": 49.9,
           "is_rest_day": false
         },
         {
           "day_number": 5,
-          "date": "2026-08-05",
+          "date": "2026-03-05",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 71.2,
-          "low_temp_f": 51.2,
+          "high_temp_f": 58.7,
+          "low_temp_f": 42.4,
           "is_rest_day": false
         },
         {
           "day_number": 6,
-          "date": "2026-08-06",
+          "date": "2026-03-06",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 71.7,
-          "low_temp_f": 51.7,
+          "high_temp_f": 56.3,
+          "low_temp_f": 39.2,
           "is_rest_day": false
         },
         {
           "day_number": 7,
-          "date": "2026-08-07",
+          "date": "2026-03-07",
           "origin": "Salem, Oregon",
           "destination": "Sacramento, California",
           "distance_miles": 63.71929649588117,
           "ascent_feet": 24.285714285714285,
-          "high_temp_f": 67.2,
-          "low_temp_f": 47.2,
+          "high_temp_f": 65.1,
+          "low_temp_f": 40.2,
           "is_rest_day": false
         },
         {
           "day_number": 8,
-          "date": "2026-08-08",
+          "date": "2026-03-08",
           "origin": "Sacramento, California",
           "destination": "Carson City, Nevada",
           "distance_miles": 50.54869748627599,
           "ascent_feet": 255.0,
-          "high_temp_f": 68.8,
-          "low_temp_f": 48.8,
+          "high_temp_f": 51.5,
+          "low_temp_f": 35.5,
           "is_rest_day": false
         },
         {
           "day_number": 9,
-          "date": "2026-08-09",
+          "date": "2026-03-09",
           "origin": "Sacramento, California",
           "destination": "Carson City, Nevada",
           "distance_miles": 50.54869748627599,
           "ascent_feet": 255.0,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
+          "high_temp_f": 55.8,
+          "low_temp_f": 43.0,
           "is_rest_day": false
         },
         {
           "day_number": 10,
-          "date": "2026-08-10",
+          "date": "2026-03-10",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 74.8,
-          "low_temp_f": 54.8,
+          "high_temp_f": 82.0,
+          "low_temp_f": 56.1,
           "is_rest_day": false
         },
         {
           "day_number": 11,
-          "date": "2026-08-11",
+          "date": "2026-03-11",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 75.3,
-          "low_temp_f": 55.3,
+          "high_temp_f": 82.6,
+          "low_temp_f": 56.1,
           "is_rest_day": false
         },
         {
           "day_number": 12,
-          "date": "2026-08-12",
+          "date": "2026-03-12",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 75.8,
-          "low_temp_f": 55.8,
+          "high_temp_f": 82.5,
+          "low_temp_f": 60.5,
           "is_rest_day": false
         },
         {
           "day_number": 13,
-          "date": "2026-08-13",
+          "date": "2026-03-13",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 71.3,
-          "low_temp_f": 51.3,
+          "high_temp_f": 78.9,
+          "low_temp_f": 50.6,
           "is_rest_day": false
         },
         {
           "day_number": 14,
-          "date": "2026-08-14",
+          "date": "2026-03-14",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 71.8,
-          "low_temp_f": 51.8,
+          "high_temp_f": 68.6,
+          "low_temp_f": 39.3,
           "is_rest_day": false
         },
         {
           "day_number": 15,
-          "date": "2026-08-15",
+          "date": "2026-03-15",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.3,
-          "low_temp_f": 52.3,
+          "high_temp_f": 67.6,
+          "low_temp_f": 40.6,
           "is_rest_day": false
         },
         {
           "day_number": 16,
-          "date": "2026-08-16",
+          "date": "2026-03-16",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.8,
-          "low_temp_f": 52.8,
+          "high_temp_f": 69.6,
+          "low_temp_f": 40.0,
           "is_rest_day": false
         },
         {
           "day_number": 17,
-          "date": "2026-08-17",
+          "date": "2026-03-17",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
           "high_temp_f": 73.3,
-          "low_temp_f": 53.3,
+          "low_temp_f": 44.3,
           "is_rest_day": false
         },
         {
           "day_number": 18,
-          "date": "2026-08-18",
+          "date": "2026-03-18",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 73.8,
-          "low_temp_f": 53.8,
+          "high_temp_f": 79.6,
+          "low_temp_f": 46.8,
           "is_rest_day": false
         },
         {
           "day_number": 19,
-          "date": "2026-08-19",
+          "date": "2026-03-19",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 72.5,
-          "low_temp_f": 52.5,
+          "high_temp_f": 51.6,
+          "low_temp_f": 22.6,
           "is_rest_day": false
         },
         {
           "day_number": 20,
-          "date": "2026-08-20",
+          "date": "2026-03-20",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.0,
-          "low_temp_f": 53.0,
+          "high_temp_f": 58.3,
+          "low_temp_f": 28.6,
           "is_rest_day": false
         },
         {
           "day_number": 21,
-          "date": "2026-08-21",
+          "date": "2026-03-21",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.5,
-          "low_temp_f": 53.5,
+          "high_temp_f": 61.5,
+          "low_temp_f": 32.7,
           "is_rest_day": false
         },
         {
           "day_number": 22,
-          "date": "2026-08-22",
+          "date": "2026-03-22",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 74.0,
-          "low_temp_f": 54.0,
+          "high_temp_f": 61.0,
+          "low_temp_f": 38.0,
           "is_rest_day": false
         },
         {
           "day_number": 23,
-          "date": "2026-08-23",
+          "date": "2026-03-23",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 69.5,
-          "low_temp_f": 49.5,
+          "high_temp_f": 56.0,
+          "low_temp_f": 39.8,
           "is_rest_day": false
         },
         {
           "day_number": 24,
-          "date": "2026-08-24",
+          "date": "2026-03-24",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 70.0,
-          "low_temp_f": 50.0,
+          "high_temp_f": 55.6,
+          "low_temp_f": 36.5,
           "is_rest_day": false
         },
         {
           "day_number": 25,
-          "date": "2026-08-25",
+          "date": "2026-03-25",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.9,
-          "low_temp_f": 56.9,
+          "high_temp_f": 65.3,
+          "low_temp_f": 52.1,
           "is_rest_day": false
         },
         {
           "day_number": 26,
-          "date": "2026-08-26",
+          "date": "2026-03-26",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.4,
-          "low_temp_f": 57.4,
+          "high_temp_f": 70.1,
+          "low_temp_f": 64.1,
           "is_rest_day": false
         },
         {
           "day_number": 27,
-          "date": "2026-08-27",
+          "date": "2026-03-27",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.9,
-          "low_temp_f": 57.9,
+          "high_temp_f": 75.9,
+          "low_temp_f": 64.7,
           "is_rest_day": false
         },
         {
           "day_number": 28,
-          "date": "2026-08-28",
+          "date": "2026-03-28",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 78.4,
-          "low_temp_f": 58.4,
+          "high_temp_f": 76.2,
+          "low_temp_f": 65.9,
           "is_rest_day": false
         },
         {
           "day_number": 29,
-          "date": "2026-08-29",
+          "date": "2026-03-29",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 73.9,
-          "low_temp_f": 53.9,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 30,
-          "date": "2026-08-30",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 74.4,
-          "low_temp_f": 54.4,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 31,
-          "date": "2026-08-31",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 74.9,
-          "low_temp_f": 54.9,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 32,
-          "date": "2026-09-01",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 68.8,
-          "low_temp_f": 48.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 33,
-          "date": "2026-09-02",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
-          "is_rest_day": false
-        }
-      ],
-      "violations": []
-    },
-    {
-      "is_feasible": true,
-      "start_city": "Salem, Oregon",
-      "completion_city": "Austin, Texas",
-      "via_cities": [
-        "Sacramento, California",
-        "Carson City, Nevada",
-        "Phoenix, Arizona",
-        "Santa Fe, New Mexico"
-      ],
-      "start_date": "2026-08-01",
-      "scores": {
-        "weather": 0.8485,
-        "distance": 1.0,
-        "hills": 0.8764,
-        "total": 0.9009
-      },
-      "legs": [
-        {
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 446.03507547116817,
-          "ascent_feet": 170.0
-        },
-        {
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 101.09739497255198,
-          "ascent_feet": 510.0
-        },
-        {
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 581.8294194823264,
-          "ascent_feet": 550.0
-        },
-        {
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 381.3338324669747,
-          "ascent_feet": 1060.0
-        },
-        {
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 604.0244234083848,
-          "ascent_feet": 800.0
-        }
-      ],
-      "schedule": [
-        {
-          "day_number": 1,
-          "date": "2026-08-01",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 69.2,
-          "low_temp_f": 49.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 2,
-          "date": "2026-08-02",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 69.7,
-          "low_temp_f": 49.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 3,
-          "date": "2026-08-03",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 70.2,
-          "low_temp_f": 50.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 4,
-          "date": "2026-08-04",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 70.7,
-          "low_temp_f": 50.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 5,
-          "date": "2026-08-05",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 71.2,
-          "low_temp_f": 51.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 6,
-          "date": "2026-08-06",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 71.7,
-          "low_temp_f": 51.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 7,
-          "date": "2026-08-07",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 67.2,
-          "low_temp_f": 47.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 8,
-          "date": "2026-08-08",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 68.8,
-          "low_temp_f": 48.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 9,
-          "date": "2026-08-09",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 10,
-          "date": "2026-08-10",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 74.8,
-          "low_temp_f": 54.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 11,
-          "date": "2026-08-11",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 75.3,
-          "low_temp_f": 55.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 12,
-          "date": "2026-08-12",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
           "high_temp_f": 75.8,
-          "low_temp_f": 55.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 13,
-          "date": "2026-08-13",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 71.3,
-          "low_temp_f": 51.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 14,
-          "date": "2026-08-14",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 71.8,
-          "low_temp_f": 51.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 15,
-          "date": "2026-08-15",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.3,
-          "low_temp_f": 52.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 16,
-          "date": "2026-08-16",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.8,
-          "low_temp_f": 52.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 17,
-          "date": "2026-08-17",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 73.3,
-          "low_temp_f": 53.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 18,
-          "date": "2026-08-18",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 73.8,
-          "low_temp_f": 53.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 19,
-          "date": "2026-08-19",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 72.5,
-          "low_temp_f": 52.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 20,
-          "date": "2026-08-20",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.0,
-          "low_temp_f": 53.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 21,
-          "date": "2026-08-21",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.5,
-          "low_temp_f": 53.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 22,
-          "date": "2026-08-22",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 74.0,
-          "low_temp_f": 54.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 23,
-          "date": "2026-08-23",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 69.5,
-          "low_temp_f": 49.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 24,
-          "date": "2026-08-24",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 70.0,
-          "low_temp_f": 50.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 25,
-          "date": "2026-08-25",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.9,
-          "low_temp_f": 56.9,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 26,
-          "date": "2026-08-26",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.4,
-          "low_temp_f": 57.4,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 27,
-          "date": "2026-08-27",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.9,
-          "low_temp_f": 57.9,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 28,
-          "date": "2026-08-28",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 78.4,
-          "low_temp_f": 58.4,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 29,
-          "date": "2026-08-29",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 73.9,
-          "low_temp_f": 53.9,
+          "low_temp_f": 70.4,
           "is_rest_day": false
         },
         {
           "day_number": 30,
-          "date": "2026-08-30",
+          "date": "2026-03-30",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 74.4,
-          "low_temp_f": 54.4,
+          "high_temp_f": 75.9,
+          "low_temp_f": 53.4,
           "is_rest_day": false
         },
         {
           "day_number": 31,
-          "date": "2026-08-31",
+          "date": "2026-03-31",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 61.9,
+          "low_temp_f": 44.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2026-04-01",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.8,
+          "low_temp_f": 43.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2026-04-02",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
           "high_temp_f": 74.9,
-          "low_temp_f": 54.9,
+          "low_temp_f": 49.2,
+          "is_rest_day": false
+        }
+      ],
+      "violations": [
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-03-19",
+          "observed_value": 22.6,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        }
+      ]
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Salem, Oregon",
+      "completion_city": "Austin, Texas",
+      "via_cities": [
+        "Sacramento, California",
+        "Carson City, Nevada",
+        "Phoenix, Arizona",
+        "Santa Fe, New Mexico"
+      ],
+      "start_date": "2026-02-01",
+      "scores": {
+        "weather": 0.5433,
+        "distance": 1.0,
+        "hills": 0.8764,
+        "total": 0.7636
+      },
+      "legs": [
+        {
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 446.03507547116817,
+          "ascent_feet": 170.0
+        },
+        {
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 101.09739497255198,
+          "ascent_feet": 510.0
+        },
+        {
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 581.8294194823264,
+          "ascent_feet": 550.0
+        },
+        {
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 381.3338324669747,
+          "ascent_feet": 1060.0
+        },
+        {
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 604.0244234083848,
+          "ascent_feet": 800.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2026-02-01",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 55.9,
+          "low_temp_f": 31.2,
           "is_rest_day": false
         },
         {
-          "day_number": 32,
-          "date": "2026-09-01",
+          "day_number": 2,
+          "date": "2026-02-02",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 57.4,
+          "low_temp_f": 36.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2026-02-03",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 60.8,
+          "low_temp_f": 37.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2026-02-04",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 61.7,
+          "low_temp_f": 39.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2026-02-05",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 63.5,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2026-02-06",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 68.6,
+          "low_temp_f": 41.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2026-02-07",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 69.5,
+          "low_temp_f": 49.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2026-02-08",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 41.2,
+          "low_temp_f": 26.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2026-02-09",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 41.7,
+          "low_temp_f": 29.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2026-02-10",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.5,
+          "low_temp_f": 39.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2026-02-11",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.7,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2026-02-12",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.5,
+          "low_temp_f": 39.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2026-02-13",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 70.9,
+          "low_temp_f": 42.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2026-02-14",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 71.0,
+          "low_temp_f": 42.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2026-02-15",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 69.4,
+          "low_temp_f": 41.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2026-02-16",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 69.7,
+          "low_temp_f": 44.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2026-02-17",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 72.4,
+          "low_temp_f": 43.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2026-02-18",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 72.5,
+          "low_temp_f": 43.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2026-02-19",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 40.6,
+          "low_temp_f": 24.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2026-02-20",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 40.2,
+          "low_temp_f": 29.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2026-02-21",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 47.6,
+          "low_temp_f": 28.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2026-02-22",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 51.2,
+          "low_temp_f": 26.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2026-02-23",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 53.6,
+          "low_temp_f": 28.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2026-02-24",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 52.8,
+          "low_temp_f": 27.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2026-02-25",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
+          "high_temp_f": 76.9,
+          "low_temp_f": 47.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2026-02-26",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.8,
+          "low_temp_f": 56.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2026-02-27",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 65.2,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2026-02-28",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 52.8,
+          "low_temp_f": 46.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2026-03-01",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 64.5,
+          "low_temp_f": 45.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2026-03-02",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 72.1,
+          "low_temp_f": 50.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2026-03-03",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 83.0,
+          "low_temp_f": 52.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2026-03-04",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 83.2,
+          "low_temp_f": 62.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2026-03-05",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 82.9,
+          "low_temp_f": 65.6,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Salem, Oregon",
+      "completion_city": "Austin, Texas",
+      "via_cities": [
+        "Sacramento, California",
+        "Carson City, Nevada",
+        "Phoenix, Arizona",
+        "Santa Fe, New Mexico"
+      ],
+      "start_date": "2026-02-01",
+      "scores": {
+        "weather": 0.5433,
+        "distance": 1.0,
+        "hills": 0.8764,
+        "total": 0.7636
+      },
+      "legs": [
+        {
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 446.03507547116817,
+          "ascent_feet": 170.0
+        },
+        {
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 101.09739497255198,
+          "ascent_feet": 510.0
+        },
+        {
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 581.8294194823264,
+          "ascent_feet": 550.0
+        },
+        {
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 381.3338324669747,
+          "ascent_feet": 1060.0
+        },
+        {
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 604.0244234083848,
+          "ascent_feet": 800.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2026-02-01",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 55.9,
+          "low_temp_f": 31.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2026-02-02",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 57.4,
+          "low_temp_f": 36.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2026-02-03",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 60.8,
+          "low_temp_f": 37.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2026-02-04",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 61.7,
+          "low_temp_f": 39.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2026-02-05",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 63.5,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2026-02-06",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 68.6,
+          "low_temp_f": 41.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2026-02-07",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 69.5,
+          "low_temp_f": 49.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2026-02-08",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 41.2,
+          "low_temp_f": 26.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2026-02-09",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 41.7,
+          "low_temp_f": 29.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2026-02-10",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.5,
+          "low_temp_f": 39.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2026-02-11",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.7,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2026-02-12",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 67.5,
+          "low_temp_f": 39.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2026-02-13",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 70.9,
+          "low_temp_f": 42.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2026-02-14",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 71.0,
+          "low_temp_f": 42.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2026-02-15",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 69.4,
+          "low_temp_f": 41.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2026-02-16",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 69.7,
+          "low_temp_f": 44.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2026-02-17",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 72.4,
+          "low_temp_f": 43.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2026-02-18",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 72.5,
+          "low_temp_f": 43.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2026-02-19",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 40.6,
+          "low_temp_f": 24.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2026-02-20",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 40.2,
+          "low_temp_f": 29.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2026-02-21",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 47.6,
+          "low_temp_f": 28.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2026-02-22",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 51.2,
+          "low_temp_f": 26.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2026-02-23",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 53.6,
+          "low_temp_f": 28.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2026-02-24",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 52.8,
+          "low_temp_f": 27.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2026-02-25",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 76.9,
+          "low_temp_f": 47.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2026-02-26",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.8,
+          "low_temp_f": 56.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2026-02-27",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 65.2,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2026-02-28",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 52.8,
+          "low_temp_f": 46.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2026-03-01",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 64.5,
+          "low_temp_f": 45.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2026-03-02",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 72.1,
+          "low_temp_f": 50.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2026-03-03",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 83.0,
+          "low_temp_f": 52.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2026-03-04",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 83.2,
+          "low_temp_f": 62.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2026-03-05",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 82.9,
+          "low_temp_f": 65.6,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
+    },
+    {
+      "is_feasible": false,
+      "start_city": "Salem, Oregon",
+      "completion_city": "Austin, Texas",
+      "via_cities": [
+        "Sacramento, California",
+        "Carson City, Nevada",
+        "Phoenix, Arizona",
+        "Santa Fe, New Mexico"
+      ],
+      "start_date": "2026-01-01",
+      "scores": {
+        "weather": null,
+        "distance": null,
+        "hills": null,
+        "total": null
+      },
+      "legs": [
+        {
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 446.03507547116817,
+          "ascent_feet": 170.0
+        },
+        {
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 101.09739497255198,
+          "ascent_feet": 510.0
+        },
+        {
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 581.8294194823264,
+          "ascent_feet": 550.0
+        },
+        {
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 381.3338324669747,
+          "ascent_feet": 1060.0
+        },
+        {
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 604.0244234083848,
+          "ascent_feet": 800.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2026-01-01",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 58.9,
+          "low_temp_f": 42.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2026-01-02",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 60.0,
+          "low_temp_f": 45.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2026-01-03",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 60.2,
+          "low_temp_f": 45.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2026-01-04",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 56.5,
+          "low_temp_f": 44.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2026-01-05",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 55.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2026-01-06",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 61.4,
+          "low_temp_f": 42.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2026-01-07",
+          "origin": "Salem, Oregon",
+          "destination": "Sacramento, California",
+          "distance_miles": 63.71929649588117,
+          "ascent_feet": 24.285714285714285,
+          "high_temp_f": 62.3,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2026-01-08",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 42.9,
+          "low_temp_f": 42.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2026-01-09",
+          "origin": "Sacramento, California",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 41.4,
+          "low_temp_f": 31.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2026-01-10",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 59.8,
+          "low_temp_f": 36.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2026-01-11",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 61.5,
+          "low_temp_f": 37.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2026-01-12",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
+          "high_temp_f": 61.4,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2026-01-13",
+          "origin": "Carson City, Nevada",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 64.64771327581406,
+          "ascent_feet": 61.111111111111114,
           "high_temp_f": 68.8,
-          "low_temp_f": 48.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 33,
-          "date": "2026-09-02",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
-          "is_rest_day": false
-        }
-      ],
-      "violations": []
-    },
-    {
-      "is_feasible": true,
-      "start_city": "Salem, Oregon",
-      "completion_city": "Austin, Texas",
-      "via_cities": [
-        "Sacramento, California",
-        "Carson City, Nevada",
-        "Phoenix, Arizona",
-        "Santa Fe, New Mexico"
-      ],
-      "start_date": "2026-05-01",
-      "scores": {
-        "weather": 0.8027,
-        "distance": 1.0,
-        "hills": 0.8764,
-        "total": 0.8803
-      },
-      "legs": [
-        {
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 446.03507547116817,
-          "ascent_feet": 170.0
-        },
-        {
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 101.09739497255198,
-          "ascent_feet": 510.0
-        },
-        {
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 581.8294194823264,
-          "ascent_feet": 550.0
-        },
-        {
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 381.3338324669747,
-          "ascent_feet": 1060.0
-        },
-        {
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 604.0244234083848,
-          "ascent_feet": 800.0
-        }
-      ],
-      "schedule": [
-        {
-          "day_number": 1,
-          "date": "2026-05-01",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 61.6,
-          "low_temp_f": 41.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 2,
-          "date": "2026-05-02",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 62.1,
-          "low_temp_f": 42.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 3,
-          "date": "2026-05-03",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 62.6,
-          "low_temp_f": 42.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 4,
-          "date": "2026-05-04",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 63.1,
-          "low_temp_f": 43.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 5,
-          "date": "2026-05-05",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 63.6,
-          "low_temp_f": 43.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 6,
-          "date": "2026-05-06",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 64.1,
-          "low_temp_f": 44.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 7,
-          "date": "2026-05-07",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 64.6,
-          "low_temp_f": 44.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 8,
-          "date": "2026-05-08",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 61.2,
-          "low_temp_f": 41.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 9,
-          "date": "2026-05-09",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 61.7,
-          "low_temp_f": 41.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 10,
-          "date": "2026-05-10",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 67.2,
-          "low_temp_f": 47.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 11,
-          "date": "2026-05-11",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 67.7,
-          "low_temp_f": 47.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 12,
-          "date": "2026-05-12",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 68.2,
-          "low_temp_f": 48.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 13,
-          "date": "2026-05-13",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 68.7,
-          "low_temp_f": 48.7,
+          "low_temp_f": 37.6,
           "is_rest_day": false
         },
         {
           "day_number": 14,
-          "date": "2026-05-14",
+          "date": "2026-01-14",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 69.2,
-          "low_temp_f": 49.2,
+          "high_temp_f": 70.2,
+          "low_temp_f": 41.8,
           "is_rest_day": false
         },
         {
           "day_number": 15,
-          "date": "2026-05-15",
+          "date": "2026-01-15",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 64.7,
-          "low_temp_f": 44.7,
+          "high_temp_f": 71.5,
+          "low_temp_f": 43.9,
           "is_rest_day": false
         },
         {
           "day_number": 16,
-          "date": "2026-05-16",
+          "date": "2026-01-16",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 65.2,
-          "low_temp_f": 45.2,
+          "high_temp_f": 71.0,
+          "low_temp_f": 43.9,
           "is_rest_day": false
         },
         {
           "day_number": 17,
-          "date": "2026-05-17",
+          "date": "2026-01-17",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 65.7,
-          "low_temp_f": 45.7,
+          "high_temp_f": 66.8,
+          "low_temp_f": 34.4,
           "is_rest_day": false
         },
         {
           "day_number": 18,
-          "date": "2026-05-18",
+          "date": "2026-01-18",
           "origin": "Carson City, Nevada",
           "destination": "Phoenix, Arizona",
           "distance_miles": 64.64771327581406,
           "ascent_feet": 61.111111111111114,
-          "high_temp_f": 66.2,
-          "low_temp_f": 46.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 19,
-          "date": "2026-05-19",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 65.0,
-          "low_temp_f": 45.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 20,
-          "date": "2026-05-20",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 65.5,
-          "low_temp_f": 45.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 21,
-          "date": "2026-05-21",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 66.0,
-          "low_temp_f": 46.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 22,
-          "date": "2026-05-22",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 66.5,
-          "low_temp_f": 46.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 23,
-          "date": "2026-05-23",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 67.0,
-          "low_temp_f": 47.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 24,
-          "date": "2026-05-24",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 67.5,
-          "low_temp_f": 47.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 25,
-          "date": "2026-05-25",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 26,
-          "date": "2026-05-26",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.8,
-          "low_temp_f": 49.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 27,
-          "date": "2026-05-27",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 70.3,
-          "low_temp_f": 50.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 28,
-          "date": "2026-05-28",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 70.8,
-          "low_temp_f": 50.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 29,
-          "date": "2026-05-29",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.3,
-          "low_temp_f": 51.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 30,
-          "date": "2026-05-30",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.8,
-          "low_temp_f": 51.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 31,
-          "date": "2026-05-31",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 68.3,
-          "low_temp_f": 48.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 32,
-          "date": "2026-06-01",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.4,
-          "low_temp_f": 56.4,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 33,
-          "date": "2026-06-02",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.9,
-          "low_temp_f": 51.9,
-          "is_rest_day": false
-        }
-      ],
-      "violations": []
-    },
-    {
-      "is_feasible": true,
-      "start_city": "Salem, Oregon",
-      "completion_city": "Austin, Texas",
-      "via_cities": [
-        "Sacramento, California",
-        "Carson City, Nevada",
-        "Phoenix, Arizona",
-        "Santa Fe, New Mexico"
-      ],
-      "start_date": "2026-05-01",
-      "scores": {
-        "weather": 0.8027,
-        "distance": 1.0,
-        "hills": 0.8764,
-        "total": 0.8803
-      },
-      "legs": [
-        {
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 446.03507547116817,
-          "ascent_feet": 170.0
-        },
-        {
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 101.09739497255198,
-          "ascent_feet": 510.0
-        },
-        {
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 581.8294194823264,
-          "ascent_feet": 550.0
-        },
-        {
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 381.3338324669747,
-          "ascent_feet": 1060.0
-        },
-        {
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 604.0244234083848,
-          "ascent_feet": 800.0
-        }
-      ],
-      "schedule": [
-        {
-          "day_number": 1,
-          "date": "2026-05-01",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 61.6,
-          "low_temp_f": 41.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 2,
-          "date": "2026-05-02",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 62.1,
-          "low_temp_f": 42.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 3,
-          "date": "2026-05-03",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 62.6,
-          "low_temp_f": 42.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 4,
-          "date": "2026-05-04",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 63.1,
-          "low_temp_f": 43.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 5,
-          "date": "2026-05-05",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 63.6,
-          "low_temp_f": 43.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 6,
-          "date": "2026-05-06",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 64.1,
-          "low_temp_f": 44.1,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 7,
-          "date": "2026-05-07",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 64.6,
-          "low_temp_f": 44.6,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 8,
-          "date": "2026-05-08",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 61.2,
-          "low_temp_f": 41.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 9,
-          "date": "2026-05-09",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 61.7,
-          "low_temp_f": 41.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 10,
-          "date": "2026-05-10",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 67.2,
-          "low_temp_f": 47.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 11,
-          "date": "2026-05-11",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 67.7,
-          "low_temp_f": 47.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 12,
-          "date": "2026-05-12",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 68.2,
-          "low_temp_f": 48.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 13,
-          "date": "2026-05-13",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 68.7,
-          "low_temp_f": 48.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 14,
-          "date": "2026-05-14",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 69.2,
-          "low_temp_f": 49.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 15,
-          "date": "2026-05-15",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 64.7,
-          "low_temp_f": 44.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 16,
-          "date": "2026-05-16",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 65.2,
-          "low_temp_f": 45.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 17,
-          "date": "2026-05-17",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 65.7,
-          "low_temp_f": 45.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 18,
-          "date": "2026-05-18",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 66.2,
-          "low_temp_f": 46.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 19,
-          "date": "2026-05-19",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 65.0,
-          "low_temp_f": 45.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 20,
-          "date": "2026-05-20",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 65.5,
-          "low_temp_f": 45.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 21,
-          "date": "2026-05-21",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 66.0,
-          "low_temp_f": 46.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 22,
-          "date": "2026-05-22",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 66.5,
-          "low_temp_f": 46.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 23,
-          "date": "2026-05-23",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 67.0,
-          "low_temp_f": 47.0,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 24,
-          "date": "2026-05-24",
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 63.55563874449578,
-          "ascent_feet": 176.66666666666666,
-          "high_temp_f": 67.5,
-          "low_temp_f": 47.5,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 25,
-          "date": "2026-05-25",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.3,
-          "low_temp_f": 49.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 26,
-          "date": "2026-05-26",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 69.8,
-          "low_temp_f": 49.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 27,
-          "date": "2026-05-27",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 70.3,
-          "low_temp_f": 50.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 28,
-          "date": "2026-05-28",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 70.8,
-          "low_temp_f": 50.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 29,
-          "date": "2026-05-29",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.3,
-          "low_temp_f": 51.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 30,
-          "date": "2026-05-30",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.8,
-          "low_temp_f": 51.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 31,
-          "date": "2026-05-31",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 68.3,
-          "low_temp_f": 48.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 32,
-          "date": "2026-06-01",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.4,
-          "low_temp_f": 56.4,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 33,
-          "date": "2026-06-02",
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 67.11382482315386,
-          "ascent_feet": 88.88888888888889,
-          "high_temp_f": 71.9,
-          "low_temp_f": 51.9,
-          "is_rest_day": false
-        }
-      ],
-      "violations": []
-    },
-    {
-      "is_feasible": true,
-      "start_city": "Salem, Oregon",
-      "completion_city": "Austin, Texas",
-      "via_cities": [
-        "Sacramento, California",
-        "Carson City, Nevada",
-        "Phoenix, Arizona",
-        "Santa Fe, New Mexico"
-      ],
-      "start_date": "2026-06-01",
-      "scores": {
-        "weather": 0.8014,
-        "distance": 1.0,
-        "hills": 0.8764,
-        "total": 0.8797
-      },
-      "legs": [
-        {
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 446.03507547116817,
-          "ascent_feet": 170.0
-        },
-        {
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 101.09739497255198,
-          "ascent_feet": 510.0
-        },
-        {
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 581.8294194823264,
-          "ascent_feet": 550.0
-        },
-        {
-          "origin": "Phoenix, Arizona",
-          "destination": "Santa Fe, New Mexico",
-          "distance_miles": 381.3338324669747,
-          "ascent_feet": 1060.0
-        },
-        {
-          "origin": "Santa Fe, New Mexico",
-          "destination": "Austin, Texas",
-          "distance_miles": 604.0244234083848,
-          "ascent_feet": 800.0
-        }
-      ],
-      "schedule": [
-        {
-          "day_number": 1,
-          "date": "2026-06-01",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
           "high_temp_f": 66.7,
-          "low_temp_f": 46.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 2,
-          "date": "2026-06-02",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 68.2,
-          "low_temp_f": 48.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 3,
-          "date": "2026-06-03",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 70.7,
-          "low_temp_f": 50.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 4,
-          "date": "2026-06-04",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 71.2,
-          "low_temp_f": 51.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 5,
-          "date": "2026-06-05",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 72.7,
-          "low_temp_f": 52.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 6,
-          "date": "2026-06-06",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 68.2,
-          "low_temp_f": 48.2,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 7,
-          "date": "2026-06-07",
-          "origin": "Salem, Oregon",
-          "destination": "Sacramento, California",
-          "distance_miles": 63.71929649588117,
-          "ascent_feet": 24.285714285714285,
-          "high_temp_f": 69.7,
-          "low_temp_f": 49.7,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 8,
-          "date": "2026-06-08",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 66.3,
-          "low_temp_f": 46.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 9,
-          "date": "2026-06-09",
-          "origin": "Sacramento, California",
-          "destination": "Carson City, Nevada",
-          "distance_miles": 50.54869748627599,
-          "ascent_feet": 255.0,
-          "high_temp_f": 67.8,
-          "low_temp_f": 47.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 10,
-          "date": "2026-06-10",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 73.3,
-          "low_temp_f": 53.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 11,
-          "date": "2026-06-11",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 75.8,
-          "low_temp_f": 55.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 12,
-          "date": "2026-06-12",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 76.3,
-          "low_temp_f": 56.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 13,
-          "date": "2026-06-13",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 77.8,
-          "low_temp_f": 57.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 14,
-          "date": "2026-06-14",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 68.3,
-          "low_temp_f": 48.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 15,
-          "date": "2026-06-15",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 71.8,
-          "low_temp_f": 51.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 16,
-          "date": "2026-06-16",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.3,
-          "low_temp_f": 52.3,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 17,
-          "date": "2026-06-17",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 72.8,
-          "low_temp_f": 52.8,
-          "is_rest_day": false
-        },
-        {
-          "day_number": 18,
-          "date": "2026-06-18",
-          "origin": "Carson City, Nevada",
-          "destination": "Phoenix, Arizona",
-          "distance_miles": 64.64771327581406,
-          "ascent_feet": 61.111111111111114,
-          "high_temp_f": 73.3,
-          "low_temp_f": 53.3,
+          "low_temp_f": 33.2,
           "is_rest_day": false
         },
         {
           "day_number": 19,
-          "date": "2026-06-19",
+          "date": "2026-01-19",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 72.0,
-          "low_temp_f": 52.0,
+          "high_temp_f": 33.7,
+          "low_temp_f": 9.9,
           "is_rest_day": false
         },
         {
           "day_number": 20,
-          "date": "2026-06-20",
+          "date": "2026-01-20",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 72.5,
-          "low_temp_f": 52.5,
+          "high_temp_f": 36.4,
+          "low_temp_f": 13.1,
           "is_rest_day": false
         },
         {
           "day_number": 21,
-          "date": "2026-06-21",
+          "date": "2026-01-21",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.0,
-          "low_temp_f": 53.0,
+          "high_temp_f": 35.2,
+          "low_temp_f": 12.1,
           "is_rest_day": false
         },
         {
           "day_number": 22,
-          "date": "2026-06-22",
+          "date": "2026-01-22",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 73.5,
-          "low_temp_f": 53.5,
+          "high_temp_f": 37.3,
+          "low_temp_f": 12.6,
           "is_rest_day": false
         },
         {
           "day_number": 23,
-          "date": "2026-06-23",
+          "date": "2026-01-23",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 74.0,
-          "low_temp_f": 54.0,
+          "high_temp_f": 45.4,
+          "low_temp_f": 18.6,
           "is_rest_day": false
         },
         {
           "day_number": 24,
-          "date": "2026-06-24",
+          "date": "2026-01-24",
           "origin": "Phoenix, Arizona",
           "destination": "Santa Fe, New Mexico",
           "distance_miles": 63.55563874449578,
           "ascent_feet": 176.66666666666666,
-          "high_temp_f": 69.5,
-          "low_temp_f": 49.5,
+          "high_temp_f": 44.9,
+          "low_temp_f": 21.8,
           "is_rest_day": false
         },
         {
           "day_number": 25,
-          "date": "2026-06-25",
+          "date": "2026-01-25",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.4,
-          "low_temp_f": 56.4,
+          "high_temp_f": 64.6,
+          "low_temp_f": 46.2,
           "is_rest_day": false
         },
         {
           "day_number": 26,
-          "date": "2026-06-26",
+          "date": "2026-01-26",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.9,
-          "low_temp_f": 56.9,
+          "high_temp_f": 65.4,
+          "low_temp_f": 53.3,
           "is_rest_day": false
         },
         {
           "day_number": 27,
-          "date": "2026-06-27",
+          "date": "2026-01-27",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.4,
-          "low_temp_f": 57.4,
+          "high_temp_f": 67.4,
+          "low_temp_f": 59.4,
           "is_rest_day": false
         },
         {
           "day_number": 28,
-          "date": "2026-06-28",
+          "date": "2026-01-28",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.9,
-          "low_temp_f": 57.9,
+          "high_temp_f": 66.7,
+          "low_temp_f": 51.3,
           "is_rest_day": false
         },
         {
           "day_number": 29,
-          "date": "2026-06-29",
+          "date": "2026-01-29",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 78.4,
-          "low_temp_f": 58.4,
+          "high_temp_f": 52.7,
+          "low_temp_f": 39.4,
           "is_rest_day": false
         },
         {
           "day_number": 30,
-          "date": "2026-06-30",
+          "date": "2026-01-30",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 73.9,
-          "low_temp_f": 53.9,
+          "high_temp_f": 46.6,
+          "low_temp_f": 34.6,
           "is_rest_day": false
         },
         {
           "day_number": 31,
-          "date": "2026-07-01",
+          "date": "2026-01-31",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 76.8,
-          "low_temp_f": 56.8,
+          "high_temp_f": 49.8,
+          "low_temp_f": 35.0,
           "is_rest_day": false
         },
         {
           "day_number": 32,
-          "date": "2026-07-02",
+          "date": "2026-02-01",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.3,
-          "low_temp_f": 57.3,
+          "high_temp_f": 50.2,
+          "low_temp_f": 25.9,
           "is_rest_day": false
         },
         {
           "day_number": 33,
-          "date": "2026-07-03",
+          "date": "2026-02-02",
           "origin": "Santa Fe, New Mexico",
           "destination": "Austin, Texas",
           "distance_miles": 67.11382482315386,
           "ascent_feet": 88.88888888888889,
-          "high_temp_f": 77.8,
-          "low_temp_f": 57.8,
+          "high_temp_f": 31.3,
+          "low_temp_f": 20.7,
+          "is_rest_day": false
+        }
+      ],
+      "violations": [
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-19",
+          "observed_value": 9.9,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-20",
+          "observed_value": 13.1,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-21",
+          "observed_value": 12.1,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-22",
+          "observed_value": 12.6,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-23",
+          "observed_value": 18.6,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Santa Fe, New Mexico",
+          "date": "2026-01-24",
+          "observed_value": 21.8,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MIN_LOW",
+          "location": "Austin, Texas",
+          "date": "2026-02-02",
+          "observed_value": 20.7,
+          "threshold_limit": 24,
+          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Austin, Texas."
+        }
+      ]
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Salem, Oregon",
+      "completion_city": "Austin, Texas",
+      "via_cities": [
+        "Carson City, Nevada",
+        "Sacramento, California",
+        "Phoenix, Arizona",
+        "Santa Fe, New Mexico"
+      ],
+      "start_date": "2026-03-01",
+      "scores": {
+        "weather": 0.4801,
+        "distance": 0.9663,
+        "hills": 0.7964,
+        "total": 0.705
+      },
+      "legs": [
+        {
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 432.47706020132006,
+          "ascent_feet": 800.0
+        },
+        {
+          "origin": "Carson City, Nevada",
+          "destination": "Sacramento, California",
+          "distance_miles": 101.09739497255198,
+          "ascent_feet": 510.0
+        },
+        {
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 633.941812356218,
+          "ascent_feet": 1920.0
+        },
+        {
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 381.3338324669747,
+          "ascent_feet": 1060.0
+        },
+        {
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 604.0244234083848,
+          "ascent_feet": 800.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2026-03-01",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 49.8,
+          "low_temp_f": 40.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2026-03-02",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 49.5,
+          "low_temp_f": 44.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2026-03-03",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 45.2,
+          "low_temp_f": 42.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2026-03-04",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 44.9,
+          "low_temp_f": 43.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2026-03-05",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 44.7,
+          "low_temp_f": 37.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2026-03-06",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 44.0,
+          "low_temp_f": 30.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2026-03-07",
+          "origin": "Salem, Oregon",
+          "destination": "Carson City, Nevada",
+          "distance_miles": 61.782437171617154,
+          "ascent_feet": 114.28571428571429,
+          "high_temp_f": 51.1,
+          "low_temp_f": 28.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2026-03-08",
+          "origin": "Carson City, Nevada",
+          "destination": "Sacramento, California",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 65.2,
+          "low_temp_f": 46.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2026-03-09",
+          "origin": "Carson City, Nevada",
+          "destination": "Sacramento, California",
+          "distance_miles": 50.54869748627599,
+          "ascent_feet": 255.0,
+          "high_temp_f": 60.9,
+          "low_temp_f": 52.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2026-03-10",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 82.0,
+          "low_temp_f": 56.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2026-03-11",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 82.6,
+          "low_temp_f": 56.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2026-03-12",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 82.5,
+          "low_temp_f": 60.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2026-03-13",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 78.9,
+          "low_temp_f": 50.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2026-03-14",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 68.6,
+          "low_temp_f": 39.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2026-03-15",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 67.6,
+          "low_temp_f": 40.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2026-03-16",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 69.6,
+          "low_temp_f": 40.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2026-03-17",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 73.3,
+          "low_temp_f": 44.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2026-03-18",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 79.6,
+          "low_temp_f": 46.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2026-03-19",
+          "origin": "Sacramento, California",
+          "destination": "Phoenix, Arizona",
+          "distance_miles": 63.394181235621794,
+          "ascent_feet": 192.0,
+          "high_temp_f": 83.8,
+          "low_temp_f": 49.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2026-03-20",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 58.3,
+          "low_temp_f": 28.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2026-03-21",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 61.5,
+          "low_temp_f": 32.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2026-03-22",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 61.0,
+          "low_temp_f": 38.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2026-03-23",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 56.0,
+          "low_temp_f": 39.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2026-03-24",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 55.6,
+          "low_temp_f": 36.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2026-03-25",
+          "origin": "Phoenix, Arizona",
+          "destination": "Santa Fe, New Mexico",
+          "distance_miles": 63.55563874449578,
+          "ascent_feet": 176.66666666666666,
+          "high_temp_f": 51.2,
+          "low_temp_f": 41.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2026-03-26",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 70.1,
+          "low_temp_f": 64.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2026-03-27",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.9,
+          "low_temp_f": 64.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2026-03-28",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 76.2,
+          "low_temp_f": 65.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2026-03-29",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.8,
+          "low_temp_f": 70.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2026-03-30",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.9,
+          "low_temp_f": 53.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2026-03-31",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 61.9,
+          "low_temp_f": 44.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2026-04-01",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 75.8,
+          "low_temp_f": 43.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2026-04-02",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 74.9,
+          "low_temp_f": 49.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2026-04-03",
+          "origin": "Santa Fe, New Mexico",
+          "destination": "Austin, Texas",
+          "distance_miles": 67.11382482315386,
+          "ascent_feet": 88.88888888888889,
+          "high_temp_f": 74.7,
+          "low_temp_f": 48.8,
           "is_rest_day": false
         }
       ],
       "violations": []
     }
-  ]
+  ],
+  "data_attribution": {
+    "provider": "Open-Meteo",
+    "provider_url": "https://open-meteo.com/",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "Data has been transformed into itinerary-level schedule summaries."
+  }
 }
