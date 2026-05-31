@@ -199,8 +199,8 @@ class RequestParser:
             start_date=start_date
         )
         
-        from src.scoring import compute_geodesic_baseline
-        itinerary.original_geodesic_baseline = compute_geodesic_baseline(itinerary)
+        from src.scoring import compute_shortest_geodesic_baseline
+        itinerary.original_geodesic_baseline = compute_shortest_geodesic_baseline(itinerary)
         
         return itinerary, effective_config
 

@@ -27,6 +27,24 @@ def compute_geodesic_baseline(itinerary: Itinerary) -> float:
     total += haversine_distance(current, itinerary.completion_city)
     return total
 
+def compute_shortest_geodesic_baseline(itinerary: Itinerary) -> float:
+    """Calculates the baseline sequential geodesic distance along the shortest greedy NN TSP path."""
+    unvisited = list(itinerary.via_cities)
+    sequence = [itinerary.start_city]
+    
+    while unvisited:
+        current = sequence[-1]
+        best_city = min(unvisited, key=lambda c: haversine_distance(current, c))
+        unvisited.remove(best_city)
+        sequence.append(best_city)
+        
+    sequence.append(itinerary.completion_city)
+    
+    total = 0.0
+    for i in range(len(sequence) - 1):
+        total += haversine_distance(sequence[i], sequence[i+1])
+    return total
+
 class ScoringEngine:
     """Computes soft objective desirability scores and deterministically ranks itineraries."""
     
