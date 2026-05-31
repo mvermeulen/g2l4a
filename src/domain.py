@@ -95,3 +95,24 @@ class Itinerary:
     scores: Scores = field(default_factory=Scores)
     is_feasible: bool = True
     violation_details: List[Dict] = field(default_factory=list)
+
+
+@dataclass(frozen=True)
+class ConstraintViolation:
+    code: str
+    location: str
+    date: str
+    observed_value: float
+    threshold_limit: float
+    remediation_hint: str
+
+    def to_dict(self) -> dict:
+        return {
+            "code": self.code,
+            "location": self.location,
+            "date": self.date,
+            "observed_value": self.observed_value,
+            "threshold_limit": self.threshold_limit,
+            "remediation_hint": self.remediation_hint
+        }
+

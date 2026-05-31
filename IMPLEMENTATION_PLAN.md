@@ -77,6 +77,7 @@ Documentation milestone:
 - `docs/errors.md`: validation error taxonomy with remediation guidance.
 
 ## Phase 2 - Provider Integration (Routing, Weather, Elevation)
+**Status: Completed** ✅
 
 Goal:
 - Build provider adapters and caching so segment and weather data are fetchable and reproducible.
@@ -100,6 +101,7 @@ Documentation milestone:
 - `docs/caching.md`: key design, invalidation, TTLs, reproducibility rules.
 
 ## Phase 3 - Feasibility Engine (Hard Constraints)
+**Status: Completed** ✅
 
 Goal:
 - Reject infeasible candidates early and return actionable diagnostics.
