@@ -14,5 +14,8 @@ weather_constraints:
   max_avg_high_f: 90
   min_avg_low_f: 24
 
+weather_provider:
+  name: open_meteo
+
 output:
   alternatives_count: 4
