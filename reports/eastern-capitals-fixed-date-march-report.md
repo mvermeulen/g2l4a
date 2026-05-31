@@ -3,11 +3,7 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2027-03-01 | Yes | 0.5668 | 0.1416 | 1.0000 | 0.8125 | 3629.2 mi | 15940 ft | Baseline / Optimal Route |
-| Alternative 1 | 2027-03-01 | Yes | 0.5040 | 0.4103 | 0.3287 | 0.8831 | 6338.3 mi | 9940 ft | Alternative via-city sequence, same date |
-| Alternative 2 | 2027-03-01 | Yes | 0.4973 | 0.4022 | 0.3381 | 0.8595 | 6249.7 mi | 11940 ft | Alternative via-city sequence, same date |
-| Alternative 3 | 2027-03-01 | Yes | 0.4967 | 0.4011 | 0.3376 | 0.8595 | 6254.5 mi | 11940 ft | Alternative via-city sequence, same date |
-| Alternative 4 | 2027-03-01 | Yes | 0.4966 | 0.4027 | 0.3350 | 0.8595 | 6278.5 mi | 11940 ft | Alternative via-city sequence, same date |
+| **Best Recommendation** | 2027-03-01 | Yes | 0.6279 | 0.2773 | 1.0000 | 0.8125 | 3629.2 mi | 15940 ft | Baseline / Optimal Route |
 
 ## Detailed Recommendations
 ### Best Recommendation
@@ -16,557 +12,82 @@
 - **Total Distance**: 3629.2 miles
 - **Total Climbing**: 15940 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.142
+  - Weather Preference: 0.277
   - Distance Score: 1.000
   - Climbing Score: 0.812
-  - **Total Desirability Score**: 0.567
+  - **Total Desirability Score**: 0.628
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | 2027-03-01 | Austin, Texas | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 6) |
-| 2 | 2027-03-02 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 6) |
-| 3 | 2027-03-03 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.1°F, Low: 27.1°F | Transit (Day 3 of 6) |
-| 4 | 2027-03-04 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 4 of 6) |
-| 5 | 2027-03-05 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 5 of 6) |
-| 6 | 2027-03-06 | In Transit (from Austin, Texas) | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 48.6°F, Low: 28.6°F | Arrived (Day 6 of 6) |
-| 7 | 2027-03-07 | Oklahoma City, Oklahoma | In Transit (to Topeka, Kansas) | 66.7 | 340 | Avg High: 44.3°F, Low: 24.3°F | Transit (Day 1 of 4) |
-| 8 | 2027-03-08 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Topeka, Kansas) | 66.7 | 340 | Avg High: 44.8°F, Low: 24.8°F | Transit (Day 2 of 4) |
-| 9 | 2027-03-09 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Topeka, Kansas) | 66.7 | 340 | Avg High: 45.3°F, Low: 25.3°F | Transit (Day 3 of 4) |
-| 10 | 2027-03-10 | In Transit (from Oklahoma City, Oklahoma) | Topeka, Kansas | 66.7 | 340 | Avg High: 45.8°F, Low: 25.8°F | Arrived (Day 4 of 4) |
-| 11 | 2027-03-11 | Topeka, Kansas | In Transit (to Jefferson City, Missouri) | 63.7 | 370 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 3) |
-| 12 | 2027-03-12 | In Transit (from Topeka, Kansas) | In Transit (to Jefferson City, Missouri) | 63.7 | 370 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 3) |
-| 13 | 2027-03-13 | In Transit (from Topeka, Kansas) | Jefferson City, Missouri | 63.7 | 370 | Avg High: 47.1°F, Low: 27.1°F | Arrived (Day 3 of 3) |
-| 14 | 2027-03-14 | Jefferson City, Missouri | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 50.2°F, Low: 30.2°F | Transit (Day 1 of 4) |
-| 15 | 2027-03-15 | In Transit (from Jefferson City, Missouri) | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 45.7°F, Low: 25.7°F | Transit (Day 2 of 4) |
-| 16 | 2027-03-16 | In Transit (from Jefferson City, Missouri) | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 46.2°F, Low: 26.2°F | Transit (Day 3 of 4) |
-| 17 | 2027-03-17 | In Transit (from Jefferson City, Missouri) | Little Rock, Arkansas | 66.1 | 422 | Avg High: 46.7°F, Low: 26.7°F | Arrived (Day 4 of 4) |
-| 18 | 2027-03-18 | Little Rock, Arkansas | In Transit (to Jackson, Mississippi) | 69.3 | 457 | Avg High: 48.7°F, Low: 28.7°F | Transit (Day 1 of 3) |
-| 19 | 2027-03-19 | In Transit (from Little Rock, Arkansas) | In Transit (to Jackson, Mississippi) | 69.3 | 457 | Avg High: 49.2°F, Low: 29.2°F | Transit (Day 2 of 3) |
-| 20 | 2027-03-20 | In Transit (from Little Rock, Arkansas) | Jackson, Mississippi | 69.3 | 457 | Avg High: 49.7°F, Low: 29.7°F | Arrived (Day 3 of 3) |
-| 21 | 2027-03-21 | Jackson, Mississippi | In Transit (to Baton Rouge, Louisiana) | 46.8 | 83 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 1 of 3) |
-| 22 | 2027-03-22 | In Transit (from Jackson, Mississippi) | In Transit (to Baton Rouge, Louisiana) | 46.8 | 83 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 2 of 3) |
-| 23 | 2027-03-23 | In Transit (from Jackson, Mississippi) | Baton Rouge, Louisiana | 46.8 | 83 | Avg High: 52.1°F, Low: 32.1°F | Arrived (Day 3 of 3) |
-| 24 | 2027-03-24 | Baton Rouge, Louisiana | In Transit (to Montgomery, Alabama) | 63.3 | 226 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 1 of 5) |
-| 25 | 2027-03-25 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Montgomery, Alabama) | 63.3 | 226 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 2 of 5) |
-| 26 | 2027-03-26 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Montgomery, Alabama) | 63.3 | 226 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 3 of 5) |
-| 27 | 2027-03-27 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Montgomery, Alabama) | 63.3 | 226 | Avg High: 52.1°F, Low: 32.1°F | Transit (Day 4 of 5) |
-| 28 | 2027-03-28 | In Transit (from Baton Rouge, Louisiana) | Montgomery, Alabama | 63.3 | 226 | Avg High: 47.6°F, Low: 27.6°F | Arrived (Day 5 of 5) |
-| 29 | 2027-03-29 | Montgomery, Alabama | In Transit (to Tallahassee, Florida) | 59.8 | 200 | Avg High: 53.6°F, Low: 33.6°F | Transit (Day 1 of 3) |
-| 30 | 2027-03-30 | In Transit (from Montgomery, Alabama) | In Transit (to Tallahassee, Florida) | 59.8 | 200 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 2 of 3) |
-| 31 | 2027-03-31 | In Transit (from Montgomery, Alabama) | Tallahassee, Florida | 59.8 | 200 | Avg High: 49.6°F, Low: 29.6°F | Arrived (Day 3 of 3) |
-| 32 | 2027-04-01 | Tallahassee, Florida | In Transit (to Atlanta, Georgia) | 57.1 | 32 | Avg High: 59.0°F, Low: 39.0°F | Transit (Day 1 of 4) |
-| 33 | 2027-04-02 | In Transit (from Tallahassee, Florida) | In Transit (to Atlanta, Georgia) | 57.1 | 32 | Avg High: 59.5°F, Low: 39.5°F | Transit (Day 2 of 4) |
-| 34 | 2027-04-03 | In Transit (from Tallahassee, Florida) | In Transit (to Atlanta, Georgia) | 57.1 | 32 | Avg High: 60.0°F, Low: 40.0°F | Transit (Day 3 of 4) |
-| 35 | 2027-04-04 | In Transit (from Tallahassee, Florida) | Atlanta, Georgia | 57.1 | 32 | Avg High: 55.5°F, Low: 35.5°F | Arrived (Day 4 of 4) |
-| 36 | 2027-04-05 | Atlanta, Georgia | In Transit (to Nashville, Tennessee) | 53.7 | 98 | Avg High: 54.6°F, Low: 34.6°F | Transit (Day 1 of 4) |
-| 37 | 2027-04-06 | In Transit (from Atlanta, Georgia) | In Transit (to Nashville, Tennessee) | 53.7 | 98 | Avg High: 55.1°F, Low: 35.1°F | Transit (Day 2 of 4) |
-| 38 | 2027-04-07 | In Transit (from Atlanta, Georgia) | In Transit (to Nashville, Tennessee) | 53.7 | 98 | Avg High: 55.6°F, Low: 35.6°F | Transit (Day 3 of 4) |
-| 39 | 2027-04-08 | In Transit (from Atlanta, Georgia) | Nashville, Tennessee | 53.7 | 98 | Avg High: 56.1°F, Low: 36.1°F | Arrived (Day 4 of 4) |
-| 40 | 2027-04-09 | Nashville, Tennessee | In Transit (to Frankfort, Kentucky) | 58.5 | 17 | Avg High: 52.4°F, Low: 32.4°F | Transit (Day 1 of 3) |
-| 41 | 2027-04-10 | In Transit (from Nashville, Tennessee) | In Transit (to Frankfort, Kentucky) | 58.5 | 17 | Avg High: 52.9°F, Low: 32.9°F | Transit (Day 2 of 3) |
-| 42 | 2027-04-11 | In Transit (from Nashville, Tennessee) | Frankfort, Kentucky | 58.5 | 17 | Avg High: 53.4°F, Low: 33.4°F | Arrived (Day 3 of 3) |
-| 43 | 2027-04-12 | Frankfort, Kentucky | In Transit (to Charleston, West Virginia) | 58.6 | 513 | Avg High: 55.8°F, Low: 35.8°F | Transit (Day 1 of 3) |
-| 44 | 2027-04-13 | In Transit (from Frankfort, Kentucky) | In Transit (to Charleston, West Virginia) | 58.6 | 513 | Avg High: 56.3°F, Low: 36.3°F | Transit (Day 2 of 3) |
-| 45 | 2027-04-14 | In Transit (from Frankfort, Kentucky) | Charleston, West Virginia | 58.6 | 513 | Avg High: 51.8°F, Low: 31.8°F | Arrived (Day 3 of 3) |
-| 46 | 2027-04-15 | Charleston, West Virginia | In Transit (to Columbia, South Carolina) | 60.4 | 226 | Avg High: 58.3°F, Low: 38.3°F | Transit (Day 1 of 5) |
-| 47 | 2027-04-16 | In Transit (from Charleston, West Virginia) | In Transit (to Columbia, South Carolina) | 60.4 | 226 | Avg High: 58.8°F, Low: 38.8°F | Transit (Day 2 of 5) |
-| 48 | 2027-04-17 | In Transit (from Charleston, West Virginia) | In Transit (to Columbia, South Carolina) | 60.4 | 226 | Avg High: 59.3°F, Low: 39.3°F | Transit (Day 3 of 5) |
-| 49 | 2027-04-18 | In Transit (from Charleston, West Virginia) | In Transit (to Columbia, South Carolina) | 60.4 | 226 | Avg High: 59.8°F, Low: 39.8°F | Transit (Day 4 of 5) |
-| 50 | 2027-04-19 | In Transit (from Charleston, West Virginia) | Columbia, South Carolina | 60.4 | 226 | Avg High: 55.3°F, Low: 35.3°F | Arrived (Day 5 of 5) |
-| 51 | 2027-04-20 | Columbia, South Carolina | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 54.4°F, Low: 34.4°F | Transit (Day 1 of 3) |
-| 52 | 2027-04-21 | In Transit (from Columbia, South Carolina) | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 54.9°F, Low: 34.9°F | Transit (Day 2 of 3) |
-| 53 | 2027-04-22 | In Transit (from Columbia, South Carolina) | Raleigh, North Carolina | 61.0 | 60 | Avg High: 55.4°F, Low: 35.4°F | Arrived (Day 3 of 3) |
-| 54 | 2027-04-23 | Raleigh, North Carolina | In Transit (to Richmond, Virginia) | 69.3 | 935 | Avg High: 54.0°F, Low: 34.0°F | Transit (Day 1 of 2) |
-| 55 | 2027-04-24 | In Transit (from Raleigh, North Carolina) | Richmond, Virginia | 69.3 | 935 | Avg High: 54.5°F, Low: 34.5°F | Arrived (Day 2 of 2) |
-| 56 | 2027-04-25 | Richmond, Virginia | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 50.8°F, Low: 30.8°F | Transit (Day 1 of 3) |
-| 57 | 2027-04-26 | In Transit (from Richmond, Virginia) | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 51.3°F, Low: 31.3°F | Transit (Day 2 of 3) |
-| 58 | 2027-04-27 | In Transit (from Richmond, Virginia) | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 51.8°F, Low: 31.8°F | Arrived (Day 3 of 3) |
-| 59 | 2027-04-28 | Harrisburg, Pennsylvania | In Transit (to Washington, DC) | 47.3 | 950 | Avg High: 54.4°F, Low: 34.4°F | Transit (Day 1 of 2) |
-| 60 | 2027-04-29 | In Transit (from Harrisburg, Pennsylvania) | Washington, DC | 47.3 | 950 | Avg High: 54.9°F, Low: 34.9°F | Arrived (Day 2 of 2) |
+| 1 | 2027-03-01 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 2 | 2027-03-02 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 3 | 2027-03-03 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 4 | 2027-03-04 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 5 | 2027-03-05 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 6 | 2027-03-06 | Austin, Texas | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 84.2°F, Low: 39.5°F (open-meteo) |  |
+| 7 | 2027-03-07 | Oklahoma City, Oklahoma | Topeka, Kansas | 66.7 | 340 | Avg High: 79.9°F, Low: 34.1°F (open-meteo) |  |
+| 8 | 2027-03-08 | Oklahoma City, Oklahoma | Topeka, Kansas | 66.7 | 340 | Avg High: 79.9°F, Low: 34.1°F (wikipedia) |  |
+| 9 | 2027-03-09 | Oklahoma City, Oklahoma | Topeka, Kansas | 66.7 | 340 | Avg High: 79.9°F, Low: 34.1°F (wikipedia) |  |
+| 10 | 2027-03-10 | Oklahoma City, Oklahoma | Topeka, Kansas | 66.7 | 340 | Avg High: 79.9°F, Low: 34.1°F (wikipedia) |  |
+| 11 | 2027-03-11 | Topeka, Kansas | Jefferson City, Missouri | 63.7 | 370 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
+| 12 | 2027-03-12 | Topeka, Kansas | Jefferson City, Missouri | 63.7 | 370 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
+| 13 | 2027-03-13 | Topeka, Kansas | Jefferson City, Missouri | 63.7 | 370 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
+| 14 | 2027-03-14 | Jefferson City, Missouri | Little Rock, Arkansas | 66.1 | 422 | Avg High: 82.2°F, Low: 41.8°F (open-meteo) |  |
+| 15 | 2027-03-15 | Jefferson City, Missouri | Little Rock, Arkansas | 66.1 | 422 | Avg High: 82.2°F, Low: 41.8°F (open-meteo) |  |
+| 16 | 2027-03-16 | Jefferson City, Missouri | Little Rock, Arkansas | 66.1 | 422 | Avg High: 82.2°F, Low: 41.8°F (open-meteo) |  |
+| 17 | 2027-03-17 | Jefferson City, Missouri | Little Rock, Arkansas | 66.1 | 422 | Avg High: 82.2°F, Low: 41.8°F (open-meteo) |  |
+| 18 | 2027-03-18 | Little Rock, Arkansas | Jackson, Mississippi | 69.3 | 457 | Avg High: 83.5°F, Low: 46.4°F (open-meteo) |  |
+| 19 | 2027-03-19 | Little Rock, Arkansas | Jackson, Mississippi | 69.3 | 457 | Avg High: 83.5°F, Low: 46.4°F (open-meteo) |  |
+| 20 | 2027-03-20 | Little Rock, Arkansas | Jackson, Mississippi | 69.3 | 457 | Avg High: 83.5°F, Low: 46.4°F (open-meteo) |  |
+| 21 | 2027-03-21 | Jackson, Mississippi | Baton Rouge, Louisiana | 46.8 | 83 | Avg High: 84.3°F, Low: 51.0°F (open-meteo) |  |
+| 22 | 2027-03-22 | Jackson, Mississippi | Baton Rouge, Louisiana | 46.8 | 83 | Avg High: 84.3°F, Low: 51.0°F (open-meteo) |  |
+| 23 | 2027-03-23 | Jackson, Mississippi | Baton Rouge, Louisiana | 46.8 | 83 | Avg High: 84.3°F, Low: 51.0°F (open-meteo) |  |
+| 24 | 2027-03-24 | Baton Rouge, Louisiana | Montgomery, Alabama | 63.3 | 226 | Avg High: 84.7°F, Low: 46.5°F (open-meteo) |  |
+| 25 | 2027-03-25 | Baton Rouge, Louisiana | Montgomery, Alabama | 63.3 | 226 | Avg High: 84.7°F, Low: 46.5°F (open-meteo) |  |
+| 26 | 2027-03-26 | Baton Rouge, Louisiana | Montgomery, Alabama | 63.3 | 226 | Avg High: 84.7°F, Low: 46.5°F (open-meteo) |  |
+| 27 | 2027-03-27 | Baton Rouge, Louisiana | Montgomery, Alabama | 63.3 | 226 | Avg High: 84.7°F, Low: 46.5°F (open-meteo) |  |
+| 28 | 2027-03-28 | Baton Rouge, Louisiana | Montgomery, Alabama | 63.3 | 226 | Avg High: 84.7°F, Low: 46.5°F (wikipedia) |  |
+| 29 | 2027-03-29 | Montgomery, Alabama | Tallahassee, Florida | 59.8 | 200 | Avg High: 86.0°F, Low: 48.6°F (open-meteo) |  |
+| 30 | 2027-03-30 | Montgomery, Alabama | Tallahassee, Florida | 59.8 | 200 | Avg High: 86.0°F, Low: 48.6°F (open-meteo) |  |
+| 31 | 2027-03-31 | Montgomery, Alabama | Tallahassee, Florida | 59.8 | 200 | Avg High: 86.0°F, Low: 48.6°F (open-meteo) |  |
+| 32 | 2027-04-01 | Tallahassee, Florida | Atlanta, Georgia | 57.1 | 32 | Avg High: 84.7°F, Low: 52.5°F (open-meteo) |  |
+| 33 | 2027-04-02 | Tallahassee, Florida | Atlanta, Georgia | 57.1 | 32 | Avg High: 84.7°F, Low: 52.5°F (open-meteo) |  |
+| 34 | 2027-04-03 | Tallahassee, Florida | Atlanta, Georgia | 57.1 | 32 | Avg High: 84.7°F, Low: 52.5°F (open-meteo) |  |
+| 35 | 2027-04-04 | Tallahassee, Florida | Atlanta, Georgia | 57.1 | 32 | Avg High: 84.7°F, Low: 52.5°F (open-meteo) |  |
+| 36 | 2027-04-05 | Atlanta, Georgia | Nashville, Tennessee | 53.7 | 98 | Avg High: 85.3°F, Low: 48.9°F (open-meteo) |  |
+| 37 | 2027-04-06 | Atlanta, Georgia | Nashville, Tennessee | 53.7 | 98 | Avg High: 85.3°F, Low: 48.9°F (open-meteo) |  |
+| 38 | 2027-04-07 | Atlanta, Georgia | Nashville, Tennessee | 53.7 | 98 | Avg High: 85.3°F, Low: 48.9°F (open-meteo) |  |
+| 39 | 2027-04-08 | Atlanta, Georgia | Nashville, Tennessee | 53.7 | 98 | Avg High: 85.3°F, Low: 48.9°F (open-meteo) |  |
+| 40 | 2027-04-09 | Nashville, Tennessee | Frankfort, Kentucky | 58.5 | 17 | Avg High: 82.7°F, Low: 44.8°F (open-meteo) |  |
+| 41 | 2027-04-10 | Nashville, Tennessee | Frankfort, Kentucky | 58.5 | 17 | Avg High: 82.7°F, Low: 44.8°F (open-meteo) |  |
+| 42 | 2027-04-11 | Nashville, Tennessee | Frankfort, Kentucky | 58.5 | 17 | Avg High: 82.7°F, Low: 44.8°F (open-meteo) |  |
+| 43 | 2027-04-12 | Frankfort, Kentucky | Charleston, West Virginia | 58.6 | 513 | Avg High: 86.8°F, Low: 44.5°F (open-meteo) |  |
+| 44 | 2027-04-13 | Frankfort, Kentucky | Charleston, West Virginia | 58.6 | 513 | Avg High: 86.8°F, Low: 44.5°F (open-meteo) |  |
+| 45 | 2027-04-14 | Frankfort, Kentucky | Charleston, West Virginia | 58.6 | 513 | Avg High: 86.8°F, Low: 44.5°F (open-meteo) |  |
+| 46 | 2027-04-15 | Charleston, West Virginia | Columbia, South Carolina | 60.4 | 226 | Avg High: 89.0°F, Low: 51.5°F (open-meteo) |  |
+| 47 | 2027-04-16 | Charleston, West Virginia | Columbia, South Carolina | 60.4 | 226 | Avg High: 89.0°F, Low: 51.5°F (open-meteo) |  |
+| 48 | 2027-04-17 | Charleston, West Virginia | Columbia, South Carolina | 60.4 | 226 | Avg High: 89.0°F, Low: 51.5°F (open-meteo) |  |
+| 49 | 2027-04-18 | Charleston, West Virginia | Columbia, South Carolina | 60.4 | 226 | Avg High: 89.0°F, Low: 51.5°F (open-meteo) |  |
+| 50 | 2027-04-19 | Charleston, West Virginia | Columbia, South Carolina | 60.4 | 226 | Avg High: 89.0°F, Low: 51.5°F (open-meteo) |  |
+| 51 | 2027-04-20 | Columbia, South Carolina | Raleigh, North Carolina | 61.0 | 60 | Avg High: 86.4°F, Low: 48.9°F (open-meteo) |  |
+| 52 | 2027-04-21 | Columbia, South Carolina | Raleigh, North Carolina | 61.0 | 60 | Avg High: 86.4°F, Low: 48.9°F (open-meteo) |  |
+| 53 | 2027-04-22 | Columbia, South Carolina | Raleigh, North Carolina | 61.0 | 60 | Avg High: 86.4°F, Low: 48.9°F (open-meteo) |  |
+| 54 | 2027-04-23 | Raleigh, North Carolina | Richmond, Virginia | 69.3 | 935 | Avg High: 87.7°F, Low: 46.4°F (open-meteo) |  |
+| 55 | 2027-04-24 | Raleigh, North Carolina | Richmond, Virginia | 69.3 | 935 | Avg High: 87.7°F, Low: 46.4°F (open-meteo) |  |
+| 56 | 2027-04-25 | Richmond, Virginia | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 83.5°F, Low: 42.5°F (open-meteo) |  |
+| 57 | 2027-04-26 | Richmond, Virginia | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 83.5°F, Low: 42.5°F (open-meteo) |  |
+| 58 | 2027-04-27 | Richmond, Virginia | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 83.5°F, Low: 42.5°F (open-meteo) |  |
+| 59 | 2027-04-28 | Harrisburg, Pennsylvania | Washington, DC | 47.3 | 950 | Avg High: 54.4°F, Low: 34.4°F (open-meteo) |  |
+| 60 | 2027-04-29 | Harrisburg, Pennsylvania | Washington, DC | 47.3 | 950 | Avg High: 54.9°F, Low: 34.9°F (open-meteo) |  |
 
 </details>
 
 ---
 
-### Alternative 1
-**Feasible**: Yes
-- **Start Date**: 2027-03-01
-- **Total Distance**: 6338.3 miles
-- **Total Climbing**: 9940 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.410
-  - Distance Score: 0.329
-  - Climbing Score: 0.883
-  - **Total Desirability Score**: 0.504
+## Data Attribution
+Weather data by [Open-Meteo.com](https://open-meteo.com/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data has been transformed into itinerary-level schedule summaries.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-01 | Austin, Texas | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 6) |
-| 2 | 2027-03-02 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 6) |
-| 3 | 2027-03-03 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.1°F, Low: 27.1°F | Transit (Day 3 of 6) |
-| 4 | 2027-03-04 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 4 of 6) |
-| 5 | 2027-03-05 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 5 of 6) |
-| 6 | 2027-03-06 | In Transit (from Austin, Texas) | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 48.6°F, Low: 28.6°F | Arrived (Day 6 of 6) |
-| 7 | 2027-03-07 | Oklahoma City, Oklahoma | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 1 of 13) |
-| 8 | 2027-03-08 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 2 of 13) |
-| 9 | 2027-03-09 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Transit (Day 3 of 13) |
-| 10 | 2027-03-10 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 13) |
-| 11 | 2027-03-11 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 5 of 13) |
-| 12 | 2027-03-12 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 6 of 13) |
-| 13 | 2027-03-13 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 7 of 13) |
-| 14 | 2027-03-14 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 8 of 13) |
-| 15 | 2027-03-15 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 9 of 13) |
-| 16 | 2027-03-16 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.1°F, Low: 32.1°F | Transit (Day 10 of 13) |
-| 17 | 2027-03-17 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 11 of 13) |
-| 18 | 2027-03-18 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 12 of 13) |
-| 19 | 2027-03-19 | In Transit (from Oklahoma City, Oklahoma) | Tallahassee, Florida | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Arrived (Day 13 of 13) |
-| 20 | 2027-03-20 | Tallahassee, Florida | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 1 of 7) |
-| 21 | 2027-03-21 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 2 of 7) |
-| 22 | 2027-03-22 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.6°F, Low: 28.6°F | Transit (Day 3 of 7) |
-| 23 | 2027-03-23 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 7) |
-| 24 | 2027-03-24 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 44.6°F, Low: 24.6°F | Transit (Day 5 of 7) |
-| 25 | 2027-03-25 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 45.1°F, Low: 25.1°F | Transit (Day 6 of 7) |
-| 26 | 2027-03-26 | In Transit (from Tallahassee, Florida) | Nashville, Tennessee | 60.1 | 6 | Avg High: 45.6°F, Low: 25.6°F | Arrived (Day 7 of 7) |
-| 27 | 2027-03-27 | Nashville, Tennessee | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 1 of 7) |
-| 28 | 2027-03-28 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 2 of 7) |
-| 29 | 2027-03-29 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 3 of 7) |
-| 30 | 2027-03-30 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 4 of 7) |
-| 31 | 2027-03-31 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 5 of 7) |
-| 32 | 2027-04-01 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 6 of 7) |
-| 33 | 2027-04-02 | In Transit (from Nashville, Tennessee) | Baton Rouge, Louisiana | 67.0 | 81 | Avg High: 61.1°F, Low: 41.1°F | Arrived (Day 7 of 7) |
-| 34 | 2027-04-03 | Baton Rouge, Louisiana | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 60.0°F, Low: 40.0°F | Transit (Day 1 of 7) |
-| 35 | 2027-04-04 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 55.5°F, Low: 35.5°F | Transit (Day 2 of 7) |
-| 36 | 2027-04-05 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 3 of 7) |
-| 37 | 2027-04-06 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.5°F, Low: 36.5°F | Transit (Day 4 of 7) |
-| 38 | 2027-04-07 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.0°F, Low: 37.0°F | Transit (Day 5 of 7) |
-| 39 | 2027-04-08 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.5°F, Low: 37.5°F | Transit (Day 6 of 7) |
-| 40 | 2027-04-09 | In Transit (from Baton Rouge, Louisiana) | Atlanta, Georgia | 65.4 | 94 | Avg High: 58.0°F, Low: 38.0°F | Arrived (Day 7 of 7) |
-| 41 | 2027-04-10 | Atlanta, Georgia | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.2°F, Low: 39.2°F | Transit (Day 1 of 5) |
-| 42 | 2027-04-11 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.7°F, Low: 39.7°F | Transit (Day 2 of 5) |
-| 43 | 2027-04-12 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.2°F, Low: 40.2°F | Transit (Day 3 of 5) |
-| 44 | 2027-04-13 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.7°F, Low: 40.7°F | Transit (Day 4 of 5) |
-| 45 | 2027-04-14 | In Transit (from Atlanta, Georgia) | Jackson, Mississippi | 70.0 | 14 | Avg High: 61.2°F, Low: 41.2°F | Arrived (Day 5 of 5) |
-| 46 | 2027-04-15 | Jackson, Mississippi | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 1 of 4) |
-| 47 | 2027-04-16 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 2 of 4) |
-| 48 | 2027-04-17 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 56.6°F, Low: 36.6°F | Transit (Day 3 of 4) |
-| 49 | 2027-04-18 | In Transit (from Jackson, Mississippi) | Montgomery, Alabama | 56.5 | 135 | Avg High: 57.1°F, Low: 37.1°F | Arrived (Day 4 of 4) |
-| 50 | 2027-04-19 | Montgomery, Alabama | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.3°F, Low: 35.3°F | Transit (Day 1 of 5) |
-| 51 | 2027-04-20 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.8°F, Low: 35.8°F | Transit (Day 2 of 5) |
-| 52 | 2027-04-21 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.3°F, Low: 36.3°F | Transit (Day 3 of 5) |
-| 53 | 2027-04-22 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.8°F, Low: 36.8°F | Transit (Day 4 of 5) |
-| 54 | 2027-04-23 | In Transit (from Montgomery, Alabama) | Columbia, South Carolina | 64.9 | 40 | Avg High: 57.3°F, Low: 37.3°F | Arrived (Day 5 of 5) |
-| 55 | 2027-04-24 | Columbia, South Carolina | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.4°F, Low: 36.4°F | Transit (Day 1 of 3) |
-| 56 | 2027-04-25 | In Transit (from Columbia, South Carolina) | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.9°F, Low: 36.9°F | Transit (Day 2 of 3) |
-| 57 | 2027-04-26 | In Transit (from Columbia, South Carolina) | Raleigh, North Carolina | 61.0 | 60 | Avg High: 57.4°F, Low: 37.4°F | Arrived (Day 3 of 3) |
-| 58 | 2027-04-27 | Raleigh, North Carolina | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 53.3°F, Low: 33.3°F | Transit (Day 1 of 4) |
-| 59 | 2027-04-28 | In Transit (from Raleigh, North Carolina) | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 53.8°F, Low: 33.8°F | Transit (Day 2 of 4) |
-| 60 | 2027-04-29 | In Transit (from Raleigh, North Carolina) | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 54.3°F, Low: 34.3°F | Transit (Day 3 of 4) |
-| 61 | 2027-04-30 | In Transit (from Raleigh, North Carolina) | Charleston, West Virginia | 60.5 | 82 | Avg High: 54.8°F, Low: 34.8°F | Arrived (Day 4 of 4) |
-| 62 | 2027-05-01 | Charleston, West Virginia | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 62.4°F, Low: 42.4°F | Transit (Day 1 of 3) |
-| 63 | 2027-05-02 | In Transit (from Charleston, West Virginia) | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 62.9°F, Low: 42.9°F | Transit (Day 2 of 3) |
-| 64 | 2027-05-03 | In Transit (from Charleston, West Virginia) | Frankfort, Kentucky | 58.6 | 513 | Avg High: 63.4°F, Low: 43.4°F | Arrived (Day 3 of 3) |
-| 65 | 2027-05-04 | Frankfort, Kentucky | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 1 of 6) |
-| 66 | 2027-05-05 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 61.6°F, Low: 41.6°F | Transit (Day 2 of 6) |
-| 67 | 2027-05-06 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 62.1°F, Low: 42.1°F | Transit (Day 3 of 6) |
-| 68 | 2027-05-07 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 62.6°F, Low: 42.6°F | Transit (Day 4 of 6) |
-| 69 | 2027-05-08 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 63.1°F, Low: 43.1°F | Transit (Day 5 of 6) |
-| 70 | 2027-05-09 | In Transit (from Frankfort, Kentucky) | Jefferson City, Missouri | 65.9 | 8 | Avg High: 63.6°F, Low: 43.6°F | Arrived (Day 6 of 6) |
-| 71 | 2027-05-10 | Jefferson City, Missouri | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 66.7°F, Low: 46.7°F | Transit (Day 1 of 4) |
-| 72 | 2027-05-11 | In Transit (from Jefferson City, Missouri) | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 67.2°F, Low: 47.2°F | Transit (Day 2 of 4) |
-| 73 | 2027-05-12 | In Transit (from Jefferson City, Missouri) | In Transit (to Little Rock, Arkansas) | 66.1 | 422 | Avg High: 67.7°F, Low: 47.7°F | Transit (Day 3 of 4) |
-| 74 | 2027-05-13 | In Transit (from Jefferson City, Missouri) | Little Rock, Arkansas | 66.1 | 422 | Avg High: 68.2°F, Low: 48.2°F | Arrived (Day 4 of 4) |
-| 75 | 2027-05-14 | Little Rock, Arkansas | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 61.3°F, Low: 41.3°F | Transit (Day 1 of 6) |
-| 76 | 2027-05-15 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 61.8°F, Low: 41.8°F | Transit (Day 2 of 6) |
-| 77 | 2027-05-16 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 62.3°F, Low: 42.3°F | Transit (Day 3 of 6) |
-| 78 | 2027-05-17 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 62.8°F, Low: 42.8°F | Transit (Day 4 of 6) |
-| 79 | 2027-05-18 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 63.3°F, Low: 43.3°F | Transit (Day 5 of 6) |
-| 80 | 2027-05-19 | In Transit (from Little Rock, Arkansas) | Topeka, Kansas | 58.4 | 83 | Avg High: 63.8°F, Low: 43.8°F | Arrived (Day 6 of 6) |
-| 81 | 2027-05-20 | Topeka, Kansas | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 61.5°F, Low: 41.5°F | Transit (Day 1 of 15) |
-| 82 | 2027-05-21 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 62.0°F, Low: 42.0°F | Transit (Day 2 of 15) |
-| 83 | 2027-05-22 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 62.5°F, Low: 42.5°F | Transit (Day 3 of 15) |
-| 84 | 2027-05-23 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 63.0°F, Low: 43.0°F | Transit (Day 4 of 15) |
-| 85 | 2027-05-24 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 63.5°F, Low: 43.5°F | Transit (Day 5 of 15) |
-| 86 | 2027-05-25 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 64.0°F, Low: 44.0°F | Transit (Day 6 of 15) |
-| 87 | 2027-05-26 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 64.5°F, Low: 44.5°F | Transit (Day 7 of 15) |
-| 88 | 2027-05-27 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 65.0°F, Low: 45.0°F | Transit (Day 8 of 15) |
-| 89 | 2027-05-28 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 65.5°F, Low: 45.5°F | Transit (Day 9 of 15) |
-| 90 | 2027-05-29 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 66.0°F, Low: 46.0°F | Transit (Day 10 of 15) |
-| 91 | 2027-05-30 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 61.5°F, Low: 41.5°F | Transit (Day 11 of 15) |
-| 92 | 2027-05-31 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 62.0°F, Low: 42.0°F | Transit (Day 12 of 15) |
-| 93 | 2027-06-01 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 69.1°F, Low: 49.1°F | Transit (Day 13 of 15) |
-| 94 | 2027-06-02 | In Transit (from Topeka, Kansas) | In Transit (to Richmond, Virginia) | 66.2 | 9 | Avg High: 69.6°F, Low: 49.6°F | Transit (Day 14 of 15) |
-| 95 | 2027-06-03 | In Transit (from Topeka, Kansas) | Richmond, Virginia | 66.2 | 9 | Avg High: 70.1°F, Low: 50.1°F | Arrived (Day 15 of 15) |
-| 96 | 2027-06-04 | Richmond, Virginia | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 66.4°F, Low: 46.4°F | Transit (Day 1 of 3) |
-| 97 | 2027-06-05 | In Transit (from Richmond, Virginia) | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 66.9°F, Low: 46.9°F | Transit (Day 2 of 3) |
-| 98 | 2027-06-06 | In Transit (from Richmond, Virginia) | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 67.4°F, Low: 47.4°F | Arrived (Day 3 of 3) |
-| 99 | 2027-06-07 | Harrisburg, Pennsylvania | In Transit (to Washington, DC) | 47.3 | 950 | Avg High: 70.0°F, Low: 50.0°F | Transit (Day 1 of 2) |
-| 100 | 2027-06-08 | In Transit (from Harrisburg, Pennsylvania) | Washington, DC | 47.3 | 950 | Avg High: 70.5°F, Low: 50.5°F | Arrived (Day 2 of 2) |
-
-</details>
-
----
-
-### Alternative 2
-**Feasible**: Yes
-- **Start Date**: 2027-03-01
-- **Total Distance**: 6249.7 miles
-- **Total Climbing**: 11940 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.402
-  - Distance Score: 0.338
-  - Climbing Score: 0.860
-  - **Total Desirability Score**: 0.497
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-01 | Austin, Texas | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 6) |
-| 2 | 2027-03-02 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 6) |
-| 3 | 2027-03-03 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.1°F, Low: 27.1°F | Transit (Day 3 of 6) |
-| 4 | 2027-03-04 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 4 of 6) |
-| 5 | 2027-03-05 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 5 of 6) |
-| 6 | 2027-03-06 | In Transit (from Austin, Texas) | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 48.6°F, Low: 28.6°F | Arrived (Day 6 of 6) |
-| 7 | 2027-03-07 | Oklahoma City, Oklahoma | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 1 of 13) |
-| 8 | 2027-03-08 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 2 of 13) |
-| 9 | 2027-03-09 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Transit (Day 3 of 13) |
-| 10 | 2027-03-10 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 13) |
-| 11 | 2027-03-11 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 5 of 13) |
-| 12 | 2027-03-12 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 6 of 13) |
-| 13 | 2027-03-13 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 7 of 13) |
-| 14 | 2027-03-14 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 8 of 13) |
-| 15 | 2027-03-15 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 9 of 13) |
-| 16 | 2027-03-16 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.1°F, Low: 32.1°F | Transit (Day 10 of 13) |
-| 17 | 2027-03-17 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 11 of 13) |
-| 18 | 2027-03-18 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 12 of 13) |
-| 19 | 2027-03-19 | In Transit (from Oklahoma City, Oklahoma) | Tallahassee, Florida | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Arrived (Day 13 of 13) |
-| 20 | 2027-03-20 | Tallahassee, Florida | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 1 of 7) |
-| 21 | 2027-03-21 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 2 of 7) |
-| 22 | 2027-03-22 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.6°F, Low: 28.6°F | Transit (Day 3 of 7) |
-| 23 | 2027-03-23 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 7) |
-| 24 | 2027-03-24 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 44.6°F, Low: 24.6°F | Transit (Day 5 of 7) |
-| 25 | 2027-03-25 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 45.1°F, Low: 25.1°F | Transit (Day 6 of 7) |
-| 26 | 2027-03-26 | In Transit (from Tallahassee, Florida) | Nashville, Tennessee | 60.1 | 6 | Avg High: 45.6°F, Low: 25.6°F | Arrived (Day 7 of 7) |
-| 27 | 2027-03-27 | Nashville, Tennessee | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 1 of 7) |
-| 28 | 2027-03-28 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 2 of 7) |
-| 29 | 2027-03-29 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 3 of 7) |
-| 30 | 2027-03-30 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 4 of 7) |
-| 31 | 2027-03-31 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 5 of 7) |
-| 32 | 2027-04-01 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 6 of 7) |
-| 33 | 2027-04-02 | In Transit (from Nashville, Tennessee) | Baton Rouge, Louisiana | 67.0 | 81 | Avg High: 61.1°F, Low: 41.1°F | Arrived (Day 7 of 7) |
-| 34 | 2027-04-03 | Baton Rouge, Louisiana | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 60.0°F, Low: 40.0°F | Transit (Day 1 of 7) |
-| 35 | 2027-04-04 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 55.5°F, Low: 35.5°F | Transit (Day 2 of 7) |
-| 36 | 2027-04-05 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 3 of 7) |
-| 37 | 2027-04-06 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.5°F, Low: 36.5°F | Transit (Day 4 of 7) |
-| 38 | 2027-04-07 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.0°F, Low: 37.0°F | Transit (Day 5 of 7) |
-| 39 | 2027-04-08 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.5°F, Low: 37.5°F | Transit (Day 6 of 7) |
-| 40 | 2027-04-09 | In Transit (from Baton Rouge, Louisiana) | Atlanta, Georgia | 65.4 | 94 | Avg High: 58.0°F, Low: 38.0°F | Arrived (Day 7 of 7) |
-| 41 | 2027-04-10 | Atlanta, Georgia | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.2°F, Low: 39.2°F | Transit (Day 1 of 5) |
-| 42 | 2027-04-11 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.7°F, Low: 39.7°F | Transit (Day 2 of 5) |
-| 43 | 2027-04-12 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.2°F, Low: 40.2°F | Transit (Day 3 of 5) |
-| 44 | 2027-04-13 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.7°F, Low: 40.7°F | Transit (Day 4 of 5) |
-| 45 | 2027-04-14 | In Transit (from Atlanta, Georgia) | Jackson, Mississippi | 70.0 | 14 | Avg High: 61.2°F, Low: 41.2°F | Arrived (Day 5 of 5) |
-| 46 | 2027-04-15 | Jackson, Mississippi | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 1 of 4) |
-| 47 | 2027-04-16 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 2 of 4) |
-| 48 | 2027-04-17 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 56.6°F, Low: 36.6°F | Transit (Day 3 of 4) |
-| 49 | 2027-04-18 | In Transit (from Jackson, Mississippi) | Montgomery, Alabama | 56.5 | 135 | Avg High: 57.1°F, Low: 37.1°F | Arrived (Day 4 of 4) |
-| 50 | 2027-04-19 | Montgomery, Alabama | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.3°F, Low: 35.3°F | Transit (Day 1 of 5) |
-| 51 | 2027-04-20 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.8°F, Low: 35.8°F | Transit (Day 2 of 5) |
-| 52 | 2027-04-21 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.3°F, Low: 36.3°F | Transit (Day 3 of 5) |
-| 53 | 2027-04-22 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.8°F, Low: 36.8°F | Transit (Day 4 of 5) |
-| 54 | 2027-04-23 | In Transit (from Montgomery, Alabama) | Columbia, South Carolina | 64.9 | 40 | Avg High: 57.3°F, Low: 37.3°F | Arrived (Day 5 of 5) |
-| 55 | 2027-04-24 | Columbia, South Carolina | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.4°F, Low: 36.4°F | Transit (Day 1 of 3) |
-| 56 | 2027-04-25 | In Transit (from Columbia, South Carolina) | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.9°F, Low: 36.9°F | Transit (Day 2 of 3) |
-| 57 | 2027-04-26 | In Transit (from Columbia, South Carolina) | Raleigh, North Carolina | 61.0 | 60 | Avg High: 57.4°F, Low: 37.4°F | Arrived (Day 3 of 3) |
-| 58 | 2027-04-27 | Raleigh, North Carolina | In Transit (to Richmond, Virginia) | 69.3 | 935 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 1 of 2) |
-| 59 | 2027-04-28 | In Transit (from Raleigh, North Carolina) | Richmond, Virginia | 69.3 | 935 | Avg High: 56.5°F, Low: 36.5°F | Arrived (Day 2 of 2) |
-| 60 | 2027-04-29 | Richmond, Virginia | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 52.8°F, Low: 32.8°F | Transit (Day 1 of 3) |
-| 61 | 2027-04-30 | In Transit (from Richmond, Virginia) | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 53.3°F, Low: 33.3°F | Transit (Day 2 of 3) |
-| 62 | 2027-05-01 | In Transit (from Richmond, Virginia) | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 62.8°F, Low: 42.8°F | Arrived (Day 3 of 3) |
-| 63 | 2027-05-02 | Harrisburg, Pennsylvania | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 64.8°F, Low: 44.8°F | Transit (Day 1 of 5) |
-| 64 | 2027-05-03 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 65.3°F, Low: 45.3°F | Transit (Day 2 of 5) |
-| 65 | 2027-05-04 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 60.8°F, Low: 40.8°F | Transit (Day 3 of 5) |
-| 66 | 2027-05-05 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 61.3°F, Low: 41.3°F | Transit (Day 4 of 5) |
-| 67 | 2027-05-06 | In Transit (from Harrisburg, Pennsylvania) | Charleston, West Virginia | 57.2 | 316 | Avg High: 61.8°F, Low: 41.8°F | Arrived (Day 5 of 5) |
-| 68 | 2027-05-07 | Charleston, West Virginia | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 65.4°F, Low: 45.4°F | Transit (Day 1 of 3) |
-| 69 | 2027-05-08 | In Transit (from Charleston, West Virginia) | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 60.9°F, Low: 40.9°F | Transit (Day 2 of 3) |
-| 70 | 2027-05-09 | In Transit (from Charleston, West Virginia) | Frankfort, Kentucky | 58.6 | 513 | Avg High: 61.4°F, Low: 41.4°F | Arrived (Day 3 of 3) |
-| 71 | 2027-05-10 | Frankfort, Kentucky | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 64.1°F, Low: 44.1°F | Transit (Day 1 of 6) |
-| 72 | 2027-05-11 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 64.6°F, Low: 44.6°F | Transit (Day 2 of 6) |
-| 73 | 2027-05-12 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 65.1°F, Low: 45.1°F | Transit (Day 3 of 6) |
-| 74 | 2027-05-13 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 4 of 6) |
-| 75 | 2027-05-14 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 5 of 6) |
-| 76 | 2027-05-15 | In Transit (from Frankfort, Kentucky) | Jefferson City, Missouri | 65.9 | 8 | Avg High: 61.6°F, Low: 41.6°F | Arrived (Day 6 of 6) |
-| 77 | 2027-05-16 | Jefferson City, Missouri | In Transit (to Topeka, Kansas) | 63.7 | 370 | Avg High: 62.3°F, Low: 42.3°F | Transit (Day 1 of 3) |
-| 78 | 2027-05-17 | In Transit (from Jefferson City, Missouri) | In Transit (to Topeka, Kansas) | 63.7 | 370 | Avg High: 62.8°F, Low: 42.8°F | Transit (Day 2 of 3) |
-| 79 | 2027-05-18 | In Transit (from Jefferson City, Missouri) | Topeka, Kansas | 63.7 | 370 | Avg High: 63.3°F, Low: 43.3°F | Arrived (Day 3 of 3) |
-| 80 | 2027-05-19 | Topeka, Kansas | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 66.2°F, Low: 46.2°F | Transit (Day 1 of 6) |
-| 81 | 2027-05-20 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 66.7°F, Low: 46.7°F | Transit (Day 2 of 6) |
-| 82 | 2027-05-21 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 67.2°F, Low: 47.2°F | Transit (Day 3 of 6) |
-| 83 | 2027-05-22 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 67.7°F, Low: 47.7°F | Transit (Day 4 of 6) |
-| 84 | 2027-05-23 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 68.2°F, Low: 48.2°F | Transit (Day 5 of 6) |
-| 85 | 2027-05-24 | In Transit (from Topeka, Kansas) | Little Rock, Arkansas | 58.4 | 83 | Avg High: 63.7°F, Low: 43.7°F | Arrived (Day 6 of 6) |
-| 86 | 2027-05-25 | Little Rock, Arkansas | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 61.9°F, Low: 41.9°F | Transit (Day 1 of 13) |
-| 87 | 2027-05-26 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 62.4°F, Low: 42.4°F | Transit (Day 2 of 13) |
-| 88 | 2027-05-27 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 62.9°F, Low: 42.9°F | Transit (Day 3 of 13) |
-| 89 | 2027-05-28 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 63.4°F, Low: 43.4°F | Transit (Day 4 of 13) |
-| 90 | 2027-05-29 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 63.9°F, Low: 43.9°F | Transit (Day 5 of 13) |
-| 91 | 2027-05-30 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 64.4°F, Low: 44.4°F | Transit (Day 6 of 13) |
-| 92 | 2027-05-31 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 64.9°F, Low: 44.9°F | Transit (Day 7 of 13) |
-| 93 | 2027-06-01 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 67.0°F, Low: 47.0°F | Transit (Day 8 of 13) |
-| 94 | 2027-06-02 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 67.5°F, Low: 47.5°F | Transit (Day 9 of 13) |
-| 95 | 2027-06-03 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 68.0°F, Low: 48.0°F | Transit (Day 10 of 13) |
-| 96 | 2027-06-04 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 68.5°F, Low: 48.5°F | Transit (Day 11 of 13) |
-| 97 | 2027-06-05 | In Transit (from Little Rock, Arkansas) | In Transit (to Washington, DC) | 68.5 | 115 | Avg High: 69.0°F, Low: 49.0°F | Transit (Day 12 of 13) |
-| 98 | 2027-06-06 | In Transit (from Little Rock, Arkansas) | Washington, DC | 68.5 | 115 | Avg High: 69.5°F, Low: 49.5°F | Arrived (Day 13 of 13) |
-
-</details>
-
----
-
-### Alternative 3
-**Feasible**: Yes
-- **Start Date**: 2027-03-01
-- **Total Distance**: 6254.5 miles
-- **Total Climbing**: 11940 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.401
-  - Distance Score: 0.338
-  - Climbing Score: 0.860
-  - **Total Desirability Score**: 0.497
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-01 | Austin, Texas | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 6) |
-| 2 | 2027-03-02 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 6) |
-| 3 | 2027-03-03 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.1°F, Low: 27.1°F | Transit (Day 3 of 6) |
-| 4 | 2027-03-04 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 4 of 6) |
-| 5 | 2027-03-05 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 5 of 6) |
-| 6 | 2027-03-06 | In Transit (from Austin, Texas) | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 48.6°F, Low: 28.6°F | Arrived (Day 6 of 6) |
-| 7 | 2027-03-07 | Oklahoma City, Oklahoma | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 1 of 13) |
-| 8 | 2027-03-08 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 2 of 13) |
-| 9 | 2027-03-09 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Transit (Day 3 of 13) |
-| 10 | 2027-03-10 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 13) |
-| 11 | 2027-03-11 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 5 of 13) |
-| 12 | 2027-03-12 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 6 of 13) |
-| 13 | 2027-03-13 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 7 of 13) |
-| 14 | 2027-03-14 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 8 of 13) |
-| 15 | 2027-03-15 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 9 of 13) |
-| 16 | 2027-03-16 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.1°F, Low: 32.1°F | Transit (Day 10 of 13) |
-| 17 | 2027-03-17 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 11 of 13) |
-| 18 | 2027-03-18 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 12 of 13) |
-| 19 | 2027-03-19 | In Transit (from Oklahoma City, Oklahoma) | Tallahassee, Florida | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Arrived (Day 13 of 13) |
-| 20 | 2027-03-20 | Tallahassee, Florida | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 1 of 7) |
-| 21 | 2027-03-21 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 2 of 7) |
-| 22 | 2027-03-22 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.6°F, Low: 28.6°F | Transit (Day 3 of 7) |
-| 23 | 2027-03-23 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 7) |
-| 24 | 2027-03-24 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 44.6°F, Low: 24.6°F | Transit (Day 5 of 7) |
-| 25 | 2027-03-25 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 45.1°F, Low: 25.1°F | Transit (Day 6 of 7) |
-| 26 | 2027-03-26 | In Transit (from Tallahassee, Florida) | Nashville, Tennessee | 60.1 | 6 | Avg High: 45.6°F, Low: 25.6°F | Arrived (Day 7 of 7) |
-| 27 | 2027-03-27 | Nashville, Tennessee | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 1 of 7) |
-| 28 | 2027-03-28 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 2 of 7) |
-| 29 | 2027-03-29 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 3 of 7) |
-| 30 | 2027-03-30 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 4 of 7) |
-| 31 | 2027-03-31 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 5 of 7) |
-| 32 | 2027-04-01 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 6 of 7) |
-| 33 | 2027-04-02 | In Transit (from Nashville, Tennessee) | Baton Rouge, Louisiana | 67.0 | 81 | Avg High: 61.1°F, Low: 41.1°F | Arrived (Day 7 of 7) |
-| 34 | 2027-04-03 | Baton Rouge, Louisiana | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 60.0°F, Low: 40.0°F | Transit (Day 1 of 7) |
-| 35 | 2027-04-04 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 55.5°F, Low: 35.5°F | Transit (Day 2 of 7) |
-| 36 | 2027-04-05 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 3 of 7) |
-| 37 | 2027-04-06 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.5°F, Low: 36.5°F | Transit (Day 4 of 7) |
-| 38 | 2027-04-07 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.0°F, Low: 37.0°F | Transit (Day 5 of 7) |
-| 39 | 2027-04-08 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.5°F, Low: 37.5°F | Transit (Day 6 of 7) |
-| 40 | 2027-04-09 | In Transit (from Baton Rouge, Louisiana) | Atlanta, Georgia | 65.4 | 94 | Avg High: 58.0°F, Low: 38.0°F | Arrived (Day 7 of 7) |
-| 41 | 2027-04-10 | Atlanta, Georgia | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.2°F, Low: 39.2°F | Transit (Day 1 of 5) |
-| 42 | 2027-04-11 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.7°F, Low: 39.7°F | Transit (Day 2 of 5) |
-| 43 | 2027-04-12 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.2°F, Low: 40.2°F | Transit (Day 3 of 5) |
-| 44 | 2027-04-13 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.7°F, Low: 40.7°F | Transit (Day 4 of 5) |
-| 45 | 2027-04-14 | In Transit (from Atlanta, Georgia) | Jackson, Mississippi | 70.0 | 14 | Avg High: 61.2°F, Low: 41.2°F | Arrived (Day 5 of 5) |
-| 46 | 2027-04-15 | Jackson, Mississippi | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 1 of 4) |
-| 47 | 2027-04-16 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 2 of 4) |
-| 48 | 2027-04-17 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 56.6°F, Low: 36.6°F | Transit (Day 3 of 4) |
-| 49 | 2027-04-18 | In Transit (from Jackson, Mississippi) | Montgomery, Alabama | 56.5 | 135 | Avg High: 57.1°F, Low: 37.1°F | Arrived (Day 4 of 4) |
-| 50 | 2027-04-19 | Montgomery, Alabama | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.3°F, Low: 35.3°F | Transit (Day 1 of 5) |
-| 51 | 2027-04-20 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.8°F, Low: 35.8°F | Transit (Day 2 of 5) |
-| 52 | 2027-04-21 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.3°F, Low: 36.3°F | Transit (Day 3 of 5) |
-| 53 | 2027-04-22 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.8°F, Low: 36.8°F | Transit (Day 4 of 5) |
-| 54 | 2027-04-23 | In Transit (from Montgomery, Alabama) | Columbia, South Carolina | 64.9 | 40 | Avg High: 57.3°F, Low: 37.3°F | Arrived (Day 5 of 5) |
-| 55 | 2027-04-24 | Columbia, South Carolina | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.4°F, Low: 36.4°F | Transit (Day 1 of 3) |
-| 56 | 2027-04-25 | In Transit (from Columbia, South Carolina) | In Transit (to Raleigh, North Carolina) | 61.0 | 60 | Avg High: 56.9°F, Low: 36.9°F | Transit (Day 2 of 3) |
-| 57 | 2027-04-26 | In Transit (from Columbia, South Carolina) | Raleigh, North Carolina | 61.0 | 60 | Avg High: 57.4°F, Low: 37.4°F | Arrived (Day 3 of 3) |
-| 58 | 2027-04-27 | Raleigh, North Carolina | In Transit (to Richmond, Virginia) | 69.3 | 935 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 1 of 2) |
-| 59 | 2027-04-28 | In Transit (from Raleigh, North Carolina) | Richmond, Virginia | 69.3 | 935 | Avg High: 56.5°F, Low: 36.5°F | Arrived (Day 2 of 2) |
-| 60 | 2027-04-29 | Richmond, Virginia | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 52.8°F, Low: 32.8°F | Transit (Day 1 of 3) |
-| 61 | 2027-04-30 | In Transit (from Richmond, Virginia) | In Transit (to Harrisburg, Pennsylvania) | 63.6 | 373 | Avg High: 53.3°F, Low: 33.3°F | Transit (Day 2 of 3) |
-| 62 | 2027-05-01 | In Transit (from Richmond, Virginia) | Harrisburg, Pennsylvania | 63.6 | 373 | Avg High: 62.8°F, Low: 42.8°F | Arrived (Day 3 of 3) |
-| 63 | 2027-05-02 | Harrisburg, Pennsylvania | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 64.8°F, Low: 44.8°F | Transit (Day 1 of 5) |
-| 64 | 2027-05-03 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 65.3°F, Low: 45.3°F | Transit (Day 2 of 5) |
-| 65 | 2027-05-04 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 60.8°F, Low: 40.8°F | Transit (Day 3 of 5) |
-| 66 | 2027-05-05 | In Transit (from Harrisburg, Pennsylvania) | In Transit (to Charleston, West Virginia) | 57.2 | 316 | Avg High: 61.3°F, Low: 41.3°F | Transit (Day 4 of 5) |
-| 67 | 2027-05-06 | In Transit (from Harrisburg, Pennsylvania) | Charleston, West Virginia | 57.2 | 316 | Avg High: 61.8°F, Low: 41.8°F | Arrived (Day 5 of 5) |
-| 68 | 2027-05-07 | Charleston, West Virginia | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 65.4°F, Low: 45.4°F | Transit (Day 1 of 3) |
-| 69 | 2027-05-08 | In Transit (from Charleston, West Virginia) | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 60.9°F, Low: 40.9°F | Transit (Day 2 of 3) |
-| 70 | 2027-05-09 | In Transit (from Charleston, West Virginia) | Frankfort, Kentucky | 58.6 | 513 | Avg High: 61.4°F, Low: 41.4°F | Arrived (Day 3 of 3) |
-| 71 | 2027-05-10 | Frankfort, Kentucky | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 66.7°F, Low: 46.7°F | Transit (Day 1 of 7) |
-| 72 | 2027-05-11 | In Transit (from Frankfort, Kentucky) | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 67.2°F, Low: 47.2°F | Transit (Day 2 of 7) |
-| 73 | 2027-05-12 | In Transit (from Frankfort, Kentucky) | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 67.7°F, Low: 47.7°F | Transit (Day 3 of 7) |
-| 74 | 2027-05-13 | In Transit (from Frankfort, Kentucky) | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 68.2°F, Low: 48.2°F | Transit (Day 4 of 7) |
-| 75 | 2027-05-14 | In Transit (from Frankfort, Kentucky) | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 63.7°F, Low: 43.7°F | Transit (Day 5 of 7) |
-| 76 | 2027-05-15 | In Transit (from Frankfort, Kentucky) | In Transit (to Little Rock, Arkansas) | 67.9 | 206 | Avg High: 64.2°F, Low: 44.2°F | Transit (Day 6 of 7) |
-| 77 | 2027-05-16 | In Transit (from Frankfort, Kentucky) | Little Rock, Arkansas | 67.9 | 206 | Avg High: 64.7°F, Low: 44.7°F | Arrived (Day 7 of 7) |
-| 78 | 2027-05-17 | Little Rock, Arkansas | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 62.8°F, Low: 42.8°F | Transit (Day 1 of 6) |
-| 79 | 2027-05-18 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 63.3°F, Low: 43.3°F | Transit (Day 2 of 6) |
-| 80 | 2027-05-19 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 63.8°F, Low: 43.8°F | Transit (Day 3 of 6) |
-| 81 | 2027-05-20 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 64.3°F, Low: 44.3°F | Transit (Day 4 of 6) |
-| 82 | 2027-05-21 | In Transit (from Little Rock, Arkansas) | In Transit (to Topeka, Kansas) | 58.4 | 83 | Avg High: 64.8°F, Low: 44.8°F | Transit (Day 5 of 6) |
-| 83 | 2027-05-22 | In Transit (from Little Rock, Arkansas) | Topeka, Kansas | 58.4 | 83 | Avg High: 60.3°F, Low: 40.3°F | Arrived (Day 6 of 6) |
-| 84 | 2027-05-23 | Topeka, Kansas | In Transit (to Jefferson City, Missouri) | 63.7 | 370 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 1 of 3) |
-| 85 | 2027-05-24 | In Transit (from Topeka, Kansas) | In Transit (to Jefferson City, Missouri) | 63.7 | 370 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 2 of 3) |
-| 86 | 2027-05-25 | In Transit (from Topeka, Kansas) | Jefferson City, Missouri | 63.7 | 370 | Avg High: 61.6°F, Low: 41.6°F | Arrived (Day 3 of 3) |
-| 87 | 2027-05-26 | Jefferson City, Missouri | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 62.4°F, Low: 42.4°F | Transit (Day 1 of 12) |
-| 88 | 2027-05-27 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 62.9°F, Low: 42.9°F | Transit (Day 2 of 12) |
-| 89 | 2027-05-28 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 63.4°F, Low: 43.4°F | Transit (Day 3 of 12) |
-| 90 | 2027-05-29 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 63.9°F, Low: 43.9°F | Transit (Day 4 of 12) |
-| 91 | 2027-05-30 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 64.4°F, Low: 44.4°F | Transit (Day 5 of 12) |
-| 92 | 2027-05-31 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 64.9°F, Low: 44.9°F | Transit (Day 6 of 12) |
-| 93 | 2027-06-01 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 67.0°F, Low: 47.0°F | Transit (Day 7 of 12) |
-| 94 | 2027-06-02 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 67.5°F, Low: 47.5°F | Transit (Day 8 of 12) |
-| 95 | 2027-06-03 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 68.0°F, Low: 48.0°F | Transit (Day 9 of 12) |
-| 96 | 2027-06-04 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 68.5°F, Low: 48.5°F | Transit (Day 10 of 12) |
-| 97 | 2027-06-05 | In Transit (from Jefferson City, Missouri) | In Transit (to Washington, DC) | 67.9 | 9 | Avg High: 69.0°F, Low: 49.0°F | Transit (Day 11 of 12) |
-| 98 | 2027-06-06 | In Transit (from Jefferson City, Missouri) | Washington, DC | 67.9 | 9 | Avg High: 69.5°F, Low: 49.5°F | Arrived (Day 12 of 12) |
-
-</details>
-
----
-
-### Alternative 4
-**Feasible**: Yes
-- **Start Date**: 2027-03-01
-- **Total Distance**: 6278.5 miles
-- **Total Climbing**: 11940 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.403
-  - Distance Score: 0.335
-  - Climbing Score: 0.860
-  - **Total Desirability Score**: 0.497
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-| Day | Date | Origin | Destination | Distance (mi) | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-01 | Austin, Texas | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.1°F, Low: 26.1°F | Transit (Day 1 of 6) |
-| 2 | 2027-03-02 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 46.6°F, Low: 26.6°F | Transit (Day 2 of 6) |
-| 3 | 2027-03-03 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.1°F, Low: 27.1°F | Transit (Day 3 of 6) |
-| 4 | 2027-03-04 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 4 of 6) |
-| 5 | 2027-03-05 | In Transit (from Austin, Texas) | In Transit (to Oklahoma City, Oklahoma) | 59.8 | 20 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 5 of 6) |
-| 6 | 2027-03-06 | In Transit (from Austin, Texas) | Oklahoma City, Oklahoma | 59.8 | 20 | Avg High: 48.6°F, Low: 28.6°F | Arrived (Day 6 of 6) |
-| 7 | 2027-03-07 | Oklahoma City, Oklahoma | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 1 of 13) |
-| 8 | 2027-03-08 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 2 of 13) |
-| 9 | 2027-03-09 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Transit (Day 3 of 13) |
-| 10 | 2027-03-10 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 13) |
-| 11 | 2027-03-11 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 5 of 13) |
-| 12 | 2027-03-12 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 6 of 13) |
-| 13 | 2027-03-13 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 7 of 13) |
-| 14 | 2027-03-14 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 8 of 13) |
-| 15 | 2027-03-15 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 51.6°F, Low: 31.6°F | Transit (Day 9 of 13) |
-| 16 | 2027-03-16 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.1°F, Low: 32.1°F | Transit (Day 10 of 13) |
-| 17 | 2027-03-17 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 52.6°F, Low: 32.6°F | Transit (Day 11 of 13) |
-| 18 | 2027-03-18 | In Transit (from Oklahoma City, Oklahoma) | In Transit (to Tallahassee, Florida) | 64.7 | 22 | Avg High: 53.1°F, Low: 33.1°F | Transit (Day 12 of 13) |
-| 19 | 2027-03-19 | In Transit (from Oklahoma City, Oklahoma) | Tallahassee, Florida | 64.7 | 22 | Avg High: 53.6°F, Low: 33.6°F | Arrived (Day 13 of 13) |
-| 20 | 2027-03-20 | Tallahassee, Florida | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 47.6°F, Low: 27.6°F | Transit (Day 1 of 7) |
-| 21 | 2027-03-21 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.1°F, Low: 28.1°F | Transit (Day 2 of 7) |
-| 22 | 2027-03-22 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 48.6°F, Low: 28.6°F | Transit (Day 3 of 7) |
-| 23 | 2027-03-23 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 4 of 7) |
-| 24 | 2027-03-24 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 44.6°F, Low: 24.6°F | Transit (Day 5 of 7) |
-| 25 | 2027-03-25 | In Transit (from Tallahassee, Florida) | In Transit (to Nashville, Tennessee) | 60.1 | 6 | Avg High: 45.1°F, Low: 25.1°F | Transit (Day 6 of 7) |
-| 26 | 2027-03-26 | In Transit (from Tallahassee, Florida) | Nashville, Tennessee | 60.1 | 6 | Avg High: 45.6°F, Low: 25.6°F | Arrived (Day 7 of 7) |
-| 27 | 2027-03-27 | Nashville, Tennessee | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.1°F, Low: 29.1°F | Transit (Day 1 of 7) |
-| 28 | 2027-03-28 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 49.6°F, Low: 29.6°F | Transit (Day 2 of 7) |
-| 29 | 2027-03-29 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.1°F, Low: 30.1°F | Transit (Day 3 of 7) |
-| 30 | 2027-03-30 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 50.6°F, Low: 30.6°F | Transit (Day 4 of 7) |
-| 31 | 2027-03-31 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 51.1°F, Low: 31.1°F | Transit (Day 5 of 7) |
-| 32 | 2027-04-01 | In Transit (from Nashville, Tennessee) | In Transit (to Baton Rouge, Louisiana) | 67.0 | 81 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 6 of 7) |
-| 33 | 2027-04-02 | In Transit (from Nashville, Tennessee) | Baton Rouge, Louisiana | 67.0 | 81 | Avg High: 61.1°F, Low: 41.1°F | Arrived (Day 7 of 7) |
-| 34 | 2027-04-03 | Baton Rouge, Louisiana | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 60.0°F, Low: 40.0°F | Transit (Day 1 of 7) |
-| 35 | 2027-04-04 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 55.5°F, Low: 35.5°F | Transit (Day 2 of 7) |
-| 36 | 2027-04-05 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 3 of 7) |
-| 37 | 2027-04-06 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 56.5°F, Low: 36.5°F | Transit (Day 4 of 7) |
-| 38 | 2027-04-07 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.0°F, Low: 37.0°F | Transit (Day 5 of 7) |
-| 39 | 2027-04-08 | In Transit (from Baton Rouge, Louisiana) | In Transit (to Atlanta, Georgia) | 65.4 | 94 | Avg High: 57.5°F, Low: 37.5°F | Transit (Day 6 of 7) |
-| 40 | 2027-04-09 | In Transit (from Baton Rouge, Louisiana) | Atlanta, Georgia | 65.4 | 94 | Avg High: 58.0°F, Low: 38.0°F | Arrived (Day 7 of 7) |
-| 41 | 2027-04-10 | Atlanta, Georgia | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.2°F, Low: 39.2°F | Transit (Day 1 of 5) |
-| 42 | 2027-04-11 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 59.7°F, Low: 39.7°F | Transit (Day 2 of 5) |
-| 43 | 2027-04-12 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.2°F, Low: 40.2°F | Transit (Day 3 of 5) |
-| 44 | 2027-04-13 | In Transit (from Atlanta, Georgia) | In Transit (to Jackson, Mississippi) | 70.0 | 14 | Avg High: 60.7°F, Low: 40.7°F | Transit (Day 4 of 5) |
-| 45 | 2027-04-14 | In Transit (from Atlanta, Georgia) | Jackson, Mississippi | 70.0 | 14 | Avg High: 61.2°F, Low: 41.2°F | Arrived (Day 5 of 5) |
-| 46 | 2027-04-15 | Jackson, Mississippi | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 60.6°F, Low: 40.6°F | Transit (Day 1 of 4) |
-| 47 | 2027-04-16 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 61.1°F, Low: 41.1°F | Transit (Day 2 of 4) |
-| 48 | 2027-04-17 | In Transit (from Jackson, Mississippi) | In Transit (to Montgomery, Alabama) | 56.5 | 135 | Avg High: 56.6°F, Low: 36.6°F | Transit (Day 3 of 4) |
-| 49 | 2027-04-18 | In Transit (from Jackson, Mississippi) | Montgomery, Alabama | 56.5 | 135 | Avg High: 57.1°F, Low: 37.1°F | Arrived (Day 4 of 4) |
-| 50 | 2027-04-19 | Montgomery, Alabama | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.3°F, Low: 35.3°F | Transit (Day 1 of 5) |
-| 51 | 2027-04-20 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 55.8°F, Low: 35.8°F | Transit (Day 2 of 5) |
-| 52 | 2027-04-21 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.3°F, Low: 36.3°F | Transit (Day 3 of 5) |
-| 53 | 2027-04-22 | In Transit (from Montgomery, Alabama) | In Transit (to Columbia, South Carolina) | 64.9 | 40 | Avg High: 56.8°F, Low: 36.8°F | Transit (Day 4 of 5) |
-| 54 | 2027-04-23 | In Transit (from Montgomery, Alabama) | Columbia, South Carolina | 64.9 | 40 | Avg High: 57.3°F, Low: 37.3°F | Arrived (Day 5 of 5) |
-| 55 | 2027-04-24 | Columbia, South Carolina | In Transit (to Richmond, Virginia) | 63.3 | 134 | Avg High: 54.5°F, Low: 34.5°F | Transit (Day 1 of 5) |
-| 56 | 2027-04-25 | In Transit (from Columbia, South Carolina) | In Transit (to Richmond, Virginia) | 63.3 | 134 | Avg High: 55.0°F, Low: 35.0°F | Transit (Day 2 of 5) |
-| 57 | 2027-04-26 | In Transit (from Columbia, South Carolina) | In Transit (to Richmond, Virginia) | 63.3 | 134 | Avg High: 55.5°F, Low: 35.5°F | Transit (Day 3 of 5) |
-| 58 | 2027-04-27 | In Transit (from Columbia, South Carolina) | In Transit (to Richmond, Virginia) | 63.3 | 134 | Avg High: 56.0°F, Low: 36.0°F | Transit (Day 4 of 5) |
-| 59 | 2027-04-28 | In Transit (from Columbia, South Carolina) | Richmond, Virginia | 63.3 | 134 | Avg High: 56.5°F, Low: 36.5°F | Arrived (Day 5 of 5) |
-| 60 | 2027-04-29 | Richmond, Virginia | In Transit (to Raleigh, North Carolina) | 69.3 | 935 | Avg High: 53.9°F, Low: 33.9°F | Transit (Day 1 of 2) |
-| 61 | 2027-04-30 | In Transit (from Richmond, Virginia) | Raleigh, North Carolina | 69.3 | 935 | Avg High: 54.4°F, Low: 34.4°F | Arrived (Day 2 of 2) |
-| 62 | 2027-05-01 | Raleigh, North Carolina | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 64.3°F, Low: 44.3°F | Transit (Day 1 of 4) |
-| 63 | 2027-05-02 | In Transit (from Raleigh, North Carolina) | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 64.8°F, Low: 44.8°F | Transit (Day 2 of 4) |
-| 64 | 2027-05-03 | In Transit (from Raleigh, North Carolina) | In Transit (to Charleston, West Virginia) | 60.5 | 82 | Avg High: 65.3°F, Low: 45.3°F | Transit (Day 3 of 4) |
-| 65 | 2027-05-04 | In Transit (from Raleigh, North Carolina) | Charleston, West Virginia | 60.5 | 82 | Avg High: 60.8°F, Low: 40.8°F | Arrived (Day 4 of 4) |
-| 66 | 2027-05-05 | Charleston, West Virginia | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 64.4°F, Low: 44.4°F | Transit (Day 1 of 3) |
-| 67 | 2027-05-06 | In Transit (from Charleston, West Virginia) | In Transit (to Frankfort, Kentucky) | 58.6 | 513 | Avg High: 64.9°F, Low: 44.9°F | Transit (Day 2 of 3) |
-| 68 | 2027-05-07 | In Transit (from Charleston, West Virginia) | Frankfort, Kentucky | 58.6 | 513 | Avg High: 65.4°F, Low: 45.4°F | Arrived (Day 3 of 3) |
-| 69 | 2027-05-08 | Frankfort, Kentucky | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 63.1°F, Low: 43.1°F | Transit (Day 1 of 6) |
-| 70 | 2027-05-09 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 63.6°F, Low: 43.6°F | Transit (Day 2 of 6) |
-| 71 | 2027-05-10 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 64.1°F, Low: 44.1°F | Transit (Day 3 of 6) |
-| 72 | 2027-05-11 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 64.6°F, Low: 44.6°F | Transit (Day 4 of 6) |
-| 73 | 2027-05-12 | In Transit (from Frankfort, Kentucky) | In Transit (to Jefferson City, Missouri) | 65.9 | 8 | Avg High: 65.1°F, Low: 45.1°F | Transit (Day 5 of 6) |
-| 74 | 2027-05-13 | In Transit (from Frankfort, Kentucky) | Jefferson City, Missouri | 65.9 | 8 | Avg High: 60.6°F, Low: 40.6°F | Arrived (Day 6 of 6) |
-| 75 | 2027-05-14 | Jefferson City, Missouri | In Transit (to Topeka, Kansas) | 63.7 | 370 | Avg High: 61.3°F, Low: 41.3°F | Transit (Day 1 of 3) |
-| 76 | 2027-05-15 | In Transit (from Jefferson City, Missouri) | In Transit (to Topeka, Kansas) | 63.7 | 370 | Avg High: 61.8°F, Low: 41.8°F | Transit (Day 2 of 3) |
-| 77 | 2027-05-16 | In Transit (from Jefferson City, Missouri) | Topeka, Kansas | 63.7 | 370 | Avg High: 62.3°F, Low: 42.3°F | Arrived (Day 3 of 3) |
-| 78 | 2027-05-17 | Topeka, Kansas | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 65.2°F, Low: 45.2°F | Transit (Day 1 of 6) |
-| 79 | 2027-05-18 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 65.7°F, Low: 45.7°F | Transit (Day 2 of 6) |
-| 80 | 2027-05-19 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 66.2°F, Low: 46.2°F | Transit (Day 3 of 6) |
-| 81 | 2027-05-20 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 66.7°F, Low: 46.7°F | Transit (Day 4 of 6) |
-| 82 | 2027-05-21 | In Transit (from Topeka, Kansas) | In Transit (to Little Rock, Arkansas) | 58.4 | 83 | Avg High: 67.2°F, Low: 47.2°F | Transit (Day 5 of 6) |
-| 83 | 2027-05-22 | In Transit (from Topeka, Kansas) | Little Rock, Arkansas | 58.4 | 83 | Avg High: 67.7°F, Low: 47.7°F | Arrived (Day 6 of 6) |
-| 84 | 2027-05-23 | Little Rock, Arkansas | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 63.8°F, Low: 43.8°F | Transit (Day 1 of 14) |
-| 85 | 2027-05-24 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 59.3°F, Low: 39.3°F | Transit (Day 2 of 14) |
-| 86 | 2027-05-25 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 59.8°F, Low: 39.8°F | Transit (Day 3 of 14) |
-| 87 | 2027-05-26 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 60.3°F, Low: 40.3°F | Transit (Day 4 of 14) |
-| 88 | 2027-05-27 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 60.8°F, Low: 40.8°F | Transit (Day 5 of 14) |
-| 89 | 2027-05-28 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 61.3°F, Low: 41.3°F | Transit (Day 6 of 14) |
-| 90 | 2027-05-29 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 61.8°F, Low: 41.8°F | Transit (Day 7 of 14) |
-| 91 | 2027-05-30 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 62.3°F, Low: 42.3°F | Transit (Day 8 of 14) |
-| 92 | 2027-05-31 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 62.8°F, Low: 42.8°F | Transit (Day 9 of 14) |
-| 93 | 2027-06-01 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 69.9°F, Low: 49.9°F | Transit (Day 10 of 14) |
-| 94 | 2027-06-02 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 70.4°F, Low: 50.4°F | Transit (Day 11 of 14) |
-| 95 | 2027-06-03 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 65.9°F, Low: 45.9°F | Transit (Day 12 of 14) |
-| 96 | 2027-06-04 | In Transit (from Little Rock, Arkansas) | In Transit (to Harrisburg, Pennsylvania) | 66.1 | 106 | Avg High: 66.4°F, Low: 46.4°F | Transit (Day 13 of 14) |
-| 97 | 2027-06-05 | In Transit (from Little Rock, Arkansas) | Harrisburg, Pennsylvania | 66.1 | 106 | Avg High: 66.9°F, Low: 46.9°F | Arrived (Day 14 of 14) |
-| 98 | 2027-06-06 | Harrisburg, Pennsylvania | In Transit (to Washington, DC) | 47.3 | 950 | Avg High: 69.5°F, Low: 49.5°F | Transit (Day 1 of 2) |
-| 99 | 2027-06-07 | In Transit (from Harrisburg, Pennsylvania) | Washington, DC | 47.3 | 950 | Avg High: 70.0°F, Low: 50.0°F | Arrived (Day 2 of 2) |
-
-</details>
-
----
 

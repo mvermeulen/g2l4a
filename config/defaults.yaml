@@ -33,7 +33,7 @@ defaults:
     allow_international_borders: true
 
   weather_provider:
-    name: "mock"
+    name: "open_meteo"
     timeout_seconds: 8.0
     climate_model: "CMCC_CM2_VHR4"
     capital_monthly_normals_path: "data/state_capitals_monthly_normals.json"

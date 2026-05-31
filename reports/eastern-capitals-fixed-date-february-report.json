@@ -2,7 +2,7 @@
   "solver_metrics": null,
   "recommendations": [
     {
-      "is_feasible": false,
+      "is_feasible": true,
       "start_city": "Austin, Texas",
       "completion_city": "Washington, DC",
       "via_cities": [
@@ -25,10 +25,10 @@
       ],
       "start_date": "2027-02-01",
       "scores": {
-        "weather": null,
-        "distance": null,
-        "hills": null,
-        "total": null
+        "weather": 0.5692,
+        "distance": 1.0,
+        "hills": 0.8125,
+        "total": 0.7592
       },
       "legs": [
         {
@@ -142,8 +142,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 40.5,
-          "low_temp_f": 20.5,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -153,8 +153,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -164,8 +164,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 41.5,
-          "low_temp_f": 21.5,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -175,8 +175,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 22.0,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -186,8 +186,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 42.5,
-          "low_temp_f": 22.5,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -197,8 +197,8 @@
           "destination": "Oklahoma City, Oklahoma",
           "distance_miles": 59.84467500426593,
           "ascent_feet": 20.0,
-          "high_temp_f": 43.0,
-          "low_temp_f": 23.0,
+          "high_temp_f": 77.1,
+          "low_temp_f": 30.8,
           "is_rest_day": false
         },
         {
@@ -208,8 +208,8 @@
           "destination": "Topeka, Kansas",
           "distance_miles": 66.72385493546538,
           "ascent_feet": 340.0,
-          "high_temp_f": 38.7,
-          "low_temp_f": 18.7,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
           "is_rest_day": false
         },
         {
@@ -219,8 +219,8 @@
           "destination": "Topeka, Kansas",
           "distance_miles": 66.72385493546538,
           "ascent_feet": 340.0,
-          "high_temp_f": 39.2,
-          "low_temp_f": 19.2,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
           "is_rest_day": false
         },
         {
@@ -230,8 +230,8 @@
           "destination": "Topeka, Kansas",
           "distance_miles": 66.72385493546538,
           "ascent_feet": 340.0,
-          "high_temp_f": 39.7,
-          "low_temp_f": 19.7,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
           "is_rest_day": false
         },
         {
@@ -241,8 +241,8 @@
           "destination": "Topeka, Kansas",
           "distance_miles": 66.72385493546538,
           "ascent_feet": 340.0,
-          "high_temp_f": 40.2,
-          "low_temp_f": 20.2,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
           "is_rest_day": false
         },
         {
@@ -252,8 +252,8 @@
           "destination": "Jefferson City, Missouri",
           "distance_miles": 63.683172098442135,
           "ascent_feet": 370.0,
-          "high_temp_f": 40.6,
-          "low_temp_f": 20.6,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
           "is_rest_day": false
         },
         {
@@ -263,8 +263,8 @@
           "destination": "Jefferson City, Missouri",
           "distance_miles": 63.683172098442135,
           "ascent_feet": 370.0,
-          "high_temp_f": 36.1,
-          "low_temp_f": 16.1,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
           "is_rest_day": false
         },
         {
@@ -274,8 +274,8 @@
           "destination": "Jefferson City, Missouri",
           "distance_miles": 63.683172098442135,
           "ascent_feet": 370.0,
-          "high_temp_f": 36.6,
-          "low_temp_f": 16.6,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
           "is_rest_day": false
         },
         {
@@ -285,8 +285,8 @@
           "destination": "Little Rock, Arkansas",
           "distance_miles": 66.09047887554111,
           "ascent_feet": 422.5,
-          "high_temp_f": 39.6,
-          "low_temp_f": 19.6,
+          "high_temp_f": 75.8,
+          "low_temp_f": 34.2,
           "is_rest_day": false
         },
         {
@@ -296,8 +296,8 @@
           "destination": "Little Rock, Arkansas",
           "distance_miles": 66.09047887554111,
           "ascent_feet": 422.5,
-          "high_temp_f": 40.1,
-          "low_temp_f": 20.1,
+          "high_temp_f": 75.8,
+          "low_temp_f": 34.2,
           "is_rest_day": false
         },
         {
@@ -307,8 +307,8 @@
           "destination": "Little Rock, Arkansas",
           "distance_miles": 66.09047887554111,
           "ascent_feet": 422.5,
-          "high_temp_f": 40.6,
-          "low_temp_f": 20.6,
+          "high_temp_f": 75.8,
+          "low_temp_f": 34.2,
           "is_rest_day": false
         },
         {
@@ -318,8 +318,8 @@
           "destination": "Little Rock, Arkansas",
           "distance_miles": 66.09047887554111,
           "ascent_feet": 422.5,
-          "high_temp_f": 41.1,
-          "low_temp_f": 21.1,
+          "high_temp_f": 75.8,
+          "low_temp_f": 34.2,
           "is_rest_day": false
         },
         {
@@ -329,8 +329,8 @@
           "destination": "Jackson, Mississippi",
           "distance_miles": 69.26865230143041,
           "ascent_feet": 456.6666666666667,
-          "high_temp_f": 43.1,
-          "low_temp_f": 23.1,
+          "high_temp_f": 78.6,
+          "low_temp_f": 39.8,
           "is_rest_day": false
         },
         {
@@ -340,8 +340,8 @@
           "destination": "Jackson, Mississippi",
           "distance_miles": 69.26865230143041,
           "ascent_feet": 456.6666666666667,
-          "high_temp_f": 43.6,
-          "low_temp_f": 23.6,
+          "high_temp_f": 78.6,
+          "low_temp_f": 39.8,
           "is_rest_day": false
         },
         {
@@ -351,8 +351,8 @@
           "destination": "Jackson, Mississippi",
           "distance_miles": 69.26865230143041,
           "ascent_feet": 456.6666666666667,
-          "high_temp_f": 44.1,
-          "low_temp_f": 24.1,
+          "high_temp_f": 78.6,
+          "low_temp_f": 39.8,
           "is_rest_day": false
         },
         {
@@ -362,8 +362,8 @@
           "destination": "Baton Rouge, Louisiana",
           "distance_miles": 46.82524847907525,
           "ascent_feet": 83.33333333333333,
-          "high_temp_f": 45.6,
-          "low_temp_f": 25.6,
+          "high_temp_f": 80.3,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -373,8 +373,8 @@
           "destination": "Baton Rouge, Louisiana",
           "distance_miles": 46.82524847907525,
           "ascent_feet": 83.33333333333333,
-          "high_temp_f": 46.1,
-          "low_temp_f": 26.1,
+          "high_temp_f": 80.3,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -384,8 +384,8 @@
           "destination": "Baton Rouge, Louisiana",
           "distance_miles": 46.82524847907525,
           "ascent_feet": 83.33333333333333,
-          "high_temp_f": 46.6,
-          "low_temp_f": 26.6,
+          "high_temp_f": 80.3,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -395,8 +395,8 @@
           "destination": "Montgomery, Alabama",
           "distance_miles": 63.323873531212726,
           "ascent_feet": 226.0,
-          "high_temp_f": 45.0,
-          "low_temp_f": 25.0,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
           "is_rest_day": false
         },
         {
@@ -406,8 +406,8 @@
           "destination": "Montgomery, Alabama",
           "distance_miles": 63.323873531212726,
           "ascent_feet": 226.0,
-          "high_temp_f": 45.5,
-          "low_temp_f": 25.5,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
           "is_rest_day": false
         },
         {
@@ -417,8 +417,8 @@
           "destination": "Montgomery, Alabama",
           "distance_miles": 63.323873531212726,
           "ascent_feet": 226.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
           "is_rest_day": false
         },
         {
@@ -428,8 +428,8 @@
           "destination": "Montgomery, Alabama",
           "distance_miles": 63.323873531212726,
           "ascent_feet": 226.0,
-          "high_temp_f": 41.5,
-          "low_temp_f": 21.5,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
           "is_rest_day": false
         },
         {
@@ -439,8 +439,8 @@
           "destination": "Montgomery, Alabama",
           "distance_miles": 63.323873531212726,
           "ascent_feet": 226.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 22.0,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
           "is_rest_day": false
         },
         {
@@ -450,8 +450,8 @@
           "destination": "Tallahassee, Florida",
           "distance_miles": 59.799756458479415,
           "ascent_feet": 200.0,
-          "high_temp_f": 49.6,
-          "low_temp_f": 29.6,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
           "is_rest_day": false
         },
         {
@@ -461,8 +461,8 @@
           "destination": "Tallahassee, Florida",
           "distance_miles": 59.799756458479415,
           "ascent_feet": 200.0,
-          "high_temp_f": 50.1,
-          "low_temp_f": 30.1,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
           "is_rest_day": false
         },
         {
@@ -472,8 +472,8 @@
           "destination": "Tallahassee, Florida",
           "distance_miles": 59.799756458479415,
           "ascent_feet": 200.0,
-          "high_temp_f": 50.6,
-          "low_temp_f": 30.6,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
           "is_rest_day": false
         },
         {
@@ -483,8 +483,8 @@
           "destination": "Atlanta, Georgia",
           "distance_miles": 57.13109831235559,
           "ascent_feet": 32.5,
-          "high_temp_f": 51.0,
-          "low_temp_f": 31.0,
+          "high_temp_f": 80.8,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -494,8 +494,8 @@
           "destination": "Atlanta, Georgia",
           "distance_miles": 57.13109831235559,
           "ascent_feet": 32.5,
-          "high_temp_f": 46.5,
-          "low_temp_f": 26.5,
+          "high_temp_f": 80.8,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -505,8 +505,8 @@
           "destination": "Atlanta, Georgia",
           "distance_miles": 57.13109831235559,
           "ascent_feet": 32.5,
-          "high_temp_f": 47.0,
-          "low_temp_f": 27.0,
+          "high_temp_f": 80.8,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -516,8 +516,8 @@
           "destination": "Atlanta, Georgia",
           "distance_miles": 57.13109831235559,
           "ascent_feet": 32.5,
-          "high_temp_f": 47.5,
-          "low_temp_f": 27.5,
+          "high_temp_f": 80.8,
+          "low_temp_f": 45.3,
           "is_rest_day": false
         },
         {
@@ -527,8 +527,8 @@
           "destination": "Nashville, Tennessee",
           "distance_miles": 53.654230820707745,
           "ascent_feet": 97.5,
-          "high_temp_f": 46.6,
-          "low_temp_f": 26.6,
+          "high_temp_f": 80.1,
+          "low_temp_f": 40.2,
           "is_rest_day": false
         },
         {
@@ -538,8 +538,8 @@
           "destination": "Nashville, Tennessee",
           "distance_miles": 53.654230820707745,
           "ascent_feet": 97.5,
-          "high_temp_f": 47.1,
-          "low_temp_f": 27.1,
+          "high_temp_f": 80.1,
+          "low_temp_f": 40.2,
           "is_rest_day": false
         },
         {
@@ -549,8 +549,8 @@
           "destination": "Nashville, Tennessee",
           "distance_miles": 53.654230820707745,
           "ascent_feet": 97.5,
-          "high_temp_f": 47.6,
-          "low_temp_f": 27.6,
+          "high_temp_f": 80.1,
+          "low_temp_f": 40.2,
           "is_rest_day": false
         },
         {
@@ -560,8 +560,8 @@
           "destination": "Nashville, Tennessee",
           "distance_miles": 53.654230820707745,
           "ascent_feet": 97.5,
-          "high_temp_f": 48.1,
-          "low_temp_f": 28.1,
+          "high_temp_f": 80.1,
+          "low_temp_f": 40.2,
           "is_rest_day": false
         },
         {
@@ -571,8 +571,8 @@
           "destination": "Frankfort, Kentucky",
           "distance_miles": 58.484383246905445,
           "ascent_feet": 16.666666666666668,
-          "high_temp_f": 44.4,
-          "low_temp_f": 24.4,
+          "high_temp_f": 76.0,
+          "low_temp_f": 35.3,
           "is_rest_day": false
         },
         {
@@ -582,8 +582,8 @@
           "destination": "Frankfort, Kentucky",
           "distance_miles": 58.484383246905445,
           "ascent_feet": 16.666666666666668,
-          "high_temp_f": 44.9,
-          "low_temp_f": 24.9,
+          "high_temp_f": 76.0,
+          "low_temp_f": 35.3,
           "is_rest_day": false
         },
         {
@@ -593,8 +593,8 @@
           "destination": "Frankfort, Kentucky",
           "distance_miles": 58.484383246905445,
           "ascent_feet": 16.666666666666668,
-          "high_temp_f": 45.4,
-          "low_temp_f": 25.4,
+          "high_temp_f": 76.0,
+          "low_temp_f": 35.3,
           "is_rest_day": false
         },
         {
@@ -604,8 +604,8 @@
           "destination": "Charleston, West Virginia",
           "distance_miles": 58.614173649818646,
           "ascent_feet": 513.3333333333334,
-          "high_temp_f": 42.8,
-          "low_temp_f": 22.8,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
           "is_rest_day": false
         },
         {
@@ -615,8 +615,8 @@
           "destination": "Charleston, West Virginia",
           "distance_miles": 58.614173649818646,
           "ascent_feet": 513.3333333333334,
-          "high_temp_f": 43.3,
-          "low_temp_f": 23.3,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
           "is_rest_day": false
         },
         {
@@ -626,8 +626,8 @@
           "destination": "Charleston, West Virginia",
           "distance_miles": 58.614173649818646,
           "ascent_feet": 513.3333333333334,
-          "high_temp_f": 43.8,
-          "low_temp_f": 23.8,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
           "is_rest_day": false
         },
         {
@@ -637,8 +637,8 @@
           "destination": "Columbia, South Carolina",
           "distance_miles": 60.411955931700845,
           "ascent_feet": 226.0,
-          "high_temp_f": 50.3,
-          "low_temp_f": 30.3,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
           "is_rest_day": false
         },
         {
@@ -648,8 +648,8 @@
           "destination": "Columbia, South Carolina",
           "distance_miles": 60.411955931700845,
           "ascent_feet": 226.0,
-          "high_temp_f": 50.8,
-          "low_temp_f": 30.8,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
           "is_rest_day": false
         },
         {
@@ -659,8 +659,8 @@
           "destination": "Columbia, South Carolina",
           "distance_miles": 60.411955931700845,
           "ascent_feet": 226.0,
-          "high_temp_f": 46.3,
-          "low_temp_f": 26.3,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
           "is_rest_day": false
         },
         {
@@ -670,8 +670,8 @@
           "destination": "Columbia, South Carolina",
           "distance_miles": 60.411955931700845,
           "ascent_feet": 226.0,
-          "high_temp_f": 46.8,
-          "low_temp_f": 26.8,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
           "is_rest_day": false
         },
         {
@@ -681,8 +681,8 @@
           "destination": "Columbia, South Carolina",
           "distance_miles": 60.411955931700845,
           "ascent_feet": 226.0,
-          "high_temp_f": 47.3,
-          "low_temp_f": 27.3,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
           "is_rest_day": false
         },
         {
@@ -692,8 +692,8 @@
           "destination": "Raleigh, North Carolina",
           "distance_miles": 61.00748848625998,
           "ascent_feet": 60.0,
-          "high_temp_f": 46.4,
-          "low_temp_f": 26.4,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
           "is_rest_day": false
         },
         {
@@ -703,8 +703,8 @@
           "destination": "Raleigh, North Carolina",
           "distance_miles": 61.00748848625998,
           "ascent_feet": 60.0,
-          "high_temp_f": 46.9,
-          "low_temp_f": 26.9,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
           "is_rest_day": false
         },
         {
@@ -714,8 +714,8 @@
           "destination": "Raleigh, North Carolina",
           "distance_miles": 61.00748848625998,
           "ascent_feet": 60.0,
-          "high_temp_f": 47.4,
-          "low_temp_f": 27.4,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
           "is_rest_day": false
         },
         {
@@ -725,8 +725,8 @@
           "destination": "Richmond, Virginia",
           "distance_miles": 69.27140629439191,
           "ascent_feet": 935.0,
-          "high_temp_f": 46.0,
-          "low_temp_f": 26.0,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
           "is_rest_day": false
         },
         {
@@ -736,8 +736,8 @@
           "destination": "Richmond, Virginia",
           "distance_miles": 69.27140629439191,
           "ascent_feet": 935.0,
-          "high_temp_f": 46.5,
-          "low_temp_f": 26.5,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
           "is_rest_day": false
         },
         {
@@ -747,8 +747,8 @@
           "destination": "Harrisburg, Pennsylvania",
           "distance_miles": 63.611810186873704,
           "ascent_feet": 373.3333333333333,
-          "high_temp_f": 42.8,
-          "low_temp_f": 22.8,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
           "is_rest_day": false
         },
         {
@@ -758,8 +758,8 @@
           "destination": "Harrisburg, Pennsylvania",
           "distance_miles": 63.611810186873704,
           "ascent_feet": 373.3333333333333,
-          "high_temp_f": 43.3,
-          "low_temp_f": 23.3,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
           "is_rest_day": false
         },
         {
@@ -769,8 +769,8 @@
           "destination": "Harrisburg, Pennsylvania",
           "distance_miles": 63.611810186873704,
           "ascent_feet": 373.3333333333333,
-          "high_temp_f": 43.8,
-          "low_temp_f": 23.8,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
           "is_rest_day": false
         },
         {
@@ -796,232 +796,4632 @@
           "is_rest_day": false
         }
       ],
-      "violations": [
+      "violations": []
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Austin, Texas",
+      "completion_city": "Washington, DC",
+      "via_cities": [
+        "Topeka, Kansas",
+        "Jefferson City, Missouri",
+        "Frankfort, Kentucky",
+        "Nashville, Tennessee",
+        "Atlanta, Georgia",
+        "Montgomery, Alabama",
+        "Harrisburg, Pennsylvania",
+        "Richmond, Virginia",
+        "Charleston, West Virginia",
+        "Raleigh, North Carolina",
+        "Columbia, South Carolina",
+        "Tallahassee, Florida",
+        "Baton Rouge, Louisiana",
+        "Jackson, Mississippi",
+        "Little Rock, Arkansas",
+        "Oklahoma City, Oklahoma"
+      ],
+      "start_date": "2027-02-01",
+      "scores": {
+        "weather": 0.5305,
+        "distance": 0.3838,
+        "hills": 0.8595,
+        "total": 0.5688
+      },
+      "legs": [
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-01",
-          "observed_value": 20.5,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 617.0911970878383,
+          "ascent_feet": 680.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-02",
-          "observed_value": 21.0,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 191.0495162953264,
+          "ascent_feet": 1110.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-03",
-          "observed_value": 21.5,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 395.66894608564655,
+          "ascent_feet": 50.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-04",
-          "observed_value": 22.0,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 175.45314974071633,
+          "ascent_feet": 50.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-05",
-          "observed_value": 22.5,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 214.61692328283098,
+          "ascent_feet": 390.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Oklahoma City, Oklahoma",
-          "date": "2027-02-06",
-          "observed_value": 23.0,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Oklahoma City, Oklahoma."
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 145.79539140390185,
+          "ascent_feet": 950.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Topeka, Kansas",
-          "date": "2027-02-07",
-          "observed_value": 18.7,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas."
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 755.6203870240616,
+          "ascent_feet": 650.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Topeka, Kansas",
-          "date": "2027-02-08",
-          "observed_value": 19.2,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas."
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 190.83543056062112,
+          "ascent_feet": 1120.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Topeka, Kansas",
-          "date": "2027-02-09",
-          "observed_value": 19.7,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas."
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 235.07634300171375,
+          "ascent_feet": 820.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Topeka, Kansas",
-          "date": "2027-02-10",
-          "observed_value": 20.2,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas."
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 242.1413351481829,
+          "ascent_feet": 330.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Jefferson City, Missouri",
-          "date": "2027-02-11",
-          "observed_value": 20.6,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri."
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 183.02246545877995,
+          "ascent_feet": 180.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Jefferson City, Missouri",
-          "date": "2027-02-12",
-          "observed_value": 16.1,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri."
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 310.2562262645804,
+          "ascent_feet": 1380.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Jefferson City, Missouri",
-          "date": "2027-02-13",
-          "observed_value": 16.6,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri."
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 410.8355525004597,
+          "ascent_feet": 310.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Little Rock, Arkansas",
-          "date": "2027-02-14",
-          "observed_value": 19.6,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Little Rock, Arkansas."
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 140.47574543722575,
+          "ascent_feet": 250.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Little Rock, Arkansas",
-          "date": "2027-02-15",
-          "observed_value": 20.1,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Little Rock, Arkansas."
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 207.8059569042912,
+          "ascent_feet": 1370.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Little Rock, Arkansas",
-          "date": "2027-02-16",
-          "observed_value": 20.6,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Little Rock, Arkansas."
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 299.2055635344243,
+          "ascent_feet": 1940.0
         },
         {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Little Rock, Arkansas",
-          "date": "2027-02-17",
-          "observed_value": 21.1,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Little Rock, Arkansas."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Jackson, Mississippi",
-          "date": "2027-02-18",
-          "observed_value": 23.1,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Jackson, Mississippi."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Jackson, Mississippi",
-          "date": "2027-02-19",
-          "observed_value": 23.6,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Jackson, Mississippi."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Montgomery, Alabama",
-          "date": "2027-02-26",
-          "observed_value": 21.0,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Montgomery, Alabama."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Montgomery, Alabama",
-          "date": "2027-02-27",
-          "observed_value": 21.5,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Montgomery, Alabama."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Montgomery, Alabama",
-          "date": "2027-02-28",
-          "observed_value": 22.0,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Montgomery, Alabama."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Charleston, West Virginia",
-          "date": "2027-03-15",
-          "observed_value": 22.8,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Charleston, West Virginia",
-          "date": "2027-03-16",
-          "observed_value": 23.3,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Charleston, West Virginia",
-          "date": "2027-03-17",
-          "observed_value": 23.8,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Harrisburg, Pennsylvania",
-          "date": "2027-03-28",
-          "observed_value": 22.8,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Harrisburg, Pennsylvania",
-          "date": "2027-03-29",
-          "observed_value": 23.3,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania."
-        },
-        {
-          "code": "INFEASIBLE_WEATHER_MIN_LOW",
-          "location": "Harrisburg, Pennsylvania",
-          "date": "2027-03-30",
-          "observed_value": 23.8,
-          "threshold_limit": 24,
-          "remediation_hint": "Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania."
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 1150.4981012566777,
+          "ascent_feet": 360.0
         }
-      ]
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2027-02-01",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2027-02-02",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2027-02-03",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2027-02-04",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2027-02-05",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2027-02-06",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2027-02-07",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2027-02-08",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2027-02-09",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2027-02-10",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2027-02-11",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2027-02-12",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2027-02-13",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2027-02-14",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2027-02-15",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2027-02-16",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2027-02-17",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2027-02-18",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2027-02-19",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2027-02-20",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2027-02-21",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2027-02-22",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2027-02-23",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2027-02-24",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2027-02-25",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2027-02-26",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2027-02-27",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2027-02-28",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2027-03-01",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2027-03-02",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2027-03-03",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2027-03-04",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2027-03-05",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2027-03-06",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 35,
+          "date": "2027-03-07",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 36,
+          "date": "2027-03-08",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 37,
+          "date": "2027-03-09",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 38,
+          "date": "2027-03-10",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 39,
+          "date": "2027-03-11",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 40,
+          "date": "2027-03-12",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 41,
+          "date": "2027-03-13",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 42,
+          "date": "2027-03-14",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 43,
+          "date": "2027-03-15",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 44,
+          "date": "2027-03-16",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 45,
+          "date": "2027-03-17",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 46,
+          "date": "2027-03-18",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 47,
+          "date": "2027-03-19",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 48,
+          "date": "2027-03-20",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 49,
+          "date": "2027-03-21",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 50,
+          "date": "2027-03-22",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 51,
+          "date": "2027-03-23",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 52,
+          "date": "2027-03-24",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 53,
+          "date": "2027-03-25",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 54,
+          "date": "2027-03-26",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 55,
+          "date": "2027-03-27",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 56,
+          "date": "2027-03-28",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 57,
+          "date": "2027-03-29",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 58,
+          "date": "2027-03-30",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 59,
+          "date": "2027-03-31",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 84.3,
+          "low_temp_f": 51.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 60,
+          "date": "2027-04-01",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 61,
+          "date": "2027-04-02",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 62,
+          "date": "2027-04-03",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 63,
+          "date": "2027-04-04",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 64,
+          "date": "2027-04-05",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 65,
+          "date": "2027-04-06",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 66,
+          "date": "2027-04-07",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 67,
+          "date": "2027-04-08",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 68,
+          "date": "2027-04-09",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 69,
+          "date": "2027-04-10",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 70,
+          "date": "2027-04-11",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 71,
+          "date": "2027-04-12",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 72,
+          "date": "2027-04-13",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 73,
+          "date": "2027-04-14",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 74,
+          "date": "2027-04-15",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 75,
+          "date": "2027-04-16",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 76,
+          "date": "2027-04-17",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 77,
+          "date": "2027-04-18",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 78,
+          "date": "2027-04-19",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 79,
+          "date": "2027-04-20",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 80,
+          "date": "2027-04-21",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.9,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 81,
+          "date": "2027-04-22",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.4,
+          "low_temp_f": 31.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 82,
+          "date": "2027-04-23",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.9,
+          "low_temp_f": 31.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 83,
+          "date": "2027-04-24",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.4,
+          "low_temp_f": 32.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 84,
+          "date": "2027-04-25",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.9,
+          "low_temp_f": 32.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 85,
+          "date": "2027-04-26",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.4,
+          "low_temp_f": 33.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 86,
+          "date": "2027-04-27",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 87,
+          "date": "2027-04-28",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 88,
+          "date": "2027-04-29",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 89,
+          "date": "2027-04-30",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 90,
+          "date": "2027-05-01",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 64.9,
+          "low_temp_f": 44.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 91,
+          "date": "2027-05-02",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.4,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 92,
+          "date": "2027-05-03",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.9,
+          "low_temp_f": 40.9,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Austin, Texas",
+      "completion_city": "Washington, DC",
+      "via_cities": [
+        "Topeka, Kansas",
+        "Jefferson City, Missouri",
+        "Frankfort, Kentucky",
+        "Atlanta, Georgia",
+        "Nashville, Tennessee",
+        "Harrisburg, Pennsylvania",
+        "Richmond, Virginia",
+        "Charleston, West Virginia",
+        "Raleigh, North Carolina",
+        "Columbia, South Carolina",
+        "Montgomery, Alabama",
+        "Tallahassee, Florida",
+        "Baton Rouge, Louisiana",
+        "Jackson, Mississippi",
+        "Little Rock, Arkansas",
+        "Oklahoma City, Oklahoma"
+      ],
+      "start_date": "2027-02-01",
+      "scores": {
+        "weather": 0.5183,
+        "distance": 0.3797,
+        "hills": 0.8831,
+        "total": 0.5679
+      },
+      "legs": [
+        {
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 617.0911970878383,
+          "ascent_feet": 680.0
+        },
+        {
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 191.0495162953264,
+          "ascent_feet": 1110.0
+        },
+        {
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 395.66894608564655,
+          "ascent_feet": 50.0
+        },
+        {
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 308.37410653594355,
+          "ascent_feet": 140.0
+        },
+        {
+          "origin": "Atlanta, Georgia",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 214.61692328283098,
+          "ascent_feet": 390.0
+        },
+        {
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 606.777178572567,
+          "ascent_feet": 90.0
+        },
+        {
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 190.83543056062112,
+          "ascent_feet": 1120.0
+        },
+        {
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 235.07634300171375,
+          "ascent_feet": 820.0
+        },
+        {
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 242.1413351481829,
+          "ascent_feet": 330.0
+        },
+        {
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 183.02246545877995,
+          "ascent_feet": 180.0
+        },
+        {
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 324.33875097206095,
+          "ascent_feet": 200.0
+        },
+        {
+          "origin": "Montgomery, Alabama",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 179.39926937543825,
+          "ascent_feet": 600.0
+        },
+        {
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 410.8355525004597,
+          "ascent_feet": 310.0
+        },
+        {
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 140.47574543722575,
+          "ascent_feet": 250.0
+        },
+        {
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 207.8059569042912,
+          "ascent_feet": 1370.0
+        },
+        {
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 299.2055635344243,
+          "ascent_feet": 1940.0
+        },
+        {
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 1150.4981012566777,
+          "ascent_feet": 360.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2027-02-01",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2027-02-02",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2027-02-03",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2027-02-04",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2027-02-05",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2027-02-06",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2027-02-07",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2027-02-08",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2027-02-09",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2027-02-10",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2027-02-11",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2027-02-12",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2027-02-13",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2027-02-14",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2027-02-15",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2027-02-16",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2027-02-17",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2027-02-18",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2027-02-19",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 61.67482130718871,
+          "ascent_feet": 28.0,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2027-02-20",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 61.67482130718871,
+          "ascent_feet": 28.0,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2027-02-21",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 61.67482130718871,
+          "ascent_feet": 28.0,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2027-02-22",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 61.67482130718871,
+          "ascent_feet": 28.0,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2027-02-23",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 61.67482130718871,
+          "ascent_feet": 28.0,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2027-02-24",
+          "origin": "Atlanta, Georgia",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2027-02-25",
+          "origin": "Atlanta, Georgia",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2027-02-26",
+          "origin": "Atlanta, Georgia",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2027-02-27",
+          "origin": "Atlanta, Georgia",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2027-02-28",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 61.4,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2027-03-01",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2027-03-02",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2027-03-03",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2027-03-04",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2027-03-05",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2027-03-06",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 35,
+          "date": "2027-03-07",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 36,
+          "date": "2027-03-08",
+          "origin": "Nashville, Tennessee",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 67.419686508063,
+          "ascent_feet": 10.0,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 37,
+          "date": "2027-03-09",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 38,
+          "date": "2027-03-10",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 39,
+          "date": "2027-03-11",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 40,
+          "date": "2027-03-12",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 41,
+          "date": "2027-03-13",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 42,
+          "date": "2027-03-14",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 43,
+          "date": "2027-03-15",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 44,
+          "date": "2027-03-16",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 45,
+          "date": "2027-03-17",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 46,
+          "date": "2027-03-18",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 47,
+          "date": "2027-03-19",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 48,
+          "date": "2027-03-20",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 49,
+          "date": "2027-03-21",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 50,
+          "date": "2027-03-22",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 51,
+          "date": "2027-03-23",
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 64.8677501944122,
+          "ascent_feet": 40.0,
+          "high_temp_f": 84.7,
+          "low_temp_f": 46.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 52,
+          "date": "2027-03-24",
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 64.8677501944122,
+          "ascent_feet": 40.0,
+          "high_temp_f": 84.7,
+          "low_temp_f": 46.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 53,
+          "date": "2027-03-25",
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 64.8677501944122,
+          "ascent_feet": 40.0,
+          "high_temp_f": 84.7,
+          "low_temp_f": 46.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 54,
+          "date": "2027-03-26",
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 64.8677501944122,
+          "ascent_feet": 40.0,
+          "high_temp_f": 84.7,
+          "low_temp_f": 46.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 55,
+          "date": "2027-03-27",
+          "origin": "Columbia, South Carolina",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 64.8677501944122,
+          "ascent_feet": 40.0,
+          "high_temp_f": 84.7,
+          "low_temp_f": 46.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 56,
+          "date": "2027-03-28",
+          "origin": "Montgomery, Alabama",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 59.799756458479415,
+          "ascent_feet": 200.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 57,
+          "date": "2027-03-29",
+          "origin": "Montgomery, Alabama",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 59.799756458479415,
+          "ascent_feet": 200.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 58,
+          "date": "2027-03-30",
+          "origin": "Montgomery, Alabama",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 59.799756458479415,
+          "ascent_feet": 200.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 59,
+          "date": "2027-03-31",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 84.3,
+          "low_temp_f": 51.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 60,
+          "date": "2027-04-01",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 61,
+          "date": "2027-04-02",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 62,
+          "date": "2027-04-03",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 63,
+          "date": "2027-04-04",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 64,
+          "date": "2027-04-05",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 65,
+          "date": "2027-04-06",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 66,
+          "date": "2027-04-07",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 67,
+          "date": "2027-04-08",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 68,
+          "date": "2027-04-09",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 69,
+          "date": "2027-04-10",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 70,
+          "date": "2027-04-11",
+          "origin": "Jackson, Mississippi",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 69.26865230143041,
+          "ascent_feet": 456.6666666666667,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 71,
+          "date": "2027-04-12",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 72,
+          "date": "2027-04-13",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 73,
+          "date": "2027-04-14",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 74,
+          "date": "2027-04-15",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 75,
+          "date": "2027-04-16",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 76,
+          "date": "2027-04-17",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 77,
+          "date": "2027-04-18",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 78,
+          "date": "2027-04-19",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 79,
+          "date": "2027-04-20",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 80,
+          "date": "2027-04-21",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.9,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 81,
+          "date": "2027-04-22",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.4,
+          "low_temp_f": 31.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 82,
+          "date": "2027-04-23",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.9,
+          "low_temp_f": 31.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 83,
+          "date": "2027-04-24",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.4,
+          "low_temp_f": 32.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 84,
+          "date": "2027-04-25",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.9,
+          "low_temp_f": 32.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 85,
+          "date": "2027-04-26",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.4,
+          "low_temp_f": 33.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 86,
+          "date": "2027-04-27",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 87,
+          "date": "2027-04-28",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 88,
+          "date": "2027-04-29",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 89,
+          "date": "2027-04-30",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 90,
+          "date": "2027-05-01",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 64.9,
+          "low_temp_f": 44.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 91,
+          "date": "2027-05-02",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.4,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 92,
+          "date": "2027-05-03",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.9,
+          "low_temp_f": 40.9,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Austin, Texas",
+      "completion_city": "Washington, DC",
+      "via_cities": [
+        "Topeka, Kansas",
+        "Jefferson City, Missouri",
+        "Frankfort, Kentucky",
+        "Nashville, Tennessee",
+        "Atlanta, Georgia",
+        "Montgomery, Alabama",
+        "Harrisburg, Pennsylvania",
+        "Richmond, Virginia",
+        "Charleston, West Virginia",
+        "Raleigh, North Carolina",
+        "Columbia, South Carolina",
+        "Tallahassee, Florida",
+        "Baton Rouge, Louisiana",
+        "Jackson, Mississippi",
+        "Oklahoma City, Oklahoma",
+        "Little Rock, Arkansas"
+      ],
+      "start_date": "2027-02-01",
+      "scores": {
+        "weather": 0.5279,
+        "distance": 0.3832,
+        "hills": 0.8595,
+        "total": 0.5674
+      },
+      "legs": [
+        {
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 617.0911970878383,
+          "ascent_feet": 680.0
+        },
+        {
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 191.0495162953264,
+          "ascent_feet": 1110.0
+        },
+        {
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 395.66894608564655,
+          "ascent_feet": 50.0
+        },
+        {
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 175.45314974071633,
+          "ascent_feet": 50.0
+        },
+        {
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 214.61692328283098,
+          "ascent_feet": 390.0
+        },
+        {
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 145.79539140390185,
+          "ascent_feet": 950.0
+        },
+        {
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 755.6203870240616,
+          "ascent_feet": 650.0
+        },
+        {
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 190.83543056062112,
+          "ascent_feet": 1120.0
+        },
+        {
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 235.07634300171375,
+          "ascent_feet": 820.0
+        },
+        {
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 242.1413351481829,
+          "ascent_feet": 330.0
+        },
+        {
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 183.02246545877995,
+          "ascent_feet": 180.0
+        },
+        {
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 310.2562262645804,
+          "ascent_feet": 1380.0
+        },
+        {
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 410.8355525004597,
+          "ascent_feet": 310.0
+        },
+        {
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 140.47574543722575,
+          "ascent_feet": 250.0
+        },
+        {
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 473.4776800315412,
+          "ascent_feet": 230.0
+        },
+        {
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 299.2055635344243,
+          "ascent_feet": 1940.0
+        },
+        {
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 889.9980884696508,
+          "ascent_feet": 1500.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2027-02-01",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2027-02-02",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2027-02-03",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2027-02-04",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2027-02-05",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2027-02-06",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2027-02-07",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2027-02-08",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2027-02-09",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2027-02-10",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2027-02-11",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2027-02-12",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2027-02-13",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2027-02-14",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2027-02-15",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2027-02-16",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2027-02-17",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2027-02-18",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2027-02-19",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2027-02-20",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2027-02-21",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2027-02-22",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2027-02-23",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2027-02-24",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2027-02-25",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2027-02-26",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2027-02-27",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2027-02-28",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2027-03-01",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2027-03-02",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2027-03-03",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2027-03-04",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2027-03-05",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2027-03-06",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 35,
+          "date": "2027-03-07",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 36,
+          "date": "2027-03-08",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 37,
+          "date": "2027-03-09",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 38,
+          "date": "2027-03-10",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 39,
+          "date": "2027-03-11",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 40,
+          "date": "2027-03-12",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 41,
+          "date": "2027-03-13",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 42,
+          "date": "2027-03-14",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 43,
+          "date": "2027-03-15",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 44,
+          "date": "2027-03-16",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 45,
+          "date": "2027-03-17",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 46,
+          "date": "2027-03-18",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 47,
+          "date": "2027-03-19",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 48,
+          "date": "2027-03-20",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 49,
+          "date": "2027-03-21",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 50,
+          "date": "2027-03-22",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 51,
+          "date": "2027-03-23",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 52,
+          "date": "2027-03-24",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 53,
+          "date": "2027-03-25",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 54,
+          "date": "2027-03-26",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 55,
+          "date": "2027-03-27",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 56,
+          "date": "2027-03-28",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 57,
+          "date": "2027-03-29",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 58,
+          "date": "2027-03-30",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 59,
+          "date": "2027-03-31",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 84.3,
+          "low_temp_f": 51.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 60,
+          "date": "2027-04-01",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 61,
+          "date": "2027-04-02",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 62,
+          "date": "2027-04-03",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 63,
+          "date": "2027-04-04",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 64,
+          "date": "2027-04-05",
+          "origin": "Tallahassee, Florida",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 68.47259208340995,
+          "ascent_feet": 51.666666666666664,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 65,
+          "date": "2027-04-06",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 66,
+          "date": "2027-04-07",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 67,
+          "date": "2027-04-08",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 68,
+          "date": "2027-04-09",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 69,
+          "date": "2027-04-10",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 70,
+          "date": "2027-04-11",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 71,
+          "date": "2027-04-12",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 72,
+          "date": "2027-04-13",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 73,
+          "date": "2027-04-14",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 74,
+          "date": "2027-04-15",
+          "origin": "Jackson, Mississippi",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 67.63966857593445,
+          "ascent_feet": 32.857142857142854,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 75,
+          "date": "2027-04-16",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 76,
+          "date": "2027-04-17",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 77,
+          "date": "2027-04-18",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 78,
+          "date": "2027-04-19",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 79,
+          "date": "2027-04-20",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 80,
+          "date": "2027-04-21",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 55.9,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 81,
+          "date": "2027-04-22",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 51.4,
+          "low_temp_f": 31.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 82,
+          "date": "2027-04-23",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 51.9,
+          "low_temp_f": 31.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 83,
+          "date": "2027-04-24",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 52.4,
+          "low_temp_f": 32.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 84,
+          "date": "2027-04-25",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 52.9,
+          "low_temp_f": 32.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 85,
+          "date": "2027-04-26",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 53.4,
+          "low_temp_f": 33.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 86,
+          "date": "2027-04-27",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 87,
+          "date": "2027-04-28",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 88,
+          "date": "2027-04-29",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 89,
+          "date": "2027-04-30",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 90,
+          "date": "2027-05-01",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 64.9,
+          "low_temp_f": 44.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 91,
+          "date": "2027-05-02",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 60.4,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 92,
+          "date": "2027-05-03",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Washington, DC",
+          "distance_miles": 68.46139142074237,
+          "ascent_feet": 115.38461538461539,
+          "high_temp_f": 60.9,
+          "low_temp_f": 40.9,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
+    },
+    {
+      "is_feasible": true,
+      "start_city": "Austin, Texas",
+      "completion_city": "Washington, DC",
+      "via_cities": [
+        "Topeka, Kansas",
+        "Jefferson City, Missouri",
+        "Frankfort, Kentucky",
+        "Nashville, Tennessee",
+        "Atlanta, Georgia",
+        "Montgomery, Alabama",
+        "Harrisburg, Pennsylvania",
+        "Richmond, Virginia",
+        "Charleston, West Virginia",
+        "Raleigh, North Carolina",
+        "Columbia, South Carolina",
+        "Tallahassee, Florida",
+        "Jackson, Mississippi",
+        "Baton Rouge, Louisiana",
+        "Little Rock, Arkansas",
+        "Oklahoma City, Oklahoma"
+      ],
+      "start_date": "2027-02-01",
+      "scores": {
+        "weather": 0.5326,
+        "distance": 0.3767,
+        "hills": 0.836,
+        "total": 0.5617
+      },
+      "legs": [
+        {
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 617.0911970878383,
+          "ascent_feet": 680.0
+        },
+        {
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 191.0495162953264,
+          "ascent_feet": 1110.0
+        },
+        {
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 395.66894608564655,
+          "ascent_feet": 50.0
+        },
+        {
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 175.45314974071633,
+          "ascent_feet": 50.0
+        },
+        {
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 214.61692328283098,
+          "ascent_feet": 390.0
+        },
+        {
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 145.79539140390185,
+          "ascent_feet": 950.0
+        },
+        {
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 755.6203870240616,
+          "ascent_feet": 650.0
+        },
+        {
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 190.83543056062112,
+          "ascent_feet": 1120.0
+        },
+        {
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 235.07634300171375,
+          "ascent_feet": 820.0
+        },
+        {
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 242.1413351481829,
+          "ascent_feet": 330.0
+        },
+        {
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 183.02246545877995,
+          "ascent_feet": 180.0
+        },
+        {
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 310.2562262645804,
+          "ascent_feet": 1380.0
+        },
+        {
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 370.77162931615516,
+          "ascent_feet": 1720.0
+        },
+        {
+          "origin": "Jackson, Mississippi",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 140.47574543722575,
+          "ascent_feet": 250.0
+        },
+        {
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 303.2055082576219,
+          "ascent_feet": 1960.0
+        },
+        {
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 299.2055635344243,
+          "ascent_feet": 1940.0
+        },
+        {
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 1150.4981012566777,
+          "ascent_feet": 360.0
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2027-02-01",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2027-02-02",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2027-02-03",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2027-02-04",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2027-02-05",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2027-02-06",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2027-02-07",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2027-02-08",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2027-02-09",
+          "origin": "Austin, Texas",
+          "destination": "Topeka, Kansas",
+          "distance_miles": 68.56568856531537,
+          "ascent_feet": 75.55555555555556,
+          "high_temp_f": 70.0,
+          "low_temp_f": 24.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2027-02-10",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2027-02-11",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2027-02-12",
+          "origin": "Topeka, Kansas",
+          "destination": "Jefferson City, Missouri",
+          "distance_miles": 63.683172098442135,
+          "ascent_feet": 370.0,
+          "high_temp_f": 71.7,
+          "low_temp_f": 24.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2027-02-13",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2027-02-14",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2027-02-15",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2027-02-16",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2027-02-17",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2027-02-18",
+          "origin": "Jefferson City, Missouri",
+          "destination": "Frankfort, Kentucky",
+          "distance_miles": 65.94482434760776,
+          "ascent_feet": 8.333333333333334,
+          "high_temp_f": 68.8,
+          "low_temp_f": 28.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2027-02-19",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2027-02-20",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2027-02-21",
+          "origin": "Frankfort, Kentucky",
+          "destination": "Nashville, Tennessee",
+          "distance_miles": 58.484383246905445,
+          "ascent_feet": 16.666666666666668,
+          "high_temp_f": 73.3,
+          "low_temp_f": 33.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2027-02-22",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2027-02-23",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2027-02-24",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2027-02-25",
+          "origin": "Nashville, Tennessee",
+          "destination": "Atlanta, Georgia",
+          "distance_miles": 53.654230820707745,
+          "ascent_feet": 97.5,
+          "high_temp_f": 73.5,
+          "low_temp_f": 38.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2027-02-26",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2027-02-27",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2027-02-28",
+          "origin": "Atlanta, Georgia",
+          "destination": "Montgomery, Alabama",
+          "distance_miles": 48.59846380130062,
+          "ascent_feet": 316.6666666666667,
+          "high_temp_f": 78.8,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2027-03-01",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2027-03-02",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2027-03-03",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2027-03-04",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2027-03-05",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2027-03-06",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 35,
+          "date": "2027-03-07",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 36,
+          "date": "2027-03-08",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 37,
+          "date": "2027-03-09",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 38,
+          "date": "2027-03-10",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 39,
+          "date": "2027-03-11",
+          "origin": "Montgomery, Alabama",
+          "destination": "Harrisburg, Pennsylvania",
+          "distance_miles": 68.69276245673288,
+          "ascent_feet": 59.09090909090909,
+          "high_temp_f": 72.7,
+          "low_temp_f": 32.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 40,
+          "date": "2027-03-12",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 41,
+          "date": "2027-03-13",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 42,
+          "date": "2027-03-14",
+          "origin": "Harrisburg, Pennsylvania",
+          "destination": "Richmond, Virginia",
+          "distance_miles": 63.611810186873704,
+          "ascent_feet": 373.3333333333333,
+          "high_temp_f": 80.5,
+          "low_temp_f": 37.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 43,
+          "date": "2027-03-15",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 44,
+          "date": "2027-03-16",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 45,
+          "date": "2027-03-17",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 46,
+          "date": "2027-03-18",
+          "origin": "Richmond, Virginia",
+          "destination": "Charleston, West Virginia",
+          "distance_miles": 58.76908575042844,
+          "ascent_feet": 205.0,
+          "high_temp_f": 79.1,
+          "low_temp_f": 35.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 47,
+          "date": "2027-03-19",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 48,
+          "date": "2027-03-20",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 49,
+          "date": "2027-03-21",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 50,
+          "date": "2027-03-22",
+          "origin": "Charleston, West Virginia",
+          "destination": "Raleigh, North Carolina",
+          "distance_miles": 60.53533378704572,
+          "ascent_feet": 82.5,
+          "high_temp_f": 81.6,
+          "low_temp_f": 40.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 51,
+          "date": "2027-03-23",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 52,
+          "date": "2027-03-24",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 53,
+          "date": "2027-03-25",
+          "origin": "Raleigh, North Carolina",
+          "destination": "Columbia, South Carolina",
+          "distance_miles": 61.00748848625998,
+          "ascent_feet": 60.0,
+          "high_temp_f": 84.1,
+          "low_temp_f": 43.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 54,
+          "date": "2027-03-26",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 55,
+          "date": "2027-03-27",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 56,
+          "date": "2027-03-28",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 57,
+          "date": "2027-03-29",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 58,
+          "date": "2027-03-30",
+          "origin": "Columbia, South Carolina",
+          "destination": "Tallahassee, Florida",
+          "distance_miles": 62.051245252916075,
+          "ascent_feet": 276.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 48.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 59,
+          "date": "2027-03-31",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 83.5,
+          "low_temp_f": 46.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 60,
+          "date": "2027-04-01",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 61,
+          "date": "2027-04-02",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 62,
+          "date": "2027-04-03",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 63,
+          "date": "2027-04-04",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 64,
+          "date": "2027-04-05",
+          "origin": "Tallahassee, Florida",
+          "destination": "Jackson, Mississippi",
+          "distance_miles": 61.795271552692526,
+          "ascent_feet": 286.6666666666667,
+          "high_temp_f": 86.8,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 65,
+          "date": "2027-04-06",
+          "origin": "Jackson, Mississippi",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 66,
+          "date": "2027-04-07",
+          "origin": "Jackson, Mississippi",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 67,
+          "date": "2027-04-08",
+          "origin": "Jackson, Mississippi",
+          "destination": "Baton Rouge, Louisiana",
+          "distance_miles": 46.82524847907525,
+          "ascent_feet": 83.33333333333333,
+          "high_temp_f": 87.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 68,
+          "date": "2027-04-09",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 60.64110165152438,
+          "ascent_feet": 392.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 69,
+          "date": "2027-04-10",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 60.64110165152438,
+          "ascent_feet": 392.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 70,
+          "date": "2027-04-11",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 60.64110165152438,
+          "ascent_feet": 392.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 71,
+          "date": "2027-04-12",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 60.64110165152438,
+          "ascent_feet": 392.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 72,
+          "date": "2027-04-13",
+          "origin": "Baton Rouge, Louisiana",
+          "destination": "Little Rock, Arkansas",
+          "distance_miles": 60.64110165152438,
+          "ascent_feet": 392.0,
+          "high_temp_f": 86.2,
+          "low_temp_f": 50.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 73,
+          "date": "2027-04-14",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 74,
+          "date": "2027-04-15",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 75,
+          "date": "2027-04-16",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 76,
+          "date": "2027-04-17",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 77,
+          "date": "2027-04-18",
+          "origin": "Little Rock, Arkansas",
+          "destination": "Oklahoma City, Oklahoma",
+          "distance_miles": 59.84111270688486,
+          "ascent_feet": 388.0,
+          "high_temp_f": 86.9,
+          "low_temp_f": 47.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 78,
+          "date": "2027-04-19",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 79,
+          "date": "2027-04-20",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 80,
+          "date": "2027-04-21",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.9,
+          "low_temp_f": 35.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 81,
+          "date": "2027-04-22",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.4,
+          "low_temp_f": 31.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 82,
+          "date": "2027-04-23",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 51.9,
+          "low_temp_f": 31.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 83,
+          "date": "2027-04-24",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.4,
+          "low_temp_f": 32.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 84,
+          "date": "2027-04-25",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 52.9,
+          "low_temp_f": 32.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 85,
+          "date": "2027-04-26",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.4,
+          "low_temp_f": 33.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 86,
+          "date": "2027-04-27",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 53.9,
+          "low_temp_f": 33.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 87,
+          "date": "2027-04-28",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.4,
+          "low_temp_f": 34.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 88,
+          "date": "2027-04-29",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 54.9,
+          "low_temp_f": 34.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 89,
+          "date": "2027-04-30",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 55.4,
+          "low_temp_f": 35.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 90,
+          "date": "2027-05-01",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 64.9,
+          "low_temp_f": 44.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 91,
+          "date": "2027-05-02",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.4,
+          "low_temp_f": 40.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 92,
+          "date": "2027-05-03",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 60.9,
+          "low_temp_f": 40.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 93,
+          "date": "2027-05-04",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 61.4,
+          "low_temp_f": 41.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 94,
+          "date": "2027-05-05",
+          "origin": "Oklahoma City, Oklahoma",
+          "destination": "Washington, DC",
+          "distance_miles": 67.67635889745164,
+          "ascent_feet": 21.176470588235293,
+          "high_temp_f": 61.9,
+          "low_temp_f": 41.9,
+          "is_rest_day": false
+        }
+      ],
+      "violations": []
     }
-  ]
+  ],
+  "data_attribution": {
+    "provider": "Open-Meteo",
+    "provider_url": "https://open-meteo.com/",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "Data has been transformed into itinerary-level schedule summaries."
+  }
 }

@@ -106,12 +106,23 @@ class CachedWeatherProvider(WeatherProvider):
             ttl_hours,
             provider_key=self.provider_key,
         )
+        
+        def _clean_source(src: str) -> str:
+            src_lower = src.lower()
+            if "mock" in src_lower:
+                return "mock"
+            if "statecapitalmonthlynormals" in src_lower or "wikipedia" in src_lower:
+                return "wikipedia"
+            if "openmeteo" in src_lower or "open-meteo" in src_lower:
+                return "open-meteo"
+            return src
+
         if cached_res:
             metrics: WeatherMetrics = {
                 "high_temp_f": float(cached_res["high_temp_f"]),
                 "low_temp_f": float(cached_res["low_temp_f"]),
                 "is_forecast": bool(cached_res["is_forecast"]),
-                "source": str(cached_res.get("source", self.provider_key or "unknown")),
+                "source": _clean_source(str(cached_res.get("source", self.provider_key or "unknown"))),
             }
             self._l1_cache[l1_key] = (metrics, now)
             return metrics
@@ -122,7 +133,7 @@ class CachedWeatherProvider(WeatherProvider):
             "high_temp_f": raw_metrics["high_temp_f"],
             "low_temp_f": raw_metrics["low_temp_f"],
             "is_forecast": raw_metrics.get("is_forecast", is_forecast),
-            "source": raw_metrics.get("source", self.provider_key or "unknown"),
+            "source": _clean_source(raw_metrics.get("source", self.provider_key or "unknown")),
         }
 
         # 4. Save to L2 SQLite and L1 in-memory
