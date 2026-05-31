@@ -367,7 +367,7 @@ Proposed YAML defaults:
 - weather_constraints.max_avg_high_f: 90
 - weather_constraints.min_avg_low_f: 24
 - Behavior: if omitted in input, solver uses defaults above.
-- daily_constraints.max_miles_per_day: 80
+- daily_constraints.max_miles_per_day: 70
 - daily_constraints.max_climb_ft_per_day: 5000
 - duration_constraints.max_total_days: null (no hard cap)
 - solver_constraints.max_total_cities: 50
@@ -389,7 +389,7 @@ defaults:
 		min_avg_low_f: 24
 
 	daily_constraints:
-		max_miles_per_day: 80
+		max_miles_per_day: 70
 		max_climb_ft_per_day: 5000
 
 	duration_constraints:

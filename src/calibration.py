@@ -33,7 +33,7 @@ def build_actual_itinerary(
     schedule: List[DailySchedule] = []
     curr_date = start_date
     
-    max_miles = feasibility_eng.daily_constraints.get("max_miles_per_day", 80.0) or 80.0
+    max_miles = feasibility_eng.daily_constraints.get("max_miles_per_day", 70.0) or 70.0
     max_climb = feasibility_eng.daily_constraints.get("max_climb_ft_per_day", 5000.0) or 5000.0
     
     for i in range(len(sequence) - 1):

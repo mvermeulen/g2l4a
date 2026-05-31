@@ -137,7 +137,7 @@ class BeamSearchSolver(Solver):
                         leg = routing_prov.get_leg_metrics(last_city, next_city, prefs)
                         
                         # Calculate days needed for this transition
-                        max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+                        max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 70.0) or 70.0
                         max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
                         
                         days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
@@ -223,7 +223,7 @@ class BeamSearchSolver(Solver):
                 last_city = visited[-1]
                 leg = routing_prov.get_leg_metrics(last_city, itinerary.completion_city, prefs)
                 
-                max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+                max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 70.0) or 70.0
                 max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
                 
                 days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1
@@ -346,7 +346,7 @@ class BeamSearchSolver(Solver):
             
             leg = routing_prov.get_leg_metrics(c_from, c_to, preferences)
             
-            max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 80.0) or 80.0
+            max_miles = effective_config.get("daily_constraints", {}).get("max_miles_per_day", 70.0) or 70.0
             max_climb = effective_config.get("daily_constraints", {}).get("max_climb_ft_per_day", 5000.0) or 5000.0
             
             days_needed_miles = math.ceil(leg.distance_miles / max_miles) if max_miles > 0 else 1

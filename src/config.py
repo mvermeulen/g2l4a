@@ -9,7 +9,7 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "min_avg_low_f": 24.0,
     },
     "daily_constraints": {
-        "max_miles_per_day": 80.0,
+        "max_miles_per_day": 70.0,
         "max_climb_ft_per_day": 5000.0,
     },
     "duration_constraints": {

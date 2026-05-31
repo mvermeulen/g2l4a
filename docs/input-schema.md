@@ -14,7 +14,7 @@ This document serves as the canonical contract reference for planning request pa
 | `start_date` | string / date | No | `null` | Start date in `YYYY-MM-DD` format. If omitted, `optimize-date` mode is activated. |
 | `weather_constraints.max_avg_high_f` | float | No | `90.0` | Maximum average high temperature allowed (hard constraint). |
 | `weather_constraints.min_avg_low_f` | float | No | `24.0` | Minimum average low temperature allowed (hard constraint). |
-| `daily_constraints.max_miles_per_day` | float | No | `80.0` | Maximum allowed daily mileage cap. |
+| `daily_constraints.max_miles_per_day` | float | No | `70.0` | Maximum allowed daily mileage cap. |
 | `daily_constraints.max_climb_ft_per_day`| float | No | `5000.0` | Maximum allowed daily climbing ascent cap (feet). |
 | `solver_constraints.max_total_cities` | int | No | `50` | Maximum cities (via + start + completion) permitted in a single request. |
 | `solver_constraints.max_search_minutes` | float | No | `10.0` | Search budget timeout limit in minutes. |
