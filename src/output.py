@@ -4,6 +4,84 @@ from src.domain import Itinerary
 
 class OutputFormatter:
     """Handles structured human-readable and JSON output serialization for route recommendations."""
+
+    @staticmethod
+    def _is_markdown_table_delimiter(line: str) -> bool:
+        stripped = line.strip()
+        if not (stripped.startswith("|") and stripped.endswith("|")):
+            return False
+
+        cells = [c.strip() for c in stripped.strip("|").split("|")]
+        if not cells:
+            return False
+
+        for cell in cells:
+            if not cell:
+                return False
+            if any(ch not in "-: " for ch in cell):
+                return False
+            if "-" not in cell:
+                return False
+        return True
+
+    @staticmethod
+    def _parse_markdown_table_row(line: str) -> List[str]:
+        return [cell.strip() for cell in line.strip().strip("|").split("|")]
+
+    @staticmethod
+    def _render_ascii_table(headers: List[str], rows: List[List[str]]) -> List[str]:
+        all_rows = [headers] + rows
+        widths = [max(len(row[col]) for row in all_rows) for col in range(len(headers))]
+
+        def border() -> str:
+            return "+-" + "-+-".join("-" * w for w in widths) + "-+"
+
+        def render_row(row: List[str]) -> str:
+            return "| " + " | ".join(row[i].ljust(widths[i]) for i in range(len(widths))) + " |"
+
+        lines = [border(), render_row(headers), border()]
+        lines.extend(render_row(row) for row in rows)
+        lines.append(border())
+        return lines
+
+    @staticmethod
+    def markdown_to_aligned_text(markdown: str) -> str:
+        """Converts markdown tables to fixed-width ASCII tables for plain-text reports."""
+        in_lines = markdown.splitlines()
+        out_lines: List[str] = []
+        i = 0
+
+        while i < len(in_lines):
+            line = in_lines[i]
+            if (
+                line.strip().startswith("|")
+                and line.strip().endswith("|")
+                and i + 1 < len(in_lines)
+                and OutputFormatter._is_markdown_table_delimiter(in_lines[i + 1])
+            ):
+                headers = OutputFormatter._parse_markdown_table_row(line)
+                j = i + 2
+                rows: List[List[str]] = []
+                while j < len(in_lines):
+                    candidate = in_lines[j].strip()
+                    if not (candidate.startswith("|") and candidate.endswith("|")):
+                        break
+                    row = OutputFormatter._parse_markdown_table_row(in_lines[j])
+                    if len(row) < len(headers):
+                        row.extend([""] * (len(headers) - len(row)))
+                    elif len(row) > len(headers):
+                        row = row[: len(headers)]
+                    rows.append(row)
+                    j += 1
+
+                out_lines.extend(OutputFormatter._render_ascii_table(headers, rows))
+                i = j
+                continue
+
+            out_lines.append(line)
+            i += 1
+
+        return "\n".join(out_lines)
     
     @staticmethod
     def format_schedule_markdown(itinerary: Itinerary) -> str:

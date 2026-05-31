@@ -1,9 +1,11 @@
 # Route Recommendations Comparison
 
 ## Overview Comparison
-| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference |
-|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2026-02-01 | No ❌ | N/A | N/A | N/A | N/A | 3629.2 mi | 15940 ft | Baseline / Optimal Route |
++-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-------------+--------------------------+
+| Option                  | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference           |
++-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-------------+--------------------------+
+| **Best Recommendation** | 2026-02-01 | No ❌      | N/A         | N/A           | N/A            | N/A         | 3629.2 mi      | 15940 ft    | Baseline / Optimal Route |
++-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-------------+--------------------------+
 
 ## Detailed Recommendations
 ### Best Recommendation
@@ -51,4 +53,3 @@ ROUTE INFEASIBLE
 </details>
 
 ---
-

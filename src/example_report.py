@@ -15,6 +15,10 @@ def _default_json_output_path(example_path: Path) -> Path:
     return Path("docs") / f"{example_path.stem}-report.json"
 
 
+def _default_txt_output_path(example_path: Path) -> Path:
+    return Path("docs") / f"{example_path.stem}-report.txt"
+
+
 def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> List[Path]:
     if all_examples:
         return sorted(Path("examples").glob("*.yaml"))
@@ -51,6 +55,7 @@ def generate_report_for_example(
     example_path: Path,
     output_path: Optional[Path] = None,
     json_output_path: Optional[Path] = None,
+    txt_output_path: Optional[Path] = None,
     system_defaults_path: str = "config/defaults.yaml",
     cache_db_path: str = ".g2l4a_cache.db",
     max_alternatives: Optional[int] = None,
@@ -77,6 +82,7 @@ def generate_report_for_example(
 
     markdown = OutputFormatter.format_recommendations_markdown(itineraries)
     markdown = _apply_data_attribution(markdown, config)
+    text_payload = OutputFormatter.markdown_to_aligned_text(markdown)
     json_payload = OutputFormatter.serialize_recommendations_json(
         itineraries,
         data_attribution=_build_data_attribution(config),
@@ -90,8 +96,13 @@ def generate_report_for_example(
     if json_output_path is not None:
         json_output_path.parent.mkdir(parents=True, exist_ok=True)
         json_output_path.write_text(json_payload + "\n", encoding="utf-8")
+    if txt_output_path is not None:
+        txt_output_path.parent.mkdir(parents=True, exist_ok=True)
+        txt_output_path.write_text(text_payload + "\n", encoding="utf-8")
     if output_path is None and json_output_path is not None:
         return json_output_path
+    if output_path is None and txt_output_path is not None:
+        return txt_output_path
     return final_output_path
 
 
@@ -111,9 +122,9 @@ def build_argument_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--format",
-        choices=("md", "json", "both"),
+        choices=("md", "txt", "json", "both", "all"),
         default="md",
-        help="Output format: md (default), json, or both.",
+        help="Output format: md (default), txt, json, both (md+json), or all (md+json+txt).",
     )
     parser.add_argument(
         "--output",
@@ -122,6 +133,10 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--json-output",
         help="Optional JSON output path (used when --format is json or both). Allowed only for a single example.",
+    )
+    parser.add_argument(
+        "--txt-output",
+        help="Optional text output path (used when --format is txt or all). Allowed only for a single example.",
     )
     parser.add_argument(
         "--cache-db",
@@ -156,12 +171,16 @@ def main() -> int:
     if args.json_output and len(resolved_examples) != 1:
         parser.error("--json-output can only be used when processing a single example file.")
 
+    if args.txt_output and len(resolved_examples) != 1:
+        parser.error("--txt-output can only be used when processing a single example file.")
+
     selected_format = args.format
 
     generated_paths: List[Path] = []
     generated_json_paths: List[Path] = []
+    generated_txt_paths: List[Path] = []
     for example_path in resolved_examples:
-        if selected_format == "json":
+        if selected_format in ("json", "txt"):
             output_path = None
         elif args.output:
             output_path = Path(args.output)
@@ -170,15 +189,23 @@ def main() -> int:
 
         if args.json_output:
             json_output_path = Path(args.json_output)
-        elif selected_format in ("json", "both"):
+        elif selected_format in ("json", "both", "all"):
             json_output_path = _default_json_output_path(example_path)
         else:
             json_output_path = None
+
+        if args.txt_output:
+            txt_output_path = Path(args.txt_output)
+        elif selected_format in ("txt", "all"):
+            txt_output_path = _default_txt_output_path(example_path)
+        else:
+            txt_output_path = None
 
         written = generate_report_for_example(
             example_path=example_path,
             output_path=output_path,
             json_output_path=json_output_path,
+            txt_output_path=txt_output_path,
             cache_db_path=args.cache_db,
             max_alternatives=args.max_alternatives,
         )
@@ -186,11 +213,15 @@ def main() -> int:
             generated_paths.append(written)
         if json_output_path is not None:
             generated_json_paths.append(json_output_path)
+        if txt_output_path is not None:
+            generated_txt_paths.append(txt_output_path)
 
     for path in generated_paths:
         print(f"Generated: {path}")
     for path in generated_json_paths:
         print(f"Generated JSON: {path}")
+    for path in generated_txt_paths:
+        print(f"Generated TXT: {path}")
     return 0
 
 
