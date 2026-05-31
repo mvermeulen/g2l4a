@@ -5,7 +5,7 @@ from typing import Dict, Optional
 
 from src.domain import City
 from src.mocks import MockWeatherProvider
-from src.providers import WeatherProvider
+from src.providers import WeatherProvider, WeatherMetrics
 
 
 class StateCapitalMonthlyNormalsWeatherProvider(WeatherProvider):
@@ -63,7 +63,7 @@ class StateCapitalMonthlyNormalsWeatherProvider(WeatherProvider):
 
         return indexed
 
-    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> Dict[str, float]:
+    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> WeatherMetrics:
         is_forecast = self._is_forecast_window(travel_date, current_time)
         city_key = self._normalize_city_name(city.name)
 
@@ -72,14 +72,12 @@ class StateCapitalMonthlyNormalsWeatherProvider(WeatherProvider):
             temps = monthly.get(travel_date.month)
             if temps:
                 return {
-                    "high_temp_f": round(float(temps["high_temp_f"]), 1),
-                    "low_temp_f": round(float(temps["low_temp_f"]), 1),
-                    "is_forecast": is_forecast,
+                    "high_temp_f": temps["high_temp_f"],
+                    "low_temp_f": temps["low_temp_f"],
+                    "is_forecast": False,
+                    "source": "wikipedia",
                 }
 
-        fallback = self.fallback_provider.get_weather_metrics(city, travel_date, current_time)
-        return {
-            "high_temp_f": round(float(fallback["high_temp_f"]), 1),
-            "low_temp_f": round(float(fallback["low_temp_f"]), 1),
-            "is_forecast": is_forecast,
-        }
+        return self.fallback_provider.get_weather_metrics(
+            city, travel_date, current_time
+        )

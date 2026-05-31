@@ -1,10 +1,11 @@
 from datetime import date
 import json
+from typing import Optional
 
 from src.cached_providers import CachedWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.domain import City
-from src.providers import WeatherProvider
+from src.providers import WeatherProvider, WeatherMetrics
 from src.open_meteo_weather import OpenMeteoWeatherProvider
 from src.monthly_normals_weather import StateCapitalMonthlyNormalsWeatherProvider
 
@@ -84,11 +85,12 @@ def test_provider_aware_cache_keys_isolate_entries(tmp_path):
             self.high = high
             self.low = low
 
-        def get_weather_metrics(self, city, travel_date, current_time=None):
+        def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> WeatherMetrics:
             return {
                 "high_temp_f": self.high,
                 "low_temp_f": self.low,
                 "is_forecast": False,
+                "source": "constant",
             }
 
     city = City(name="Austin, Texas", latitude=30.2672, longitude=-97.7431)

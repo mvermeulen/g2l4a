@@ -81,6 +81,7 @@ class DailySchedule:
     ascent_feet: float
     high_temp_f: float
     low_temp_f: float
+    weather_source: str = "unknown"
     is_rest_day: bool = False
 
 

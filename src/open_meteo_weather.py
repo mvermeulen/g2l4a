@@ -1,12 +1,12 @@
 import json
 from datetime import date
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Tuple, Any
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
 from src.domain import City
 from src.mocks import MockWeatherProvider
-from src.providers import WeatherProvider
+from src.providers import WeatherProvider, WeatherMetrics
 
 
 class OpenMeteoWeatherProvider(WeatherProvider):
@@ -32,14 +32,14 @@ class OpenMeteoWeatherProvider(WeatherProvider):
         days_diff = (travel_date - current_time).days
         return 0 <= days_diff <= 14
 
-    def _request_json(self, url: str, params: Dict[str, str]) -> Dict[str, object]:
+    def _request_json(self, url: str, params: Dict[str, str]) -> Dict[str, Any]:
         query = urlencode(params)
         with urlopen(f"{url}?{query}", timeout=self.timeout_seconds) as response:
             body = response.read().decode("utf-8")
         return json.loads(body)
 
     @staticmethod
-    def _extract_daily_temps(payload: Dict[str, object], target_date: date) -> Tuple[float, float]:
+    def _extract_daily_temps(payload: Dict[str, Any], target_date: date) -> Tuple[float, float]:
         daily = payload.get("daily", {})
         days = daily.get("time", [])
         highs = daily.get("temperature_2m_max", [])
@@ -49,7 +49,7 @@ class OpenMeteoWeatherProvider(WeatherProvider):
         idx = days.index(date_key)
         return float(highs[idx]), float(lows[idx])
 
-    def _fetch_open_meteo(self, city: City, travel_date: date, is_forecast: bool) -> Dict[str, float]:
+    def _fetch_open_meteo(self, city: City, travel_date: date, is_forecast: bool) -> WeatherMetrics:
         shared_params = {
             "latitude": f"{city.latitude}",
             "longitude": f"{city.longitude}",
@@ -72,17 +72,15 @@ class OpenMeteoWeatherProvider(WeatherProvider):
             "high_temp_f": round(high, 1),
             "low_temp_f": round(low, 1),
             "is_forecast": is_forecast,
+            "source": "open-meteo",
         }
 
-    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> Dict[str, float]:
+    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> WeatherMetrics:
         is_forecast = self._is_forecast_window(travel_date, current_time)
 
         try:
             return self._fetch_open_meteo(city, travel_date, is_forecast=is_forecast)
         except Exception:
-            fallback = self.fallback_provider.get_weather_metrics(city, travel_date, current_time)
-            return {
-                "high_temp_f": round(float(fallback["high_temp_f"]), 1),
-                "low_temp_f": round(float(fallback["low_temp_f"]), 1),
-                "is_forecast": is_forecast,
-            }
+            return self.fallback_provider.get_weather_metrics(
+                city, travel_date, current_time
+            )

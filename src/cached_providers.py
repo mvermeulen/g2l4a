@@ -1,7 +1,7 @@
 from datetime import datetime, date, timezone, timedelta
 from typing import Dict, Any, Optional, Tuple
 from src.domain import City, Leg
-from src.providers import RoutingProvider, WeatherProvider, ElevationProvider
+from src.providers import RoutingProvider, WeatherProvider, ElevationProvider, WeatherMetrics
 from src.cache import SQLiteCacheManager
 
 class CachedRoutingProvider(RoutingProvider):
@@ -71,9 +71,9 @@ class CachedWeatherProvider(WeatherProvider):
                 derived_key = f"{derived_key}:{climate_model}"
         self.provider_key = derived_key
         # L1 cache key: (city_lat, city_lon, travel_date_iso, is_forecast) -> (metrics, cached_at)
-        self._l1_cache: Dict[Tuple[float, float, str, bool], Tuple[Dict[str, Any], datetime]] = {}
+        self._l1_cache: Dict[Tuple[float, float, str, bool], Tuple[WeatherMetrics, datetime]] = {}
 
-    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> Dict[str, Any]:
+    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> WeatherMetrics:
         from src.cache import round_coord
         c_lat = round_coord(city.latitude)
         c_lon = round_coord(city.longitude)
@@ -99,27 +99,34 @@ class CachedWeatherProvider(WeatherProvider):
                 del self._l1_cache[l1_key]
 
         # 2. Check L2 SQLite cache
-        metrics = self.cache_manager.get_weather(
+        cached_res = self.cache_manager.get_weather(
             city,
             travel_date,
             is_forecast,
             ttl_hours,
             provider_key=self.provider_key,
         )
-        if metrics:
+        if cached_res:
+            metrics: WeatherMetrics = {
+                "high_temp_f": float(cached_res["high_temp_f"]),
+                "low_temp_f": float(cached_res["low_temp_f"]),
+                "is_forecast": bool(cached_res["is_forecast"]),
+                "source": str(cached_res.get("source", self.provider_key or "unknown")),
+            }
             self._l1_cache[l1_key] = (metrics, now)
             return metrics
 
         # 3. Cache Miss: call base provider
-        metrics = self.base_provider.get_weather_metrics(city, travel_date, current_time)
-
-        # Sync the is_forecast field in the metrics dict
-        if "is_forecast" not in metrics:
-            metrics = dict(metrics)
-            metrics["is_forecast"] = is_forecast
+        raw_metrics = self.base_provider.get_weather_metrics(city, travel_date, current_time)
+        metrics: WeatherMetrics = {
+            "high_temp_f": raw_metrics["high_temp_f"],
+            "low_temp_f": raw_metrics["low_temp_f"],
+            "is_forecast": raw_metrics.get("is_forecast", is_forecast),
+            "source": raw_metrics.get("source", self.provider_key or "unknown"),
+        }
 
         # 4. Save to L2 SQLite and L1 in-memory
-        self.cache_manager.save_weather(city, travel_date, metrics, provider_key=self.provider_key)
+        self.cache_manager.save_weather(city, travel_date, dict(metrics), provider_key=self.provider_key)
         self._l1_cache[l1_key] = (metrics, now)
 
         return metrics

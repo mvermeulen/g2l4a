@@ -2,7 +2,7 @@ import math
 from typing import Dict, Any, Optional
 from datetime import date
 from src.domain import City, Leg
-from src.providers import RoutingProvider, WeatherProvider, ElevationProvider
+from src.providers import RoutingProvider, WeatherProvider, ElevationProvider, WeatherMetrics
 
 def stable_hash(s: str) -> int:
     """A deterministic polynomial rolling hash stable across Python processes."""
@@ -61,7 +61,7 @@ class MockWeatherProvider(WeatherProvider):
     def __init__(self, seed: int = 42):
         self.seed = seed
 
-    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> Dict[str, float]:
+    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> WeatherMetrics:
         month = travel_date.month
         
         # Base temperature drops by absolute latitude (warmer near equator)
@@ -102,7 +102,8 @@ class MockWeatherProvider(WeatherProvider):
         return {
             "high_temp_f": round(avg_high, 1),
             "low_temp_f": round(avg_low, 1),
-            "is_forecast": is_forecast
+            "is_forecast": is_forecast,
+            "source": "mock",
         }
 
 

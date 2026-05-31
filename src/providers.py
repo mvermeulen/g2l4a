@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Protocol, TypedDict
 from datetime import date
 from src.domain import City, Leg
 
@@ -12,17 +12,21 @@ class RoutingProvider(ABC):
         pass
 
 
-class WeatherProvider(ABC):
-    """Abstract Base Class representing a weather/climate provider interface."""
-    
-    @abstractmethod
-    def get_weather_metrics(self, city: City, travel_date: date, current_time: Optional[date] = None) -> Dict[str, float]:
-        """Fetches weather metrics (high_temp_f, low_temp_f) for a city and date.
-        
-        If current_time is provided and travel_date falls within 14 days,
-        uses near-term forecast data overlay; otherwise uses historical climatology averages.
-        """
-        pass
+from typing import Dict, Any, Optional, Protocol, TypedDict, runtime_checkable
+
+class WeatherMetrics(TypedDict):
+    high_temp_f: float
+    low_temp_f: float
+    is_forecast: bool
+    source: str
+
+
+@runtime_checkable
+class WeatherProvider(Protocol):
+    def get_weather_metrics(
+        self, city: "City", travel_date: date, current_time: Optional[date] = None
+    ) -> WeatherMetrics:
+        ...
 
 
 class ElevationProvider(ABC):

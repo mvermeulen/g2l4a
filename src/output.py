@@ -96,40 +96,9 @@ class OutputFormatter:
         lines.append("|---|---|---|---|---|---|---|---|")
         
         for i, item in enumerate(itinerary.schedule):
-            weather_str = f"Avg High: {item.high_temp_f}°F, Low: {item.low_temp_f}°F"
+            weather_str = f"Avg High: {item.high_temp_f}°F, Low: {item.low_temp_f}°F ({item.weather_source})"
             notes = ""
-            origin_name = item.origin.name
-            destination_name = item.destination.name
-            
-            if item.is_rest_day:
-                notes = "Rest Day"
-            else:
-                is_last_day_of_leg = True
-                if i < len(itinerary.schedule) - 1:
-                    next_item = itinerary.schedule[i + 1]
-                    if next_item.origin.name == item.origin.name and next_item.destination.name == item.destination.name:
-                        is_last_day_of_leg = False
-                
-                # Count consecutive matching transit days for this specific leg
-                matching_days = [d for d in itinerary.schedule if d.origin.name == item.origin.name and d.destination.name == item.destination.name and not d.is_rest_day]
-                if len(matching_days) > 1:
-                    curr_idx = matching_days.index(item) + 1
-                    if is_last_day_of_leg:
-                        notes = f"Arrived (Day {curr_idx} of {len(matching_days)})"
-                        origin_name = f"In Transit (from {item.origin.name})"
-                    else:
-                        notes = f"Transit (Day {curr_idx} of {len(matching_days)})"
-                        if curr_idx == 1:
-                            destination_name = f"In Transit (to {item.destination.name})"
-                        else:
-                            origin_name = f"In Transit (from {item.origin.name})"
-                            destination_name = f"In Transit (to {item.destination.name})"
-            
-            lines.append(
-                f"| {item.day_number} | {item.date} | {origin_name} | {destination_name} | "
-                f"{item.distance_miles:.1f} | {item.ascent_feet:.0f} | {weather_str} | {notes} |"
-            )
-            
+            lines.append(f"| {i+1} | {item.date.strftime('%Y-%m-%d')} | {item.origin.name} | {item.destination.name} | {item.distance_miles:.1f} | {item.ascent_feet:.0f} | {weather_str} | {notes} |")
         return "\n".join(lines)
 
     @staticmethod

@@ -62,7 +62,8 @@ def build_actual_itinerary(
                 distance_miles=day_dist,
                 ascent_feet=day_ascent,
                 high_temp_f=weather["high_temp_f"],
-                low_temp_f=weather["low_temp_f"]
+                low_temp_f=weather["low_temp_f"],
+                weather_source=weather.get("source", "unknown")
             )
             schedule.append(day)
             
