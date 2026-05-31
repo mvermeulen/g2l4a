@@ -193,7 +193,7 @@ class OutputFormatter:
         return "\n".join(lines)
 
     @staticmethod
-    def serialize_json(itinerary: Itinerary) -> str:
+    def serialize_json(itinerary: Itinerary, data_attribution: Optional[Dict[str, Any]] = None) -> str:
         """Serializes a single itinerary including schedule details to a JSON string."""
         data = {
             "is_feasible": itinerary.is_feasible,
@@ -230,10 +230,16 @@ class OutputFormatter:
             ],
             "violations": itinerary.violation_details,
         }
+        if data_attribution:
+            data["data_attribution"] = data_attribution
         return json.dumps(data, indent=2)
 
     @staticmethod
-    def serialize_recommendations_json(itineraries: List[Itinerary], metrics: Any = None) -> str:
+    def serialize_recommendations_json(
+        itineraries: List[Itinerary],
+        metrics: Any = None,
+        data_attribution: Optional[Dict[str, Any]] = None,
+    ) -> str:
         """Serializes the complete list of ranked itineraries and metrics to a structured JSON payload."""
         recommendations = []
         for it in itineraries:
@@ -278,4 +284,6 @@ class OutputFormatter:
             "solver_metrics": metrics.to_dict() if hasattr(metrics, "to_dict") else metrics,
             "recommendations": recommendations
         }
+        if data_attribution:
+            payload["data_attribution"] = data_attribution
         return json.dumps(payload, indent=2)

@@ -89,3 +89,79 @@ def test_serialize_recommendations_json():
     assert best["scores"]["total"] == 1.0
     assert len(best["schedule"]) == 1
     assert best["schedule"][0]["high_temp_f"] == 70.0
+
+
+def test_serialize_recommendations_json_with_data_attribution():
+    c1 = City(name="A", latitude=30.0, longitude=-90.0)
+    c2 = City(name="B", latitude=31.0, longitude=-91.0)
+
+    it = Itinerary(
+        start_city=c1,
+        completion_city=c2,
+        via_cities=[],
+        start_date=date(2026, 6, 1),
+        legs=[Leg(origin=c1, destination=c2, distance_miles=50.0, ascent_feet=100.0)],
+        schedule=[
+            DailySchedule(
+                day_number=1,
+                date=date(2026, 6, 1),
+                origin=c1,
+                destination=c2,
+                distance_miles=50.0,
+                ascent_feet=100.0,
+                high_temp_f=70.0,
+                low_temp_f=50.0,
+            )
+        ],
+        scores=Scores(weather=1.0, distance=1.0, hills=1.0, total=1.0),
+    )
+
+    attribution = {
+        "provider": "Open-Meteo",
+        "provider_url": "https://open-meteo.com/",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    }
+
+    json_output = OutputFormatter.serialize_recommendations_json([it], data_attribution=attribution)
+    data = json.loads(json_output)
+    assert "data_attribution" in data
+    assert data["data_attribution"]["provider"] == "Open-Meteo"
+
+
+def test_serialize_json_with_data_attribution():
+    c1 = City(name="A", latitude=30.0, longitude=-90.0)
+    c2 = City(name="B", latitude=31.0, longitude=-91.0)
+
+    it = Itinerary(
+        start_city=c1,
+        completion_city=c2,
+        via_cities=[],
+        start_date=date(2026, 6, 1),
+        legs=[Leg(origin=c1, destination=c2, distance_miles=50.0, ascent_feet=100.0)],
+        schedule=[
+            DailySchedule(
+                day_number=1,
+                date=date(2026, 6, 1),
+                origin=c1,
+                destination=c2,
+                distance_miles=50.0,
+                ascent_feet=100.0,
+                high_temp_f=70.0,
+                low_temp_f=50.0,
+            )
+        ],
+        scores=Scores(weather=1.0, distance=1.0, hills=1.0, total=1.0),
+    )
+
+    attribution = {
+        "provider": "Open-Meteo",
+        "provider_url": "https://open-meteo.com/",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    }
+
+    json_output = OutputFormatter.serialize_json(it, data_attribution=attribution)
+    data = json.loads(json_output)
+    assert "data_attribution" in data
+    assert data["data_attribution"]["license"] == "CC BY 4.0"

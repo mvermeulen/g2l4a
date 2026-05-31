@@ -8,8 +8,10 @@ from src.metrics import SolverMetrics
 from src.config import ConfigManager
 from src.validation import CITY_REGISTRY
 from src.mocks import MockRoutingProvider, MockWeatherProvider, MockElevationProvider
+from src.open_meteo_weather import OpenMeteoWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.cached_providers import CachedRoutingProvider, CachedWeatherProvider, CachedElevationProvider
+from src.providers import WeatherProvider
 from src.feasibility import FeasibilityEngine
 from src.scoring import ScoringEngine, haversine_distance
 
@@ -48,7 +50,23 @@ class BeamSearchSolver(Solver):
         
         # 2. Initialize cached providers
         base_routing = config.get("routing_provider") or MockRoutingProvider()
-        base_weather = config.get("weather_provider") or MockWeatherProvider()
+
+        weather_provider_cfg = effective_config.get("weather_provider", {})
+        weather_provider_override = config.get("weather_provider")
+
+        if isinstance(weather_provider_override, WeatherProvider):
+            base_weather = weather_provider_override
+        else:
+            weather_provider_name = weather_provider_cfg.get("name", "open_meteo")
+            if weather_provider_name == "open_meteo":
+                base_weather = OpenMeteoWeatherProvider(
+                    timeout_seconds=float(weather_provider_cfg.get("timeout_seconds", 8.0)),
+                    climate_model=str(weather_provider_cfg.get("climate_model", "CMCC_CM2_VHR4")),
+                    fallback_provider=MockWeatherProvider(),
+                )
+            else:
+                base_weather = MockWeatherProvider()
+
         base_elevation = config.get("elevation_provider") or MockElevationProvider()
         
         routing_engine = config.get("routing_engine_name", "mock")

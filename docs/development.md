@@ -63,8 +63,22 @@ PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-d
 # Explicit output path
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-march.yaml --output docs/us-capitals-fixed-date-march-report.md
 
+# Write JSON only for one example
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format json
+
+# Emit both markdown and JSON for one example
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format both
+
+# Explicit JSON output path (single example only)
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --json-output docs/us-capitals-fixed-date-report.json
+
 # Generate reports for all examples/*.yaml
 PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples
+
+# Generate markdown + JSON for all examples/*.yaml
+PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples --format both
 ```
 
 By default, output files are named docs/<example-stem>-report.md.
+When --format is json or both, JSON files are named docs/<example-stem>-report.json.
+Use --json-output only with --format json or --format both.

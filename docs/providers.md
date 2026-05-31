@@ -53,3 +53,30 @@ To prevent routing optimization runs from failing due to temporary provider outa
 1. **Fallback to Cache**: Active L2 persistent SQLite cache guarantees that repeat routes can run entirely offline or in the event of provider outages.
 2. **Provider Failures**: If a connection is interrupted and the cache is missed, the system raises a descriptive provider-level error rather than silently returning incorrect calculations.
 3. **Controlled Warnings**: Weather anomalies or elevation dropouts return explicit errors/warnings that propagate to the itinerary's `violation_details` so the user is immediately aware of why certain options could not be validated.
+
+---
+
+## 4. Open-Meteo Weather Provider
+
+The solver now supports selecting Open-Meteo as the weather source through config:
+
+```yaml
+weather_provider:
+    name: "open_meteo"
+    timeout_seconds: 8.0
+    climate_model: "CMCC_CM2_VHR4"
+```
+
+Runtime behavior:
+- For travel dates within 14 days of the run date, the provider uses Open-Meteo forecast temperatures.
+- For dates outside that horizon, it uses the Open-Meteo climate endpoint.
+- On any Open-Meteo failure (network, payload, parsing), it falls back to the deterministic mock provider so solver runs do not fail.
+
+The existing L1/L2 caching layer still applies to Open-Meteo responses, preventing repeated calls for the same city/date/forecast mode and reducing API quota consumption.
+
+### Attribution Compliance
+
+Open-Meteo data is published under CC BY 4.0 and requires attribution with a link where data is displayed. When `weather_provider.name` is set to `open_meteo`, generated markdown reports include a "Data Attribution" section with:
+- Link to Open-Meteo: `https://open-meteo.com/`
+- Link to CC BY 4.0 licence: `https://creativecommons.org/licenses/by/4.0/`
+- Note that data is transformed into itinerary-level summaries.

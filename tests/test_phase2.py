@@ -157,7 +157,7 @@ def test_cached_weather_provider_ttl_expiration():
     
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    cursor.execute("SELECT fetched_at FROM weather_cache WHERE city_lat = ?", (c_lat,))
+    cursor.execute("SELECT fetched_at FROM weather_cache_v2 WHERE city_lat = ?", (c_lat,))
     row = cursor.fetchone()
     assert row is not None
     conn.close()
@@ -166,7 +166,7 @@ def test_cached_weather_provider_ttl_expiration():
     past_time = (datetime.now(timezone.utc).replace(tzinfo=None) - timedelta(hours=3)).strftime("%Y-%m-%d %H:%M:%S")
     conn = sqlite3.connect(DB_PATH)
     with conn:
-        conn.execute("UPDATE weather_cache SET fetched_at = ? WHERE city_lat = ?", (past_time, c_lat))
+        conn.execute("UPDATE weather_cache_v2 SET fetched_at = ? WHERE city_lat = ?", (past_time, c_lat))
     conn.close()
     
     # 3. Request weather again - L1 will evict and L2 will miss and delete the expired entry
@@ -176,7 +176,7 @@ def test_cached_weather_provider_ttl_expiration():
     # Assert L2 entry was refreshed/re-saved with new fetched_at
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    cursor.execute("SELECT fetched_at FROM weather_cache WHERE city_lat = ?", (c_lat,))
+    cursor.execute("SELECT fetched_at FROM weather_cache_v2 WHERE city_lat = ?", (c_lat,))
     row2 = cursor.fetchone()
     assert row2 is not None
     assert row2[0] != past_time

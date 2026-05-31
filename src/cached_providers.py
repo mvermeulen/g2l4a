@@ -51,12 +51,25 @@ class CachedWeatherProvider(WeatherProvider):
     vs historical climatology (30 days).
     """
     
-    def __init__(self, base_provider: WeatherProvider, cache_manager: SQLiteCacheManager,
-                 forecast_ttl_hours: int = 24, climatology_ttl_days: int = 30):
+    def __init__(
+        self,
+        base_provider: WeatherProvider,
+        cache_manager: SQLiteCacheManager,
+        forecast_ttl_hours: int = 24,
+        climatology_ttl_days: int = 30,
+        provider_key: Optional[str] = None,
+    ):
         self.base_provider = base_provider
         self.cache_manager = cache_manager
         self.forecast_ttl_hours = forecast_ttl_hours
         self.climatology_ttl_days = climatology_ttl_days
+        derived_key = provider_key
+        if derived_key is None:
+            derived_key = self.base_provider.__class__.__name__.lower()
+            climate_model = getattr(self.base_provider, "climate_model", None)
+            if climate_model:
+                derived_key = f"{derived_key}:{climate_model}"
+        self.provider_key = derived_key
         # L1 cache key: (city_lat, city_lon, travel_date_iso, is_forecast) -> (metrics, cached_at)
         self._l1_cache: Dict[Tuple[float, float, str, bool], Tuple[Dict[str, Any], datetime]] = {}
 
@@ -86,7 +99,13 @@ class CachedWeatherProvider(WeatherProvider):
                 del self._l1_cache[l1_key]
 
         # 2. Check L2 SQLite cache
-        metrics = self.cache_manager.get_weather(city, travel_date, is_forecast, ttl_hours)
+        metrics = self.cache_manager.get_weather(
+            city,
+            travel_date,
+            is_forecast,
+            ttl_hours,
+            provider_key=self.provider_key,
+        )
         if metrics:
             self._l1_cache[l1_key] = (metrics, now)
             return metrics
@@ -100,7 +119,7 @@ class CachedWeatherProvider(WeatherProvider):
             metrics["is_forecast"] = is_forecast
 
         # 4. Save to L2 SQLite and L1 in-memory
-        self.cache_manager.save_weather(city, travel_date, metrics)
+        self.cache_manager.save_weather(city, travel_date, metrics, provider_key=self.provider_key)
         self._l1_cache[l1_key] = (metrics, now)
 
         return metrics

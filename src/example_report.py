@@ -11,20 +11,51 @@ def _default_output_path(example_path: Path) -> Path:
     return Path("docs") / f"{example_path.stem}-report.md"
 
 
+def _default_json_output_path(example_path: Path) -> Path:
+    return Path("docs") / f"{example_path.stem}-report.json"
+
+
 def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> List[Path]:
     if all_examples:
         return sorted(Path("examples").glob("*.yaml"))
     return [Path(path) for path in example_paths]
 
 
+def _build_data_attribution(config: dict) -> Optional[dict]:
+    provider_name = str(config.get("weather_provider", {}).get("name", "open_meteo"))
+    if provider_name != "open_meteo":
+        return None
+
+    return {
+        "provider": "Open-Meteo",
+        "provider_url": "https://open-meteo.com/",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "note": "Data has been transformed into itinerary-level schedule summaries.",
+    }
+
+
+def _apply_data_attribution(markdown: str, config: dict) -> str:
+    attribution_data = _build_data_attribution(config)
+    if not attribution_data:
+        return markdown
+
+    attribution = "\n\n## Data Attribution\n"
+    attribution += "Weather data by [Open-Meteo.com](https://open-meteo.com/)"
+    attribution += " under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+    attribution += " Data has been transformed into itinerary-level schedule summaries.\n"
+    return markdown.rstrip() + attribution + "\n"
+
+
 def generate_report_for_example(
     example_path: Path,
     output_path: Optional[Path] = None,
+    json_output_path: Optional[Path] = None,
     system_defaults_path: str = "config/defaults.yaml",
     cache_db_path: str = ".g2l4a_cache.db",
     max_alternatives: Optional[int] = None,
 ) -> Path:
-    """Parse one YAML request, solve it, and persist a markdown comparison report."""
+    """Parse one YAML request, solve it, and persist report outputs."""
     parser = RequestParser(system_defaults_path=system_defaults_path)
     itinerary, config = parser.parse_request_file(str(example_path))
 
@@ -45,10 +76,22 @@ def generate_report_for_example(
         raise RuntimeError(f"No recommendations were generated for {example_path}.")
 
     markdown = OutputFormatter.format_recommendations_markdown(itineraries)
+    markdown = _apply_data_attribution(markdown, config)
+    json_payload = OutputFormatter.serialize_recommendations_json(
+        itineraries,
+        data_attribution=_build_data_attribution(config),
+    )
 
     final_output_path = output_path if output_path is not None else _default_output_path(example_path)
-    final_output_path.parent.mkdir(parents=True, exist_ok=True)
-    final_output_path.write_text(markdown + "\n", encoding="utf-8")
+    if output_path is not None:
+        final_output_path.parent.mkdir(parents=True, exist_ok=True)
+        final_output_path.write_text(markdown + "\n", encoding="utf-8")
+
+    if json_output_path is not None:
+        json_output_path.parent.mkdir(parents=True, exist_ok=True)
+        json_output_path.write_text(json_payload + "\n", encoding="utf-8")
+    if output_path is None and json_output_path is not None:
+        return json_output_path
     return final_output_path
 
 
@@ -67,8 +110,18 @@ def build_argument_parser() -> argparse.ArgumentParser:
         help="Generate reports for all .yaml files in examples/.",
     )
     parser.add_argument(
+        "--format",
+        choices=("md", "json", "both"),
+        default="md",
+        help="Output format: md (default), json, or both.",
+    )
+    parser.add_argument(
         "--output",
-        help="Optional output path. Allowed only when a single example is processed.",
+        help="Optional markdown output path (used when --format is md or both). Allowed only for a single example.",
+    )
+    parser.add_argument(
+        "--json-output",
+        help="Optional JSON output path (used when --format is json or both). Allowed only for a single example.",
     )
     parser.add_argument(
         "--cache-db",
@@ -100,19 +153,44 @@ def main() -> int:
     if args.output and len(resolved_examples) != 1:
         parser.error("--output can only be used when processing a single example file.")
 
+    if args.json_output and len(resolved_examples) != 1:
+        parser.error("--json-output can only be used when processing a single example file.")
+
+    selected_format = args.format
+
     generated_paths: List[Path] = []
+    generated_json_paths: List[Path] = []
     for example_path in resolved_examples:
-        output_path = Path(args.output) if args.output else None
+        if selected_format == "json":
+            output_path = None
+        elif args.output:
+            output_path = Path(args.output)
+        else:
+            output_path = _default_output_path(example_path)
+
+        if args.json_output:
+            json_output_path = Path(args.json_output)
+        elif selected_format in ("json", "both"):
+            json_output_path = _default_json_output_path(example_path)
+        else:
+            json_output_path = None
+
         written = generate_report_for_example(
             example_path=example_path,
             output_path=output_path,
+            json_output_path=json_output_path,
             cache_db_path=args.cache_db,
             max_alternatives=args.max_alternatives,
         )
-        generated_paths.append(written)
+        if output_path is not None:
+            generated_paths.append(written)
+        if json_output_path is not None:
+            generated_json_paths.append(json_output_path)
 
     for path in generated_paths:
         print(f"Generated: {path}")
+    for path in generated_json_paths:
+        print(f"Generated JSON: {path}")
     return 0
 
 

@@ -32,6 +32,11 @@ defaults:
     allow_ferries: true
     allow_international_borders: true
 
+  weather_provider:
+    name: "open_meteo"
+    timeout_seconds: 8.0
+    climate_model: "CMCC_CM2_VHR4"
+
   cache:
     db_path: ".g2l4a_cache.db"
     forecast_ttl_hours: 24

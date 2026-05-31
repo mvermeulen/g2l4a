@@ -77,6 +77,19 @@ class SQLiteCacheManager:
                     PRIMARY KEY (city_lat, city_lon, travel_date, is_forecast)
                 )
             """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS weather_cache_v2 (
+                    city_lat REAL,
+                    city_lon REAL,
+                    travel_date TEXT,
+                    high_temp_f REAL,
+                    low_temp_f REAL,
+                    is_forecast INTEGER,
+                    provider_key TEXT,
+                    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    PRIMARY KEY (city_lat, city_lon, travel_date, is_forecast, provider_key)
+                )
+            """)
 
     def close(self):
         """Closes the thread-local database connection if it exists."""
@@ -143,7 +156,14 @@ class SQLiteCacheManager:
 
     # --- Weather Cache Operations ---
 
-    def get_weather(self, city: City, travel_date: date, is_forecast: bool, ttl_hours: int) -> Optional[Dict[str, Any]]:
+    def get_weather(
+        self,
+        city: City,
+        travel_date: date,
+        is_forecast: bool,
+        ttl_hours: int,
+        provider_key: str = "default",
+    ) -> Optional[Dict[str, Any]]:
         """Retrieves cached weather metrics if not expired."""
         conn = self._get_conn()
         c_lat = round_coord(city.latitude)
@@ -154,9 +174,9 @@ class SQLiteCacheManager:
         cursor = conn.cursor()
         cursor.execute("""
             SELECT high_temp_f, low_temp_f, fetched_at
-            FROM weather_cache
-            WHERE city_lat = ? AND city_lon = ? AND travel_date = ? AND is_forecast = ?
-        """, (c_lat, c_lon, date_str, is_fc_int))
+            FROM weather_cache_v2
+            WHERE city_lat = ? AND city_lon = ? AND travel_date = ? AND is_forecast = ? AND provider_key = ?
+        """, (c_lat, c_lon, date_str, is_fc_int, provider_key))
 
         row = cursor.fetchone()
         if row:
@@ -178,9 +198,9 @@ class SQLiteCacheManager:
                 # Expired cache entry, prune it
                 with conn:
                     conn.execute("""
-                        DELETE FROM weather_cache
-                        WHERE city_lat = ? AND city_lon = ? AND travel_date = ? AND is_forecast = ?
-                    """, (c_lat, c_lon, date_str, is_fc_int))
+                        DELETE FROM weather_cache_v2
+                        WHERE city_lat = ? AND city_lon = ? AND travel_date = ? AND is_forecast = ? AND provider_key = ?
+                    """, (c_lat, c_lon, date_str, is_fc_int, provider_key))
                 return None
 
             return {
@@ -190,7 +210,7 @@ class SQLiteCacheManager:
             }
         return None
 
-    def save_weather(self, city: City, travel_date: date, metrics: Dict[str, Any]):
+    def save_weather(self, city: City, travel_date: date, metrics: Dict[str, Any], provider_key: str = "default"):
         """Saves weather metrics into the cache."""
         conn = self._get_conn()
         c_lat = round_coord(city.latitude)
@@ -200,10 +220,10 @@ class SQLiteCacheManager:
 
         with conn:
             conn.execute("""
-                INSERT OR REPLACE INTO weather_cache (
-                    city_lat, city_lon, travel_date, is_forecast, high_temp_f, low_temp_f, fetched_at
-                ) VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                INSERT OR REPLACE INTO weather_cache_v2 (
+                    city_lat, city_lon, travel_date, is_forecast, provider_key, high_temp_f, low_temp_f, fetched_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             """, (
                 c_lat, c_lon, date_str, is_forecast,
-                metrics["high_temp_f"], metrics["low_temp_f"]
+                provider_key, metrics["high_temp_f"], metrics["low_temp_f"]
             ))
