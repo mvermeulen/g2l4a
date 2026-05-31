@@ -1,0 +1,18 @@
+scenario_name: Western Capitals Corridor Example (Optimize Date)
+
+start_city: Salem, Oregon
+completion_city: Austin, Texas
+# start_date intentionally omitted to enable optimize-date mode
+
+via_cities:
+  - Sacramento, California
+  - Carson City, Nevada
+  - Phoenix, Arizona
+  - Santa Fe, New Mexico
+
+weather_constraints:
+  max_avg_high_f: 90
+  min_avg_low_f: 24
+
+output:
+  alternatives_count: 4
