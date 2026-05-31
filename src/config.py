@@ -24,6 +24,10 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
             "weather": 0.45,
             "distance": 0.30,
             "hills": 0.25,
+        },
+        "comfort": {
+            "ideal_temp_f": 70.0,
+            "temp_tolerance_f": 20.0,
         }
     },
     "routing_preferences": {

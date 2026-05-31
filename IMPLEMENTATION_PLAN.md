@@ -123,6 +123,7 @@ Documentation milestone:
 - `docs/diagnostics.md`: reason codes, warning vs blocking semantics.
 
 ## Phase 4 - Scoring and Ranking (Soft Objectives)
+**Status: Completed** ✅
 
 Goal:
 - Implement Stage 2 desirability scoring and stable ranking behavior.
