@@ -1,8 +1,8 @@
-scenario_name: US Capitals Corridor Example (Fixed Date)
+scenario_name: US Capitals Corridor Example (Fixed Date February)
 
 start_city: Austin, Texas
 completion_city: Washington, DC
-start_date: "2026-02-01"
+start_date: "2027-02-01"
 
 via_cities:
   - Montgomery, Alabama

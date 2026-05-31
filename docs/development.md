@@ -58,19 +58,19 @@ Use the report generator module to convert YAML requests in examples/ into markd
 
 ```bash
 # One example config -> one report file
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-february.yaml
 
 # Explicit output path
 PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-march.yaml --output reports/us-capitals-fixed-date-march-report.md
 
 # Write JSON only for one example
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format json
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-february.yaml --format json
 
 # Emit both markdown and JSON for one example
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --format both
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-february.yaml --format both
 
 # Explicit JSON output path (single example only)
-PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date.yaml --json-output reports/us-capitals-fixed-date-report.json
+PYTHONPATH=. .venv/bin/python -m src.example_report examples/us-capitals-fixed-date-february.yaml --json-output reports/us-capitals-fixed-date-february-report.json
 
 # Generate reports for all examples/*.yaml
 PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples

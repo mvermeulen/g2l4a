@@ -113,7 +113,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "examples",
         nargs="*",
-        help="One or more example YAML files (for example: examples/us-capitals-fixed-date.yaml).",
+        help="One or more example YAML files (for example: examples/us-capitals-fixed-date-february.yaml).",
     )
     parser.add_argument(
         "--all-examples",

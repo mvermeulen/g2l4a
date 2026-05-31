@@ -8,7 +8,7 @@ def test_positive_fixtures_loading():
     parser = RequestParser(system_defaults_path="config/defaults.yaml")
     
     # 1. Load US Capitals fixed date example
-    itinerary_fixed, config_fixed = parser.parse_request_file("examples/us-capitals-fixed-date.yaml")
+    itinerary_fixed, config_fixed = parser.parse_request_file("examples/us-capitals-fixed-date-february.yaml")
     assert itinerary_fixed.start_city.name == "Austin, Texas"
     assert itinerary_fixed.completion_city.name == "Washington, DC"
     assert itinerary_fixed.start_date == date(2026, 2, 1)
