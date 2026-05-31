@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build monthly temperature normals for all 50 US state capitals.
+"""Build monthly temperature normals for all 50 US state capitals plus Washington, DC and Chicago.
 
 Source strategy:
 - Fetch each capital's public Wikipedia page.
@@ -54,6 +54,7 @@ CAPITAL_WIKI_TITLES: Dict[str, str] = {
     "Carson City, Nevada": "Carson_City,_Nevada",
     "Concord, New Hampshire": "Concord,_New_Hampshire",
     "Trenton, New Jersey": "Trenton,_New_Jersey",
+    "Washington, DC": "Washington,_D.C.",
     "Santa Fe, New Mexico": "Santa_Fe,_New_Mexico",
     "Albany, New York": "Albany,_New_York",
     "Raleigh, North Carolina": "Raleigh,_North_Carolina",
@@ -74,6 +75,7 @@ CAPITAL_WIKI_TITLES: Dict[str, str] = {
     "Charleston, West Virginia": "Charleston,_West_Virginia",
     "Madison, Wisconsin": "Madison,_Wisconsin",
     "Cheyenne, Wyoming": "Cheyenne,_Wyoming",
+    "Chicago, Illinois": "Chicago",
 }
 
 
@@ -164,6 +166,7 @@ def _build_aliases(city_name: str) -> List[str]:
 def build_dataset() -> Dict[str, object]:
     cities_payload: Dict[str, object] = {}
 
+    total = len(CAPITAL_WIKI_TITLES)
     for idx, (city_name, wiki_title) in enumerate(CAPITAL_WIKI_TITLES.items(), start=1):
         html = _fetch_wikipedia_html(wiki_title)
         highs, lows = _parse_capital_monthly_normals(html)
@@ -182,7 +185,7 @@ def build_dataset() -> Dict[str, object]:
             "monthly": monthly,
         }
 
-        print(f"[{idx:02d}/50] Parsed {city_name}")
+        print(f"[{idx:02d}/{total}] Parsed {city_name}")
         time.sleep(0.2)
 
     return {
@@ -190,7 +193,7 @@ def build_dataset() -> Dict[str, object]:
             "generated_at_utc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
             "source": "Wikipedia climate tables",
             "units": "F",
-            "coverage": "50 US state capitals",
+            "coverage": "50 US state capitals + Washington, DC + Chicago, Illinois",
             "high_row": list(HEADER_CANDIDATES_HIGH),
             "low_row": list(HEADER_CANDIDATES_LOW),
         },

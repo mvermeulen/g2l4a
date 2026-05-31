@@ -1,0 +1,26 @@
+scenario_name: Dixie Corridor Example (Fixed Date)
+
+start_city: Austin, Texas
+completion_city: Harrisburg, Pennsylvania
+start_date: "2027-01-02"
+
+via_cities:
+  - Baton Rouge, Louisiana
+  - Jackson, Mississippi
+  - Montgomery, Alabama
+  - Tallahassee, Florida
+  - Atlanta, Georgia
+  - Columbia, South Carolina
+  - Raleigh, North Carolina
+  - Richmond, Virginia
+  - Washington, DC
+
+weather_constraints:
+  max_avg_high_f: 90
+  min_avg_low_f: 24
+
+weather_provider:
+  name: state_capital_monthly_normals
+
+output:
+  alternatives_count: 4

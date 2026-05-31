@@ -685,6 +685,65 @@
       },
       "wikipedia_title": "Cheyenne,_Wyoming"
     },
+    "Chicago, Illinois": {
+      "aliases": [
+        "Chicago, Illinois",
+        "chicago, illinois",
+        "Chicago",
+        "chicago"
+      ],
+      "monthly": {
+        "1": {
+          "high_temp_f": 53.4,
+          "low_temp_f": 19.5
+        },
+        "10": {
+          "high_temp_f": 82.8,
+          "low_temp_f": 46.8
+        },
+        "11": {
+          "high_temp_f": 68.0,
+          "low_temp_f": 35.2
+        },
+        "12": {
+          "high_temp_f": 57.5,
+          "low_temp_f": 25.3
+        },
+        "2": {
+          "high_temp_f": 57.9,
+          "low_temp_f": 22.9
+        },
+        "3": {
+          "high_temp_f": 72.0,
+          "low_temp_f": 32.0
+        },
+        "4": {
+          "high_temp_f": 81.5,
+          "low_temp_f": 41.7
+        },
+        "5": {
+          "high_temp_f": 89.2,
+          "low_temp_f": 52.4
+        },
+        "6": {
+          "high_temp_f": 93.9,
+          "low_temp_f": 62.7
+        },
+        "7": {
+          "high_temp_f": 96.0,
+          "low_temp_f": 68.1
+        },
+        "8": {
+          "high_temp_f": 94.2,
+          "low_temp_f": 66.9
+        },
+        "9": {
+          "high_temp_f": 90.8,
+          "low_temp_f": 59.2
+        }
+      },
+      "wikipedia_title": "Chicago"
+    },
     "Columbia, South Carolina": {
       "aliases": [
         "Columbia, South Carolina",
@@ -2853,10 +2912,71 @@
         }
       },
       "wikipedia_title": "Trenton,_New_Jersey"
+    },
+    "Washington, DC": {
+      "aliases": [
+        "Washington, DC",
+        "washington, dc",
+        "Washington DC",
+        "washington dc",
+        "Washington, D.C.",
+        "washington, d.c."
+      ],
+      "monthly": {
+        "1": {
+          "high_temp_f": 66.7,
+          "low_temp_f": 30.1
+        },
+        "10": {
+          "high_temp_f": 84.5,
+          "low_temp_f": 52.2
+        },
+        "11": {
+          "high_temp_f": 74.8,
+          "low_temp_f": 41.6
+        },
+        "12": {
+          "high_temp_f": 67.1,
+          "low_temp_f": 34.5
+        },
+        "2": {
+          "high_temp_f": 68.1,
+          "low_temp_f": 31.8
+        },
+        "3": {
+          "high_temp_f": 77.3,
+          "low_temp_f": 38.6
+        },
+        "4": {
+          "high_temp_f": 86.4,
+          "low_temp_f": 48.4
+        },
+        "5": {
+          "high_temp_f": 91.0,
+          "low_temp_f": 58.0
+        },
+        "6": {
+          "high_temp_f": 95.7,
+          "low_temp_f": 67.5
+        },
+        "7": {
+          "high_temp_f": 98.1,
+          "low_temp_f": 72.4
+        },
+        "8": {
+          "high_temp_f": 96.5,
+          "low_temp_f": 71.0
+        },
+        "9": {
+          "high_temp_f": 91.9,
+          "low_temp_f": 64.1
+        }
+      },
+      "wikipedia_title": "Washington,_D.C."
     }
   },
   "metadata": {
-    "coverage": "50 US state capitals",
+    "coverage": "50 US state capitals + Washington, DC + Chicago, Illinois",
     "generated_at_utc": "2026-05-31T16:00:59+00:00",
     "high_row": [
       "Mean daily maximum",

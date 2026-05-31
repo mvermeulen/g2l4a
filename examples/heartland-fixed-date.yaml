@@ -1,0 +1,24 @@
+scenario_name: Heartland Corridor Example (Fixed Date)
+
+start_city: Austin, Texas
+completion_city: Chicago, Illinois
+start_date: "2027-04-15"
+
+via_cities:
+  - Oklahoma City, Oklahoma
+  - Topeka, Kansas
+  - Jefferson City, Missouri
+  - Little Rock, Arkansas
+  - Nashville, Tennessee
+  - Frankfort, Kentucky
+  - Charleston, West Virginia
+
+weather_constraints:
+  max_avg_high_f: 92
+  min_avg_low_f: 24
+
+weather_provider:
+  name: state_capital_monthly_normals
+
+output:
+  alternatives_count: 4
