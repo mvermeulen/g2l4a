@@ -31,6 +31,12 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "avoid_tolls": True,
         "allow_ferries": True,
         "allow_international_borders": True,
+    },
+    "cache": {
+        "db_path": ".g2l4a_cache.db",
+        "forecast_ttl_hours": 24,
+        "climatology_ttl_days": 30,
+        "concurrency_limit": 10,
     }
 }
 
