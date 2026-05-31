@@ -1,0 +1,8 @@
+# Core Dependencies
+pyyaml>=6.0.0
+
+# Development, Testing, and Linting
+pytest>=9.0.0
+pytest-cov>=6.0.0
+pyrefly>=1.0.0
+types-PyYAML>=6.0.0

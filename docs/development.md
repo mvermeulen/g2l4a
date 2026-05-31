@@ -13,9 +13,10 @@ python3 -m venv .venv
 # 2. Activate the virtual environment
 source .venv/bin/activate
 
-# 3. Install core dependencies and test framework
-pip install pyyaml pytest
+# 3. Install all dependencies, testing, and linting tools
+pip install -r requirements.txt
 ```
+
 
 ---
 

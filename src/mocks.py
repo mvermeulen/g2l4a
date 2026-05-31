@@ -113,4 +113,5 @@ class MockElevationProvider(ElevationProvider):
 
     def get_elevation_profile(self, origin: City, destination: City) -> float:
         name_hash = abs(stable_hash(origin.name) + stable_hash(destination.name) + self.seed)
-        return float((name_hash % 200) * 10.0)
+        return (name_hash % 200) * 10.0
+

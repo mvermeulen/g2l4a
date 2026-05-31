@@ -54,6 +54,7 @@ Documentation milestone:
 - `docs/development.md`: local run/test workflow.
 
 ## Phase 1 - Input Contract and Validation
+**Status: Completed** ✅
 
 Goal:
 - Parse YAML requests into validated internal models with clear error diagnostics.
