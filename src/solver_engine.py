@@ -137,8 +137,8 @@ class BeamSearchSolver(Solver):
         if itinerary.start_date:
             # Fixed-date mode: evaluate the requested date plus +/- two-week alternatives.
             candidate_start_dates = [
-                itinerary.start_date - timedelta(days=14),
                 itinerary.start_date,
+                itinerary.start_date - timedelta(days=14),
                 itinerary.start_date + timedelta(days=14),
             ]
         else:
