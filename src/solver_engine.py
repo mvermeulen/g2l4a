@@ -135,7 +135,12 @@ class BeamSearchSolver(Solver):
         current_run_date = date.today()
         candidate_start_dates: List[date] = []
         if itinerary.start_date:
-            candidate_start_dates = [itinerary.start_date]
+            # Fixed-date mode: evaluate the requested date plus +/- two-week alternatives.
+            candidate_start_dates = [
+                itinerary.start_date - timedelta(days=14),
+                itinerary.start_date,
+                itinerary.start_date + timedelta(days=14),
+            ]
         else:
             # Optimize-date mode: search 1st of each month in the upcoming year
             year = current_run_date.year

@@ -30,4 +30,4 @@ routing_provider:
   purge_mock_cache: true
 
 output:
-  alternatives_count: 4
+  alternatives_count: 6
