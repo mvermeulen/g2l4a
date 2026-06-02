@@ -11,6 +11,18 @@ docker-compose -f docker-compose.graphhopper.yml up -d
 curl -fsS http://localhost:8989/info | head -c 300 && echo
 ```
 
+## Follow the GraphHopper Log
+
+```bash
+docker-compose -f docker-compose.graphhopper.yml logs -f graphhopper
+```
+
+Alternative:
+
+```bash
+docker logs -f g2l4a-graphhopper
+```
+
 ## Run One GPX-Enabled Example
 
 ```bash
