@@ -46,6 +46,12 @@ Generate all examples, including markdown, JSON, text, and GPX outputs:
 PYTHONUNBUFFERED=1 PYTHONPATH=. python -u -m src.example_report --all-examples --format all
 ```
 
+Generate segment-level GPX files for all unique route segments:
+
+```bash
+python scripts/generate_segment_gpx.py
+```
+
 Run tests:
 
 ```bash
@@ -57,7 +63,8 @@ PYTHONPATH=. pytest -q
 - Markdown reports are written to `reports/<example-stem>-report.md`
 - JSON reports are written to `reports/<example-stem>-report.json`
 - Text reports are written to `reports/<example-stem>-report.txt`
-- GPX files are written to `gpx/<example-stem>--<start-city>-to-<end-city>.gpx` when `output.gpx: true`
+- Route GPX files are written to `gpx/<example-stem>--<start-city>-to-<end-city>.gpx` when `output.gpx: true`
+- Segment-level GPX files are written to `gpx/segment/<start-city>-to-<end-city>.gpx`
 
 GPX export is skipped automatically if it runs longer than `output.gpx_timeout_seconds`, so report generation can continue.
 
