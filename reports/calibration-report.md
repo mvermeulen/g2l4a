@@ -9,8 +9,8 @@ This report documents the calibration of the `g2l4a` multi-objective route optim
 | **Total Ascent (ft)** | 30,680 | 24,680 | -6,000 |
 | **Weather Comfort Score** | 0.6984 | 0.7746 | +0.0762 |
 | **Distance Detour Score** | 0.9908 | 1.0000 | +0.0092 |
-| **Hill Climb Score** | 0.7640 | 0.8102 | +0.0462 |
-| **Total Desirability Score** | **0.8025** | **0.8511** | **+0.0486** |
+| **Hill Climb Score** | 0.7640 | 0.0000 | -0.7640 |
+| **Total Desirability Score** | **0.8025** | **0.6486** | **-0.1539** |
 | **Feasibility Status** | Feasible ✅ | Feasible ✅ | - |
 
 ## Weight Sensitivity Analysis
@@ -18,7 +18,7 @@ Each weight perturbed by +/- 0.10 and normalized to sum to 1.0.
 
 | Weight Shift / Label | Weights (W_w / W_d / W_h) | Cyclist Actual Score | Solver Optimized Score | Improvement |
 | :--- | :---: | :---: | :---: | :---: |
-| Baseline | 0.45 / 0.30 / 0.25 | 0.8025 | 0.8511 | +0.0486 |
+| Baseline | 0.45 / 0.30 / 0.25 | 0.8025 | 0.6486 | -0.1539 |
 | Shift weather by -0.10 | 0.39 / 0.33 / 0.28 | 0.8141 | 0.8596 | +0.0455 |
 | Shift weather by +0.10 | 0.50 / 0.27 / 0.23 | 0.7930 | 0.8442 | +0.0512 |
 | Shift distance by -0.10 | 0.50 / 0.22 / 0.28 | 0.7816 | 0.8346 | +0.0530 |
@@ -27,7 +27,7 @@ Each weight perturbed by +/- 0.10 and normalized to sum to 1.0.
 | Shift hills by +0.10 | 0.41 / 0.27 / 0.32 | 0.7990 | 0.8474 | +0.0484 |
 
 ## Solver Execution Performance
-- **Execution Duration**: 5916.5 ms
+- **Execution Duration**: 5962.3 ms
 - **Evaluated Candidates**: 5 recommendations returned
 
 ## Sequence Ordered Visits Comparison

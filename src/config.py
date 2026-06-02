@@ -40,7 +40,7 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
         "name": "mock",
         "routing_engine_name": "mock",
         "base_url": "http://localhost:8989",
-        "profile": "car",
+        "profile": "bike",
         "timeout_seconds": 12.0,
         "purge_mock_cache": False,
     },
