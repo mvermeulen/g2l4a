@@ -8632,10 +8632,19 @@
     }
   ],
   "data_attribution": {
-    "provider": "Open-Meteo",
-    "provider_url": "https://open-meteo.com/",
-    "license": "CC BY 4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "note": "Data has been transformed into itinerary-level schedule summaries."
+    "weather": {
+      "provider": "Open-Meteo",
+      "provider_url": "https://open-meteo.com/",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "note": "Data has been transformed into itinerary-level schedule summaries."
+    },
+    "routing": {
+      "provider": "GraphHopper",
+      "provider_url": "https://www.graphhopper.com/",
+      "license": "OpenStreetMap ODbL 1.0",
+      "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "note": "Routing distances and elevation metrics are computed via GraphHopper using OpenStreetMap data."
+    }
   }
 }

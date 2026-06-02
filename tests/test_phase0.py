@@ -224,7 +224,7 @@ def test_output_formatting():
     
     # 1. Test schedule markdown
     md_sched = OutputFormatter.format_schedule_markdown(itinerary)
-    assert "| Day | Date | Origin | Destination |" in md_sched
+    assert "| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) |" in md_sched
     assert "Austin" in md_sched
     assert "Dallas" in md_sched
     assert "195.0" in md_sched

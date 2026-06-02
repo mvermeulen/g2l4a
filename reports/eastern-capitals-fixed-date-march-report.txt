@@ -70,90 +70,27 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| Day | Date       | Origin                    | Destination               | Distance (mi) | Distance Source | Ascent (ft) | Weather Context                            | Notes |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| 1   | 2027-03-15 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 79.9°F, Low: 41.0°F (open-meteo) |       |
-| 2   | 2027-03-16 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 56.3°F, Low: 39.3°F (open-meteo) |       |
-| 3   | 2027-03-17 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 56.4°F, Low: 42.3°F (open-meteo) |       |
-| 4   | 2027-03-18 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 58.2°F, Low: 34.5°F (open-meteo) |       |
-| 5   | 2027-03-19 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 58.5°F, Low: 38.9°F (open-meteo) |       |
-| 6   | 2027-03-20 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 65.2°F, Low: 35.8°F (open-meteo) |       |
-| 7   | 2027-03-21 | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7          | graphhopper     | 2429        | Avg High: 70.8°F, Low: 49.3°F (open-meteo) |       |
-| 8   | 2027-03-22 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 52.1°F, Low: 33.0°F (open-meteo) |       |
-| 9   | 2027-03-23 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 60.0°F, Low: 37.4°F (open-meteo) |       |
-| 10  | 2027-03-24 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 59.0°F, Low: 38.7°F (open-meteo) |       |
-| 11  | 2027-03-25 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 68.0°F, Low: 35.6°F (open-meteo) |       |
-| 12  | 2027-03-26 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 74.9°F, Low: 47.5°F (open-meteo) |       |
-| 13  | 2027-03-27 | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4          | graphhopper     | 2085        | Avg High: 74.6°F, Low: 52.3°F (open-meteo) |       |
-| 14  | 2027-03-28 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 57.0°F, Low: 37.3°F (open-meteo) |       |
-| 15  | 2027-03-29 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 69.0°F, Low: 43.4°F (open-meteo) |       |
-| 16  | 2027-03-30 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 78.6°F, Low: 47.8°F (open-meteo) |       |
-| 17  | 2027-03-31 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 74.5°F, Low: 43.4°F (open-meteo) |       |
-| 18  | 2027-04-01 | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5          | graphhopper     | 4982        | Avg High: 68.4°F, Low: 41.2°F (open-meteo) |       |
-| 19  | 2027-04-02 | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5          | graphhopper     | 4982        | Avg High: 68.3°F, Low: 41.3°F (open-meteo) |       |
-| 20  | 2027-04-03 | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5          | graphhopper     | 4982        | Avg High: 72.5°F, Low: 52.4°F (open-meteo) |       |
-| 21  | 2027-04-04 | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5          | graphhopper     | 4982        | Avg High: 63.8°F, Low: 37.7°F (open-meteo) |       |
-| 22  | 2027-04-05 | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5          | graphhopper     | 4982        | Avg High: 56.0°F, Low: 44.0°F (open-meteo) |       |
-| 23  | 2027-04-06 | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7          | graphhopper     | 1539        | Avg High: 75.5°F, Low: 63.7°F (open-meteo) |       |
-| 24  | 2027-04-07 | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7          | graphhopper     | 1539        | Avg High: 74.2°F, Low: 51.1°F (open-meteo) |       |
-| 25  | 2027-04-08 | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7          | graphhopper     | 1539        | Avg High: 76.5°F, Low: 54.3°F (open-meteo) |       |
-| 26  | 2027-04-09 | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7          | graphhopper     | 1539        | Avg High: 77.0°F, Low: 46.5°F (open-meteo) |       |
-| 27  | 2027-04-10 | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7          | graphhopper     | 1539        | Avg High: 82.9°F, Low: 50.3°F (open-meteo) |       |
-| 28  | 2027-04-11 | Jackson, Mississippi      | Baton Rouge, Louisiana    | 57.6          | graphhopper     | 2454        | Avg High: 84.0°F, Low: 57.2°F (open-meteo) |       |
-| 29  | 2027-04-12 | Jackson, Mississippi      | Baton Rouge, Louisiana    | 57.6          | graphhopper     | 2454        | Avg High: 82.0°F, Low: 61.5°F (open-meteo) |       |
-| 30  | 2027-04-13 | Jackson, Mississippi      | Baton Rouge, Louisiana    | 57.6          | graphhopper     | 2454        | Avg High: 85.3°F, Low: 64.8°F (open-meteo) |       |
-| 31  | 2027-04-14 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 83.1°F, Low: 62.3°F (open-meteo) |       |
-| 32  | 2027-04-15 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 76.4°F, Low: 56.9°F (open-meteo) |       |
-| 33  | 2027-04-16 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 76.8°F, Low: 49.5°F (open-meteo) |       |
-| 34  | 2027-04-17 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 78.6°F, Low: 54.9°F (open-meteo) |       |
-| 35  | 2027-04-18 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 78.1°F, Low: 64.9°F (open-meteo) |       |
-| 36  | 2027-04-19 | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3          | graphhopper     | 2882        | Avg High: 80.6°F, Low: 65.9°F (open-meteo) |       |
-| 37  | 2027-04-20 | Montgomery, Alabama       | Tallahassee, Florida      | 55.5          | graphhopper     | 2540        | Avg High: 84.7°F, Low: 63.5°F (open-meteo) |       |
-| 38  | 2027-04-21 | Montgomery, Alabama       | Tallahassee, Florida      | 55.5          | graphhopper     | 2540        | Avg High: 82.4°F, Low: 67.4°F (open-meteo) |       |
-| 39  | 2027-04-22 | Montgomery, Alabama       | Tallahassee, Florida      | 55.5          | graphhopper     | 2540        | Avg High: 80.3°F, Low: 71.8°F (open-meteo) |       |
-| 40  | 2027-04-23 | Montgomery, Alabama       | Tallahassee, Florida      | 55.5          | graphhopper     | 2540        | Avg High: 79.6°F, Low: 73.2°F (open-meteo) |       |
-| 41  | 2027-04-24 | Tallahassee, Florida      | Atlanta, Georgia          | 63.0          | graphhopper     | 2864        | Avg High: 77.7°F, Low: 56.1°F (open-meteo) |       |
-| 42  | 2027-04-25 | Tallahassee, Florida      | Atlanta, Georgia          | 63.0          | graphhopper     | 2864        | Avg High: 77.1°F, Low: 54.9°F (open-meteo) |       |
-| 43  | 2027-04-26 | Tallahassee, Florida      | Atlanta, Georgia          | 63.0          | graphhopper     | 2864        | Avg High: 74.4°F, Low: 56.9°F (open-meteo) |       |
-| 44  | 2027-04-27 | Tallahassee, Florida      | Atlanta, Georgia          | 63.0          | graphhopper     | 2864        | Avg High: 72.7°F, Low: 52.0°F (open-meteo) |       |
-| 45  | 2027-04-28 | Tallahassee, Florida      | Atlanta, Georgia          | 63.0          | graphhopper     | 2864        | Avg High: 71.2°F, Low: 46.0°F (open-meteo) |       |
-| 46  | 2027-04-29 | Atlanta, Georgia          | Nashville, Tennessee      | 58.6          | graphhopper     | 3589        | Avg High: 81.7°F, Low: 51.2°F (open-meteo) |       |
-| 47  | 2027-04-30 | Atlanta, Georgia          | Nashville, Tennessee      | 58.6          | graphhopper     | 3589        | Avg High: 83.5°F, Low: 57.2°F (open-meteo) |       |
-| 48  | 2027-05-01 | Atlanta, Georgia          | Nashville, Tennessee      | 58.6          | graphhopper     | 3589        | Avg High: 77.2°F, Low: 58.3°F (open-meteo) |       |
-| 49  | 2027-05-02 | Atlanta, Georgia          | Nashville, Tennessee      | 58.6          | graphhopper     | 3589        | Avg High: 78.1°F, Low: 64.2°F (open-meteo) |       |
-| 50  | 2027-05-03 | Atlanta, Georgia          | Nashville, Tennessee      | 58.6          | graphhopper     | 3589        | Avg High: 61.0°F, Low: 43.0°F (open-meteo) |       |
-| 51  | 2027-05-04 | Nashville, Tennessee      | Frankfort, Kentucky       | 57.1          | graphhopper     | 3572        | Avg High: 56.3°F, Low: 37.0°F (open-meteo) |       |
-| 52  | 2027-05-05 | Nashville, Tennessee      | Frankfort, Kentucky       | 57.1          | graphhopper     | 3572        | Avg High: 65.4°F, Low: 38.4°F (open-meteo) |       |
-| 53  | 2027-05-06 | Nashville, Tennessee      | Frankfort, Kentucky       | 57.1          | graphhopper     | 3572        | Avg High: 72.6°F, Low: 45.2°F (open-meteo) |       |
-| 54  | 2027-05-07 | Nashville, Tennessee      | Frankfort, Kentucky       | 57.1          | graphhopper     | 3572        | Avg High: 78.3°F, Low: 51.7°F (open-meteo) |       |
-| 55  | 2027-05-08 | Frankfort, Kentucky       | Charleston, West Virginia | 64.1          | graphhopper     | 4912        | Avg High: 79.3°F, Low: 53.6°F (open-meteo) |       |
-| 56  | 2027-05-09 | Frankfort, Kentucky       | Charleston, West Virginia | 64.1          | graphhopper     | 4912        | Avg High: 83.5°F, Low: 56.3°F (open-meteo) |       |
-| 57  | 2027-05-10 | Frankfort, Kentucky       | Charleston, West Virginia | 64.1          | graphhopper     | 4912        | Avg High: 87.7°F, Low: 55.1°F (open-meteo) |       |
-| 58  | 2027-05-11 | Frankfort, Kentucky       | Charleston, West Virginia | 64.1          | graphhopper     | 4912        | Avg High: 79.4°F, Low: 65.4°F (open-meteo) |       |
-| 59  | 2027-05-12 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 88.0°F, Low: 68.5°F (open-meteo) |       |
-| 60  | 2027-05-13 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 84.8°F, Low: 65.6°F (open-meteo) |       |
-| 61  | 2027-05-14 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 79.8°F, Low: 65.0°F (open-meteo) |       |
-| 62  | 2027-05-15 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 80.2°F, Low: 64.4°F (open-meteo) |       |
-| 63  | 2027-05-16 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 79.6°F, Low: 65.2°F (open-meteo) |       |
-| 64  | 2027-05-17 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 76.2°F, Low: 60.0°F (open-meteo) |       |
-| 65  | 2027-05-18 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 81.4°F, Low: 66.7°F (open-meteo) |       |
-| 66  | 2027-05-19 | Charleston, West Virginia | Columbia, South Carolina  | 54.3          | graphhopper     | 4823        | Avg High: 83.4°F, Low: 64.9°F (open-meteo) |       |
-| 67  | 2027-05-20 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 80.6°F, Low: 67.5°F (open-meteo) |       |
-| 68  | 2027-05-21 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 79.9°F, Low: 70.1°F (open-meteo) |       |
-| 69  | 2027-05-22 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 76.6°F, Low: 61.6°F (open-meteo) |       |
-| 70  | 2027-05-23 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 78.0°F, Low: 53.5°F (open-meteo) |       |
-| 71  | 2027-05-24 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 87.9°F, Low: 58.6°F (open-meteo) |       |
-| 72  | 2027-05-25 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 89.9°F, Low: 64.0°F (open-meteo) |       |
-| 73  | 2027-05-26 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 86.3°F, Low: 66.5°F (open-meteo) |       |
-| 74  | 2027-05-27 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 81.9°F, Low: 61.6°F (open-meteo) |       |
-| 75  | 2027-05-28 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 83.5°F, Low: 58.3°F (open-meteo) |       |
-| 76  | 2027-05-29 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 81.8°F, Low: 59.1°F (open-meteo) |       |
-| 77  | 2027-05-30 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 78.4°F, Low: 70.3°F (open-meteo) |       |
-| 78  | 2027-05-31 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 82.4°F, Low: 72.5°F (open-meteo) |       |
-| 79  | 2027-06-01 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 82.2°F, Low: 66.2°F (open-meteo) |       |
-| 80  | 2027-06-02 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 57.4°F (open-meteo) |       |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| 2027-03-15 | 2027-03-21 | 7    | Austin, Texas             | Oklahoma City, Oklahoma   | 64.7/day          | 2429/day        | 452.9             | 17000           | graphhopper     | Avg High: 56.3-79.9°F, Low: 34.5-49.3°F (open-meteo) |       |
+| 2027-03-22 | 2027-03-27 | 6    | Oklahoma City, Oklahoma   | Topeka, Kansas            | 62.4/day          | 2085/day        | 374.5             | 12509           | graphhopper     | Avg High: 52.1-74.9°F, Low: 33.0-52.3°F (open-meteo) |       |
+| 2027-03-28 | 2027-03-31 | 4    | Topeka, Kansas            | Jefferson City, Missouri  | 57.7/day          | 2910/day        | 230.9             | 11638           | graphhopper     | Avg High: 57.0-78.6°F, Low: 37.3-47.8°F (open-meteo) |       |
+| 2027-04-01 | 2027-04-05 | 5    | Jefferson City, Missouri  | Little Rock, Arkansas     | 68.5/day          | 4982/day        | 342.5             | 24909           | graphhopper     | Avg High: 56.0-72.5°F, Low: 37.7-52.4°F (open-meteo) |       |
+| 2027-04-06 | 2027-04-10 | 5    | Little Rock, Arkansas     | Jackson, Mississippi      | 66.7/day          | 1539/day        | 333.4             | 7693            | graphhopper     | Avg High: 74.2-82.9°F, Low: 46.5-63.7°F (open-meteo) |       |
+| 2027-04-11 | 2027-04-13 | 3    | Jackson, Mississippi      | Baton Rouge, Louisiana    | 57.6/day          | 2454/day        | 172.9             | 7362            | graphhopper     | Avg High: 82.0-85.3°F, Low: 57.2-64.8°F (open-meteo) |       |
+| 2027-04-14 | 2027-04-19 | 6    | Baton Rouge, Louisiana    | Montgomery, Alabama       | 68.3/day          | 2882/day        | 409.9             | 17294           | graphhopper     | Avg High: 76.4-83.1°F, Low: 49.5-65.9°F (open-meteo) |       |
+| 2027-04-20 | 2027-04-23 | 4    | Montgomery, Alabama       | Tallahassee, Florida      | 55.5/day          | 2540/day        | 222.0             | 10161           | graphhopper     | Avg High: 79.6-84.7°F, Low: 63.5-73.2°F (open-meteo) |       |
+| 2027-04-24 | 2027-04-28 | 5    | Tallahassee, Florida      | Atlanta, Georgia          | 63.0/day          | 2864/day        | 315.0             | 14321           | graphhopper     | Avg High: 71.2-77.7°F, Low: 46.0-56.9°F (open-meteo) |       |
+| 2027-04-29 | 2027-05-03 | 5    | Atlanta, Georgia          | Nashville, Tennessee      | 58.6/day          | 3589/day        | 293.2             | 17944           | graphhopper     | Avg High: 61.0-83.5°F, Low: 43.0-64.2°F (open-meteo) |       |
+| 2027-05-04 | 2027-05-07 | 4    | Nashville, Tennessee      | Frankfort, Kentucky       | 57.1/day          | 3572/day        | 228.5             | 14287           | graphhopper     | Avg High: 56.3-78.3°F, Low: 37.0-51.7°F (open-meteo) |       |
+| 2027-05-08 | 2027-05-11 | 4    | Frankfort, Kentucky       | Charleston, West Virginia | 64.1/day          | 4912/day        | 256.4             | 19646           | graphhopper     | Avg High: 79.3-87.7°F, Low: 53.6-65.4°F (open-meteo) |       |
+| 2027-05-12 | 2027-05-19 | 8    | Charleston, West Virginia | Columbia, South Carolina  | 54.3/day          | 4823/day        | 434.7             | 38581           | graphhopper     | Avg High: 76.2-88.0°F, Low: 60.0-68.5°F (open-meteo) |       |
+| 2027-05-20 | 2027-05-23 | 4    | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8/day          | 2586/day        | 231.3             | 10345           | graphhopper     | Avg High: 76.6-80.6°F, Low: 53.5-70.1°F (open-meteo) |       |
+| 2027-05-24 | 2027-05-26 | 3    | Raleigh, North Carolina   | Richmond, Virginia        | 65.2/day          | 3602/day        | 195.7             | 10806           | graphhopper     | Avg High: 86.3-89.9°F, Low: 58.6-66.5°F (open-meteo) |       |
+| 2027-05-27 | 2027-05-30 | 4    | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2/day          | 4515/day        | 257.0             | 18058           | graphhopper     | Avg High: 78.4-83.5°F, Low: 58.3-70.3°F (open-meteo) |       |
+| 2027-05-31 | 2027-06-02 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2             | 10127           | graphhopper     | Avg High: 79.2-82.4°F, Low: 57.4-72.5°F (open-meteo) |       |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
 </details>
 
@@ -174,119 +111,27 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| Day | Date       | Origin                    | Destination               | Distance (mi) | Distance Source | Ascent (ft) | Weather Context                            | Notes |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| 1   | 2027-02-15 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.0°F, Low: 60.1°F (open-meteo) |       |
-| 2   | 2027-02-16 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.9°F, Low: 53.8°F (open-meteo) |       |
-| 3   | 2027-02-17 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.8°F, Low: 51.3°F (open-meteo) |       |
-| 4   | 2027-02-18 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.6°F, Low: 50.7°F (open-meteo) |       |
-| 5   | 2027-02-19 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 73.7°F, Low: 58.5°F (open-meteo) |       |
-| 6   | 2027-02-20 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 74.1°F, Low: 59.4°F (open-meteo) |       |
-| 7   | 2027-02-21 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 72.2°F, Low: 57.2°F (open-meteo) |       |
-| 8   | 2027-02-22 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 63.8°F, Low: 55.2°F (open-meteo) |       |
-| 9   | 2027-02-23 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 57.3°F, Low: 41.0°F (open-meteo) |       |
-| 10  | 2027-02-24 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.8°F, Low: 48.9°F (open-meteo) |       |
-| 11  | 2027-02-25 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.1°F, Low: 41.0°F (open-meteo) |       |
-| 12  | 2027-02-26 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.2°F, Low: 54.8°F (open-meteo) |       |
-| 13  | 2027-02-27 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 62.6°F, Low: 46.3°F (open-meteo) |       |
-| 14  | 2027-02-28 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 52.6°F, Low: 34.0°F (open-meteo) |       |
-| 15  | 2027-03-01 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.7°F, Low: 41.0°F (open-meteo) |       |
-| 16  | 2027-03-02 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 63.4°F, Low: 38.1°F (open-meteo) |       |
-| 17  | 2027-03-03 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 60.9°F, Low: 46.9°F (open-meteo) |       |
-| 18  | 2027-03-04 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 53.9°F, Low: 33.1°F (open-meteo) |       |
-| 19  | 2027-03-05 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 69.9°F, Low: 45.5°F (open-meteo) |       |
-| 20  | 2027-03-06 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 77.6°F, Low: 68.3°F (open-meteo) |       |
-| 21  | 2027-03-07 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 67.6°F, Low: 40.3°F (open-meteo) |       |
-| 22  | 2027-03-08 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 58.0°F, Low: 36.2°F (open-meteo) |       |
-| 23  | 2027-03-09 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 68.7°F, Low: 42.5°F (open-meteo) |       |
-| 24  | 2027-03-10 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 73.8°F, Low: 63.2°F (open-meteo) |       |
-| 25  | 2027-03-11 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.2°F, Low: 48.4°F (open-meteo) |       |
-| 26  | 2027-03-12 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 59.1°F, Low: 41.5°F (open-meteo) |       |
-| 27  | 2027-03-13 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.8°F, Low: 36.3°F (open-meteo) |       |
-| 28  | 2027-03-14 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 72.2°F, Low: 39.1°F (open-meteo) |       |
-| 29  | 2027-03-15 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.8°F, Low: 53.3°F (open-meteo) |       |
-| 30  | 2027-03-16 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.4°F, Low: 64.2°F (open-meteo) |       |
-| 31  | 2027-03-17 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 74.6°F, Low: 48.1°F (open-meteo) |       |
-| 32  | 2027-03-18 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.7°F, Low: 57.8°F (open-meteo) |       |
-| 33  | 2027-03-19 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 65.2°F, Low: 37.6°F (open-meteo) |       |
-| 34  | 2027-03-20 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 62.7°F, Low: 41.5°F (open-meteo) |       |
-| 35  | 2027-03-21 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 69.9°F, Low: 39.1°F (open-meteo) |       |
-| 36  | 2027-03-22 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 71.7°F, Low: 51.6°F (open-meteo) |       |
-| 37  | 2027-03-23 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 74.4°F, Low: 58.6°F (open-meteo) |       |
-| 38  | 2027-03-24 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.1°F, Low: 50.6°F (open-meteo) |       |
-| 39  | 2027-03-25 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 68.5°F, Low: 43.4°F (open-meteo) |       |
-| 40  | 2027-03-26 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.7°F, Low: 43.6°F (open-meteo) |       |
-| 41  | 2027-03-27 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 70.7°F, Low: 51.2°F (open-meteo) |       |
-| 42  | 2027-03-28 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.2°F, Low: 55.6°F (open-meteo) |       |
-| 43  | 2027-03-29 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.4°F, Low: 49.8°F (open-meteo) |       |
-| 44  | 2027-03-30 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 55.9°F (open-meteo) |       |
-| 45  | 2027-03-31 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 69.3°F (open-meteo) |       |
-| 46  | 2027-04-01 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.7°F, Low: 58.7°F (open-meteo) |       |
-| 47  | 2027-04-02 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 64.0°F, Low: 48.1°F (open-meteo) |       |
-| 48  | 2027-04-03 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 63.0°F, Low: 49.6°F (open-meteo) |       |
-| 49  | 2027-04-04 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 61.5°F, Low: 57.8°F (open-meteo) |       |
-| 50  | 2027-04-05 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 66.4°F, Low: 47.7°F (open-meteo) |       |
-| 51  | 2027-04-06 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 80.6°F, Low: 55.2°F (open-meteo) |       |
-| 52  | 2027-04-07 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 83.2°F, Low: 69.2°F (open-meteo) |       |
-| 53  | 2027-04-08 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 77.8°F, Low: 70.6°F (open-meteo) |       |
-| 54  | 2027-04-09 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.5°F, Low: 47.5°F (open-meteo) |       |
-| 55  | 2027-04-10 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.4°F, Low: 41.5°F (open-meteo) |       |
-| 56  | 2027-04-11 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 83.4°F, Low: 47.2°F (open-meteo) |       |
-| 57  | 2027-04-12 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 84.2°F, Low: 53.8°F (open-meteo) |       |
-| 58  | 2027-04-13 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 81.8°F, Low: 60.3°F (open-meteo) |       |
-| 59  | 2027-04-14 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 70.7°F, Low: 55.0°F (open-meteo) |       |
-| 60  | 2027-04-15 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 67.8°F, Low: 52.5°F (open-meteo) |       |
-| 61  | 2027-04-16 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 68.3°F, Low: 37.1°F (open-meteo) |       |
-| 62  | 2027-04-17 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.7°F, Low: 45.9°F (open-meteo) |       |
-| 63  | 2027-04-18 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 79.0°F, Low: 57.3°F (open-meteo) |       |
-| 64  | 2027-04-19 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 77.3°F, Low: 63.0°F (open-meteo) |       |
-| 65  | 2027-04-20 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 69.8°F, Low: 65.9°F (open-meteo) |       |
-| 66  | 2027-04-21 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.6°F, Low: 64.8°F (open-meteo) |       |
-| 67  | 2027-04-22 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.5°F, Low: 66.3°F (open-meteo) |       |
-| 68  | 2027-04-23 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 74.6°F, Low: 66.2°F (open-meteo) |       |
-| 69  | 2027-04-24 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 70.6°F, Low: 60.8°F (open-meteo) |       |
-| 70  | 2027-04-25 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 70.4°F, Low: 52.2°F (open-meteo) |       |
-| 71  | 2027-04-26 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 70.8°F, Low: 57.3°F (open-meteo) |       |
-| 72  | 2027-04-27 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 69.1°F, Low: 48.8°F (open-meteo) |       |
-| 73  | 2027-04-28 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 71.2°F, Low: 42.9°F (open-meteo) |       |
-| 74  | 2027-04-29 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 81.7°F, Low: 51.2°F (open-meteo) |       |
-| 75  | 2027-04-30 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 83.5°F, Low: 57.2°F (open-meteo) |       |
-| 76  | 2027-05-01 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 77.2°F, Low: 58.3°F (open-meteo) |       |
-| 77  | 2027-05-02 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 78.1°F, Low: 64.2°F (open-meteo) |       |
-| 78  | 2027-05-03 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 53.1°F, Low: 39.1°F (open-meteo) |       |
-| 79  | 2027-05-04 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 59.0°F, Low: 34.3°F (open-meteo) |       |
-| 80  | 2027-05-05 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 69.8°F, Low: 40.2°F (open-meteo) |       |
-| 81  | 2027-05-06 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 76.5°F, Low: 49.2°F (open-meteo) |       |
-| 82  | 2027-05-07 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 81.5°F, Low: 54.1°F (open-meteo) |       |
-| 83  | 2027-05-08 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 81.7°F, Low: 57.6°F (open-meteo) |       |
-| 84  | 2027-05-09 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 85.0°F, Low: 53.3°F (open-meteo) |       |
-| 85  | 2027-05-10 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 87.1°F, Low: 63.7°F (open-meteo) |       |
-| 86  | 2027-05-11 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 88.8°F, Low: 65.5°F (open-meteo) |       |
-| 87  | 2027-05-12 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 87.0°F, Low: 63.4°F (open-meteo) |       |
-| 88  | 2027-05-13 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 72.3°F, Low: 56.1°F (open-meteo) |       |
-| 89  | 2027-05-14 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 69.2°F, Low: 47.4°F (open-meteo) |       |
-| 90  | 2027-05-15 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 66.5°F, Low: 45.6°F (open-meteo) |       |
-| 91  | 2027-05-16 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 59.9°F, Low: 52.8°F (open-meteo) |       |
-| 92  | 2027-05-17 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 68.3°F, Low: 45.2°F (open-meteo) |       |
-| 93  | 2027-05-18 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 71.7°F, Low: 51.1°F (open-meteo) |       |
-| 94  | 2027-05-19 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 77.8°F, Low: 59.6°F (open-meteo) |       |
-| 95  | 2027-05-20 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 79.1°F, Low: 64.5°F (open-meteo) |       |
-| 96  | 2027-05-21 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 80.1°F, Low: 60.2°F (open-meteo) |       |
-| 97  | 2027-05-22 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 72.9°F, Low: 56.2°F (open-meteo) |       |
-| 98  | 2027-05-23 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 75.8°F, Low: 49.4°F (open-meteo) |       |
-| 99  | 2027-05-24 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 74.0°F, Low: 53.5°F (open-meteo) |       |
-| 100 | 2027-05-25 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.9°F, Low: 63.9°F (open-meteo) |       |
-| 101 | 2027-05-26 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 77.7°F, Low: 51.1°F (open-meteo) |       |
-| 102 | 2027-05-27 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.9°F, Low: 61.6°F (open-meteo) |       |
-| 103 | 2027-05-28 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 83.5°F, Low: 58.3°F (open-meteo) |       |
-| 104 | 2027-05-29 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.8°F, Low: 59.1°F (open-meteo) |       |
-| 105 | 2027-05-30 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 78.4°F, Low: 70.3°F (open-meteo) |       |
-| 106 | 2027-05-31 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 84.8°F, Low: 63.6°F (open-meteo) |       |
-| 107 | 2027-06-01 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 82.2°F, Low: 66.2°F (open-meteo) |       |
-| 108 | 2027-06-02 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 57.4°F (open-meteo) |       |
-| 109 | 2027-06-03 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 54.1°F (open-meteo) |       |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| 2027-02-15 | 2027-02-23 | 9    | Austin, Texas             | Little Rock, Arkansas     | 63.5/day          | 2357/day        | 571.6             | 21211           | graphhopper     | Avg High: 57.3-74.1°F, Low: 41.0-60.1°F (open-meteo) |       |
+| 2027-02-24 | 2027-03-01 | 6    | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5/day          | 3322/day        | 375.0             | 19932           | graphhopper     | Avg High: 52.6-69.2°F, Low: 34.0-54.8°F (open-meteo) |       |
+| 2027-03-02 | 2027-03-17 | 16   | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8/day          | 2863/day        | 1100.3            | 45810           | graphhopper     | Avg High: 53.9-77.6°F, Low: 33.1-68.3°F (open-meteo) |       |
+| 2027-03-18 | 2027-03-25 | 8    | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5/day          | 2248/day        | 523.9             | 17982           | graphhopper     | Avg High: 62.7-74.4°F, Low: 37.6-58.6°F (open-meteo) |       |
+| 2027-03-26 | 2027-03-28 | 3    | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6/day          | 2527/day        | 172.8             | 7581            | graphhopper     | Avg High: 70.7-72.7°F, Low: 43.6-55.6°F (open-meteo) |       |
+| 2027-03-29 | 2027-04-01 | 4    | Jackson, Mississippi      | Montgomery, Alabama       | 67.6/day          | 3054/day        | 270.3             | 12216           | graphhopper     | Avg High: 74.4-75.5°F, Low: 49.8-69.3°F (open-meteo) |       |
+| 2027-04-02 | 2027-04-04 | 3    | Montgomery, Alabama       | Atlanta, Georgia          | 66.4/day          | 3698/day        | 199.3             | 11095           | graphhopper     | Avg High: 61.5-64.0°F, Low: 48.1-57.8°F (open-meteo) |       |
+| 2027-04-05 | 2027-04-08 | 4    | Atlanta, Georgia          | Columbia, South Carolina  | 64.1/day          | 3717/day        | 256.3             | 14869           | graphhopper     | Avg High: 66.4-83.2°F, Low: 47.7-70.6°F (open-meteo) |       |
+| 2027-04-09 | 2027-04-12 | 4    | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8/day          | 2586/day        | 231.3             | 10345           | graphhopper     | Avg High: 71.4-84.2°F, Low: 41.5-53.8°F (open-meteo) |       |
+| 2027-04-13 | 2027-04-15 | 3    | Raleigh, North Carolina   | Richmond, Virginia        | 65.2/day          | 3602/day        | 195.7             | 10806           | graphhopper     | Avg High: 67.8-81.8°F, Low: 52.5-60.3°F (open-meteo) |       |
+| 2027-04-16 | 2027-04-24 | 9    | Richmond, Virginia        | Charleston, West Virginia | 42.2/day          | 4494/day        | 380.0             | 40442           | graphhopper     | Avg High: 68.3-79.0°F, Low: 37.1-66.3°F (open-meteo) |       |
+| 2027-04-25 | 2027-04-28 | 4    | Charleston, West Virginia | Frankfort, Kentucky       | 63.9/day          | 4850/day        | 255.7             | 19398           | graphhopper     | Avg High: 69.1-71.2°F, Low: 42.9-57.3°F (open-meteo) |       |
+| 2027-04-29 | 2027-05-02 | 4    | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0/day          | 3529/day        | 227.8             | 14115           | graphhopper     | Avg High: 77.2-83.5°F, Low: 51.2-64.2°F (open-meteo) |       |
+| 2027-05-03 | 2027-05-09 | 7    | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9/day          | 4236/day        | 461.2             | 29655           | graphhopper     | Avg High: 53.1-85.0°F, Low: 34.3-57.6°F (open-meteo) |       |
+| 2027-05-10 | 2027-05-13 | 4    | Jefferson City, Missouri  | Topeka, Kansas            | 58.1/day          | 3041/day        | 232.4             | 12165           | graphhopper     | Avg High: 72.3-88.8°F, Low: 56.1-65.5°F (open-meteo) |       |
+| 2027-05-14 | 2027-05-31 | 18   | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5/day          | 3591/day        | 1250.8            | 64629           | graphhopper     | Avg High: 59.9-84.8°F, Low: 45.2-70.3°F (open-meteo) |       |
+| 2027-06-01 | 2027-06-03 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2             | 10127           | graphhopper     | Avg High: 79.2-82.2°F, Low: 54.1-66.2°F (open-meteo) |       |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
 </details>
 
@@ -307,121 +152,27 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| Day | Date       | Origin                    | Destination               | Distance (mi) | Distance Source | Ascent (ft) | Weather Context                            | Notes |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| 1   | 2027-02-15 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.0°F, Low: 60.1°F (open-meteo) |       |
-| 2   | 2027-02-16 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.9°F, Low: 53.8°F (open-meteo) |       |
-| 3   | 2027-02-17 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.8°F, Low: 51.3°F (open-meteo) |       |
-| 4   | 2027-02-18 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.6°F, Low: 50.7°F (open-meteo) |       |
-| 5   | 2027-02-19 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 73.7°F, Low: 58.5°F (open-meteo) |       |
-| 6   | 2027-02-20 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 74.1°F, Low: 59.4°F (open-meteo) |       |
-| 7   | 2027-02-21 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 72.2°F, Low: 57.2°F (open-meteo) |       |
-| 8   | 2027-02-22 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 63.8°F, Low: 55.2°F (open-meteo) |       |
-| 9   | 2027-02-23 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 57.3°F, Low: 41.0°F (open-meteo) |       |
-| 10  | 2027-02-24 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.8°F, Low: 48.9°F (open-meteo) |       |
-| 11  | 2027-02-25 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.1°F, Low: 41.0°F (open-meteo) |       |
-| 12  | 2027-02-26 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.2°F, Low: 54.8°F (open-meteo) |       |
-| 13  | 2027-02-27 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 62.6°F, Low: 46.3°F (open-meteo) |       |
-| 14  | 2027-02-28 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 52.6°F, Low: 34.0°F (open-meteo) |       |
-| 15  | 2027-03-01 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.7°F, Low: 41.0°F (open-meteo) |       |
-| 16  | 2027-03-02 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 63.4°F, Low: 38.1°F (open-meteo) |       |
-| 17  | 2027-03-03 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 60.9°F, Low: 46.9°F (open-meteo) |       |
-| 18  | 2027-03-04 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 53.9°F, Low: 33.1°F (open-meteo) |       |
-| 19  | 2027-03-05 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 69.9°F, Low: 45.5°F (open-meteo) |       |
-| 20  | 2027-03-06 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 77.6°F, Low: 68.3°F (open-meteo) |       |
-| 21  | 2027-03-07 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 67.6°F, Low: 40.3°F (open-meteo) |       |
-| 22  | 2027-03-08 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 58.0°F, Low: 36.2°F (open-meteo) |       |
-| 23  | 2027-03-09 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 68.7°F, Low: 42.5°F (open-meteo) |       |
-| 24  | 2027-03-10 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 73.8°F, Low: 63.2°F (open-meteo) |       |
-| 25  | 2027-03-11 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.2°F, Low: 48.4°F (open-meteo) |       |
-| 26  | 2027-03-12 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 59.1°F, Low: 41.5°F (open-meteo) |       |
-| 27  | 2027-03-13 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.8°F, Low: 36.3°F (open-meteo) |       |
-| 28  | 2027-03-14 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 72.2°F, Low: 39.1°F (open-meteo) |       |
-| 29  | 2027-03-15 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.8°F, Low: 53.3°F (open-meteo) |       |
-| 30  | 2027-03-16 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.4°F, Low: 64.2°F (open-meteo) |       |
-| 31  | 2027-03-17 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 74.6°F, Low: 48.1°F (open-meteo) |       |
-| 32  | 2027-03-18 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.7°F, Low: 57.8°F (open-meteo) |       |
-| 33  | 2027-03-19 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 65.2°F, Low: 37.6°F (open-meteo) |       |
-| 34  | 2027-03-20 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 62.7°F, Low: 41.5°F (open-meteo) |       |
-| 35  | 2027-03-21 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 69.9°F, Low: 39.1°F (open-meteo) |       |
-| 36  | 2027-03-22 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 71.7°F, Low: 51.6°F (open-meteo) |       |
-| 37  | 2027-03-23 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 74.4°F, Low: 58.6°F (open-meteo) |       |
-| 38  | 2027-03-24 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.1°F, Low: 50.6°F (open-meteo) |       |
-| 39  | 2027-03-25 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 68.5°F, Low: 43.4°F (open-meteo) |       |
-| 40  | 2027-03-26 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.7°F, Low: 43.6°F (open-meteo) |       |
-| 41  | 2027-03-27 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 70.7°F, Low: 51.2°F (open-meteo) |       |
-| 42  | 2027-03-28 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.2°F, Low: 55.6°F (open-meteo) |       |
-| 43  | 2027-03-29 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.4°F, Low: 49.8°F (open-meteo) |       |
-| 44  | 2027-03-30 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 55.9°F (open-meteo) |       |
-| 45  | 2027-03-31 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 69.3°F (open-meteo) |       |
-| 46  | 2027-04-01 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.7°F, Low: 58.7°F (open-meteo) |       |
-| 47  | 2027-04-02 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 64.0°F, Low: 48.1°F (open-meteo) |       |
-| 48  | 2027-04-03 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 63.0°F, Low: 49.6°F (open-meteo) |       |
-| 49  | 2027-04-04 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 61.5°F, Low: 57.8°F (open-meteo) |       |
-| 50  | 2027-04-05 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 66.4°F, Low: 47.7°F (open-meteo) |       |
-| 51  | 2027-04-06 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 80.6°F, Low: 55.2°F (open-meteo) |       |
-| 52  | 2027-04-07 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 83.2°F, Low: 69.2°F (open-meteo) |       |
-| 53  | 2027-04-08 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 77.8°F, Low: 70.6°F (open-meteo) |       |
-| 54  | 2027-04-09 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 66.4°F, Low: 48.9°F (open-meteo) |       |
-| 55  | 2027-04-10 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 71.9°F, Low: 39.4°F (open-meteo) |       |
-| 56  | 2027-04-11 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 82.5°F, Low: 50.0°F (open-meteo) |       |
-| 57  | 2027-04-12 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 88.4°F, Low: 56.7°F (open-meteo) |       |
-| 58  | 2027-04-13 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 81.8°F, Low: 60.3°F (open-meteo) |       |
-| 59  | 2027-04-14 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 70.7°F, Low: 55.0°F (open-meteo) |       |
-| 60  | 2027-04-15 | Columbia, South Carolina  | Richmond, Virginia        | 60.2          | graphhopper     | 2990        | Avg High: 67.8°F, Low: 52.5°F (open-meteo) |       |
-| 61  | 2027-04-16 | Richmond, Virginia        | Raleigh, North Carolina   | 65.5          | graphhopper     | 3717        | Avg High: 69.3°F, Low: 44.1°F (open-meteo) |       |
-| 62  | 2027-04-17 | Richmond, Virginia        | Raleigh, North Carolina   | 65.5          | graphhopper     | 3717        | Avg High: 74.4°F, Low: 44.9°F (open-meteo) |       |
-| 63  | 2027-04-18 | Richmond, Virginia        | Raleigh, North Carolina   | 65.5          | graphhopper     | 3717        | Avg High: 75.4°F, Low: 53.6°F (open-meteo) |       |
-| 64  | 2027-04-19 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 77.3°F, Low: 63.0°F (open-meteo) |       |
-| 65  | 2027-04-20 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 69.8°F, Low: 65.9°F (open-meteo) |       |
-| 66  | 2027-04-21 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 75.6°F, Low: 64.8°F (open-meteo) |       |
-| 67  | 2027-04-22 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 75.5°F, Low: 66.3°F (open-meteo) |       |
-| 68  | 2027-04-23 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 74.6°F, Low: 66.2°F (open-meteo) |       |
-| 69  | 2027-04-24 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 70.6°F, Low: 60.8°F (open-meteo) |       |
-| 70  | 2027-04-25 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 69.8°F, Low: 54.5°F (open-meteo) |       |
-| 71  | 2027-04-26 | Raleigh, North Carolina   | Charleston, West Virginia | 43.9          | graphhopper     | 4574        | Avg High: 66.2°F, Low: 55.8°F (open-meteo) |       |
-| 72  | 2027-04-27 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 69.1°F, Low: 48.8°F (open-meteo) |       |
-| 73  | 2027-04-28 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 71.2°F, Low: 42.9°F (open-meteo) |       |
-| 74  | 2027-04-29 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 79.0°F, Low: 51.6°F (open-meteo) |       |
-| 75  | 2027-04-30 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 84.1°F, Low: 60.0°F (open-meteo) |       |
-| 76  | 2027-05-01 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 77.2°F, Low: 58.3°F (open-meteo) |       |
-| 77  | 2027-05-02 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 78.1°F, Low: 64.2°F (open-meteo) |       |
-| 78  | 2027-05-03 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 61.0°F, Low: 43.0°F (open-meteo) |       |
-| 79  | 2027-05-04 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 57.1°F, Low: 37.4°F (open-meteo) |       |
-| 80  | 2027-05-05 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 69.8°F, Low: 40.2°F (open-meteo) |       |
-| 81  | 2027-05-06 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 76.5°F, Low: 49.2°F (open-meteo) |       |
-| 82  | 2027-05-07 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 81.5°F, Low: 54.1°F (open-meteo) |       |
-| 83  | 2027-05-08 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 81.7°F, Low: 57.6°F (open-meteo) |       |
-| 84  | 2027-05-09 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 85.0°F, Low: 53.3°F (open-meteo) |       |
-| 85  | 2027-05-10 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 86.8°F, Low: 56.9°F (open-meteo) |       |
-| 86  | 2027-05-11 | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9          | graphhopper     | 4236        | Avg High: 87.3°F, Low: 66.4°F (open-meteo) |       |
-| 87  | 2027-05-12 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 87.0°F, Low: 63.4°F (open-meteo) |       |
-| 88  | 2027-05-13 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 72.3°F, Low: 56.1°F (open-meteo) |       |
-| 89  | 2027-05-14 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 75.1°F, Low: 57.9°F (open-meteo) |       |
-| 90  | 2027-05-15 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 80.5°F, Low: 63.8°F (open-meteo) |       |
-| 91  | 2027-05-16 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 59.9°F, Low: 52.8°F (open-meteo) |       |
-| 92  | 2027-05-17 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 68.3°F, Low: 45.2°F (open-meteo) |       |
-| 93  | 2027-05-18 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 71.7°F, Low: 51.1°F (open-meteo) |       |
-| 94  | 2027-05-19 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 77.8°F, Low: 59.6°F (open-meteo) |       |
-| 95  | 2027-05-20 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 79.1°F, Low: 64.5°F (open-meteo) |       |
-| 96  | 2027-05-21 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 80.1°F, Low: 60.2°F (open-meteo) |       |
-| 97  | 2027-05-22 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 72.9°F, Low: 56.2°F (open-meteo) |       |
-| 98  | 2027-05-23 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 75.8°F, Low: 49.4°F (open-meteo) |       |
-| 99  | 2027-05-24 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 74.0°F, Low: 53.5°F (open-meteo) |       |
-| 100 | 2027-05-25 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.9°F, Low: 63.9°F (open-meteo) |       |
-| 101 | 2027-05-26 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 77.7°F, Low: 51.1°F (open-meteo) |       |
-| 102 | 2027-05-27 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.9°F, Low: 61.6°F (open-meteo) |       |
-| 103 | 2027-05-28 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 83.5°F, Low: 58.3°F (open-meteo) |       |
-| 104 | 2027-05-29 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 81.8°F, Low: 59.1°F (open-meteo) |       |
-| 105 | 2027-05-30 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 78.4°F, Low: 70.3°F (open-meteo) |       |
-| 106 | 2027-05-31 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 84.8°F, Low: 63.6°F (open-meteo) |       |
-| 107 | 2027-06-01 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 78.3°F, Low: 58.0°F (open-meteo) |       |
-| 108 | 2027-06-02 | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5          | graphhopper     | 3591        | Avg High: 78.7°F, Low: 54.3°F (open-meteo) |       |
-| 109 | 2027-06-03 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 54.1°F (open-meteo) |       |
-| 110 | 2027-06-04 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 89.0°F, Low: 61.0°F (open-meteo) |       |
-| 111 | 2027-06-05 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 84.8°F, Low: 71.2°F (open-meteo) |       |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| 2027-02-15 | 2027-02-23 | 9    | Austin, Texas             | Little Rock, Arkansas     | 63.5/day          | 2357/day        | 571.6             | 21211           | graphhopper     | Avg High: 57.3-74.1°F, Low: 41.0-60.1°F (open-meteo) |       |
+| 2027-02-24 | 2027-03-01 | 6    | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5/day          | 3322/day        | 375.0             | 19932           | graphhopper     | Avg High: 52.6-69.2°F, Low: 34.0-54.8°F (open-meteo) |       |
+| 2027-03-02 | 2027-03-17 | 16   | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8/day          | 2863/day        | 1100.3            | 45810           | graphhopper     | Avg High: 53.9-77.6°F, Low: 33.1-68.3°F (open-meteo) |       |
+| 2027-03-18 | 2027-03-25 | 8    | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5/day          | 2248/day        | 523.9             | 17982           | graphhopper     | Avg High: 62.7-74.4°F, Low: 37.6-58.6°F (open-meteo) |       |
+| 2027-03-26 | 2027-03-28 | 3    | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6/day          | 2527/day        | 172.8             | 7581            | graphhopper     | Avg High: 70.7-72.7°F, Low: 43.6-55.6°F (open-meteo) |       |
+| 2027-03-29 | 2027-04-01 | 4    | Jackson, Mississippi      | Montgomery, Alabama       | 67.6/day          | 3054/day        | 270.3             | 12216           | graphhopper     | Avg High: 74.4-75.5°F, Low: 49.8-69.3°F (open-meteo) |       |
+| 2027-04-02 | 2027-04-04 | 3    | Montgomery, Alabama       | Atlanta, Georgia          | 66.4/day          | 3698/day        | 199.3             | 11095           | graphhopper     | Avg High: 61.5-64.0°F, Low: 48.1-57.8°F (open-meteo) |       |
+| 2027-04-05 | 2027-04-08 | 4    | Atlanta, Georgia          | Columbia, South Carolina  | 64.1/day          | 3717/day        | 256.3             | 14869           | graphhopper     | Avg High: 66.4-83.2°F, Low: 47.7-70.6°F (open-meteo) |       |
+| 2027-04-09 | 2027-04-15 | 7    | Columbia, South Carolina  | Richmond, Virginia        | 60.2/day          | 2990/day        | 421.2             | 20928           | graphhopper     | Avg High: 66.4-88.4°F, Low: 39.4-60.3°F (open-meteo) |       |
+| 2027-04-16 | 2027-04-18 | 3    | Richmond, Virginia        | Raleigh, North Carolina   | 65.5/day          | 3717/day        | 196.4             | 11151           | graphhopper     | Avg High: 69.3-75.4°F, Low: 44.1-53.6°F (open-meteo) |       |
+| 2027-04-19 | 2027-04-26 | 8    | Raleigh, North Carolina   | Charleston, West Virginia | 43.9/day          | 4574/day        | 351.1             | 36594           | graphhopper     | Avg High: 66.2-77.3°F, Low: 54.5-66.3°F (open-meteo) |       |
+| 2027-04-27 | 2027-04-30 | 4    | Charleston, West Virginia | Frankfort, Kentucky       | 63.9/day          | 4850/day        | 255.7             | 19398           | graphhopper     | Avg High: 69.1-84.1°F, Low: 42.9-60.0°F (open-meteo) |       |
+| 2027-05-01 | 2027-05-04 | 4    | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0/day          | 3529/day        | 227.8             | 14115           | graphhopper     | Avg High: 57.1-78.1°F, Low: 37.4-64.2°F (open-meteo) |       |
+| 2027-05-05 | 2027-05-11 | 7    | Nashville, Tennessee      | Jefferson City, Missouri  | 65.9/day          | 4236/day        | 461.2             | 29655           | graphhopper     | Avg High: 69.8-87.3°F, Low: 40.2-66.4°F (open-meteo) |       |
+| 2027-05-12 | 2027-05-15 | 4    | Jefferson City, Missouri  | Topeka, Kansas            | 58.1/day          | 3041/day        | 232.4             | 12165           | graphhopper     | Avg High: 72.3-87.0°F, Low: 56.1-63.8°F (open-meteo) |       |
+| 2027-05-16 | 2027-06-02 | 18   | Topeka, Kansas            | Harrisburg, Pennsylvania  | 69.5/day          | 3591/day        | 1250.8            | 64629           | graphhopper     | Avg High: 59.9-84.8°F, Low: 45.2-70.3°F (open-meteo) |       |
+| 2027-06-03 | 2027-06-05 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2             | 10127           | graphhopper     | Avg High: 79.2-89.0°F, Low: 54.1-71.2°F (open-meteo) |       |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
 </details>
 
@@ -442,120 +193,27 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| Day | Date       | Origin                    | Destination               | Distance (mi) | Distance Source | Ascent (ft) | Weather Context                            | Notes |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| 1   | 2027-02-15 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.0°F, Low: 60.1°F (open-meteo) |       |
-| 2   | 2027-02-16 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.9°F, Low: 53.8°F (open-meteo) |       |
-| 3   | 2027-02-17 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.8°F, Low: 51.3°F (open-meteo) |       |
-| 4   | 2027-02-18 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.6°F, Low: 50.7°F (open-meteo) |       |
-| 5   | 2027-02-19 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 73.7°F, Low: 58.5°F (open-meteo) |       |
-| 6   | 2027-02-20 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 74.1°F, Low: 59.4°F (open-meteo) |       |
-| 7   | 2027-02-21 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 72.2°F, Low: 57.2°F (open-meteo) |       |
-| 8   | 2027-02-22 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 63.8°F, Low: 55.2°F (open-meteo) |       |
-| 9   | 2027-02-23 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 57.3°F, Low: 41.0°F (open-meteo) |       |
-| 10  | 2027-02-24 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.8°F, Low: 48.9°F (open-meteo) |       |
-| 11  | 2027-02-25 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.1°F, Low: 41.0°F (open-meteo) |       |
-| 12  | 2027-02-26 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.2°F, Low: 54.8°F (open-meteo) |       |
-| 13  | 2027-02-27 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 62.6°F, Low: 46.3°F (open-meteo) |       |
-| 14  | 2027-02-28 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 52.6°F, Low: 34.0°F (open-meteo) |       |
-| 15  | 2027-03-01 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.7°F, Low: 41.0°F (open-meteo) |       |
-| 16  | 2027-03-02 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 63.4°F, Low: 38.1°F (open-meteo) |       |
-| 17  | 2027-03-03 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 60.9°F, Low: 46.9°F (open-meteo) |       |
-| 18  | 2027-03-04 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 53.9°F, Low: 33.1°F (open-meteo) |       |
-| 19  | 2027-03-05 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 69.9°F, Low: 45.5°F (open-meteo) |       |
-| 20  | 2027-03-06 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 77.6°F, Low: 68.3°F (open-meteo) |       |
-| 21  | 2027-03-07 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 67.6°F, Low: 40.3°F (open-meteo) |       |
-| 22  | 2027-03-08 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 58.0°F, Low: 36.2°F (open-meteo) |       |
-| 23  | 2027-03-09 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 68.7°F, Low: 42.5°F (open-meteo) |       |
-| 24  | 2027-03-10 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 73.8°F, Low: 63.2°F (open-meteo) |       |
-| 25  | 2027-03-11 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.2°F, Low: 48.4°F (open-meteo) |       |
-| 26  | 2027-03-12 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 59.1°F, Low: 41.5°F (open-meteo) |       |
-| 27  | 2027-03-13 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.8°F, Low: 36.3°F (open-meteo) |       |
-| 28  | 2027-03-14 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 72.2°F, Low: 39.1°F (open-meteo) |       |
-| 29  | 2027-03-15 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.8°F, Low: 53.3°F (open-meteo) |       |
-| 30  | 2027-03-16 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.4°F, Low: 64.2°F (open-meteo) |       |
-| 31  | 2027-03-17 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 74.6°F, Low: 48.1°F (open-meteo) |       |
-| 32  | 2027-03-18 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.7°F, Low: 57.8°F (open-meteo) |       |
-| 33  | 2027-03-19 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 65.2°F, Low: 37.6°F (open-meteo) |       |
-| 34  | 2027-03-20 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 62.7°F, Low: 41.5°F (open-meteo) |       |
-| 35  | 2027-03-21 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 69.9°F, Low: 39.1°F (open-meteo) |       |
-| 36  | 2027-03-22 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 71.7°F, Low: 51.6°F (open-meteo) |       |
-| 37  | 2027-03-23 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 74.4°F, Low: 58.6°F (open-meteo) |       |
-| 38  | 2027-03-24 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.1°F, Low: 50.6°F (open-meteo) |       |
-| 39  | 2027-03-25 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 68.5°F, Low: 43.4°F (open-meteo) |       |
-| 40  | 2027-03-26 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.7°F, Low: 43.6°F (open-meteo) |       |
-| 41  | 2027-03-27 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 70.7°F, Low: 51.2°F (open-meteo) |       |
-| 42  | 2027-03-28 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.2°F, Low: 55.6°F (open-meteo) |       |
-| 43  | 2027-03-29 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.4°F, Low: 49.8°F (open-meteo) |       |
-| 44  | 2027-03-30 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 55.9°F (open-meteo) |       |
-| 45  | 2027-03-31 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 69.3°F (open-meteo) |       |
-| 46  | 2027-04-01 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.7°F, Low: 58.7°F (open-meteo) |       |
-| 47  | 2027-04-02 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 64.0°F, Low: 48.1°F (open-meteo) |       |
-| 48  | 2027-04-03 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 63.0°F, Low: 49.6°F (open-meteo) |       |
-| 49  | 2027-04-04 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 61.5°F, Low: 57.8°F (open-meteo) |       |
-| 50  | 2027-04-05 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 66.4°F, Low: 47.7°F (open-meteo) |       |
-| 51  | 2027-04-06 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 80.6°F, Low: 55.2°F (open-meteo) |       |
-| 52  | 2027-04-07 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 83.2°F, Low: 69.2°F (open-meteo) |       |
-| 53  | 2027-04-08 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 77.8°F, Low: 70.6°F (open-meteo) |       |
-| 54  | 2027-04-09 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.5°F, Low: 47.5°F (open-meteo) |       |
-| 55  | 2027-04-10 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.4°F, Low: 41.5°F (open-meteo) |       |
-| 56  | 2027-04-11 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 83.4°F, Low: 47.2°F (open-meteo) |       |
-| 57  | 2027-04-12 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 84.2°F, Low: 53.8°F (open-meteo) |       |
-| 58  | 2027-04-13 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 81.8°F, Low: 60.3°F (open-meteo) |       |
-| 59  | 2027-04-14 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 70.7°F, Low: 55.0°F (open-meteo) |       |
-| 60  | 2027-04-15 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 67.8°F, Low: 52.5°F (open-meteo) |       |
-| 61  | 2027-04-16 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 68.3°F, Low: 37.1°F (open-meteo) |       |
-| 62  | 2027-04-17 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.7°F, Low: 45.9°F (open-meteo) |       |
-| 63  | 2027-04-18 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 79.0°F, Low: 57.3°F (open-meteo) |       |
-| 64  | 2027-04-19 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 77.3°F, Low: 63.0°F (open-meteo) |       |
-| 65  | 2027-04-20 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 69.8°F, Low: 65.9°F (open-meteo) |       |
-| 66  | 2027-04-21 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.6°F, Low: 64.8°F (open-meteo) |       |
-| 67  | 2027-04-22 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 75.5°F, Low: 66.3°F (open-meteo) |       |
-| 68  | 2027-04-23 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 74.6°F, Low: 66.2°F (open-meteo) |       |
-| 69  | 2027-04-24 | Richmond, Virginia        | Charleston, West Virginia | 42.2          | graphhopper     | 4494        | Avg High: 70.6°F, Low: 60.8°F (open-meteo) |       |
-| 70  | 2027-04-25 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 70.4°F, Low: 52.2°F (open-meteo) |       |
-| 71  | 2027-04-26 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 70.8°F, Low: 57.3°F (open-meteo) |       |
-| 72  | 2027-04-27 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 69.1°F, Low: 48.8°F (open-meteo) |       |
-| 73  | 2027-04-28 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 71.2°F, Low: 42.9°F (open-meteo) |       |
-| 74  | 2027-04-29 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 83.2°F, Low: 61.2°F (open-meteo) |       |
-| 75  | 2027-04-30 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 79.4°F, Low: 57.6°F (open-meteo) |       |
-| 76  | 2027-05-01 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 77.4°F, Low: 58.7°F (open-meteo) |       |
-| 77  | 2027-05-02 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 69.3°F, Low: 46.1°F (open-meteo) |       |
-| 78  | 2027-05-03 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 53.1°F, Low: 39.1°F (open-meteo) |       |
-| 79  | 2027-05-04 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 59.0°F, Low: 34.3°F (open-meteo) |       |
-| 80  | 2027-05-05 | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1          | graphhopper     | 3494        | Avg High: 69.8°F, Low: 40.2°F (open-meteo) |       |
-| 81  | 2027-05-06 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 78.4°F, Low: 52.2°F (open-meteo) |       |
-| 82  | 2027-05-07 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 82.2°F, Low: 57.8°F (open-meteo) |       |
-| 83  | 2027-05-08 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 82.4°F, Low: 58.4°F (open-meteo) |       |
-| 84  | 2027-05-09 | Jefferson City, Missouri  | Topeka, Kansas            | 58.1          | graphhopper     | 3041        | Avg High: 85.3°F, Low: 61.2°F (open-meteo) |       |
-| 85  | 2027-05-10 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 81.2°F, Low: 62.0°F (open-meteo) |       |
-| 86  | 2027-05-11 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 84.6°F, Low: 68.4°F (open-meteo) |       |
-| 87  | 2027-05-12 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 87.4°F, Low: 63.7°F (open-meteo) |       |
-| 88  | 2027-05-13 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 83.3°F, Low: 65.7°F (open-meteo) |       |
-| 89  | 2027-05-14 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 81.6°F, Low: 59.5°F (open-meteo) |       |
-| 90  | 2027-05-15 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 80.4°F, Low: 68.2°F (open-meteo) |       |
-| 91  | 2027-05-16 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 84.1°F, Low: 70.8°F (open-meteo) |       |
-| 92  | 2027-05-17 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 82.0°F, Low: 70.5°F (open-meteo) |       |
-| 93  | 2027-05-18 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 78.5°F, Low: 71.7°F (open-meteo) |       |
-| 94  | 2027-05-19 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 75.6°F, Low: 72.2°F (open-meteo) |       |
-| 95  | 2027-05-20 | Topeka, Kansas            | Nashville, Tennessee      | 66.9          | graphhopper     | 3199        | Avg High: 81.9°F, Low: 67.2°F (open-meteo) |       |
-| 96  | 2027-05-21 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 80.1°F, Low: 60.2°F (open-meteo) |       |
-| 97  | 2027-05-22 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 72.9°F, Low: 56.2°F (open-meteo) |       |
-| 98  | 2027-05-23 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 75.8°F, Low: 49.4°F (open-meteo) |       |
-| 99  | 2027-05-24 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 74.0°F, Low: 53.5°F (open-meteo) |       |
-| 100 | 2027-05-25 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 81.9°F, Low: 63.9°F (open-meteo) |       |
-| 101 | 2027-05-26 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 77.7°F, Low: 51.1°F (open-meteo) |       |
-| 102 | 2027-05-27 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 81.9°F, Low: 61.6°F (open-meteo) |       |
-| 103 | 2027-05-28 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 83.5°F, Low: 58.3°F (open-meteo) |       |
-| 104 | 2027-05-29 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 81.8°F, Low: 59.1°F (open-meteo) |       |
-| 105 | 2027-05-30 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 78.4°F, Low: 70.3°F (open-meteo) |       |
-| 106 | 2027-05-31 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 84.8°F, Low: 63.6°F (open-meteo) |       |
-| 107 | 2027-06-01 | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5          | graphhopper     | 4798        | Avg High: 78.3°F, Low: 58.0°F (open-meteo) |       |
-| 108 | 2027-06-02 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 57.4°F (open-meteo) |       |
-| 109 | 2027-06-03 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 79.2°F, Low: 54.1°F (open-meteo) |       |
-| 110 | 2027-06-04 | Harrisburg, Pennsylvania  | Washington, DC            | 43.1          | graphhopper     | 3376        | Avg High: 89.0°F, Low: 61.0°F (open-meteo) |       |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| 2027-02-15 | 2027-02-23 | 9    | Austin, Texas             | Little Rock, Arkansas     | 63.5/day          | 2357/day        | 571.6             | 21211           | graphhopper     | Avg High: 57.3-74.1°F, Low: 41.0-60.1°F (open-meteo) |       |
+| 2027-02-24 | 2027-03-01 | 6    | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5/day          | 3322/day        | 375.0             | 19932           | graphhopper     | Avg High: 52.6-69.2°F, Low: 34.0-54.8°F (open-meteo) |       |
+| 2027-03-02 | 2027-03-17 | 16   | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8/day          | 2863/day        | 1100.3            | 45810           | graphhopper     | Avg High: 53.9-77.6°F, Low: 33.1-68.3°F (open-meteo) |       |
+| 2027-03-18 | 2027-03-25 | 8    | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5/day          | 2248/day        | 523.9             | 17982           | graphhopper     | Avg High: 62.7-74.4°F, Low: 37.6-58.6°F (open-meteo) |       |
+| 2027-03-26 | 2027-03-28 | 3    | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6/day          | 2527/day        | 172.8             | 7581            | graphhopper     | Avg High: 70.7-72.7°F, Low: 43.6-55.6°F (open-meteo) |       |
+| 2027-03-29 | 2027-04-01 | 4    | Jackson, Mississippi      | Montgomery, Alabama       | 67.6/day          | 3054/day        | 270.3             | 12216           | graphhopper     | Avg High: 74.4-75.5°F, Low: 49.8-69.3°F (open-meteo) |       |
+| 2027-04-02 | 2027-04-04 | 3    | Montgomery, Alabama       | Atlanta, Georgia          | 66.4/day          | 3698/day        | 199.3             | 11095           | graphhopper     | Avg High: 61.5-64.0°F, Low: 48.1-57.8°F (open-meteo) |       |
+| 2027-04-05 | 2027-04-08 | 4    | Atlanta, Georgia          | Columbia, South Carolina  | 64.1/day          | 3717/day        | 256.3             | 14869           | graphhopper     | Avg High: 66.4-83.2°F, Low: 47.7-70.6°F (open-meteo) |       |
+| 2027-04-09 | 2027-04-12 | 4    | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8/day          | 2586/day        | 231.3             | 10345           | graphhopper     | Avg High: 71.4-84.2°F, Low: 41.5-53.8°F (open-meteo) |       |
+| 2027-04-13 | 2027-04-15 | 3    | Raleigh, North Carolina   | Richmond, Virginia        | 65.2/day          | 3602/day        | 195.7             | 10806           | graphhopper     | Avg High: 67.8-81.8°F, Low: 52.5-60.3°F (open-meteo) |       |
+| 2027-04-16 | 2027-04-24 | 9    | Richmond, Virginia        | Charleston, West Virginia | 42.2/day          | 4494/day        | 380.0             | 40442           | graphhopper     | Avg High: 68.3-79.0°F, Low: 37.1-66.3°F (open-meteo) |       |
+| 2027-04-25 | 2027-04-28 | 4    | Charleston, West Virginia | Frankfort, Kentucky       | 63.9/day          | 4850/day        | 255.7             | 19398           | graphhopper     | Avg High: 69.1-71.2°F, Low: 42.9-57.3°F (open-meteo) |       |
+| 2027-04-29 | 2027-05-05 | 7    | Frankfort, Kentucky       | Jefferson City, Missouri  | 69.1/day          | 3494/day        | 483.6             | 24455           | graphhopper     | Avg High: 53.1-83.2°F, Low: 34.3-61.2°F (open-meteo) |       |
+| 2027-05-06 | 2027-05-09 | 4    | Jefferson City, Missouri  | Topeka, Kansas            | 58.1/day          | 3041/day        | 232.4             | 12165           | graphhopper     | Avg High: 78.4-85.3°F, Low: 52.2-61.2°F (open-meteo) |       |
+| 2027-05-10 | 2027-05-20 | 11   | Topeka, Kansas            | Nashville, Tennessee      | 66.9/day          | 3199/day        | 736.2             | 35188           | graphhopper     | Avg High: 75.6-87.4°F, Low: 59.5-72.2°F (open-meteo) |       |
+| 2027-05-21 | 2027-06-01 | 12   | Nashville, Tennessee      | Harrisburg, Pennsylvania  | 67.5/day          | 4798/day        | 810.3             | 57574           | graphhopper     | Avg High: 72.9-84.8°F, Low: 49.4-70.3°F (open-meteo) |       |
+| 2027-06-02 | 2027-06-04 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2             | 10127           | graphhopper     | Avg High: 79.2-89.0°F, Low: 54.1-61.0°F (open-meteo) |       |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
 </details>
 
@@ -576,127 +234,33 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| Day | Date       | Origin                    | Destination               | Distance (mi) | Distance Source | Ascent (ft) | Weather Context                            | Notes |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
-| 1   | 2027-02-15 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.0°F, Low: 60.1°F (open-meteo) |       |
-| 2   | 2027-02-16 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.9°F, Low: 53.8°F (open-meteo) |       |
-| 3   | 2027-02-17 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 66.8°F, Low: 51.3°F (open-meteo) |       |
-| 4   | 2027-02-18 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 70.6°F, Low: 50.7°F (open-meteo) |       |
-| 5   | 2027-02-19 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 73.7°F, Low: 58.5°F (open-meteo) |       |
-| 6   | 2027-02-20 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 74.1°F, Low: 59.4°F (open-meteo) |       |
-| 7   | 2027-02-21 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 72.2°F, Low: 57.2°F (open-meteo) |       |
-| 8   | 2027-02-22 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 63.8°F, Low: 55.2°F (open-meteo) |       |
-| 9   | 2027-02-23 | Austin, Texas             | Little Rock, Arkansas     | 63.5          | graphhopper     | 2357        | Avg High: 57.3°F, Low: 41.0°F (open-meteo) |       |
-| 10  | 2027-02-24 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.8°F, Low: 48.9°F (open-meteo) |       |
-| 11  | 2027-02-25 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.1°F, Low: 41.0°F (open-meteo) |       |
-| 12  | 2027-02-26 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 69.2°F, Low: 54.8°F (open-meteo) |       |
-| 13  | 2027-02-27 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 62.6°F, Low: 46.3°F (open-meteo) |       |
-| 14  | 2027-02-28 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 52.6°F, Low: 34.0°F (open-meteo) |       |
-| 15  | 2027-03-01 | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5          | graphhopper     | 3322        | Avg High: 65.7°F, Low: 41.0°F (open-meteo) |       |
-| 16  | 2027-03-02 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 63.4°F, Low: 38.1°F (open-meteo) |       |
-| 17  | 2027-03-03 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 60.9°F, Low: 46.9°F (open-meteo) |       |
-| 18  | 2027-03-04 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 53.9°F, Low: 33.1°F (open-meteo) |       |
-| 19  | 2027-03-05 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 69.9°F, Low: 45.5°F (open-meteo) |       |
-| 20  | 2027-03-06 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 77.6°F, Low: 68.3°F (open-meteo) |       |
-| 21  | 2027-03-07 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 67.6°F, Low: 40.3°F (open-meteo) |       |
-| 22  | 2027-03-08 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 58.0°F, Low: 36.2°F (open-meteo) |       |
-| 23  | 2027-03-09 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 68.7°F, Low: 42.5°F (open-meteo) |       |
-| 24  | 2027-03-10 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 73.8°F, Low: 63.2°F (open-meteo) |       |
-| 25  | 2027-03-11 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.2°F, Low: 48.4°F (open-meteo) |       |
-| 26  | 2027-03-12 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 59.1°F, Low: 41.5°F (open-meteo) |       |
-| 27  | 2027-03-13 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 64.8°F, Low: 36.3°F (open-meteo) |       |
-| 28  | 2027-03-14 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 72.2°F, Low: 39.1°F (open-meteo) |       |
-| 29  | 2027-03-15 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.8°F, Low: 53.3°F (open-meteo) |       |
-| 30  | 2027-03-16 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 70.4°F, Low: 64.2°F (open-meteo) |       |
-| 31  | 2027-03-17 | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8          | graphhopper     | 2863        | Avg High: 74.6°F, Low: 48.1°F (open-meteo) |       |
-| 32  | 2027-03-18 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.7°F, Low: 57.8°F (open-meteo) |       |
-| 33  | 2027-03-19 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 65.2°F, Low: 37.6°F (open-meteo) |       |
-| 34  | 2027-03-20 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 62.7°F, Low: 41.5°F (open-meteo) |       |
-| 35  | 2027-03-21 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 69.9°F, Low: 39.1°F (open-meteo) |       |
-| 36  | 2027-03-22 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 71.7°F, Low: 51.6°F (open-meteo) |       |
-| 37  | 2027-03-23 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 74.4°F, Low: 58.6°F (open-meteo) |       |
-| 38  | 2027-03-24 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 72.1°F, Low: 50.6°F (open-meteo) |       |
-| 39  | 2027-03-25 | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5          | graphhopper     | 2248        | Avg High: 68.5°F, Low: 43.4°F (open-meteo) |       |
-| 40  | 2027-03-26 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.7°F, Low: 43.6°F (open-meteo) |       |
-| 41  | 2027-03-27 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 70.7°F, Low: 51.2°F (open-meteo) |       |
-| 42  | 2027-03-28 | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6          | graphhopper     | 2527        | Avg High: 72.2°F, Low: 55.6°F (open-meteo) |       |
-| 43  | 2027-03-29 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.4°F, Low: 49.8°F (open-meteo) |       |
-| 44  | 2027-03-30 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 55.9°F (open-meteo) |       |
-| 45  | 2027-03-31 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 75.5°F, Low: 69.3°F (open-meteo) |       |
-| 46  | 2027-04-01 | Jackson, Mississippi      | Montgomery, Alabama       | 67.6          | graphhopper     | 3054        | Avg High: 74.7°F, Low: 58.7°F (open-meteo) |       |
-| 47  | 2027-04-02 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 64.0°F, Low: 48.1°F (open-meteo) |       |
-| 48  | 2027-04-03 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 63.0°F, Low: 49.6°F (open-meteo) |       |
-| 49  | 2027-04-04 | Montgomery, Alabama       | Atlanta, Georgia          | 66.4          | graphhopper     | 3698        | Avg High: 61.5°F, Low: 57.8°F (open-meteo) |       |
-| 50  | 2027-04-05 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 66.4°F, Low: 47.7°F (open-meteo) |       |
-| 51  | 2027-04-06 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 80.6°F, Low: 55.2°F (open-meteo) |       |
-| 52  | 2027-04-07 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 83.2°F, Low: 69.2°F (open-meteo) |       |
-| 53  | 2027-04-08 | Atlanta, Georgia          | Columbia, South Carolina  | 64.1          | graphhopper     | 3717        | Avg High: 77.8°F, Low: 70.6°F (open-meteo) |       |
-| 54  | 2027-04-09 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.5°F, Low: 47.5°F (open-meteo) |       |
-| 55  | 2027-04-10 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 71.4°F, Low: 41.5°F (open-meteo) |       |
-| 56  | 2027-04-11 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 83.4°F, Low: 47.2°F (open-meteo) |       |
-| 57  | 2027-04-12 | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8          | graphhopper     | 2586        | Avg High: 84.2°F, Low: 53.8°F (open-meteo) |       |
-| 58  | 2027-04-13 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 81.8°F, Low: 60.3°F (open-meteo) |       |
-| 59  | 2027-04-14 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 70.7°F, Low: 55.0°F (open-meteo) |       |
-| 60  | 2027-04-15 | Raleigh, North Carolina   | Richmond, Virginia        | 65.2          | graphhopper     | 3602        | Avg High: 67.8°F, Low: 52.5°F (open-meteo) |       |
-| 61  | 2027-04-16 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 61.8°F, Low: 35.8°F (open-meteo) |       |
-| 62  | 2027-04-17 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 64.9°F, Low: 39.2°F (open-meteo) |       |
-| 63  | 2027-04-18 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 61.2°F, Low: 48.1°F (open-meteo) |       |
-| 64  | 2027-04-19 | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2          | graphhopper     | 4515        | Avg High: 72.6°F, Low: 60.7°F (open-meteo) |       |
-| 65  | 2027-04-20 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 69.8°F, Low: 65.9°F (open-meteo) |       |
-| 66  | 2027-04-21 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 75.6°F, Low: 64.8°F (open-meteo) |       |
-| 67  | 2027-04-22 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 75.5°F, Low: 66.3°F (open-meteo) |       |
-| 68  | 2027-04-23 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 74.6°F, Low: 66.2°F (open-meteo) |       |
-| 69  | 2027-04-24 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 70.6°F, Low: 60.8°F (open-meteo) |       |
-| 70  | 2027-04-25 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 69.8°F, Low: 54.5°F (open-meteo) |       |
-| 71  | 2027-04-26 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 66.2°F, Low: 55.8°F (open-meteo) |       |
-| 72  | 2027-04-27 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 66.5°F, Low: 50.4°F (open-meteo) |       |
-| 73  | 2027-04-28 | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6          | graphhopper     | 4688        | Avg High: 67.8°F, Low: 40.6°F (open-meteo) |       |
-| 74  | 2027-04-29 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 79.0°F, Low: 51.6°F (open-meteo) |       |
-| 75  | 2027-04-30 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 84.1°F, Low: 60.0°F (open-meteo) |       |
-| 76  | 2027-05-01 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 77.4°F, Low: 57.4°F (open-meteo) |       |
-| 77  | 2027-05-02 | Charleston, West Virginia | Frankfort, Kentucky       | 63.9          | graphhopper     | 4850        | Avg High: 74.3°F, Low: 60.3°F (open-meteo) |       |
-| 78  | 2027-05-03 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 61.0°F, Low: 43.0°F (open-meteo) |       |
-| 79  | 2027-05-04 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 57.1°F, Low: 37.4°F (open-meteo) |       |
-| 80  | 2027-05-05 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 67.3°F, Low: 35.2°F (open-meteo) |       |
-| 81  | 2027-05-06 | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0          | graphhopper     | 3529        | Avg High: 74.6°F, Low: 43.2°F (open-meteo) |       |
-| 82  | 2027-05-07 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 82.2°F, Low: 57.8°F (open-meteo) |       |
-| 83  | 2027-05-08 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 82.4°F, Low: 58.4°F (open-meteo) |       |
-| 84  | 2027-05-09 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 85.3°F, Low: 61.2°F (open-meteo) |       |
-| 85  | 2027-05-10 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 87.1°F, Low: 63.7°F (open-meteo) |       |
-| 86  | 2027-05-11 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 88.8°F, Low: 65.5°F (open-meteo) |       |
-| 87  | 2027-05-12 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 87.0°F, Low: 63.4°F (open-meteo) |       |
-| 88  | 2027-05-13 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 72.3°F, Low: 56.1°F (open-meteo) |       |
-| 89  | 2027-05-14 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 75.1°F, Low: 57.9°F (open-meteo) |       |
-| 90  | 2027-05-15 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 80.5°F, Low: 63.8°F (open-meteo) |       |
-| 91  | 2027-05-16 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 89.4°F, Low: 65.4°F (open-meteo) |       |
-| 92  | 2027-05-17 | Nashville, Tennessee      | Topeka, Kansas            | 67.1          | graphhopper     | 3217        | Avg High: 89.5°F, Low: 58.4°F (open-meteo) |       |
-| 93  | 2027-05-18 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 79.9°F, Low: 61.6°F (open-meteo) |       |
-| 94  | 2027-05-19 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 77.3°F, Low: 57.9°F (open-meteo) |       |
-| 95  | 2027-05-20 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 72.1°F, Low: 59.2°F (open-meteo) |       |
-| 96  | 2027-05-21 | Topeka, Kansas            | Jefferson City, Missouri  | 57.7          | graphhopper     | 2910        | Avg High: 70.1°F, Low: 51.5°F (open-meteo) |       |
-| 97  | 2027-05-22 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 76.1°F, Low: 60.2°F (open-meteo) |       |
-| 98  | 2027-05-23 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 75.5°F, Low: 51.6°F (open-meteo) |       |
-| 99  | 2027-05-24 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 84.4°F, Low: 57.5°F (open-meteo) |       |
-| 100 | 2027-05-25 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 83.7°F, Low: 65.8°F (open-meteo) |       |
-| 101 | 2027-05-26 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 82.3°F, Low: 62.1°F (open-meteo) |       |
-| 102 | 2027-05-27 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 83.1°F, Low: 67.6°F (open-meteo) |       |
-| 103 | 2027-05-28 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 83.9°F, Low: 66.2°F (open-meteo) |       |
-| 104 | 2027-05-29 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 82.6°F, Low: 61.7°F (open-meteo) |       |
-| 105 | 2027-05-30 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 83.0°F, Low: 70.6°F (open-meteo) |       |
-| 106 | 2027-05-31 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 82.4°F, Low: 72.5°F (open-meteo) |       |
-| 107 | 2027-06-01 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 82.2°F, Low: 66.2°F (open-meteo) |       |
-| 108 | 2027-06-02 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 79.2°F, Low: 57.4°F (open-meteo) |       |
-| 109 | 2027-06-03 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 79.2°F, Low: 54.1°F (open-meteo) |       |
-| 110 | 2027-06-04 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 89.0°F, Low: 61.0°F (open-meteo) |       |
-| 111 | 2027-06-05 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 84.8°F, Low: 71.2°F (open-meteo) |       |
-| 112 | 2027-06-06 | Jefferson City, Missouri  | Washington, DC            | 67.9          | graphhopper     | 3743        | Avg High: 76.5°F, Low: 58.0°F (open-meteo) |       |
-+-----+------------+---------------------------+---------------------------+---------------+-----------------+-------------+--------------------------------------------+-------+
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
+| 2027-02-15 | 2027-02-23 | 9    | Austin, Texas             | Little Rock, Arkansas     | 63.5/day          | 2357/day        | 571.6             | 21211           | graphhopper     | Avg High: 57.3-74.1°F, Low: 41.0-60.1°F (open-meteo) |       |
+| 2027-02-24 | 2027-03-01 | 6    | Little Rock, Arkansas     | Oklahoma City, Oklahoma   | 62.5/day          | 3322/day        | 375.0             | 19932           | graphhopper     | Avg High: 52.6-69.2°F, Low: 34.0-54.8°F (open-meteo) |       |
+| 2027-03-02 | 2027-03-17 | 16   | Oklahoma City, Oklahoma   | Tallahassee, Florida      | 68.8/day          | 2863/day        | 1100.3            | 45810           | graphhopper     | Avg High: 53.9-77.6°F, Low: 33.1-68.3°F (open-meteo) |       |
+| 2027-03-18 | 2027-03-25 | 8    | Tallahassee, Florida      | Baton Rouge, Louisiana    | 65.5/day          | 2248/day        | 523.9             | 17982           | graphhopper     | Avg High: 62.7-74.4°F, Low: 37.6-58.6°F (open-meteo) |       |
+| 2027-03-26 | 2027-03-28 | 3    | Baton Rouge, Louisiana    | Jackson, Mississippi      | 57.6/day          | 2527/day        | 172.8             | 7581            | graphhopper     | Avg High: 70.7-72.7°F, Low: 43.6-55.6°F (open-meteo) |       |
+| 2027-03-29 | 2027-04-01 | 4    | Jackson, Mississippi      | Montgomery, Alabama       | 67.6/day          | 3054/day        | 270.3             | 12216           | graphhopper     | Avg High: 74.4-75.5°F, Low: 49.8-69.3°F (open-meteo) |       |
+| 2027-04-02 | 2027-04-04 | 3    | Montgomery, Alabama       | Atlanta, Georgia          | 66.4/day          | 3698/day        | 199.3             | 11095           | graphhopper     | Avg High: 61.5-64.0°F, Low: 48.1-57.8°F (open-meteo) |       |
+| 2027-04-05 | 2027-04-08 | 4    | Atlanta, Georgia          | Columbia, South Carolina  | 64.1/day          | 3717/day        | 256.3             | 14869           | graphhopper     | Avg High: 66.4-83.2°F, Low: 47.7-70.6°F (open-meteo) |       |
+| 2027-04-09 | 2027-04-12 | 4    | Columbia, South Carolina  | Raleigh, North Carolina   | 57.8/day          | 2586/day        | 231.3             | 10345           | graphhopper     | Avg High: 71.4-84.2°F, Low: 41.5-53.8°F (open-meteo) |       |
+| 2027-04-13 | 2027-04-15 | 3    | Raleigh, North Carolina   | Richmond, Virginia        | 65.2/day          | 3602/day        | 195.7             | 10806           | graphhopper     | Avg High: 67.8-81.8°F, Low: 52.5-60.3°F (open-meteo) |       |
+| 2027-04-16 | 2027-04-19 | 4    | Richmond, Virginia        | Harrisburg, Pennsylvania  | 64.2/day          | 4515/day        | 257.0             | 18058           | graphhopper     | Avg High: 61.2-72.6°F, Low: 35.8-60.7°F (open-meteo) |       |
+| 2027-04-20 | 2027-04-28 | 9    | Harrisburg, Pennsylvania  | Charleston, West Virginia | 44.6/day          | 4688/day        | 401.1             | 42195           | graphhopper     | Avg High: 66.2-75.6°F, Low: 40.6-66.3°F (open-meteo) |       |
+| 2027-04-29 | 2027-05-02 | 4    | Charleston, West Virginia | Frankfort, Kentucky       | 63.9/day          | 4850/day        | 255.7             | 19398           | graphhopper     | Avg High: 74.3-84.1°F, Low: 51.6-60.3°F (open-meteo) |       |
+| 2027-05-03 | 2027-05-06 | 4    | Frankfort, Kentucky       | Nashville, Tennessee      | 57.0/day          | 3529/day        | 227.8             | 14115           | graphhopper     | Avg High: 57.1-74.6°F, Low: 35.2-43.2°F (open-meteo) |       |
+| 2027-05-07 | 2027-05-17 | 11   | Nashville, Tennessee      | Topeka, Kansas            | 67.1/day          | 3217/day        | 738.5             | 35389           | graphhopper     | Avg High: 72.3-89.5°F, Low: 56.1-65.5°F (open-meteo) |       |
+| 2027-05-18 | 2027-05-21 | 4    | Topeka, Kansas            | Jefferson City, Missouri  | 57.7/day          | 2910/day        | 230.9             | 11638           | graphhopper     | Avg High: 70.1-79.9°F, Low: 51.5-61.6°F (open-meteo) |       |
+| 2027-05-22 | 2027-06-06 | 16   | Jefferson City, Missouri  | Washington, DC            | 67.9/day          | 3743/day        | 1087.0            | 59882           | graphhopper     | Avg High: 75.5-89.0°F, Low: 51.6-72.5°F (open-meteo) |       |
++------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
 </details>
 
 ---
 
 ## Data Attribution
-Weather data by [Open-Meteo.com](https://open-meteo.com/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data has been transformed into itinerary-level schedule summaries.
+- Weather data by [Open-Meteo.com](https://open-meteo.com/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Data has been transformed into itinerary-level schedule summaries.
+- Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/) using [OpenStreetMap](https://www.openstreetmap.org/copyright) data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 

@@ -27,52 +27,16 @@
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-26 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 2 | 2027-03-27 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 3 | 2027-03-28 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 4 | 2027-03-29 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 5 | 2027-03-30 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 6 | 2027-03-31 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 84.2°F, Low: 39.5°F (wikipedia) |  |
-| 7 | 2027-04-01 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 8 | 2027-04-02 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 9 | 2027-04-03 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 10 | 2027-04-04 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 11 | 2027-04-05 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 12 | 2027-04-06 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 13 | 2027-04-07 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 14 | 2027-04-08 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 15 | 2027-04-09 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 16 | 2027-04-10 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 17 | 2027-04-11 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 18 | 2027-04-12 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 19 | 2027-04-13 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 20 | 2027-04-14 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 21 | 2027-04-15 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 22 | 2027-04-16 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 23 | 2027-04-17 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 24 | 2027-04-18 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 25 | 2027-04-19 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 26 | 2027-04-20 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 27 | 2027-04-21 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 28 | 2027-04-22 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 29 | 2027-04-23 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 30 | 2027-04-24 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 31 | 2027-04-25 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 32 | 2027-04-26 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 33 | 2027-04-27 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
-| 34 | 2027-04-28 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
-| 35 | 2027-04-29 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
-| 36 | 2027-04-30 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
-| 37 | 2027-05-01 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 38 | 2027-05-02 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 39 | 2027-05-03 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 40 | 2027-05-04 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 41 | 2027-05-05 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 42 | 2027-05-06 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 43 | 2027-05-07 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 44 | 2027-05-08 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-03-26 | 2027-04-01 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 84.2-86.9°F, Low: 39.5-47.5°F (wikipedia) |  |
+| 2027-04-02 | 2027-04-07 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
+| 2027-04-08 | 2027-04-11 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
+| 2027-04-12 | 2027-04-16 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
+| 2027-04-17 | 2027-04-22 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
+| 2027-04-23 | 2027-04-26 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
+| 2027-04-27 | 2027-04-30 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
+| 2027-05-01 | 2027-05-08 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
 
@@ -93,52 +57,16 @@
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-04-09 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 2 | 2027-04-10 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 3 | 2027-04-11 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 4 | 2027-04-12 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 5 | 2027-04-13 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 6 | 2027-04-14 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 7 | 2027-04-15 | Austin, Texas | Oklahoma City, Oklahoma | 64.7 | graphhopper | 2429 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 8 | 2027-04-16 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 9 | 2027-04-17 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 10 | 2027-04-18 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 11 | 2027-04-19 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 12 | 2027-04-20 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 13 | 2027-04-21 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 14 | 2027-04-22 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 15 | 2027-04-23 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 16 | 2027-04-24 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 17 | 2027-04-25 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 18 | 2027-04-26 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 19 | 2027-04-27 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 20 | 2027-04-28 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 21 | 2027-04-29 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 22 | 2027-04-30 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5 | graphhopper | 4982 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 23 | 2027-05-01 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 24 | 2027-05-02 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 25 | 2027-05-03 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 26 | 2027-05-04 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 27 | 2027-05-05 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 28 | 2027-05-06 | Little Rock, Arkansas | Nashville, Tennessee | 69.7 | graphhopper | 2814 | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 29 | 2027-05-07 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
-| 30 | 2027-05-08 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
-| 31 | 2027-05-09 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
-| 32 | 2027-05-10 | Nashville, Tennessee | Frankfort, Kentucky | 57.1 | graphhopper | 3572 | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
-| 33 | 2027-05-11 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 34 | 2027-05-12 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 35 | 2027-05-13 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 36 | 2027-05-14 | Frankfort, Kentucky | Charleston, West Virginia | 64.1 | graphhopper | 4912 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 37 | 2027-05-15 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 38 | 2027-05-16 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 39 | 2027-05-17 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 40 | 2027-05-18 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 41 | 2027-05-19 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 42 | 2027-05-20 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 43 | 2027-05-21 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 44 | 2027-05-22 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-04-09 | 2027-04-15 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
+| 2027-04-16 | 2027-04-21 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
+| 2027-04-22 | 2027-04-25 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
+| 2027-04-26 | 2027-04-30 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
+| 2027-05-01 | 2027-05-06 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
+| 2027-05-07 | 2027-05-10 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
+| 2027-05-11 | 2027-05-14 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
+| 2027-05-15 | 2027-05-22 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
 
@@ -182,71 +110,16 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-26 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 2 | 2027-03-27 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 3 | 2027-03-28 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 4 | 2027-03-29 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 5 | 2027-03-30 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 6 | 2027-03-31 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 76.0°F, Low: 35.3°F (wikipedia) |  |
-| 7 | 2027-04-01 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 8 | 2027-04-02 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 9 | 2027-04-03 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 10 | 2027-04-04 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 11 | 2027-04-05 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 12 | 2027-04-06 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 13 | 2027-04-07 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 14 | 2027-04-08 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 15 | 2027-04-09 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 16 | 2027-04-10 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 17 | 2027-04-11 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 18 | 2027-04-12 | Austin, Texas | Frankfort, Kentucky | 69.0 | graphhopper | 3183 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 19 | 2027-04-13 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 20 | 2027-04-14 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 21 | 2027-04-15 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 22 | 2027-04-16 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 23 | 2027-04-17 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 24 | 2027-04-18 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 25 | 2027-04-19 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 26 | 2027-04-20 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 27 | 2027-04-21 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 28 | 2027-04-22 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 29 | 2027-04-23 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 30 | 2027-04-24 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 31 | 2027-04-25 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 32 | 2027-04-26 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 33 | 2027-04-27 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 34 | 2027-04-28 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 35 | 2027-04-29 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 36 | 2027-04-30 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 37 | 2027-05-01 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 38 | 2027-05-02 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 39 | 2027-05-03 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 40 | 2027-05-04 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 41 | 2027-05-05 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
-| 42 | 2027-05-06 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
-| 43 | 2027-05-07 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
-| 44 | 2027-05-08 | Topeka, Kansas | Jefferson City, Missouri | 57.7 | graphhopper | 2910 | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
-| 45 | 2027-05-09 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 46 | 2027-05-10 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 47 | 2027-05-11 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 48 | 2027-05-12 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 49 | 2027-05-13 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 50 | 2027-05-14 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 51 | 2027-05-15 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 52 | 2027-05-16 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 53 | 2027-05-17 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 54 | 2027-05-18 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 55 | 2027-05-19 | Jefferson City, Missouri | Charleston, West Virginia | 68.3 | graphhopper | 3024 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 56 | 2027-05-20 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 57 | 2027-05-21 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 58 | 2027-05-22 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 59 | 2027-05-23 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 60 | 2027-05-24 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 61 | 2027-05-25 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 62 | 2027-05-26 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 63 | 2027-05-27 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-03-26 | 2027-04-12 | 18 | Austin, Texas | Frankfort, Kentucky | 69.0/day | 3183/day | 1242.0 | 57292 | graphhopper | Avg High: 76.0-82.7°F, Low: 35.3-44.8°F (wikipedia) |  |
+| 2027-04-13 | 2027-04-16 | 4 | Frankfort, Kentucky | Nashville, Tennessee | 57.0/day | 3529/day | 227.8 | 14115 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
+| 2027-04-17 | 2027-04-22 | 6 | Nashville, Tennessee | Little Rock, Arkansas | 69.6/day | 2804/day | 417.8 | 16826 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
+| 2027-04-23 | 2027-04-28 | 6 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5/day | 3322/day | 375.0 | 19932 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
+| 2027-04-29 | 2027-05-04 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2-90.8°F, Low: 43.9-55.0°F (wikipedia) |  |
+| 2027-05-05 | 2027-05-08 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
+| 2027-05-09 | 2027-05-19 | 11 | Jefferson City, Missouri | Charleston, West Virginia | 68.3/day | 3024/day | 751.0 | 33266 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
+| 2027-05-20 | 2027-05-27 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
 
@@ -267,72 +140,16 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-03-26 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 2 | 2027-03-27 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 3 | 2027-03-28 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 4 | 2027-03-29 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 5 | 2027-03-30 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 6 | 2027-03-31 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 79.8°F, Low: 33.7°F (wikipedia) |  |
-| 7 | 2027-04-01 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 8 | 2027-04-02 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 9 | 2027-04-03 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 10 | 2027-04-04 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 11 | 2027-04-05 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 12 | 2027-04-06 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 13 | 2027-04-07 | Austin, Texas | Jefferson City, Missouri | 67.7 | graphhopper | 2731 | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 14 | 2027-04-08 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 15 | 2027-04-09 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 16 | 2027-04-10 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 17 | 2027-04-11 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 18 | 2027-04-12 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 19 | 2027-04-13 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 20 | 2027-04-14 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0 | graphhopper | 3435 | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 21 | 2027-04-15 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 22 | 2027-04-16 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 23 | 2027-04-17 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 24 | 2027-04-18 | Frankfort, Kentucky | Nashville, Tennessee | 57.0 | graphhopper | 3529 | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 25 | 2027-04-19 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 26 | 2027-04-20 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 27 | 2027-04-21 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 28 | 2027-04-22 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 29 | 2027-04-23 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 30 | 2027-04-24 | Nashville, Tennessee | Little Rock, Arkansas | 69.6 | graphhopper | 2804 | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 31 | 2027-04-25 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 32 | 2027-04-26 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 33 | 2027-04-27 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 34 | 2027-04-28 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 35 | 2027-04-29 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 36 | 2027-04-30 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5 | graphhopper | 3322 | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 37 | 2027-05-01 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 38 | 2027-05-02 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 39 | 2027-05-03 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 40 | 2027-05-04 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 41 | 2027-05-05 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 42 | 2027-05-06 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4 | graphhopper | 2085 | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 43 | 2027-05-07 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 44 | 2027-05-08 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 45 | 2027-05-09 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 46 | 2027-05-10 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 47 | 2027-05-11 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 48 | 2027-05-12 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 49 | 2027-05-13 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 50 | 2027-05-14 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 51 | 2027-05-15 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 52 | 2027-05-16 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 53 | 2027-05-17 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 54 | 2027-05-18 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 55 | 2027-05-19 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 56 | 2027-05-20 | Topeka, Kansas | Charleston, West Virginia | 68.6 | graphhopper | 2970 | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 57 | 2027-05-21 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 58 | 2027-05-22 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 59 | 2027-05-23 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 60 | 2027-05-24 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 61 | 2027-05-25 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 62 | 2027-05-26 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 63 | 2027-05-27 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
-| 64 | 2027-05-28 | Charleston, West Virginia | Chicago, Illinois | 63.6 | graphhopper | 2816 | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-03-26 | 2027-04-07 | 13 | Austin, Texas | Jefferson City, Missouri | 67.7/day | 2731/day | 880.2 | 35506 | graphhopper | Avg High: 79.8-85.8°F, Low: 33.7-43.8°F (wikipedia) |  |
+| 2027-04-08 | 2027-04-14 | 7 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0/day | 3435/day | 482.7 | 24043 | graphhopper | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
+| 2027-04-15 | 2027-04-18 | 4 | Frankfort, Kentucky | Nashville, Tennessee | 57.0/day | 3529/day | 227.8 | 14115 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
+| 2027-04-19 | 2027-04-24 | 6 | Nashville, Tennessee | Little Rock, Arkansas | 69.6/day | 2804/day | 417.8 | 16826 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
+| 2027-04-25 | 2027-04-30 | 6 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5/day | 3322/day | 375.0 | 19932 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
+| 2027-05-01 | 2027-05-06 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
+| 2027-05-07 | 2027-05-20 | 14 | Topeka, Kansas | Charleston, West Virginia | 68.6/day | 2970/day | 960.7 | 41584 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
+| 2027-05-21 | 2027-05-28 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
 
@@ -387,4 +204,8 @@ ROUTE INFEASIBLE
 </details>
 
 ---
+
+## Data Attribution
+- Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/) using [OpenStreetMap](https://www.openstreetmap.org/copyright) data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
+
 

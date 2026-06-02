@@ -27,6 +27,7 @@ Thumbs.db
 .cache/
 data_cache/
 .graphhopper/
+gpx/
 
 # Local Environment Variables
 .env

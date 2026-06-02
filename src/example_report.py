@@ -1,6 +1,10 @@
 import argparse
+import re
+import signal
 from pathlib import Path
 from typing import Iterable, List, Optional
+from urllib.parse import urlencode
+from urllib.request import urlopen
 
 from src.output import OutputFormatter
 from src.solver_engine import BeamSearchSolver
@@ -19,6 +23,106 @@ def _default_txt_output_path(example_path: Path) -> Path:
     return Path("reports") / f"{example_path.stem}-report.txt"
 
 
+def _slugify_city_name(city_name: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", city_name.lower())
+    return slug.strip("-") or "city"
+
+
+def _default_gpx_output_path(example_path: Path, start_city_name: str, end_city_name: str) -> Path:
+    start_slug = _slugify_city_name(start_city_name)
+    end_slug = _slugify_city_name(end_city_name)
+    return Path("gpx") / f"{example_path.stem}--{start_slug}-to-{end_slug}.gpx"
+
+
+def _extract_gpx_points(itinerary) -> list:
+    if itinerary.legs:
+        points = [itinerary.legs[0].origin]
+        points.extend(leg.destination for leg in itinerary.legs)
+        return points
+
+    points = [itinerary.start_city]
+    points.extend(itinerary.via_cities)
+    points.append(itinerary.completion_city)
+    return points
+
+
+def _fetch_gpx_payload(url: str, request_timeout_seconds: float, total_timeout_seconds: float) -> bytes:
+    if request_timeout_seconds <= 0:
+        raise ValueError("request_timeout_seconds must be > 0")
+    if total_timeout_seconds <= 0:
+        raise ValueError("total_timeout_seconds must be > 0")
+
+    if not hasattr(signal, "SIGALRM") or not hasattr(signal, "setitimer"):
+        with urlopen(url, timeout=request_timeout_seconds) as response:
+            return response.read()
+
+    def _timeout_handler(_signum, _frame):
+        raise TimeoutError(f"GPX request exceeded {total_timeout_seconds:.1f}s total timeout")
+
+    previous_handler = signal.getsignal(signal.SIGALRM)
+    previous_timer = signal.setitimer(signal.ITIMER_REAL, 0.0)
+    try:
+        signal.signal(signal.SIGALRM, _timeout_handler)
+        signal.setitimer(signal.ITIMER_REAL, total_timeout_seconds)
+        with urlopen(url, timeout=request_timeout_seconds) as response:
+            return response.read()
+    finally:
+        signal.setitimer(signal.ITIMER_REAL, previous_timer[0], previous_timer[1])
+        signal.signal(signal.SIGALRM, previous_handler)
+
+
+def _maybe_generate_gpx(example_path: Path, config: dict, itinerary) -> Optional[Path]:
+    output_cfg = config.get("output", {})
+    if not bool(output_cfg.get("gpx", False)):
+        return None
+
+    routing_cfg = config.get("routing_provider", {})
+    if str(routing_cfg.get("name", "mock")) != "graphhopper":
+        return None
+
+    points = _extract_gpx_points(itinerary)
+    if len(points) < 2:
+        return None
+
+    params = [
+        ("profile", str(routing_cfg.get("profile", "bike"))),
+        ("type", "gpx"),
+        ("gpx.track", "true"),
+        ("gpx.route", "true"),
+        ("gpx.waypoints", "true"),
+        ("instructions", "true"),
+        ("elevation", "true"),
+    ]
+    for point in points:
+        params.append(("point", f"{point.latitude},{point.longitude}"))
+
+    base_url = str(routing_cfg.get("base_url", "http://localhost:8989")).rstrip("/")
+    request_timeout_seconds = float(routing_cfg.get("timeout_seconds", 12.0))
+    gpx_timeout_seconds = float(output_cfg.get("gpx_timeout_seconds", 90.0))
+    effective_request_timeout = min(request_timeout_seconds, gpx_timeout_seconds)
+    url = f"{base_url}/route?{urlencode(params)}"
+
+    output_path = _default_gpx_output_path(
+        example_path,
+        itinerary.start_city.name,
+        itinerary.completion_city.name,
+    )
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        gpx_payload = _fetch_gpx_payload(
+            url,
+            request_timeout_seconds=effective_request_timeout,
+            total_timeout_seconds=gpx_timeout_seconds,
+        )
+    except (TimeoutError, OSError, ValueError) as exc:
+        print(f"Skipped GPX for {example_path.name}: {exc}")
+        return None
+
+    output_path.write_bytes(gpx_payload)
+    return output_path
+
+
 def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> List[Path]:
     if all_examples:
         return sorted(Path("examples").glob("*.yaml"))
@@ -26,28 +130,77 @@ def _resolve_example_paths(example_paths: Iterable[str], all_examples: bool) -> 
 
 
 def _build_data_attribution(config: dict) -> Optional[dict]:
-    provider_name = str(config.get("weather_provider", {}).get("name", "mock"))
-    if provider_name != "open_meteo":
-        return None
+    weather_provider_name = str(config.get("weather_provider", {}).get("name", "mock"))
+    routing_provider_name = str(config.get("routing_provider", {}).get("name", "mock"))
 
-    return {
-        "provider": "Open-Meteo",
-        "provider_url": "https://open-meteo.com/",
-        "license": "CC BY 4.0",
-        "license_url": "https://creativecommons.org/licenses/by/4.0/",
-        "note": "Data has been transformed into itinerary-level schedule summaries.",
-    }
+    weather_attribution = None
+    routing_attribution = None
+
+    if weather_provider_name == "open_meteo":
+        weather_attribution = {
+            "provider": "Open-Meteo",
+            "provider_url": "https://open-meteo.com/",
+            "license": "CC BY 4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "note": "Data has been transformed into itinerary-level schedule summaries.",
+        }
+
+    if routing_provider_name == "graphhopper":
+        routing_attribution = {
+            "provider": "GraphHopper",
+            "provider_url": "https://www.graphhopper.com/",
+            "license": "OpenStreetMap ODbL 1.0",
+            "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+            "note": "Routing distances and elevation metrics are computed via GraphHopper using OpenStreetMap data.",
+        }
+
+    if weather_attribution and routing_attribution:
+        return {
+            "weather": weather_attribution,
+            "routing": routing_attribution,
+        }
+
+    if weather_attribution:
+        return weather_attribution
+
+    if routing_attribution:
+        return routing_attribution
+
+    return None
+
+
+def _build_weather_attribution_markdown() -> str:
+    return (
+        "Weather data by [Open-Meteo.com](https://open-meteo.com/)"
+        " under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+        " Data has been transformed into itinerary-level schedule summaries."
+    )
+
+
+def _build_routing_attribution_markdown() -> str:
+    return (
+        "Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/)"
+        " using [OpenStreetMap](https://www.openstreetmap.org/copyright)"
+        " data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/)."
+    )
 
 
 def _apply_data_attribution(markdown: str, config: dict) -> str:
-    attribution_data = _build_data_attribution(config)
-    if not attribution_data:
+    weather_provider_name = str(config.get("weather_provider", {}).get("name", "mock"))
+    routing_provider_name = str(config.get("routing_provider", {}).get("name", "mock"))
+
+    attribution_lines = []
+    if weather_provider_name == "open_meteo":
+        attribution_lines.append(_build_weather_attribution_markdown())
+    if routing_provider_name == "graphhopper":
+        attribution_lines.append(_build_routing_attribution_markdown())
+
+    if not attribution_lines:
         return markdown
 
     attribution = "\n\n## Data Attribution\n"
-    attribution += "Weather data by [Open-Meteo.com](https://open-meteo.com/)"
-    attribution += " under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
-    attribution += " Data has been transformed into itinerary-level schedule summaries.\n"
+    for line in attribution_lines:
+        attribution += f"- {line}\n"
     return markdown.rstrip() + attribution + "\n"
 
 
@@ -80,6 +233,8 @@ def generate_report_for_example(
     if not itineraries:
         raise RuntimeError(f"No recommendations were generated for {example_path}.")
 
+    gpx_output_path = _maybe_generate_gpx(example_path, config, itineraries[0])
+
     markdown = OutputFormatter.format_recommendations_markdown(itineraries)
     markdown = _apply_data_attribution(markdown, config)
     text_payload = OutputFormatter.markdown_to_aligned_text(markdown)
@@ -99,6 +254,8 @@ def generate_report_for_example(
     if txt_output_path is not None:
         txt_output_path.parent.mkdir(parents=True, exist_ok=True)
         txt_output_path.write_text(text_payload + "\n", encoding="utf-8")
+    if gpx_output_path is not None:
+        print(f"Generated GPX: {gpx_output_path}")
     if output_path is None and json_output_path is not None:
         return json_output_path
     if output_path is None and txt_output_path is not None:

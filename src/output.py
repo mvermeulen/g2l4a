@@ -90,17 +90,70 @@ class OutputFormatter:
             return "ROUTE INFEASIBLE\n"
         if not itinerary.schedule:
             return "No travel schedule generated.\n"
-            
+
         lines = []
-        lines.append("| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |")
-        lines.append("|---|---|---|---|---|---|---|---|---|")
+        lines.append("| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |")
+        lines.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
 
         distance_source = itinerary.routing_distance_source or "unknown"
-        
-        for i, item in enumerate(itinerary.schedule):
-            weather_str = f"Avg High: {item.high_temp_f}°F, Low: {item.low_temp_f}°F ({item.weather_source})"
+
+        grouped_rows: List[List[Any]] = []
+
+        def flush_group(group: List[Any]) -> None:
+            if not group:
+                return
+
+            first = group[0]
+            last = group[-1]
+            days = len(group)
+            highs = [day.high_temp_f for day in group]
+            lows = [day.low_temp_f for day in group]
+            sources = sorted({day.weather_source for day in group})
+
+            if max(highs) == min(highs) and max(lows) == min(lows):
+                weather_str = f"Avg High: {highs[0]}°F, Low: {lows[0]}°F ({', '.join(sources)})"
+            else:
+                weather_str = (
+                    f"Avg High: {min(highs)}-{max(highs)}°F, "
+                    f"Low: {min(lows)}-{max(lows)}°F ({', '.join(sources)})"
+                )
+
+            grouped_rows.append([
+                first.date.strftime('%Y-%m-%d'),
+                last.date.strftime('%Y-%m-%d'),
+                str(days),
+                first.origin.name,
+                first.destination.name,
+                f"{first.distance_miles:.1f}/day",
+                f"{first.ascent_feet:.0f}/day",
+                f"{first.distance_miles * days:.1f}",
+                f"{first.ascent_feet * days:.0f}",
+                distance_source,
+                weather_str,
+                "",
+            ])
+
+        current_group: List[Any] = [itinerary.schedule[0]]
+        for item in itinerary.schedule[1:]:
+            previous = current_group[-1]
+            same_leg = (
+                previous.origin.name == item.origin.name
+                and previous.destination.name == item.destination.name
+            )
+            if same_leg:
+                current_group.append(item)
+                continue
+
+            flush_group(current_group)
+            current_group = [item]
+
+        flush_group(current_group)
+
+        for row in grouped_rows:
             notes = ""
-            lines.append(f"| {i+1} | {item.date.strftime('%Y-%m-%d')} | {item.origin.name} | {item.destination.name} | {item.distance_miles:.1f} | {distance_source} | {item.ascent_feet:.0f} | {weather_str} | {notes} |")
+            lines.append(
+                f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} | {row[9]} | {row[10]} | {notes} |"
+            )
         return "\n".join(lines)
 
     @staticmethod

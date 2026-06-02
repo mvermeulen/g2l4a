@@ -27,49 +27,18 @@
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-01-02 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 2 | 2027-01-03 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 3 | 2027-01-04 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 4 | 2027-01-05 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 5 | 2027-01-06 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 6 | 2027-01-07 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 7 | 2027-01-08 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 8 | 2027-01-09 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 9 | 2027-01-10 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 10 | 2027-01-11 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 11 | 2027-01-12 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 12 | 2027-01-13 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 13 | 2027-01-14 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 14 | 2027-01-15 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 15 | 2027-01-16 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 16 | 2027-01-17 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 17 | 2027-01-18 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
-| 18 | 2027-01-19 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
-| 19 | 2027-01-20 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
-| 20 | 2027-01-21 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
-| 21 | 2027-01-22 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 22 | 2027-01-23 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 23 | 2027-01-24 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 24 | 2027-01-25 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 25 | 2027-01-26 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 26 | 2027-01-27 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 27 | 2027-01-28 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 28 | 2027-01-29 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 29 | 2027-01-30 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 30 | 2027-01-31 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 31 | 2027-02-01 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 32 | 2027-02-02 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 33 | 2027-02-03 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 34 | 2027-02-04 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 35 | 2027-02-05 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 36 | 2027-02-06 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 37 | 2027-02-07 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 38 | 2027-02-08 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 39 | 2027-02-09 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 40 | 2027-02-10 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 41 | 2027-02-11 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-01-02 | 2027-01-10 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
+| 2027-01-11 | 2027-01-13 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
+| 2027-01-14 | 2027-01-17 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
+| 2027-01-18 | 2027-01-21 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
+| 2027-01-22 | 2027-01-26 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
+| 2027-01-27 | 2027-01-30 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
+| 2027-01-31 | 2027-02-03 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 71.9-74.4°F, Low: 31.8-34.2°F (wikipedia) |  |
+| 2027-02-04 | 2027-02-06 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
+| 2027-02-07 | 2027-02-08 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
+| 2027-02-09 | 2027-02-11 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
 
 </details>
 
@@ -111,49 +80,18 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-01-16 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 2 | 2027-01-17 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 3 | 2027-01-18 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 4 | 2027-01-19 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 5 | 2027-01-20 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 6 | 2027-01-21 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 7 | 2027-01-22 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 8 | 2027-01-23 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 9 | 2027-01-24 | Austin, Texas | Baton Rouge, Louisiana | 64.5 | graphhopper | 1974 | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 10 | 2027-01-25 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 11 | 2027-01-26 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 12 | 2027-01-27 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6 | graphhopper | 2527 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 13 | 2027-01-28 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 14 | 2027-01-29 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 15 | 2027-01-30 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 16 | 2027-01-31 | Jackson, Mississippi | Montgomery, Alabama | 67.6 | graphhopper | 3054 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 17 | 2027-02-01 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 18 | 2027-02-02 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 19 | 2027-02-03 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 20 | 2027-02-04 | Montgomery, Alabama | Tallahassee, Florida | 55.5 | graphhopper | 2540 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 21 | 2027-02-05 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 22 | 2027-02-06 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 23 | 2027-02-07 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 24 | 2027-02-08 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 25 | 2027-02-09 | Tallahassee, Florida | Atlanta, Georgia | 63.0 | graphhopper | 2864 | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 26 | 2027-02-10 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 27 | 2027-02-11 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 28 | 2027-02-12 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 29 | 2027-02-13 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 30 | 2027-02-14 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 31 | 2027-02-15 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 32 | 2027-02-16 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 33 | 2027-02-17 | Columbia, South Carolina | Raleigh, North Carolina | 57.8 | graphhopper | 2586 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 34 | 2027-02-18 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 35 | 2027-02-19 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 36 | 2027-02-20 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 37 | 2027-02-21 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 38 | 2027-02-22 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 39 | 2027-02-23 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 40 | 2027-02-24 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 41 | 2027-02-25 | Washington, DC | Harrisburg, Pennsylvania | 43.6 | graphhopper | 3519 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-01-16 | 2027-01-24 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
+| 2027-01-25 | 2027-01-27 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
+| 2027-01-28 | 2027-01-31 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
+| 2027-02-01 | 2027-02-04 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
+| 2027-02-05 | 2027-02-09 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
+| 2027-02-10 | 2027-02-13 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
+| 2027-02-14 | 2027-02-17 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
+| 2027-02-18 | 2027-02-20 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
+| 2027-02-21 | 2027-02-22 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
+| 2027-02-23 | 2027-02-25 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
 
 </details>
 
@@ -174,83 +112,18 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-01-02 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 2 | 2027-01-03 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 3 | 2027-01-04 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 4 | 2027-01-05 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 5 | 2027-01-06 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 6 | 2027-01-07 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 7 | 2027-01-08 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 8 | 2027-01-09 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 9 | 2027-01-10 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 10 | 2027-01-11 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 11 | 2027-01-12 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 12 | 2027-01-13 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 13 | 2027-01-14 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 14 | 2027-01-15 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 15 | 2027-01-16 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 16 | 2027-01-17 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 17 | 2027-01-18 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 18 | 2027-01-19 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 19 | 2027-01-20 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 20 | 2027-01-21 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 21 | 2027-01-22 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 22 | 2027-01-23 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 23 | 2027-01-24 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 24 | 2027-01-25 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 25 | 2027-01-26 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 26 | 2027-01-27 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 27 | 2027-01-28 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 28 | 2027-01-29 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 29 | 2027-01-30 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 30 | 2027-01-31 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 31 | 2027-02-01 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 32 | 2027-02-02 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 33 | 2027-02-03 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 34 | 2027-02-04 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 35 | 2027-02-05 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 36 | 2027-02-06 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 37 | 2027-02-07 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 38 | 2027-02-08 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 39 | 2027-02-09 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 40 | 2027-02-10 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 41 | 2027-02-11 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 42 | 2027-02-12 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 43 | 2027-02-13 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 44 | 2027-02-14 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 45 | 2027-02-15 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 46 | 2027-02-16 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 47 | 2027-02-17 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 48 | 2027-02-18 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 49 | 2027-02-19 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 50 | 2027-02-20 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 51 | 2027-02-21 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 52 | 2027-02-22 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 53 | 2027-02-23 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 54 | 2027-02-24 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 55 | 2027-02-25 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 56 | 2027-02-26 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 57 | 2027-02-27 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 58 | 2027-02-28 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 59 | 2027-03-01 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 86.0°F, Low: 48.6°F (wikipedia) |  |
-| 60 | 2027-03-02 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 61 | 2027-03-03 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 62 | 2027-03-04 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 63 | 2027-03-05 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 64 | 2027-03-06 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 65 | 2027-03-07 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 66 | 2027-03-08 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 67 | 2027-03-09 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 68 | 2027-03-10 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 69 | 2027-03-11 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 70 | 2027-03-12 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 71 | 2027-03-13 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 72 | 2027-03-14 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 73 | 2027-03-15 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 74 | 2027-03-16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 75 | 2027-03-17 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-01-02 | 2027-01-17 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
+| 2027-01-18 | 2027-01-21 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
+| 2027-01-22 | 2027-01-28 | 7 | Columbia, South Carolina | Richmond, Virginia | 60.2/day | 2990/day | 421.2 | 20928 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
+| 2027-01-29 | 2027-01-30 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
+| 2027-01-31 | 2027-02-04 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9-74.4°F, Low: 31.8-34.2°F (wikipedia) |  |
+| 2027-02-05 | 2027-02-14 | 10 | Raleigh, North Carolina | Montgomery, Alabama | 67.6/day | 2543/day | 675.5 | 25430 | graphhopper | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
+| 2027-02-15 | 2027-02-18 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
+| 2027-02-19 | 2027-02-21 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
+| 2027-02-22 | 2027-03-01 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4-86.0°F, Low: 43.5-48.6°F (wikipedia) |  |
+| 2027-03-02 | 2027-03-17 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
 
 </details>
 
@@ -271,81 +144,18 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2027-01-02 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 2 | 2027-01-03 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 3 | 2027-01-04 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 4 | 2027-01-05 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 5 | 2027-01-06 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 6 | 2027-01-07 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 7 | 2027-01-08 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 8 | 2027-01-09 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 9 | 2027-01-10 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 10 | 2027-01-11 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 11 | 2027-01-12 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 12 | 2027-01-13 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 13 | 2027-01-14 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 14 | 2027-01-15 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 15 | 2027-01-16 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 16 | 2027-01-17 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 17 | 2027-01-18 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 18 | 2027-01-19 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 19 | 2027-01-20 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 20 | 2027-01-21 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 21 | 2027-01-22 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 22 | 2027-01-23 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 23 | 2027-01-24 | Atlanta, Georgia | Raleigh, North Carolina | 68.6 | graphhopper | 4304 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 24 | 2027-01-25 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 25 | 2027-01-26 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 26 | 2027-01-27 | Raleigh, North Carolina | Richmond, Virginia | 65.2 | graphhopper | 3602 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 27 | 2027-01-28 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 28 | 2027-01-29 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 29 | 2027-01-30 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 30 | 2027-01-31 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 31 | 2027-02-01 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 32 | 2027-02-02 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 33 | 2027-02-03 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 34 | 2027-02-04 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 35 | 2027-02-05 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 36 | 2027-02-06 | Washington, DC | Columbia, South Carolina | 67.1 | graphhopper | 3437 | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 37 | 2027-02-07 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 38 | 2027-02-08 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 39 | 2027-02-09 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 40 | 2027-02-10 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 41 | 2027-02-11 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 42 | 2027-02-12 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 43 | 2027-02-13 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 44 | 2027-02-14 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 45 | 2027-02-15 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 46 | 2027-02-16 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 47 | 2027-02-17 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 48 | 2027-02-18 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 49 | 2027-02-19 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 50 | 2027-02-20 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 51 | 2027-02-21 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 52 | 2027-02-22 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 53 | 2027-02-23 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 54 | 2027-02-24 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 55 | 2027-02-25 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 56 | 2027-02-26 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 57 | 2027-02-27 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 58 | 2027-02-28 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 59 | 2027-03-01 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 60 | 2027-03-02 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 61 | 2027-03-03 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 62 | 2027-03-04 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 63 | 2027-03-05 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 64 | 2027-03-06 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 65 | 2027-03-07 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 66 | 2027-03-08 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 67 | 2027-03-09 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 68 | 2027-03-10 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 69 | 2027-03-11 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 70 | 2027-03-12 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 71 | 2027-03-13 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 72 | 2027-03-14 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 73 | 2027-03-15 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-01-02 | 2027-01-17 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
+| 2027-01-18 | 2027-01-24 | 7 | Atlanta, Georgia | Raleigh, North Carolina | 68.6/day | 4304/day | 480.1 | 30128 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
+| 2027-01-25 | 2027-01-27 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
+| 2027-01-28 | 2027-01-29 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
+| 2027-01-30 | 2027-02-06 | 8 | Washington, DC | Columbia, South Carolina | 67.1/day | 3437/day | 536.7 | 27494 | graphhopper | Avg High: 74.5-78.0°F, Low: 34.6-37.3°F (wikipedia) |  |
+| 2027-02-07 | 2027-02-12 | 6 | Columbia, South Carolina | Montgomery, Alabama | 64.0/day | 3098/day | 383.8 | 18590 | graphhopper | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
+| 2027-02-13 | 2027-02-16 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
+| 2027-02-17 | 2027-02-19 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
+| 2027-02-20 | 2027-02-27 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
+| 2027-02-28 | 2027-03-15 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
 
 </details>
 
@@ -366,83 +176,18 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2026-12-19 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 2 | 2026-12-20 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 3 | 2026-12-21 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 4 | 2026-12-22 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 5 | 2026-12-23 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 6 | 2026-12-24 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 7 | 2026-12-25 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 8 | 2026-12-26 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 9 | 2026-12-27 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 10 | 2026-12-28 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 11 | 2026-12-29 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 12 | 2026-12-30 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 13 | 2026-12-31 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 14 | 2027-01-01 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 15 | 2027-01-02 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 16 | 2027-01-03 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 17 | 2027-01-04 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 18 | 2027-01-05 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 19 | 2027-01-06 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 20 | 2027-01-07 | Atlanta, Georgia | Columbia, South Carolina | 64.1 | graphhopper | 3717 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 21 | 2027-01-08 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 22 | 2027-01-09 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 23 | 2027-01-10 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 24 | 2027-01-11 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 25 | 2027-01-12 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 26 | 2027-01-13 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 27 | 2027-01-14 | Columbia, South Carolina | Richmond, Virginia | 60.2 | graphhopper | 2990 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 28 | 2027-01-15 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 29 | 2027-01-16 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 30 | 2027-01-17 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 31 | 2027-01-18 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 32 | 2027-01-19 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 33 | 2027-01-20 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 34 | 2027-01-21 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 35 | 2027-01-22 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 36 | 2027-01-23 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 37 | 2027-01-24 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 38 | 2027-01-25 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 39 | 2027-01-26 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 40 | 2027-01-27 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 41 | 2027-01-28 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 42 | 2027-01-29 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 43 | 2027-01-30 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 44 | 2027-01-31 | Raleigh, North Carolina | Montgomery, Alabama | 67.6 | graphhopper | 2543 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 45 | 2027-02-01 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 46 | 2027-02-02 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 47 | 2027-02-03 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 48 | 2027-02-04 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 49 | 2027-02-05 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 50 | 2027-02-06 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 51 | 2027-02-07 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 52 | 2027-02-08 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 53 | 2027-02-09 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 54 | 2027-02-10 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 55 | 2027-02-11 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 56 | 2027-02-12 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 57 | 2027-02-13 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 58 | 2027-02-14 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 59 | 2027-02-15 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 60 | 2027-02-16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 61 | 2027-02-17 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 62 | 2027-02-18 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 63 | 2027-02-19 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 64 | 2027-02-20 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 65 | 2027-02-21 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 66 | 2027-02-22 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 67 | 2027-02-23 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 68 | 2027-02-24 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 69 | 2027-02-25 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 70 | 2027-02-26 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 71 | 2027-02-27 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 72 | 2027-02-28 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 73 | 2027-03-01 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 74 | 2027-03-02 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 75 | 2027-03-03 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-12-19 | 2027-01-03 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3-71.5°F, Low: 35.6-38.4°F (wikipedia) |  |
+| 2027-01-04 | 2027-01-07 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
+| 2027-01-08 | 2027-01-14 | 7 | Columbia, South Carolina | Richmond, Virginia | 60.2/day | 2990/day | 421.2 | 20928 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
+| 2027-01-15 | 2027-01-16 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
+| 2027-01-17 | 2027-01-21 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
+| 2027-01-22 | 2027-01-31 | 10 | Raleigh, North Carolina | Montgomery, Alabama | 67.6/day | 2543/day | 675.5 | 25430 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
+| 2027-02-01 | 2027-02-04 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
+| 2027-02-05 | 2027-02-07 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
+| 2027-02-08 | 2027-02-15 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
+| 2027-02-16 | 2027-03-03 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
 
 </details>
 
@@ -463,84 +208,24 @@ ROUTE INFEASIBLE
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|
-| 1 | 2026-12-19 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 2 | 2026-12-20 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 3 | 2026-12-21 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 4 | 2026-12-22 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 5 | 2026-12-23 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 6 | 2026-12-24 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 7 | 2026-12-25 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 8 | 2026-12-26 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 9 | 2026-12-27 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 10 | 2026-12-28 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 11 | 2026-12-29 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 12 | 2026-12-30 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 13 | 2026-12-31 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 71.5°F, Low: 38.4°F (wikipedia) |  |
-| 14 | 2027-01-01 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 15 | 2027-01-02 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 16 | 2027-01-03 | Austin, Texas | Atlanta, Georgia | 68.7 | graphhopper | 2966 | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 17 | 2027-01-04 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 18 | 2027-01-05 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 19 | 2027-01-06 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 20 | 2027-01-07 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 21 | 2027-01-08 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 22 | 2027-01-09 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 23 | 2027-01-10 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 24 | 2027-01-11 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 25 | 2027-01-12 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 26 | 2027-01-13 | Atlanta, Georgia | Richmond, Virginia | 65.0 | graphhopper | 4009 | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 27 | 2027-01-14 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 28 | 2027-01-15 | Richmond, Virginia | Washington, DC | 63.3 | graphhopper | 3792 | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 29 | 2027-01-16 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 30 | 2027-01-17 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 31 | 2027-01-18 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 32 | 2027-01-19 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 33 | 2027-01-20 | Washington, DC | Raleigh, North Carolina | 62.9 | graphhopper | 3629 | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 34 | 2027-01-21 | Raleigh, North Carolina | Columbia, South Carolina | 57.9 | graphhopper | 2585 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 35 | 2027-01-22 | Raleigh, North Carolina | Columbia, South Carolina | 57.9 | graphhopper | 2585 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 36 | 2027-01-23 | Raleigh, North Carolina | Columbia, South Carolina | 57.9 | graphhopper | 2585 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 37 | 2027-01-24 | Raleigh, North Carolina | Columbia, South Carolina | 57.9 | graphhopper | 2585 | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 38 | 2027-01-25 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 39 | 2027-01-26 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 40 | 2027-01-27 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 41 | 2027-01-28 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 42 | 2027-01-29 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 43 | 2027-01-30 | Columbia, South Carolina | Montgomery, Alabama | 64.0 | graphhopper | 3098 | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 44 | 2027-01-31 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 45 | 2027-02-01 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 46 | 2027-02-02 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 47 | 2027-02-03 | Montgomery, Alabama | Jackson, Mississippi | 69.8 | graphhopper | 2986 | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 48 | 2027-02-04 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 49 | 2027-02-05 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 50 | 2027-02-06 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6 | graphhopper | 2454 | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 51 | 2027-02-07 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 52 | 2027-02-08 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 53 | 2027-02-09 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 54 | 2027-02-10 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 55 | 2027-02-11 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 56 | 2027-02-12 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 57 | 2027-02-13 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 58 | 2027-02-14 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5 | graphhopper | 2252 | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 59 | 2027-02-15 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 60 | 2027-02-16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 61 | 2027-02-17 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 62 | 2027-02-18 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 63 | 2027-02-19 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 64 | 2027-02-20 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 65 | 2027-02-21 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 66 | 2027-02-22 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 67 | 2027-02-23 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 68 | 2027-02-24 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 69 | 2027-02-25 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 70 | 2027-02-26 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 71 | 2027-02-27 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 72 | 2027-02-28 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-| 73 | 2027-03-01 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
-| 74 | 2027-03-02 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0 | graphhopper | 3181 | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-12-19 | 2027-01-03 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3-71.5°F, Low: 35.6-38.4°F (wikipedia) |  |
+| 2027-01-04 | 2027-01-13 | 10 | Atlanta, Georgia | Richmond, Virginia | 65.0/day | 4009/day | 649.8 | 40092 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
+| 2027-01-14 | 2027-01-15 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
+| 2027-01-16 | 2027-01-20 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
+| 2027-01-21 | 2027-01-24 | 4 | Raleigh, North Carolina | Columbia, South Carolina | 57.9/day | 2585/day | 231.6 | 10341 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
+| 2027-01-25 | 2027-01-30 | 6 | Columbia, South Carolina | Montgomery, Alabama | 64.0/day | 3098/day | 383.8 | 18590 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
+| 2027-01-31 | 2027-02-03 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 75.2-78.6°F, Low: 36.6-39.8°F (wikipedia) |  |
+| 2027-02-04 | 2027-02-06 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
+| 2027-02-07 | 2027-02-14 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
+| 2027-02-15 | 2027-03-02 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
 
 </details>
 
 ---
+
+## Data Attribution
+- Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/) using [OpenStreetMap](https://www.openstreetmap.org/copyright) data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
+
 

@@ -46,6 +46,11 @@ defaults:
     climate_model: "CMCC_CM2_VHR4"
     capital_monthly_normals_path: "data/state_capitals_monthly_normals.json"
 
+  output:
+    alternatives_count: 4
+    gpx: true
+    gpx_timeout_seconds: 90.0
+
   cache:
     db_path: ".g2l4a_cache.db"
     forecast_ttl_hours: 24

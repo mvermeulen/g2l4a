@@ -1,12 +1,15 @@
 import json
 import sys
 from pathlib import Path
+from types import SimpleNamespace
 
 import src.example_report as example_report
 from src.example_report import (
     _apply_data_attribution,
     _build_data_attribution,
+    _default_gpx_output_path,
     _default_json_output_path,
+    _maybe_generate_gpx,
     _default_output_path,
     _default_txt_output_path,
     build_argument_parser,
@@ -28,6 +31,45 @@ def test_default_json_output_path_uses_reports_and_stem():
 def test_default_txt_output_path_uses_reports_and_stem():
     out = _default_txt_output_path(Path("examples/eastern-capitals-fixed-date-february.yaml"))
     assert str(out) == "reports/eastern-capitals-fixed-date-february-report.txt"
+
+
+def test_default_gpx_output_path_uses_start_and_end_city_names():
+    out = _default_gpx_output_path(
+        Path("examples/dixie-fixed-date.yaml"),
+        "Austin, Texas",
+        "Harrisburg, Pennsylvania",
+    )
+    assert str(out) == "gpx/dixie-fixed-date--austin-texas-to-harrisburg-pennsylvania.gpx"
+
+
+def test_maybe_generate_gpx_timeout_is_skipped(monkeypatch, capsys):
+    def fake_urlopen(*_args, **_kwargs):
+        raise TimeoutError("simulated timeout")
+
+    monkeypatch.setattr(example_report, "urlopen", fake_urlopen)
+
+    start = SimpleNamespace(name="Austin, Texas", latitude=30.2672, longitude=-97.7431)
+    end = SimpleNamespace(name="Chicago, Illinois", latitude=41.8781, longitude=-87.6298)
+    leg = SimpleNamespace(origin=start, destination=end)
+    itinerary = SimpleNamespace(start_city=start, completion_city=end, via_cities=[], legs=[leg])
+
+    result = _maybe_generate_gpx(
+        Path("examples/heartland-fixed-date.yaml"),
+        {
+            "output": {"gpx": True, "gpx_timeout_seconds": 2.0},
+            "routing_provider": {
+                "name": "graphhopper",
+                "base_url": "http://localhost:8989",
+                "profile": "bike",
+                "timeout_seconds": 2.0,
+            },
+        },
+        itinerary,
+    )
+
+    assert result is None
+    captured = capsys.readouterr()
+    assert "Skipped GPX for heartland-fixed-date.yaml" in captured.out
 
 
 def test_generate_report_for_example_writes_markdown(tmp_path):
@@ -153,6 +195,26 @@ def test_apply_data_attribution_for_non_open_meteo():
     assert out == base_md
 
 
+def test_apply_data_attribution_for_graphhopper_routing():
+    base_md = "# Route Recommendations Comparison\n"
+    cfg = {"routing_provider": {"name": "graphhopper"}}
+    out = _apply_data_attribution(base_md, cfg)
+    assert "## Data Attribution" in out
+    assert "https://www.graphhopper.com/" in out
+    assert "https://opendatacommons.org/licenses/odbl/1-0/" in out
+
+
+def test_apply_data_attribution_for_open_meteo_and_graphhopper():
+    base_md = "# Route Recommendations Comparison\n"
+    cfg = {
+        "weather_provider": {"name": "open_meteo"},
+        "routing_provider": {"name": "graphhopper"},
+    }
+    out = _apply_data_attribution(base_md, cfg)
+    assert "https://open-meteo.com/" in out
+    assert "https://www.graphhopper.com/" in out
+
+
 def test_build_data_attribution_for_open_meteo():
     cfg = {"weather_provider": {"name": "open_meteo"}}
     data = _build_data_attribution(cfg)
@@ -165,6 +227,25 @@ def test_build_data_attribution_for_non_open_meteo():
     cfg = {"weather_provider": {"name": "mock"}}
     data = _build_data_attribution(cfg)
     assert data is None
+
+
+def test_build_data_attribution_for_graphhopper_only():
+    cfg = {"routing_provider": {"name": "graphhopper"}}
+    data = _build_data_attribution(cfg)
+    assert data is not None
+    assert data["provider"] == "GraphHopper"
+    assert data["provider_url"] == "https://www.graphhopper.com/"
+
+
+def test_build_data_attribution_for_open_meteo_and_graphhopper():
+    cfg = {
+        "weather_provider": {"name": "open_meteo"},
+        "routing_provider": {"name": "graphhopper"},
+    }
+    data = _build_data_attribution(cfg)
+    assert data is not None
+    assert "weather" in data
+    assert "routing" in data
 
 
 def test_build_argument_parser_supports_format_option():
