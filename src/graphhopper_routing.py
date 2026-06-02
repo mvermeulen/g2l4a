@@ -25,7 +25,7 @@ class GraphHopperRoutingProvider(RoutingProvider):
         params = [
             ("profile", self.profile),
             ("points_encoded", "false"),
-            ("calc_points", "false"),
+            ("calc_points", "true"),
             ("instructions", "false"),
             ("point", f"{origin.latitude},{origin.longitude}"),
             ("point", f"{destination.latitude},{destination.longitude}"),

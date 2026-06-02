@@ -161,6 +161,38 @@ class ScoringEngine:
         for it in itineraries:
             self.score_itinerary(it)
 
+        # Normalize hills score across the current recommendation set so the
+        # least-climbing itinerary receives 1.0 and higher-climbing options score lower.
+        ascent_by_itinerary = []
+        for it in itineraries:
+            total_ascent = sum(leg.ascent_feet for leg in it.legs)
+            if total_ascent <= 0:
+                total_ascent = sum(day.ascent_feet for day in it.schedule)
+            ascent_by_itinerary.append((it, float(total_ascent)))
+
+        if ascent_by_itinerary:
+            min_ascent = min(ascent for _, ascent in ascent_by_itinerary)
+            max_ascent = max(ascent for _, ascent in ascent_by_itinerary)
+
+            w_weather = self.weights.get("weather", 0.45)
+            w_dist = self.weights.get("distance", 0.30)
+            w_hills = self.weights.get("hills", 0.25)
+
+            for it, ascent in ascent_by_itinerary:
+                if max_ascent <= min_ascent:
+                    normalized_hills = 1.0
+                else:
+                    normalized_hills = 1.0 - ((ascent - min_ascent) / (max_ascent - min_ascent))
+                    normalized_hills = max(0.0, min(1.0, normalized_hills))
+
+                it.scores.hills = round(normalized_hills, 4)
+                total = (
+                    (w_weather * it.scores.weather)
+                    + (w_dist * it.scores.distance)
+                    + (w_hills * it.scores.hills)
+                )
+                it.scores.total = round(total, 4)
+
         def sorting_key(it: Itinerary) -> Tuple[float, float, float, float, str]:
             total_dist = sum(leg.distance_miles for leg in it.legs)
             if total_dist <= 0:
