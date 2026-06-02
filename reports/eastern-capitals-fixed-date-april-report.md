@@ -1,28 +1,156 @@
 # Route Recommendations Comparison
 
 ## Overview Comparison
-| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Total Climb | Key Difference |
-|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2027-04-01 | No ❌ | N/A | N/A | N/A | N/A | 3629.2 mi | 15940 ft | Baseline / Optimal Route |
+| Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Best Recommendation** | 2027-03-18 | Yes | 0.7594 | 0.6197 | 0.7683 | 1.0000 | 4145.8 mi | graphhopper | 171037 ft | Baseline / Optimal Route |
+| Alternative 1 | 2027-04-01 | No ❌ | N/A | N/A | N/A | N/A | 4145.8 mi | graphhopper | 171037 ft | Different start date (2027-04-01), same sequence |
+| Alternative 2 | 2027-04-15 | No ❌ | N/A | N/A | N/A | N/A | 4145.8 mi | graphhopper | 171037 ft | Different start date (2027-04-15), same sequence |
+| Alternative 3 | 2027-03-18 | No ❌ | N/A | N/A | N/A | N/A | 6213.1 mi | graphhopper | 293122 ft | Alternative via-city sequence, same date |
 
 ## Detailed Recommendations
 ### Best Recommendation
+**Feasible**: Yes
+- **Start Date**: 2027-03-18
+- **Total Distance**: 4145.8 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 171037 ft
+- **Desirability Scores**:
+  - Weather Preference: 0.620
+  - Distance Score: 0.768
+  - Climbing Score: 1.000
+  - **Total Desirability Score**: 0.759
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+| Day | Date | Origin | Destination | Distance (mi) | Distance Source | Ascent (ft) | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 2027-03-18 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 58.2°F, Low: 34.5°F (open-meteo) |  |
+| 2 | 2027-03-19 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 58.5°F, Low: 38.9°F (open-meteo) |  |
+| 3 | 2027-03-20 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 65.2°F, Low: 35.8°F (open-meteo) |  |
+| 4 | 2027-03-21 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 70.8°F, Low: 49.3°F (open-meteo) |  |
+| 5 | 2027-03-22 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 69.2°F, Low: 44.5°F (open-meteo) |  |
+| 6 | 2027-03-23 | Austin, Texas | Oklahoma City, Oklahoma | 64.5 | graphhopper | 2086 | Avg High: 57.8°F, Low: 38.3°F (open-meteo) |  |
+| 7 | 2027-03-24 | Oklahoma City, Oklahoma | Topeka, Kansas | 58.4 | graphhopper | 1606 | Avg High: 59.0°F, Low: 38.7°F (open-meteo) |  |
+| 8 | 2027-03-25 | Oklahoma City, Oklahoma | Topeka, Kansas | 58.4 | graphhopper | 1606 | Avg High: 68.0°F, Low: 35.6°F (open-meteo) |  |
+| 9 | 2027-03-26 | Oklahoma City, Oklahoma | Topeka, Kansas | 58.4 | graphhopper | 1606 | Avg High: 74.9°F, Low: 47.5°F (open-meteo) |  |
+| 10 | 2027-03-27 | Oklahoma City, Oklahoma | Topeka, Kansas | 58.4 | graphhopper | 1606 | Avg High: 74.6°F, Low: 52.3°F (open-meteo) |  |
+| 11 | 2027-03-28 | Oklahoma City, Oklahoma | Topeka, Kansas | 58.4 | graphhopper | 1606 | Avg High: 55.3°F, Low: 38.1°F (open-meteo) |  |
+| 12 | 2027-03-29 | Topeka, Kansas | Jefferson City, Missouri | 68.1 | graphhopper | 2569 | Avg High: 69.0°F, Low: 43.4°F (open-meteo) |  |
+| 13 | 2027-03-30 | Topeka, Kansas | Jefferson City, Missouri | 68.1 | graphhopper | 2569 | Avg High: 78.6°F, Low: 47.8°F (open-meteo) |  |
+| 14 | 2027-03-31 | Topeka, Kansas | Jefferson City, Missouri | 68.1 | graphhopper | 2569 | Avg High: 74.5°F, Low: 43.4°F (open-meteo) |  |
+| 15 | 2027-04-01 | Jefferson City, Missouri | Little Rock, Arkansas | 67.0 | graphhopper | 3286 | Avg High: 68.4°F, Low: 41.2°F (open-meteo) |  |
+| 16 | 2027-04-02 | Jefferson City, Missouri | Little Rock, Arkansas | 67.0 | graphhopper | 3286 | Avg High: 68.3°F, Low: 41.3°F (open-meteo) |  |
+| 17 | 2027-04-03 | Jefferson City, Missouri | Little Rock, Arkansas | 67.0 | graphhopper | 3286 | Avg High: 72.5°F, Low: 52.4°F (open-meteo) |  |
+| 18 | 2027-04-04 | Jefferson City, Missouri | Little Rock, Arkansas | 67.0 | graphhopper | 3286 | Avg High: 63.8°F, Low: 37.7°F (open-meteo) |  |
+| 19 | 2027-04-05 | Jefferson City, Missouri | Little Rock, Arkansas | 67.0 | graphhopper | 3286 | Avg High: 56.0°F, Low: 44.0°F (open-meteo) |  |
+| 20 | 2027-04-06 | Little Rock, Arkansas | Jackson, Mississippi | 63.3 | graphhopper | 1173 | Avg High: 75.5°F, Low: 63.7°F (open-meteo) |  |
+| 21 | 2027-04-07 | Little Rock, Arkansas | Jackson, Mississippi | 63.3 | graphhopper | 1173 | Avg High: 74.2°F, Low: 51.1°F (open-meteo) |  |
+| 22 | 2027-04-08 | Little Rock, Arkansas | Jackson, Mississippi | 63.3 | graphhopper | 1173 | Avg High: 76.5°F, Low: 54.3°F (open-meteo) |  |
+| 23 | 2027-04-09 | Little Rock, Arkansas | Jackson, Mississippi | 63.3 | graphhopper | 1173 | Avg High: 77.0°F, Low: 46.5°F (open-meteo) |  |
+| 24 | 2027-04-10 | Jackson, Mississippi | Baton Rouge, Louisiana | 53.6 | graphhopper | 1697 | Avg High: 84.3°F, Low: 50.6°F (open-meteo) |  |
+| 25 | 2027-04-11 | Jackson, Mississippi | Baton Rouge, Louisiana | 53.6 | graphhopper | 1697 | Avg High: 84.0°F, Low: 57.2°F (open-meteo) |  |
+| 26 | 2027-04-12 | Jackson, Mississippi | Baton Rouge, Louisiana | 53.6 | graphhopper | 1697 | Avg High: 82.0°F, Low: 61.5°F (open-meteo) |  |
+| 27 | 2027-04-13 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 79.9°F, Low: 58.0°F (open-meteo) |  |
+| 28 | 2027-04-14 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 83.1°F, Low: 62.3°F (open-meteo) |  |
+| 29 | 2027-04-15 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 76.4°F, Low: 56.9°F (open-meteo) |  |
+| 30 | 2027-04-16 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 76.8°F, Low: 49.5°F (open-meteo) |  |
+| 31 | 2027-04-17 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 78.6°F, Low: 54.9°F (open-meteo) |  |
+| 32 | 2027-04-18 | Baton Rouge, Louisiana | Montgomery, Alabama | 61.2 | graphhopper | 1319 | Avg High: 78.1°F, Low: 64.9°F (open-meteo) |  |
+| 33 | 2027-04-19 | Montgomery, Alabama | Tallahassee, Florida | 66.0 | graphhopper | 2771 | Avg High: 82.6°F, Low: 65.6°F (open-meteo) |  |
+| 34 | 2027-04-20 | Montgomery, Alabama | Tallahassee, Florida | 66.0 | graphhopper | 2771 | Avg High: 84.7°F, Low: 63.5°F (open-meteo) |  |
+| 35 | 2027-04-21 | Montgomery, Alabama | Tallahassee, Florida | 66.0 | graphhopper | 2771 | Avg High: 82.4°F, Low: 67.4°F (open-meteo) |  |
+| 36 | 2027-04-22 | Tallahassee, Florida | Atlanta, Georgia | 64.4 | graphhopper | 2660 | Avg High: 69.8°F, Low: 65.2°F (open-meteo) |  |
+| 37 | 2027-04-23 | Tallahassee, Florida | Atlanta, Georgia | 64.4 | graphhopper | 2660 | Avg High: 76.6°F, Low: 61.8°F (open-meteo) |  |
+| 38 | 2027-04-24 | Tallahassee, Florida | Atlanta, Georgia | 64.4 | graphhopper | 2660 | Avg High: 77.7°F, Low: 56.1°F (open-meteo) |  |
+| 39 | 2027-04-25 | Tallahassee, Florida | Atlanta, Georgia | 64.4 | graphhopper | 2660 | Avg High: 77.1°F, Low: 54.9°F (open-meteo) |  |
+| 40 | 2027-04-26 | Atlanta, Georgia | Nashville, Tennessee | 62.0 | graphhopper | 2929 | Avg High: 70.5°F, Low: 58.9°F (open-meteo) |  |
+| 41 | 2027-04-27 | Atlanta, Georgia | Nashville, Tennessee | 62.0 | graphhopper | 2929 | Avg High: 70.5°F, Low: 48.5°F (open-meteo) |  |
+| 42 | 2027-04-28 | Atlanta, Georgia | Nashville, Tennessee | 62.0 | graphhopper | 2929 | Avg High: 73.8°F, Low: 44.3°F (open-meteo) |  |
+| 43 | 2027-04-29 | Atlanta, Georgia | Nashville, Tennessee | 62.0 | graphhopper | 2929 | Avg High: 81.7°F, Low: 51.2°F (open-meteo) |  |
+| 44 | 2027-04-30 | Nashville, Tennessee | Frankfort, Kentucky | 68.6 | graphhopper | 3199 | Avg High: 84.1°F, Low: 60.0°F (open-meteo) |  |
+| 45 | 2027-05-01 | Nashville, Tennessee | Frankfort, Kentucky | 68.6 | graphhopper | 3199 | Avg High: 77.4°F, Low: 57.4°F (open-meteo) |  |
+| 46 | 2027-05-02 | Nashville, Tennessee | Frankfort, Kentucky | 68.6 | graphhopper | 3199 | Avg High: 74.3°F, Low: 60.3°F (open-meteo) |  |
+| 47 | 2027-05-03 | Frankfort, Kentucky | Charleston, West Virginia | 65.8 | graphhopper | 4181 | Avg High: 68.2°F, Low: 43.6°F (open-meteo) |  |
+| 48 | 2027-05-04 | Frankfort, Kentucky | Charleston, West Virginia | 65.8 | graphhopper | 4181 | Avg High: 52.9°F, Low: 37.1°F (open-meteo) |  |
+| 49 | 2027-05-05 | Frankfort, Kentucky | Charleston, West Virginia | 65.8 | graphhopper | 4181 | Avg High: 62.9°F, Low: 34.3°F (open-meteo) |  |
+| 50 | 2027-05-06 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 76.1°F, Low: 44.8°F (open-meteo) |  |
+| 51 | 2027-05-07 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 82.0°F, Low: 49.3°F (open-meteo) |  |
+| 52 | 2027-05-08 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 71.7°F, Low: 61.9°F (open-meteo) |  |
+| 53 | 2027-05-09 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 84.5°F, Low: 64.4°F (open-meteo) |  |
+| 54 | 2027-05-10 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 86.2°F, Low: 63.6°F (open-meteo) |  |
+| 55 | 2027-05-11 | Charleston, West Virginia | Columbia, South Carolina | 59.1 | graphhopper | 3985 | Avg High: 80.1°F, Low: 69.6°F (open-meteo) |  |
+| 56 | 2027-05-12 | Columbia, South Carolina | Raleigh, North Carolina | 67.2 | graphhopper | 2671 | Avg High: 88.0°F, Low: 66.5°F (open-meteo) |  |
+| 57 | 2027-05-13 | Columbia, South Carolina | Raleigh, North Carolina | 67.2 | graphhopper | 2671 | Avg High: 79.6°F, Low: 63.5°F (open-meteo) |  |
+| 58 | 2027-05-14 | Columbia, South Carolina | Raleigh, North Carolina | 67.2 | graphhopper | 2671 | Avg High: 77.5°F, Low: 58.7°F (open-meteo) |  |
+| 59 | 2027-05-15 | Raleigh, North Carolina | Richmond, Virginia | 51.3 | graphhopper | 2153 | Avg High: 71.2°F, Low: 54.9°F (open-meteo) |  |
+| 60 | 2027-05-16 | Raleigh, North Carolina | Richmond, Virginia | 51.3 | graphhopper | 2153 | Avg High: 63.6°F, Low: 59.2°F (open-meteo) |  |
+| 61 | 2027-05-17 | Raleigh, North Carolina | Richmond, Virginia | 51.3 | graphhopper | 2153 | Avg High: 70.8°F, Low: 56.4°F (open-meteo) |  |
+| 62 | 2027-05-18 | Richmond, Virginia | Harrisburg, Pennsylvania | 54.1 | graphhopper | 2568 | Avg High: 71.7°F, Low: 51.1°F (open-meteo) |  |
+| 63 | 2027-05-19 | Richmond, Virginia | Harrisburg, Pennsylvania | 54.1 | graphhopper | 2568 | Avg High: 77.8°F, Low: 59.6°F (open-meteo) |  |
+| 64 | 2027-05-20 | Richmond, Virginia | Harrisburg, Pennsylvania | 54.1 | graphhopper | 2568 | Avg High: 79.1°F, Low: 64.5°F (open-meteo) |  |
+| 65 | 2027-05-21 | Richmond, Virginia | Harrisburg, Pennsylvania | 54.1 | graphhopper | 2568 | Avg High: 80.1°F, Low: 60.2°F (open-meteo) |  |
+| 66 | 2027-05-22 | Harrisburg, Pennsylvania | Washington, DC | 56.2 | graphhopper | 3597 | Avg High: 76.1°F, Low: 60.2°F (open-meteo) |  |
+| 67 | 2027-05-23 | Harrisburg, Pennsylvania | Washington, DC | 56.2 | graphhopper | 3597 | Avg High: 75.5°F, Low: 51.6°F (open-meteo) |  |
+
+</details>
+
+---
+
+### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2027-04-01
-- **Total Distance**: 3629.2 miles
-- **Total Climbing**: 15940 ft
+- **Total Distance**: 4145.8 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 171037 ft
 - **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Tallahassee, Florida on 2027-05-01: observed 95.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Tallahassee, Florida.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-16: observed 94.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-17: observed 94.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-18: observed 94.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-19: observed 94.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-20: observed 94.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-21: observed 91.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-22: observed 91.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-23: observed 91.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2027-05-24: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2027-05-25: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-25: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-27: observed 92.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+ROUTE INFEASIBLE
+
+
+</details>
+
+---
+
+### Alternative 2
+**Feasible**: No ❌
+- **Start Date**: 2027-04-15
+- **Total Distance**: 4145.8 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 171037 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2027-05-13: observed 94.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2027-05-14: observed 95.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2027-05-15: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-06-05: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+ROUTE INFEASIBLE
+
+
+</details>
+
+---
+
+### Alternative 3
+**Feasible**: No ❌
+- **Start Date**: 2027-03-18
+- **Total Distance**: 6213.1 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 293122 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-06-21: observed 91.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-06-22: observed 99.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-06-23: observed 96.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-06-24: observed 98.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
