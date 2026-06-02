@@ -1,4 +1,4 @@
-# Release Checklist (v1.0.0-rc1)
+# Release Checklist (v0.1.0)
 
 This checklist specifies the exit criteria, quality gates, and rollback plans required for the official production release of the `g2l4a` bicycle tour route optimizer.
 
@@ -19,8 +19,8 @@ This checklist specifies the exit criteria, quality gates, and rollback plans re
 
 1. **Tag Repository**: Create and push a semver release tag:
    ```bash
-   git tag -a v1.0.0-rc1 -m "Release Candidate 1 for g2l4a bicycle tour optimizer"
-   git push origin v1.0.0-rc1
+   git tag -a v0.1.0 -m "Initial release of g2l4a bicycle tour optimizer"
+   git push origin v0.1.0
    ```
 2. **Database Migration**: Ensure the standard cache schema is synchronized:
    - Run unit tests to auto-generate the static SQL schema on clean systems.
@@ -44,6 +44,6 @@ In the event of a blocking runtime error or severe regression in production:
 2. **Clear SQLite L2 Cache**: If the failure is caused by L2 cache schema corruption, run the cache clean utility or delete the `.g2l4a_cache.db` file to trigger safe fallbacks.
 3. **Rollback Release Tag**: Force-delete the failing remote release tag:
    ```bash
-   git tag -d v1.0.0-rc1
-   git push --delete origin v1.0.0-rc1
+   git tag -d v0.1.0
+   git push --delete origin v0.1.0
    ```

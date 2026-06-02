@@ -2,7 +2,7 @@
 
 All notable changes to the `g2l4a` multi-objective route optimizer project will be documented in this file.
 
-## [1.0.0-rc1] - 2026-05-30
+## [0.1.0] - 2026-06-02
 
 ### Added
 - **Calibration Engine**: Implemented Gone2Look4America calibration benchmarking suite in `src/calibration.py` and sequential route scoring engine.

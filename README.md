@@ -2,6 +2,10 @@
 
 `g2l4a` is a long-distance bicycle tour route optimizer. It builds itinerary recommendations from YAML example files, scores them against weather, distance, and hills, and can export markdown, JSON, text tables, and GPX route files.
 
+## Release Note
+
+`v0.1.0` is the initial public release. It includes the core solver, GraphHopper-backed routing, scored itinerary reports, GPX export, calibration and regression test coverage, and the docs/HOWTO workflow for regenerating outputs locally.
+
 ## What This Repo Contains
 
 - `src/`: solver, routing, scoring, validation, and output code
