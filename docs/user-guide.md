@@ -48,9 +48,20 @@ scoring:
     hills: 0.20     # 20% priority on avoiding steep hill climbs
 ```
 
+## 3. Generated Outputs
+
+Report generation can write multiple artifacts for the same example file:
+
+- Markdown reports in `reports/`
+- JSON summaries in `reports/`
+- Plain text tables in `reports/`
+- GPX tracks in `gpx/` when `output.gpx: true` and GraphHopper routing is enabled
+
+GPX files use the example stem plus the start and end city names in the filename. If export takes too long, the GPX step is skipped and the report still completes.
+
 ---
 
-## 3. Troubleshooting Infeasible Results
+## 4. Troubleshooting Infeasible Results
 
 If the optimizer returns itineraries marked as `is_feasible: False` (or outputs warnings), look at `violations` or `Constraint Violations` inside the detailed summary:
 

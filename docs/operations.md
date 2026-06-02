@@ -59,6 +59,8 @@ Use these telemetry payloads to trigger operational alerts or tune solver `beam_
 
 When using `routing_provider.name: graphhopper`, GraphHopper must be running and ready before solver/report execution.
 
+If `output.gpx` is enabled, report generation also exports a GPX file into `gpx/` using the best itinerary. The export is skipped automatically if it exceeds `output.gpx_timeout_seconds`.
+
 ### Startup and Readiness
 
 ```bash
@@ -101,6 +103,8 @@ GRAPHHOPPER_JAVA_OPTS="-Xms32g -Xmx56g" ./scripts/graphhopper-start.sh --build
 ```
 
 If `/info` does not return JSON yet, the server is still initializing.
+
+Report generation commands that depend on GraphHopper should be treated as long-running operations. If you are regenerating all examples unattended, use the `--format all` mode so markdown, JSON, text, and GPX outputs are produced together.
 
 ### Reuse Across Scenarios
 

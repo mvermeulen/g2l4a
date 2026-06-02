@@ -58,6 +58,10 @@ Use the report generator module to convert YAML requests in examples/ into markd
 
 Primary scenario files in `examples/` now default to GraphHopper-backed routing and require a ready local GraphHopper endpoint.
 For deterministic no-server runs, copy an example file and remove the `routing_provider` block.
+When `output.gpx` is enabled, the generator also writes a GPX track into `gpx/` using the start and end city names in the filename.
+If the GPX fetch takes too long, it is skipped after `output.gpx_timeout_seconds` so report generation can continue.
+
+For a quick local-LLM-friendly workflow, start with the recipes in `docs/howto/README.md`.
 
 ```bash
 # One example config -> one report file
@@ -78,10 +82,11 @@ PYTHONPATH=. .venv/bin/python -m src.example_report examples/eastern-capitals-fi
 # Generate reports for all examples/*.yaml
 PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples
 
-# Generate markdown + JSON for all examples/*.yaml
-PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples --format both
+# Generate markdown + JSON + text + GPX for all examples/*.yaml
+PYTHONPATH=. .venv/bin/python -m src.example_report --all-examples --format all
 ```
 
 By default, output files are named reports/<example-stem>-report.md.
 When --format is json or both, JSON files are named reports/<example-stem>-report.json.
 Use --json-output only with --format json or --format both.
+When `output.gpx` is enabled, GPX files are named gpx/<example-stem>--<start-city>-to-<end-city>.gpx.
