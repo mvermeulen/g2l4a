@@ -3,34 +3,49 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2023-04-15 | No ❌ | N/A | N/A | N/A | N/A | 6020.1 mi | graphhopper | 210011 ft | Baseline / Optimal Route |
-| Alternative 1 | 2023-04-29 | No ❌ | N/A | N/A | N/A | N/A | 6020.1 mi | graphhopper | 210011 ft | Different start date (2023-04-29), same sequence |
+| **Best Recommendation** | 2023-04-15 | No ❌ | N/A | N/A | N/A | N/A | 6791.3 mi | graphhopper | 319321 ft | Baseline / Optimal Route |
+| Alternative 1 | 2023-04-29 | No ❌ | N/A | N/A | N/A | N/A | 6791.3 mi | graphhopper | 319321 ft | Different start date (2023-04-29), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2023-04-15
-- **Total Distance**: 6020.1 miles
+- **Total Distance**: 6791.3 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 210011 ft
+- **Total Climbing**: 319321 ft
 - **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-18: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-06-27: observed 92.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-06-28: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-06-29: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-06-30: observed 90.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-01: observed 93.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-02: observed 92.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-03: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-04: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-05: observed 97.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-06: observed 97.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-07: observed 96.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-08: observed 96.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-09: observed 94.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-15: observed 94.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-16: observed 96.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Olympia, Washington on 2023-07-17: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Olympia, Washington.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-23: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-24: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-25: observed 91.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-26: observed 102.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-27: observed 101.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-28: observed 94.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-29: observed 105.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-06-30: observed 91.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-01: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-02: observed 91.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-03: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-05: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-06: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-09: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-11: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-12: observed 96.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-13: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-14: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-15: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-16: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-17: observed 97.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-18: observed 96.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-19: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-20: observed 98.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-21: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-22: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-23: observed 92.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-24: observed 92.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-25: observed 95.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-26: observed 104.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-27: observed 102.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -45,42 +60,38 @@ ROUTE INFEASIBLE
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2023-04-29
-- **Total Distance**: 6020.1 miles
+- **Total Distance**: 6791.3 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 210011 ft
+- **Total Climbing**: 319321 ft
 - **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-23: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-24: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-25: observed 91.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-26: observed 90.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-29: observed 91.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-30: observed 106.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-01: observed 104.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-02: observed 93.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-03: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-05: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-06: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-07: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-09: observed 94.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-10: observed 95.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-11: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-12: observed 96.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-13: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-14: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-15: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-16: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-17: observed 97.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-18: observed 96.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-19: observed 101.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-20: observed 98.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-21: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-22: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-23: observed 92.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-24: observed 101.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-25: observed 104.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-26: observed 104.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-27: observed 102.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-03: observed 92.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-04: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-05: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-10: observed 92.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-13: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-14: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-15: observed 93.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-16: observed 94.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-17: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-20: observed 93.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-21: observed 94.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-22: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-25: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-26: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-27: observed 96.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-28: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-29: observed 92.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-30: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-31: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-01: observed 94.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-02: observed 95.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-03: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-04: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-05: observed 92.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-06: observed 99.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-07: observed 100.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-08: observed 106.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-09: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
