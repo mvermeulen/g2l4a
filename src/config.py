@@ -33,6 +33,7 @@ BUILTIN_DEFAULTS: Dict[str, Any] = {
     "routing_preferences": {
         "avoid_highways": True,
         "avoid_tolls": True,
+        "avoid_gravel": False,
         "allow_ferries": True,
         "allow_international_borders": True,
     },

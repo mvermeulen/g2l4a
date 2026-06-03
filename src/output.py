@@ -118,6 +118,49 @@ class OutputFormatter:
                     f"Low: {min(lows)}-{max(lows)}°F ({', '.join(sources)})"
                 )
 
+            leg_dist = first.distance_miles * days
+            leg_dist_str = f"{leg_dist:.1f}"
+
+            # Find matching leg to extract surface breakdown
+            matching_leg = None
+            for leg in itinerary.legs:
+                if leg.origin.name == first.origin.name and leg.destination.name == first.destination.name:
+                    matching_leg = leg
+                    break
+
+            if matching_leg and matching_leg.surface_breakdown:
+                paved_keys = {'paved', 'asphalt', 'concrete', 'paving_stones', 'cobblestone', 'grade1'}
+                unpaved_keys = {'unpaved', 'compacted', 'fine_gravel', 'gravel', 'ground', 'dirt', 'grass', 'sand', 'grade2', 'grade3', 'grade4', 'grade5'}
+
+                paved_miles = 0.0
+                gravel_miles = 0.0
+                for k, val in matching_leg.surface_breakdown.items():
+                    k_low = k.lower()
+                    if k_low in paved_keys:
+                        paved_miles += val
+                    elif k_low in unpaved_keys:
+                        gravel_miles += val
+                    else:
+                        if any(x in k_low for x in ['gravel', 'dirt', 'sand', 'unpaved', 'ground', 'grass', 'grade', 'compacted']):
+                            gravel_miles += val
+                        elif any(x in k_low for x in ['paved', 'asphalt', 'concrete', 'stone']):
+                            paved_miles += val
+
+                if paved_miles > 0 or gravel_miles > 0:
+                    total_classified = paved_miles + gravel_miles
+                    if total_classified > 0:
+                        scale = leg_dist / total_classified
+                        paved_miles *= scale
+                        gravel_miles *= scale
+
+                    parts = []
+                    if paved_miles >= 0.05:
+                        parts.append(f"{paved_miles:.1f} mi paved")
+                    if gravel_miles >= 0.05:
+                        parts.append(f"{gravel_miles:.1f} mi gravel")
+                    if parts:
+                        leg_dist_str = f"{leg_dist:.1f} mi ({', '.join(parts)})"
+
             grouped_rows.append([
                 first.date.strftime('%Y-%m-%d'),
                 last.date.strftime('%Y-%m-%d'),
@@ -126,7 +169,7 @@ class OutputFormatter:
                 first.destination.name,
                 f"{first.distance_miles:.1f}/day",
                 f"{first.ascent_feet:.0f}/day",
-                f"{first.distance_miles * days:.1f}",
+                leg_dist_str,
                 f"{first.ascent_feet * days:.0f}",
                 distance_source,
                 weather_str,

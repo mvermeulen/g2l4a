@@ -48,11 +48,11 @@ ROUTE INFEASIBLE
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-02-01 | 2026-02-10 | 10 | Salem, Oregon | Sacramento, California | 64.7/day | 4716/day | 647.4 | 47156 | graphhopper | Avg High: 55.9-69.5°F, Low: 31.2-49.0°F (open-meteo) |  |
-| 2026-02-11 | 2026-02-14 | 4 | Sacramento, California | Carson City, Nevada | 42.2/day | 4854/day | 168.8 | 19418 | graphhopper | Avg High: 41.4-48.5°F, Low: 28.3-29.6°F (open-meteo) |  |
-| 2026-02-15 | 2026-02-26 | 12 | Carson City, Nevada | Phoenix, Arizona | 65.1/day | 2600/day | 780.8 | 31194 | graphhopper | Avg High: 68.5-78.5°F, Low: 41.7-51.5°F (open-meteo) |  |
-| 2026-02-27 | 2026-03-07 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 | 41167 | graphhopper | Avg High: 46.1-55.7°F, Low: 30.6-40.0°F (open-meteo) |  |
-| 2026-03-08 | 2026-03-19 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 | 23472 | graphhopper | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |  |
+| 2026-02-01 | 2026-02-10 | 10 | Salem, Oregon | Sacramento, California | 64.7/day | 4716/day | 647.4 mi (609.4 mi paved, 38.0 mi gravel) | 47156 | graphhopper | Avg High: 55.9-69.5°F, Low: 31.2-49.0°F (open-meteo) |  |
+| 2026-02-11 | 2026-02-14 | 4 | Sacramento, California | Carson City, Nevada | 42.2/day | 4854/day | 168.8 mi (168.8 mi paved) | 19418 | graphhopper | Avg High: 41.4-48.5°F, Low: 28.3-29.6°F (open-meteo) |  |
+| 2026-02-15 | 2026-02-26 | 12 | Carson City, Nevada | Phoenix, Arizona | 65.1/day | 2600/day | 780.8 mi (712.2 mi paved, 68.7 mi gravel) | 31194 | graphhopper | Avg High: 68.5-78.5°F, Low: 41.7-51.5°F (open-meteo) |  |
+| 2026-02-27 | 2026-03-07 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 mi (220.8 mi paved, 310.7 mi gravel) | 41167 | graphhopper | Avg High: 46.1-55.7°F, Low: 30.6-40.0°F (open-meteo) |  |
+| 2026-03-08 | 2026-03-19 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472 | graphhopper | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |  |
 
 </details>
 
@@ -75,11 +75,11 @@ ROUTE INFEASIBLE
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-02-01 | 2026-02-10 | 10 | Salem, Oregon | Sacramento, California | 64.7/day | 4716/day | 647.4 | 47156 | graphhopper | Avg High: 55.9-69.5°F, Low: 31.2-49.0°F (open-meteo) |  |
-| 2026-02-11 | 2026-02-14 | 4 | Sacramento, California | Carson City, Nevada | 42.2/day | 4854/day | 168.8 | 19418 | graphhopper | Avg High: 41.4-48.5°F, Low: 28.3-29.6°F (open-meteo) |  |
-| 2026-02-15 | 2026-02-26 | 12 | Carson City, Nevada | Phoenix, Arizona | 65.1/day | 2600/day | 780.8 | 31194 | graphhopper | Avg High: 68.5-78.5°F, Low: 41.7-51.5°F (open-meteo) |  |
-| 2026-02-27 | 2026-03-07 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 | 41167 | graphhopper | Avg High: 46.1-55.7°F, Low: 30.6-40.0°F (open-meteo) |  |
-| 2026-03-08 | 2026-03-19 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 | 23472 | graphhopper | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |  |
+| 2026-02-01 | 2026-02-10 | 10 | Salem, Oregon | Sacramento, California | 64.7/day | 4716/day | 647.4 mi (609.4 mi paved, 38.0 mi gravel) | 47156 | graphhopper | Avg High: 55.9-69.5°F, Low: 31.2-49.0°F (open-meteo) |  |
+| 2026-02-11 | 2026-02-14 | 4 | Sacramento, California | Carson City, Nevada | 42.2/day | 4854/day | 168.8 mi (168.8 mi paved) | 19418 | graphhopper | Avg High: 41.4-48.5°F, Low: 28.3-29.6°F (open-meteo) |  |
+| 2026-02-15 | 2026-02-26 | 12 | Carson City, Nevada | Phoenix, Arizona | 65.1/day | 2600/day | 780.8 mi (712.2 mi paved, 68.7 mi gravel) | 31194 | graphhopper | Avg High: 68.5-78.5°F, Low: 41.7-51.5°F (open-meteo) |  |
+| 2026-02-27 | 2026-03-07 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 mi (220.8 mi paved, 310.7 mi gravel) | 41167 | graphhopper | Avg High: 46.1-55.7°F, Low: 30.6-40.0°F (open-meteo) |  |
+| 2026-03-08 | 2026-03-19 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472 | graphhopper | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |  |
 
 </details>
 
@@ -123,11 +123,11 @@ ROUTE INFEASIBLE
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 | 2026-10-12 | 12 | Salem, Oregon | Carson City, Nevada | 53.8/day | 4646/day | 645.3 | 55756 | graphhopper | Avg High: 58.0-82.8°F, Low: 39.2-63.0°F (open-meteo) |  |
-| 2026-10-13 | 2026-10-15 | 3 | Carson City, Nevada | Sacramento, California | 56.4/day | 4959/day | 169.3 | 14877 | graphhopper | Avg High: 87.1-88.0°F, Low: 59.9-62.4°F (open-meteo) |  |
-| 2026-10-16 | 2026-10-28 | 13 | Sacramento, California | Phoenix, Arizona | 67.4/day | 3434/day | 875.8 | 44642 | graphhopper | Avg High: 76.8-88.0°F, Low: 47.3-60.8°F (open-meteo) |  |
-| 2026-10-29 | 2026-11-06 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 | 41167 | graphhopper | Avg High: 55.7-62.4°F, Low: 26.6-37.3°F (open-meteo) |  |
-| 2026-11-07 | 2026-11-18 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 | 23472 | graphhopper | Avg High: 72.5-80.8°F, Low: 50.5-59.5°F (open-meteo) |  |
+| 2026-10-01 | 2026-10-12 | 12 | Salem, Oregon | Carson City, Nevada | 53.8/day | 4646/day | 645.3 mi (626.2 mi paved, 19.1 mi gravel) | 55756 | graphhopper | Avg High: 58.0-82.8°F, Low: 39.2-63.0°F (open-meteo) |  |
+| 2026-10-13 | 2026-10-15 | 3 | Carson City, Nevada | Sacramento, California | 56.4/day | 4959/day | 169.3 mi (169.3 mi paved) | 14877 | graphhopper | Avg High: 87.1-88.0°F, Low: 59.9-62.4°F (open-meteo) |  |
+| 2026-10-16 | 2026-10-28 | 13 | Sacramento, California | Phoenix, Arizona | 67.4/day | 3434/day | 875.8 mi (804.6 mi paved, 71.2 mi gravel) | 44642 | graphhopper | Avg High: 76.8-88.0°F, Low: 47.3-60.8°F (open-meteo) |  |
+| 2026-10-29 | 2026-11-06 | 9 | Phoenix, Arizona | Santa Fe, New Mexico | 59.1/day | 4574/day | 531.5 mi (220.8 mi paved, 310.7 mi gravel) | 41167 | graphhopper | Avg High: 55.7-62.4°F, Low: 26.6-37.3°F (open-meteo) |  |
+| 2026-11-07 | 2026-11-18 | 12 | Santa Fe, New Mexico | Austin, Texas | 69.3/day | 1956/day | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472 | graphhopper | Avg High: 72.5-80.8°F, Low: 50.5-59.5°F (open-meteo) |  |
 
 </details>
 

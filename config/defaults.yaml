@@ -29,6 +29,7 @@ defaults:
   routing_preferences:
     avoid_highways: true
     avoid_tolls: true
+    avoid_gravel: false
     allow_ferries: true
     allow_international_borders: true
 

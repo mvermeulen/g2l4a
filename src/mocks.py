@@ -48,7 +48,9 @@ class MockRoutingProvider(RoutingProvider):
             avoided_highways=avoided_highways,
             avoided_tolls=avoided_tolls,
             allowed_ferries=preferences.get("allow_ferries", True),
-            allowed_borders=preferences.get("allow_international_borders", True)
+            allowed_borders=preferences.get("allow_international_borders", True),
+            road_class_breakdown={},
+            surface_breakdown={}
         )
 
 

@@ -10,13 +10,14 @@ from src.domain import City, Leg
 def compute_profile_hash(preferences: Dict[str, Any]) -> str:
     """Computes a stable SHA-256 hash of routing preferences."""
     keys_of_interest = {
-        "avoid_highways",
-        "avoid_tolls",
-        "allow_ferries",
-        "allow_international_borders"
+        "avoid_highways": True,
+        "avoid_tolls": True,
+        "avoid_gravel": False,
+        "allow_ferries": True,
+        "allow_international_borders": True
     }
-    # Standardize missing preferences as True
-    filtered = {k: preferences.get(k, True) for k in keys_of_interest}
+    # Standardize missing preferences with their default values
+    filtered = {k: preferences.get(k, default_val) for k, default_val in keys_of_interest.items()}
     sorted_prefs = sorted(filtered.items())
     pref_str = json.dumps(sorted_prefs)
     return hashlib.sha256(pref_str.encode('utf-8')).hexdigest()
@@ -62,6 +63,8 @@ class SQLiteCacheManager:
                     avoided_tolls INTEGER,
                     allowed_ferries INTEGER,
                     allowed_borders INTEGER,
+                    road_class_breakdown TEXT,
+                    surface_breakdown TEXT,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     PRIMARY KEY (origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash)
                 )
@@ -74,6 +77,10 @@ class SQLiteCacheManager:
             if "source" not in cols:
                 conn.execute("ALTER TABLE routing_cache ADD COLUMN source TEXT")
             conn.execute("UPDATE routing_cache SET source = 'unknown' WHERE source IS NULL")
+            if "road_class_breakdown" not in cols:
+                conn.execute("ALTER TABLE routing_cache ADD COLUMN road_class_breakdown TEXT")
+            if "surface_breakdown" not in cols:
+                conn.execute("ALTER TABLE routing_cache ADD COLUMN surface_breakdown TEXT")
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS weather_cache (
                     city_lat REAL,
@@ -150,7 +157,7 @@ class SQLiteCacheManager:
         if source is None:
             cursor.execute(
                 """
-                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown
                 FROM routing_cache
                 WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
                   AND routing_engine = ? AND profile_hash = ?
@@ -160,7 +167,7 @@ class SQLiteCacheManager:
         else:
             cursor.execute(
                 """
-                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown
                 FROM routing_cache
                 WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
                   AND routing_engine = ? AND profile_hash = ? AND source = ?
@@ -170,6 +177,12 @@ class SQLiteCacheManager:
         
         row = cursor.fetchone()
         if row:
+            # Handle JSON decoding for breakdowns safely
+            rc_str = row["road_class_breakdown"]
+            rc_breakdown = json.loads(rc_str) if rc_str else {}
+            sf_str = row["surface_breakdown"]
+            sf_breakdown = json.loads(sf_str) if sf_str else {}
+
             return Leg(
                 origin=origin,
                 destination=destination,
@@ -179,7 +192,9 @@ class SQLiteCacheManager:
                 avoided_highways=bool(row["avoided_highways"]),
                 avoided_tolls=bool(row["avoided_tolls"]),
                 allowed_ferries=bool(row["allowed_ferries"]),
-                allowed_borders=bool(row["allowed_borders"])
+                allowed_borders=bool(row["allowed_borders"]),
+                road_class_breakdown=rc_breakdown,
+                surface_breakdown=sf_breakdown
             )
         return None
 
@@ -193,18 +208,21 @@ class SQLiteCacheManager:
         p_hash = compute_profile_hash(preferences)
 
         with conn:
+            rc_str = json.dumps(leg.road_class_breakdown) if leg.road_class_breakdown else None
+            sf_str = json.dumps(leg.surface_breakdown) if leg.surface_breakdown else None
             conn.execute("""
                 INSERT OR REPLACE INTO routing_cache (
                     origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash,
                     source, distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls,
-                    allowed_ferries, allowed_borders, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                    allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             """, (
                 o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash,
                 source,
                 leg.distance_miles, leg.ascent_feet, int(leg.is_bicycle_legal),
                 int(leg.avoided_highways), int(leg.avoided_tolls),
-                int(leg.allowed_ferries), int(leg.allowed_borders)
+                int(leg.allowed_ferries), int(leg.allowed_borders),
+                rc_str, sf_str
             ))
 
     def purge_routing_cache_by_engine(self, routing_engine: str) -> int:

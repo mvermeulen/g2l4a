@@ -27,6 +27,8 @@ class Leg:
     avoided_tolls: bool = True
     allowed_ferries: bool = True
     allowed_borders: bool = True
+    road_class_breakdown: Dict[str, float] = field(default_factory=dict)
+    surface_breakdown: Dict[str, float] = field(default_factory=dict)
 
 
 @dataclass(frozen=True)
