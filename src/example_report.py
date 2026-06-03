@@ -144,6 +144,14 @@ def _build_data_attribution(config: dict) -> Optional[dict]:
             "license_url": "https://creativecommons.org/licenses/by/4.0/",
             "note": "Data has been transformed into itinerary-level schedule summaries.",
         }
+    elif weather_provider_name == "meteostat":
+        weather_attribution = {
+            "provider": "Meteostat",
+            "provider_url": "https://meteostat.net/",
+            "license": "CC BY-NC 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+            "note": "Historical weather data provided by Meteostat under CC BY-NC 4.0.",
+        }
 
     if routing_provider_name == "graphhopper":
         routing_attribution = {
@@ -177,6 +185,14 @@ def _build_weather_attribution_markdown() -> str:
     )
 
 
+def _build_meteostat_attribution_markdown() -> str:
+    return (
+        "Weather data provided by [Meteostat](https://meteostat.net/)"
+        " under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)."
+        " Data has been transformed into itinerary-level schedule summaries."
+    )
+
+
 def _build_routing_attribution_markdown() -> str:
     return (
         "Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/)"
@@ -192,6 +208,9 @@ def _apply_data_attribution(markdown: str, config: dict) -> str:
     attribution_lines = []
     if weather_provider_name == "open_meteo":
         attribution_lines.append(_build_weather_attribution_markdown())
+    elif weather_provider_name == "meteostat":
+        attribution_lines.append(_build_meteostat_attribution_markdown())
+        
     if routing_provider_name == "graphhopper":
         attribution_lines.append(_build_routing_attribution_markdown())
 

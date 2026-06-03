@@ -52,6 +52,12 @@ Generate segment-level GPX files for all unique route segments:
 python scripts/generate_segment_gpx.py
 ```
 
+Pre-fetch historical weather data (Meteostat) for all registry cities:
+
+```bash
+python scripts/build_meteostat_cache.py
+```
+
 Run tests:
 
 ```bash

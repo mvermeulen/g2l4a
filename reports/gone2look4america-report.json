@@ -1759,6 +1759,1749 @@
         "Boise, Idaho",
         "Salem, Oregon"
       ],
+      "start_date": "2023-05-13",
+      "scores": {
+        "weather": null,
+        "distance": null,
+        "hills": null,
+        "total": null
+      },
+      "routing_distance_source": "graphhopper",
+      "legs": [
+        {
+          "origin": "Washington, DC",
+          "destination": "Annapolis, Maryland",
+          "distance_miles": 39.56591257058776,
+          "ascent_feet": 2575.2575514453124,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Annapolis, Maryland",
+          "destination": "Dover, Delaware",
+          "distance_miles": 140.34059157022983,
+          "ascent_feet": 7782.695348483887,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Dover, Delaware",
+          "destination": "Trenton, New Jersey",
+          "distance_miles": 130.22599767358625,
+          "ascent_feet": 5059.132274810791,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Trenton, New Jersey",
+          "destination": "Hartford, Connecticut",
+          "distance_miles": 203.9588148960073,
+          "ascent_feet": 10409.628733134765,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Hartford, Connecticut",
+          "destination": "Providence, Rhode Island",
+          "distance_miles": 89.50805110653782,
+          "ascent_feet": 5117.408936223144,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Providence, Rhode Island",
+          "destination": "Boston, Massachusetts",
+          "distance_miles": 48.610142393422414,
+          "ascent_feet": 2414.5921093115235,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Boston, Massachusetts",
+          "destination": "Concord, New Hampshire",
+          "distance_miles": 78.83997765549192,
+          "ascent_feet": 4989.806207248535,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Concord, New Hampshire",
+          "destination": "Augusta, Maine",
+          "distance_miles": 161.32265444802354,
+          "ascent_feet": 10108.087818076172,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Augusta, Maine",
+          "destination": "Montpelier, Vermont",
+          "distance_miles": 188.69876545971528,
+          "ascent_feet": 15298.67826942871,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Montpelier, Vermont",
+          "destination": "Albany, New York",
+          "distance_miles": 177.87182603595005,
+          "ascent_feet": 10283.854255454102,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 679.5817979251173,
+          "ascent_feet": 22099.08663762207,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Lansing, Michigan",
+          "destination": "Columbus, Ohio",
+          "distance_miles": 262.05768188777535,
+          "ascent_feet": 6246.207930229492,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Columbus, Ohio",
+          "destination": "Indianapolis, Indiana",
+          "distance_miles": 193.2754774616241,
+          "ascent_feet": 5302.9279828857425,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Indianapolis, Indiana",
+          "destination": "Springfield, Illinois",
+          "distance_miles": 215.14263637854927,
+          "ascent_feet": 5088.9567003686525,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Springfield, Illinois",
+          "destination": "Madison, Wisconsin",
+          "distance_miles": 272.0456192088205,
+          "ascent_feet": 8717.28739761963,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 312.31315678935016,
+          "ascent_feet": 14805.720845620117,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Des Moines, Iowa",
+          "destination": "Lincoln, Nebraska",
+          "distance_miles": 221.21355720094647,
+          "ascent_feet": 12548.944669580078,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 454.6882375676052,
+          "ascent_feet": 16757.34766319336,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 455.7539022110872,
+          "ascent_feet": 11588.220441489259,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Bismarck, North Dakota",
+          "destination": "Pierre, South Dakota",
+          "distance_miles": 215.09522886343754,
+          "ascent_feet": 6807.671712216797,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 445.52272354450014,
+          "ascent_feet": 18112.5280213916,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Cheyenne, Wyoming",
+          "destination": "Denver, Colorado",
+          "distance_miles": 113.45286215998567,
+          "ascent_feet": 4052.312384892578,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 548.6413756164002,
+          "ascent_feet": 50954.104474609376,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 415.7779592181659,
+          "ascent_feet": 17256.952472539062,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 541.8564359142607,
+          "ascent_feet": 33476.495287165526,
+          "distance_source": "graphhopper"
+        },
+        {
+          "origin": "Salem, Oregon",
+          "destination": "Olympia, Washington",
+          "distance_miles": 185.89217283563985,
+          "ascent_feet": 11466.928884040528,
+          "distance_source": "graphhopper"
+        }
+      ],
+      "schedule": [
+        {
+          "day_number": 1,
+          "date": "2023-05-13",
+          "origin": "Washington, DC",
+          "destination": "Annapolis, Maryland",
+          "distance_miles": 39.56591257058776,
+          "ascent_feet": 2575.2575514453124,
+          "high_temp_f": 81.1,
+          "low_temp_f": 64.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 2,
+          "date": "2023-05-14",
+          "origin": "Annapolis, Maryland",
+          "destination": "Dover, Delaware",
+          "distance_miles": 46.78019719007661,
+          "ascent_feet": 2594.2317828279624,
+          "high_temp_f": 75.6,
+          "low_temp_f": 66.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 3,
+          "date": "2023-05-15",
+          "origin": "Annapolis, Maryland",
+          "destination": "Dover, Delaware",
+          "distance_miles": 46.78019719007661,
+          "ascent_feet": 2594.2317828279624,
+          "high_temp_f": 72.5,
+          "low_temp_f": 56.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 4,
+          "date": "2023-05-16",
+          "origin": "Annapolis, Maryland",
+          "destination": "Dover, Delaware",
+          "distance_miles": 46.78019719007661,
+          "ascent_feet": 2594.2317828279624,
+          "high_temp_f": 81.4,
+          "low_temp_f": 49.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 5,
+          "date": "2023-05-17",
+          "origin": "Dover, Delaware",
+          "destination": "Trenton, New Jersey",
+          "distance_miles": 65.11299883679312,
+          "ascent_feet": 2529.5661374053957,
+          "high_temp_f": 74.9,
+          "low_temp_f": 56.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 6,
+          "date": "2023-05-18",
+          "origin": "Dover, Delaware",
+          "destination": "Trenton, New Jersey",
+          "distance_miles": 65.11299883679312,
+          "ascent_feet": 2529.5661374053957,
+          "high_temp_f": 77.2,
+          "low_temp_f": 48.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 7,
+          "date": "2023-05-19",
+          "origin": "Trenton, New Jersey",
+          "destination": "Hartford, Connecticut",
+          "distance_miles": 67.98627163200244,
+          "ascent_feet": 3469.876244378255,
+          "high_temp_f": 88.6,
+          "low_temp_f": 57.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 8,
+          "date": "2023-05-20",
+          "origin": "Trenton, New Jersey",
+          "destination": "Hartford, Connecticut",
+          "distance_miles": 67.98627163200244,
+          "ascent_feet": 3469.876244378255,
+          "high_temp_f": 90.5,
+          "low_temp_f": 65.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 9,
+          "date": "2023-05-21",
+          "origin": "Trenton, New Jersey",
+          "destination": "Hartford, Connecticut",
+          "distance_miles": 67.98627163200244,
+          "ascent_feet": 3469.876244378255,
+          "high_temp_f": 90.6,
+          "low_temp_f": 57.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 10,
+          "date": "2023-05-22",
+          "origin": "Hartford, Connecticut",
+          "destination": "Providence, Rhode Island",
+          "distance_miles": 44.75402555326891,
+          "ascent_feet": 2558.704468111572,
+          "high_temp_f": 75.6,
+          "low_temp_f": 70.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 11,
+          "date": "2023-05-23",
+          "origin": "Hartford, Connecticut",
+          "destination": "Providence, Rhode Island",
+          "distance_miles": 44.75402555326891,
+          "ascent_feet": 2558.704468111572,
+          "high_temp_f": 70.4,
+          "low_temp_f": 50.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 12,
+          "date": "2023-05-24",
+          "origin": "Providence, Rhode Island",
+          "destination": "Boston, Massachusetts",
+          "distance_miles": 48.610142393422414,
+          "ascent_feet": 2414.5921093115235,
+          "high_temp_f": 67.5,
+          "low_temp_f": 53.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 13,
+          "date": "2023-05-25",
+          "origin": "Boston, Massachusetts",
+          "destination": "Concord, New Hampshire",
+          "distance_miles": 39.41998882774596,
+          "ascent_feet": 2494.9031036242677,
+          "high_temp_f": 66.9,
+          "low_temp_f": 36.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 14,
+          "date": "2023-05-26",
+          "origin": "Boston, Massachusetts",
+          "destination": "Concord, New Hampshire",
+          "distance_miles": 39.41998882774596,
+          "ascent_feet": 2494.9031036242677,
+          "high_temp_f": 64.3,
+          "low_temp_f": 44.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 15,
+          "date": "2023-05-27",
+          "origin": "Concord, New Hampshire",
+          "destination": "Augusta, Maine",
+          "distance_miles": 53.77421814934118,
+          "ascent_feet": 3369.3626060253905,
+          "high_temp_f": 70.6,
+          "low_temp_f": 56.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 16,
+          "date": "2023-05-28",
+          "origin": "Concord, New Hampshire",
+          "destination": "Augusta, Maine",
+          "distance_miles": 53.77421814934118,
+          "ascent_feet": 3369.3626060253905,
+          "high_temp_f": 70.7,
+          "low_temp_f": 55.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 17,
+          "date": "2023-05-29",
+          "origin": "Concord, New Hampshire",
+          "destination": "Augusta, Maine",
+          "distance_miles": 53.77421814934118,
+          "ascent_feet": 3369.3626060253905,
+          "high_temp_f": 68.6,
+          "low_temp_f": 46.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 18,
+          "date": "2023-05-30",
+          "origin": "Augusta, Maine",
+          "destination": "Montpelier, Vermont",
+          "distance_miles": 47.17469136492882,
+          "ascent_feet": 3824.6695673571776,
+          "high_temp_f": 82.8,
+          "low_temp_f": 62.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 19,
+          "date": "2023-05-31",
+          "origin": "Augusta, Maine",
+          "destination": "Montpelier, Vermont",
+          "distance_miles": 47.17469136492882,
+          "ascent_feet": 3824.6695673571776,
+          "high_temp_f": 82.7,
+          "low_temp_f": 68.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 20,
+          "date": "2023-06-01",
+          "origin": "Augusta, Maine",
+          "destination": "Montpelier, Vermont",
+          "distance_miles": 47.17469136492882,
+          "ascent_feet": 3824.6695673571776,
+          "high_temp_f": 76.4,
+          "low_temp_f": 61.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 21,
+          "date": "2023-06-02",
+          "origin": "Augusta, Maine",
+          "destination": "Montpelier, Vermont",
+          "distance_miles": 47.17469136492882,
+          "ascent_feet": 3824.6695673571776,
+          "high_temp_f": 86.5,
+          "low_temp_f": 55.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 22,
+          "date": "2023-06-03",
+          "origin": "Montpelier, Vermont",
+          "destination": "Albany, New York",
+          "distance_miles": 59.29060867865002,
+          "ascent_feet": 3427.9514184847008,
+          "high_temp_f": 80.0,
+          "low_temp_f": 64.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 23,
+          "date": "2023-06-04",
+          "origin": "Montpelier, Vermont",
+          "destination": "Albany, New York",
+          "distance_miles": 59.29060867865002,
+          "ascent_feet": 3427.9514184847008,
+          "high_temp_f": 73.4,
+          "low_temp_f": 56.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 24,
+          "date": "2023-06-05",
+          "origin": "Montpelier, Vermont",
+          "destination": "Albany, New York",
+          "distance_miles": 59.29060867865002,
+          "ascent_feet": 3427.9514184847008,
+          "high_temp_f": 70.8,
+          "low_temp_f": 53.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 25,
+          "date": "2023-06-06",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 80.5,
+          "low_temp_f": 62.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 26,
+          "date": "2023-06-07",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 78.6,
+          "low_temp_f": 61.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 27,
+          "date": "2023-06-08",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 82.5,
+          "low_temp_f": 58.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 28,
+          "date": "2023-06-09",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 81.0,
+          "low_temp_f": 58.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 29,
+          "date": "2023-06-10",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 80.7,
+          "low_temp_f": 60.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 30,
+          "date": "2023-06-11",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 87.0,
+          "low_temp_f": 66.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 31,
+          "date": "2023-06-12",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 89.7,
+          "low_temp_f": 73.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 32,
+          "date": "2023-06-13",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 88.7,
+          "low_temp_f": 71.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 33,
+          "date": "2023-06-14",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 85.9,
+          "low_temp_f": 73.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 34,
+          "date": "2023-06-15",
+          "origin": "Albany, New York",
+          "destination": "Lansing, Michigan",
+          "distance_miles": 67.95817979251173,
+          "ascent_feet": 2209.9086637622067,
+          "high_temp_f": 86.5,
+          "low_temp_f": 71.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 35,
+          "date": "2023-06-16",
+          "origin": "Lansing, Michigan",
+          "destination": "Columbus, Ohio",
+          "distance_miles": 65.51442047194384,
+          "ascent_feet": 1561.551982557373,
+          "high_temp_f": 86.6,
+          "low_temp_f": 72.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 36,
+          "date": "2023-06-17",
+          "origin": "Lansing, Michigan",
+          "destination": "Columbus, Ohio",
+          "distance_miles": 65.51442047194384,
+          "ascent_feet": 1561.551982557373,
+          "high_temp_f": 82.4,
+          "low_temp_f": 73.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 37,
+          "date": "2023-06-18",
+          "origin": "Lansing, Michigan",
+          "destination": "Columbus, Ohio",
+          "distance_miles": 65.51442047194384,
+          "ascent_feet": 1561.551982557373,
+          "high_temp_f": 86.3,
+          "low_temp_f": 74.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 38,
+          "date": "2023-06-19",
+          "origin": "Lansing, Michigan",
+          "destination": "Columbus, Ohio",
+          "distance_miles": 65.51442047194384,
+          "ascent_feet": 1561.551982557373,
+          "high_temp_f": 83.4,
+          "low_temp_f": 72.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 39,
+          "date": "2023-06-20",
+          "origin": "Columbus, Ohio",
+          "destination": "Indianapolis, Indiana",
+          "distance_miles": 64.4251591538747,
+          "ascent_feet": 1767.642660961914,
+          "high_temp_f": 78.8,
+          "low_temp_f": 60.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 40,
+          "date": "2023-06-21",
+          "origin": "Columbus, Ohio",
+          "destination": "Indianapolis, Indiana",
+          "distance_miles": 64.4251591538747,
+          "ascent_feet": 1767.642660961914,
+          "high_temp_f": 78.9,
+          "low_temp_f": 60.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 41,
+          "date": "2023-06-22",
+          "origin": "Columbus, Ohio",
+          "destination": "Indianapolis, Indiana",
+          "distance_miles": 64.4251591538747,
+          "ascent_feet": 1767.642660961914,
+          "high_temp_f": 83.8,
+          "low_temp_f": 63.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 42,
+          "date": "2023-06-23",
+          "origin": "Indianapolis, Indiana",
+          "destination": "Springfield, Illinois",
+          "distance_miles": 53.78565909463732,
+          "ascent_feet": 1272.2391750921631,
+          "high_temp_f": 83.8,
+          "low_temp_f": 70.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 43,
+          "date": "2023-06-24",
+          "origin": "Indianapolis, Indiana",
+          "destination": "Springfield, Illinois",
+          "distance_miles": 53.78565909463732,
+          "ascent_feet": 1272.2391750921631,
+          "high_temp_f": 84.7,
+          "low_temp_f": 64.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 44,
+          "date": "2023-06-25",
+          "origin": "Indianapolis, Indiana",
+          "destination": "Springfield, Illinois",
+          "distance_miles": 53.78565909463732,
+          "ascent_feet": 1272.2391750921631,
+          "high_temp_f": 87.8,
+          "low_temp_f": 73.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 45,
+          "date": "2023-06-26",
+          "origin": "Indianapolis, Indiana",
+          "destination": "Springfield, Illinois",
+          "distance_miles": 53.78565909463732,
+          "ascent_feet": 1272.2391750921631,
+          "high_temp_f": 97.3,
+          "low_temp_f": 76.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 46,
+          "date": "2023-06-27",
+          "origin": "Springfield, Illinois",
+          "destination": "Madison, Wisconsin",
+          "distance_miles": 68.01140480220512,
+          "ascent_feet": 2179.3218494049074,
+          "high_temp_f": 82.6,
+          "low_temp_f": 64.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 47,
+          "date": "2023-06-28",
+          "origin": "Springfield, Illinois",
+          "destination": "Madison, Wisconsin",
+          "distance_miles": 68.01140480220512,
+          "ascent_feet": 2179.3218494049074,
+          "high_temp_f": 90.1,
+          "low_temp_f": 69.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 48,
+          "date": "2023-06-29",
+          "origin": "Springfield, Illinois",
+          "destination": "Madison, Wisconsin",
+          "distance_miles": 68.01140480220512,
+          "ascent_feet": 2179.3218494049074,
+          "high_temp_f": 92.3,
+          "low_temp_f": 71.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 49,
+          "date": "2023-06-30",
+          "origin": "Springfield, Illinois",
+          "destination": "Madison, Wisconsin",
+          "distance_miles": 68.01140480220512,
+          "ascent_feet": 2179.3218494049074,
+          "high_temp_f": 95.8,
+          "low_temp_f": 74.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 50,
+          "date": "2023-07-01",
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 62.46263135787003,
+          "ascent_feet": 2961.1441691240234,
+          "high_temp_f": 95.3,
+          "low_temp_f": 74.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 51,
+          "date": "2023-07-02",
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 62.46263135787003,
+          "ascent_feet": 2961.1441691240234,
+          "high_temp_f": 94.3,
+          "low_temp_f": 77.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 52,
+          "date": "2023-07-03",
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 62.46263135787003,
+          "ascent_feet": 2961.1441691240234,
+          "high_temp_f": 97.5,
+          "low_temp_f": 75.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 53,
+          "date": "2023-07-04",
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 62.46263135787003,
+          "ascent_feet": 2961.1441691240234,
+          "high_temp_f": 99.0,
+          "low_temp_f": 77.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 54,
+          "date": "2023-07-05",
+          "origin": "Madison, Wisconsin",
+          "destination": "Des Moines, Iowa",
+          "distance_miles": 62.46263135787003,
+          "ascent_feet": 2961.1441691240234,
+          "high_temp_f": 98.1,
+          "low_temp_f": 74.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 55,
+          "date": "2023-07-06",
+          "origin": "Des Moines, Iowa",
+          "destination": "Lincoln, Nebraska",
+          "distance_miles": 55.30338930023662,
+          "ascent_feet": 3137.2361673950195,
+          "high_temp_f": 98.2,
+          "low_temp_f": 75.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 56,
+          "date": "2023-07-07",
+          "origin": "Des Moines, Iowa",
+          "destination": "Lincoln, Nebraska",
+          "distance_miles": 55.30338930023662,
+          "ascent_feet": 3137.2361673950195,
+          "high_temp_f": 96.7,
+          "low_temp_f": 80.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 57,
+          "date": "2023-07-08",
+          "origin": "Des Moines, Iowa",
+          "destination": "Lincoln, Nebraska",
+          "distance_miles": 55.30338930023662,
+          "ascent_feet": 3137.2361673950195,
+          "high_temp_f": 91.6,
+          "low_temp_f": 78.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 58,
+          "date": "2023-07-09",
+          "origin": "Des Moines, Iowa",
+          "destination": "Lincoln, Nebraska",
+          "distance_miles": 55.30338930023662,
+          "ascent_feet": 3137.2361673950195,
+          "high_temp_f": 91.2,
+          "low_temp_f": 76.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 59,
+          "date": "2023-07-10",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 87.5,
+          "low_temp_f": 69.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 60,
+          "date": "2023-07-11",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 86.7,
+          "low_temp_f": 71.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 61,
+          "date": "2023-07-12",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 80.7,
+          "low_temp_f": 76.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 62,
+          "date": "2023-07-13",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 72.6,
+          "low_temp_f": 67.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 63,
+          "date": "2023-07-14",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 86.6,
+          "low_temp_f": 69.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 64,
+          "date": "2023-07-15",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 90.2,
+          "low_temp_f": 74.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 65,
+          "date": "2023-07-16",
+          "origin": "Lincoln, Nebraska",
+          "destination": "St. Paul, Minnesota",
+          "distance_miles": 64.95546250965789,
+          "ascent_feet": 2393.906809027623,
+          "high_temp_f": 88.6,
+          "low_temp_f": 73.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 66,
+          "date": "2023-07-17",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 81.4,
+          "low_temp_f": 62.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 67,
+          "date": "2023-07-18",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 82.4,
+          "low_temp_f": 60.2,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 68,
+          "date": "2023-07-19",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 88.3,
+          "low_temp_f": 66.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 69,
+          "date": "2023-07-20",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 88.1,
+          "low_temp_f": 69.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 70,
+          "date": "2023-07-21",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 86.4,
+          "low_temp_f": 64.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 71,
+          "date": "2023-07-22",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 81.5,
+          "low_temp_f": 61.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 72,
+          "date": "2023-07-23",
+          "origin": "St. Paul, Minnesota",
+          "destination": "Bismarck, North Dakota",
+          "distance_miles": 65.10770031586961,
+          "ascent_feet": 1655.460063069894,
+          "high_temp_f": 67.7,
+          "low_temp_f": 58.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 73,
+          "date": "2023-07-24",
+          "origin": "Bismarck, North Dakota",
+          "destination": "Pierre, South Dakota",
+          "distance_miles": 53.773807215859385,
+          "ascent_feet": 1701.9179280541991,
+          "high_temp_f": 78.7,
+          "low_temp_f": 64.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 74,
+          "date": "2023-07-25",
+          "origin": "Bismarck, North Dakota",
+          "destination": "Pierre, South Dakota",
+          "distance_miles": 53.773807215859385,
+          "ascent_feet": 1701.9179280541991,
+          "high_temp_f": 75.3,
+          "low_temp_f": 62.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 75,
+          "date": "2023-07-26",
+          "origin": "Bismarck, North Dakota",
+          "destination": "Pierre, South Dakota",
+          "distance_miles": 53.773807215859385,
+          "ascent_feet": 1701.9179280541991,
+          "high_temp_f": 75.1,
+          "low_temp_f": 62.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 76,
+          "date": "2023-07-27",
+          "origin": "Bismarck, North Dakota",
+          "destination": "Pierre, South Dakota",
+          "distance_miles": 53.773807215859385,
+          "ascent_feet": 1701.9179280541991,
+          "high_temp_f": 74.4,
+          "low_temp_f": 64.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 77,
+          "date": "2023-07-28",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 71.4,
+          "low_temp_f": 53.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 78,
+          "date": "2023-07-29",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 78.0,
+          "low_temp_f": 52.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 79,
+          "date": "2023-07-30",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 81.0,
+          "low_temp_f": 55.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 80,
+          "date": "2023-07-31",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 81.1,
+          "low_temp_f": 57.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 81,
+          "date": "2023-08-01",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 86.1,
+          "low_temp_f": 60.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 82,
+          "date": "2023-08-02",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 85.1,
+          "low_temp_f": 64.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 83,
+          "date": "2023-08-03",
+          "origin": "Pierre, South Dakota",
+          "destination": "Cheyenne, Wyoming",
+          "distance_miles": 63.64610336350002,
+          "ascent_feet": 2587.504003055943,
+          "high_temp_f": 82.6,
+          "low_temp_f": 58.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 84,
+          "date": "2023-08-04",
+          "origin": "Cheyenne, Wyoming",
+          "destination": "Denver, Colorado",
+          "distance_miles": 56.726431079992835,
+          "ascent_feet": 2026.156192446289,
+          "high_temp_f": 84.5,
+          "low_temp_f": 56.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 85,
+          "date": "2023-08-05",
+          "origin": "Cheyenne, Wyoming",
+          "destination": "Denver, Colorado",
+          "distance_miles": 56.726431079992835,
+          "ascent_feet": 2026.156192446289,
+          "high_temp_f": 76.1,
+          "low_temp_f": 59.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 86,
+          "date": "2023-08-06",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 92.8,
+          "low_temp_f": 64.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 87,
+          "date": "2023-08-07",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 94.3,
+          "low_temp_f": 63.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 88,
+          "date": "2023-08-08",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 96.4,
+          "low_temp_f": 68.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 89,
+          "date": "2023-08-09",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 95.4,
+          "low_temp_f": 69.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 90,
+          "date": "2023-08-10",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 95.3,
+          "low_temp_f": 66.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 91,
+          "date": "2023-08-11",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 95.2,
+          "low_temp_f": 66.7,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 92,
+          "date": "2023-08-12",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 95.1,
+          "low_temp_f": 70.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 93,
+          "date": "2023-08-13",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 94.5,
+          "low_temp_f": 72.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 94,
+          "date": "2023-08-14",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 92.6,
+          "low_temp_f": 68.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 95,
+          "date": "2023-08-15",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 90.9,
+          "low_temp_f": 69.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 96,
+          "date": "2023-08-16",
+          "origin": "Denver, Colorado",
+          "destination": "Salt Lake City, Utah",
+          "distance_miles": 49.87648869240002,
+          "ascent_feet": 4632.19131587358,
+          "high_temp_f": 90.5,
+          "low_temp_f": 60.4,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 97,
+          "date": "2023-08-17",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 92.9,
+          "low_temp_f": 62.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 98,
+          "date": "2023-08-18",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 100.3,
+          "low_temp_f": 70.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 99,
+          "date": "2023-08-19",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 100.0,
+          "low_temp_f": 72.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 100,
+          "date": "2023-08-20",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 90.3,
+          "low_temp_f": 62.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 101,
+          "date": "2023-08-21",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 79.9,
+          "low_temp_f": 57.1,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 102,
+          "date": "2023-08-22",
+          "origin": "Salt Lake City, Utah",
+          "destination": "Boise, Idaho",
+          "distance_miles": 69.29632653636098,
+          "ascent_feet": 2876.158745423177,
+          "high_temp_f": 86.0,
+          "low_temp_f": 58.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 103,
+          "date": "2023-08-23",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 80.7,
+          "low_temp_f": 56.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 104,
+          "date": "2023-08-24",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 67.6,
+          "low_temp_f": 57.5,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 105,
+          "date": "2023-08-25",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 67.9,
+          "low_temp_f": 53.6,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 106,
+          "date": "2023-08-26",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 67.2,
+          "low_temp_f": 53.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 107,
+          "date": "2023-08-27",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 81.9,
+          "low_temp_f": 50.8,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 108,
+          "date": "2023-08-28",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 92.6,
+          "low_temp_f": 65.9,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 109,
+          "date": "2023-08-29",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 95.5,
+          "low_temp_f": 72.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 110,
+          "date": "2023-08-30",
+          "origin": "Boise, Idaho",
+          "destination": "Salem, Oregon",
+          "distance_miles": 67.73205448928259,
+          "ascent_feet": 4184.561910895691,
+          "high_temp_f": 94.5,
+          "low_temp_f": 61.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 111,
+          "date": "2023-08-31",
+          "origin": "Salem, Oregon",
+          "destination": "Olympia, Washington",
+          "distance_miles": 61.96405761187995,
+          "ascent_feet": 3822.309628013509,
+          "high_temp_f": 76.8,
+          "low_temp_f": 49.3,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 112,
+          "date": "2023-09-01",
+          "origin": "Salem, Oregon",
+          "destination": "Olympia, Washington",
+          "distance_miles": 61.96405761187995,
+          "ascent_feet": 3822.309628013509,
+          "high_temp_f": 81.5,
+          "low_temp_f": 60.0,
+          "is_rest_day": false
+        },
+        {
+          "day_number": 113,
+          "date": "2023-09-02",
+          "origin": "Salem, Oregon",
+          "destination": "Olympia, Washington",
+          "distance_miles": 61.96405761187995,
+          "ascent_feet": 3822.309628013509,
+          "high_temp_f": 84.2,
+          "low_temp_f": 56.8,
+          "is_rest_day": false
+        }
+      ],
+      "violations": [
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Hartford, Connecticut",
+          "date": "2023-05-20",
+          "observed_value": 90.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Hartford, Connecticut",
+          "date": "2023-05-21",
+          "observed_value": 90.6,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Springfield, Illinois",
+          "date": "2023-06-26",
+          "observed_value": 97.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Springfield, Illinois."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Madison, Wisconsin",
+          "date": "2023-06-28",
+          "observed_value": 90.1,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Madison, Wisconsin",
+          "date": "2023-06-29",
+          "observed_value": 92.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Madison, Wisconsin",
+          "date": "2023-06-30",
+          "observed_value": 95.8,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Des Moines, Iowa",
+          "date": "2023-07-01",
+          "observed_value": 95.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Des Moines, Iowa",
+          "date": "2023-07-02",
+          "observed_value": 94.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Des Moines, Iowa",
+          "date": "2023-07-03",
+          "observed_value": 97.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Des Moines, Iowa",
+          "date": "2023-07-04",
+          "observed_value": 99.0,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Des Moines, Iowa",
+          "date": "2023-07-05",
+          "observed_value": 98.1,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Lincoln, Nebraska",
+          "date": "2023-07-06",
+          "observed_value": 98.2,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Lincoln, Nebraska",
+          "date": "2023-07-07",
+          "observed_value": 96.7,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Lincoln, Nebraska",
+          "date": "2023-07-08",
+          "observed_value": 91.6,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Lincoln, Nebraska",
+          "date": "2023-07-09",
+          "observed_value": 91.2,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "St. Paul, Minnesota",
+          "date": "2023-07-15",
+          "observed_value": 90.2,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass St. Paul, Minnesota."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-06",
+          "observed_value": 92.8,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-07",
+          "observed_value": 94.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-08",
+          "observed_value": 96.4,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-09",
+          "observed_value": 95.4,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-10",
+          "observed_value": 95.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-11",
+          "observed_value": 95.2,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-12",
+          "observed_value": 95.1,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-13",
+          "observed_value": 94.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-14",
+          "observed_value": 92.6,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-15",
+          "observed_value": 90.9,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salt Lake City, Utah",
+          "date": "2023-08-16",
+          "observed_value": 90.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Boise, Idaho",
+          "date": "2023-08-17",
+          "observed_value": 92.9,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Boise, Idaho",
+          "date": "2023-08-18",
+          "observed_value": 100.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Boise, Idaho",
+          "date": "2023-08-19",
+          "observed_value": 100.0,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Boise, Idaho",
+          "date": "2023-08-20",
+          "observed_value": 90.3,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salem, Oregon",
+          "date": "2023-08-28",
+          "observed_value": 92.6,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salem, Oregon",
+          "date": "2023-08-29",
+          "observed_value": 95.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon."
+        },
+        {
+          "code": "INFEASIBLE_WEATHER_MAX_HIGH",
+          "location": "Salem, Oregon",
+          "date": "2023-08-30",
+          "observed_value": 94.5,
+          "threshold_limit": 90,
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon."
+        }
+      ]
+    },
+    {
+      "is_feasible": false,
+      "start_city": "Washington, DC",
+      "completion_city": "Olympia, Washington",
+      "via_cities": [
+        "Annapolis, Maryland",
+        "Dover, Delaware",
+        "Trenton, New Jersey",
+        "Hartford, Connecticut",
+        "Providence, Rhode Island",
+        "Boston, Massachusetts",
+        "Concord, New Hampshire",
+        "Augusta, Maine",
+        "Montpelier, Vermont",
+        "Albany, New York",
+        "Lansing, Michigan",
+        "Columbus, Ohio",
+        "Indianapolis, Indiana",
+        "Springfield, Illinois",
+        "Madison, Wisconsin",
+        "Des Moines, Iowa",
+        "Lincoln, Nebraska",
+        "St. Paul, Minnesota",
+        "Bismarck, North Dakota",
+        "Pierre, South Dakota",
+        "Cheyenne, Wyoming",
+        "Denver, Colorado",
+        "Salt Lake City, Utah",
+        "Boise, Idaho",
+        "Salem, Oregon"
+      ],
       "start_date": "2023-04-29",
       "scores": {
         "weather": null,

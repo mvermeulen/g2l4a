@@ -11,6 +11,7 @@ from src.mocks import MockRoutingProvider, MockWeatherProvider, MockElevationPro
 from src.graphhopper_routing import GraphHopperRoutingProvider
 from src.open_meteo_weather import OpenMeteoWeatherProvider
 from src.monthly_normals_weather import StateCapitalMonthlyNormalsWeatherProvider
+from src.meteostat_weather import MeteostatWeatherProvider
 from src.cache import SQLiteCacheManager
 from src.cached_providers import CachedRoutingProvider, CachedWeatherProvider, CachedElevationProvider
 from src.providers import RoutingProvider, WeatherProvider
@@ -109,6 +110,16 @@ class BeamSearchSolver(Solver):
                 base_weather = StateCapitalMonthlyNormalsWeatherProvider(
                     dataset_path=monthly_normals_path,
                     fallback_provider=MockWeatherProvider(),
+                )
+            elif weather_provider_name == "meteostat":
+                # Fallback order: Meteostat -> state-capital monthly normals -> deterministic mock.
+                monthly_fallback = StateCapitalMonthlyNormalsWeatherProvider(
+                    dataset_path=monthly_normals_path,
+                    fallback_provider=MockWeatherProvider(),
+                )
+                base_weather = MeteostatWeatherProvider(
+                    cache_manager=self._cache_manager,
+                    fallback_provider=monthly_fallback,
                 )
             else:
                 base_weather = MockWeatherProvider()

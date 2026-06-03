@@ -3,13 +3,13 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2027-03-26 | Yes | 0.5153 | 0.1967 | 0.5892 | 1.0000 | 2813.1 mi | graphhopper | 139401 ft | Baseline / Optimal Route |
-| Alternative 1 | 2027-04-09 | Yes | 0.4790 | 0.1160 | 0.5892 | 1.0000 | 2813.1 mi | graphhopper | 139401 ft | Different start date (2027-04-09), same sequence |
+| **Best Recommendation** | 2027-03-26 | Yes | 0.7284 | 0.6702 | 0.5892 | 1.0000 | 2813.1 mi | graphhopper | 139401 ft | Baseline / Optimal Route |
+| Alternative 1 | 2027-04-09 | Yes | 0.7172 | 0.6455 | 0.5892 | 1.0000 | 2813.1 mi | graphhopper | 139401 ft | Different start date (2027-04-09), same sequence |
 | Alternative 2 | 2027-04-23 | No ❌ | N/A | N/A | N/A | N/A | 2813.1 mi | graphhopper | 139401 ft | Different start date (2027-04-23), same sequence |
-| Alternative 3 | 2027-03-26 | Yes | 0.2931 | 0.2068 | 0.2736 | 0.4720 | 4128.0 mi | graphhopper | 188107 ft | Alternative via-city sequence, same date |
-| Alternative 4 | 2027-03-26 | Yes | 0.2783 | 0.1759 | 0.2609 | 0.4835 | 4227.5 mi | graphhopper | 187044 ft | Alternative via-city sequence, same date |
-| Alternative 5 | 2027-04-09 | No ❌ | N/A | N/A | N/A | N/A | 3799.2 mi | graphhopper | 191836 ft | Different start date (2027-04-09) & alternative sequence |
-| Alternative 6 | 2027-04-09 | No ❌ | N/A | N/A | N/A | N/A | 4083.1 mi | graphhopper | 193949 ft | Different start date (2027-04-09) & alternative sequence |
+| Alternative 3 | 2027-03-26 | Yes | 0.5418 | 0.6577 | 0.3403 | 0.5749 | 3701.5 mi | graphhopper | 171494 ft | Alternative via-city sequence, same date |
+| Alternative 4 | 2027-04-09 | No ❌ | N/A | N/A | N/A | N/A | 3701.5 mi | graphhopper | 171494 ft | Different start date (2027-04-09) & alternative sequence |
+| Alternative 5 | 2027-04-09 | No ❌ | N/A | N/A | N/A | N/A | 3705.5 mi | graphhopper | 183824 ft | Different start date (2027-04-09) & alternative sequence |
+| Alternative 6 | 2027-04-23 | No ❌ | N/A | N/A | N/A | N/A | 3530.8 mi | graphhopper | 173828 ft | Different start date (2027-04-23) & alternative sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
@@ -19,23 +19,23 @@
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.197
+  - Weather Preference: 0.670
   - Distance Score: 0.589
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.515
+  - **Total Desirability Score**: 0.728
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-01 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 84.2-86.9°F, Low: 39.5-47.5°F (wikipedia) |  |
-| 2027-04-02 | 2027-04-07 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 2027-04-08 | 2027-04-11 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 2027-04-12 | 2027-04-16 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 2027-04-17 | 2027-04-22 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 2027-04-23 | 2027-04-26 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 2027-04-27 | 2027-04-30 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 86.8°F, Low: 44.5°F (wikipedia) |  |
+| 2027-03-26 | 2027-04-01 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.8°F (meteostat) |  |
+| 2027-04-02 | 2027-04-07 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 55.4-69.2°F, Low: 33.2-44.6°F (meteostat) |  |
+| 2027-04-08 | 2027-04-11 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 64.6-70.3°F, Low: 41.9-47.7°F (meteostat) |  |
+| 2027-04-12 | 2027-04-16 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 74.2-84.2°F, Low: 47.0-59.6°F (meteostat) |  |
+| 2027-04-17 | 2027-04-22 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 69.2-75.4°F, Low: 48.0-53.4°F (meteostat) |  |
+| 2027-04-23 | 2027-04-26 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 68.4-71.0°F, Low: 47.6-52.0°F (meteostat) |  |
+| 2027-04-27 | 2027-04-30 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 71.1-74.6°F, Low: 45.3-49.4°F (meteostat) |  |
 | 2027-05-01 | 2027-05-08 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
@@ -49,23 +49,23 @@
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.116
+  - Weather Preference: 0.645
   - Distance Score: 0.589
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.479
+  - **Total Desirability Score**: 0.717
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-04-09 | 2027-04-15 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 2027-04-16 | 2027-04-21 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2°F, Low: 43.9°F (wikipedia) |  |
-| 2027-04-22 | 2027-04-25 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 85.8°F, Low: 43.8°F (wikipedia) |  |
-| 2027-04-26 | 2027-04-30 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 2027-05-01 | 2027-05-06 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 89.9°F, Low: 58.3°F (wikipedia) |  |
-| 2027-05-07 | 2027-05-10 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 87.5°F, Low: 54.4°F (wikipedia) |  |
-| 2027-05-11 | 2027-05-14 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
+| 2027-04-09 | 2027-04-15 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 70.8-74.8°F, Low: 47.4-50.3°F (meteostat) |  |
+| 2027-04-16 | 2027-04-21 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 59.0-77.7°F, Low: 39.4-50.4°F (meteostat) |  |
+| 2027-04-22 | 2027-04-25 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 71.0-72.9°F, Low: 47.2-52.4°F (meteostat) |  |
+| 2027-04-26 | 2027-04-30 | 5 | Jefferson City, Missouri | Little Rock, Arkansas | 68.5/day | 4982/day | 342.5 | 24909 | graphhopper | Avg High: 73.0-81.0°F, Low: 55.9-62.6°F (meteostat) |  |
+| 2027-05-01 | 2027-05-06 | 6 | Little Rock, Arkansas | Nashville, Tennessee | 69.7/day | 2814/day | 418.5 | 16882 | graphhopper | Avg High: 68.9-79.5°F, Low: 52.5-58.9°F (meteostat) |  |
+| 2027-05-07 | 2027-05-10 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 | 14287 | graphhopper | Avg High: 73.3-74.1°F, Low: 52.0-53.3°F (meteostat) |  |
+| 2027-05-11 | 2027-05-14 | 4 | Frankfort, Kentucky | Charleston, West Virginia | 64.1/day | 4912/day | 256.4 | 19646 | graphhopper | Avg High: 73.6-76.3°F, Low: 51.3-54.1°F (meteostat) |  |
 | 2027-05-15 | 2027-05-22 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
@@ -98,58 +98,49 @@ ROUTE INFEASIBLE
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 4128.0 miles
+- **Total Distance**: 3701.5 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 188107 ft
+- **Total Climbing**: 171494 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.207
-  - Distance Score: 0.274
-  - Climbing Score: 0.472
-  - **Total Desirability Score**: 0.293
+  - Weather Preference: 0.658
+  - Distance Score: 0.340
+  - Climbing Score: 0.575
+  - **Total Desirability Score**: 0.542
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-12 | 18 | Austin, Texas | Frankfort, Kentucky | 69.0/day | 3183/day | 1242.0 | 57292 | graphhopper | Avg High: 76.0-82.7°F, Low: 35.3-44.8°F (wikipedia) |  |
-| 2027-04-13 | 2027-04-16 | 4 | Frankfort, Kentucky | Nashville, Tennessee | 57.0/day | 3529/day | 227.8 | 14115 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 2027-04-17 | 2027-04-22 | 6 | Nashville, Tennessee | Little Rock, Arkansas | 69.6/day | 2804/day | 417.8 | 16826 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 2027-04-23 | 2027-04-28 | 6 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5/day | 3322/day | 375.0 | 19932 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 2027-04-29 | 2027-05-04 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 86.2-90.8°F, Low: 43.9-55.0°F (wikipedia) |  |
-| 2027-05-05 | 2027-05-08 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 | 11638 | graphhopper | Avg High: 89.6°F, Low: 54.6°F (wikipedia) |  |
-| 2027-05-09 | 2027-05-19 | 11 | Jefferson City, Missouri | Charleston, West Virginia | 68.3/day | 3024/day | 751.0 | 33266 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 2027-05-20 | 2027-05-27 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+| 2027-03-26 | 2027-04-01 | 7 | Austin, Texas | Oklahoma City, Oklahoma | 64.7/day | 2429/day | 452.9 | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.8°F (meteostat) |  |
+| 2027-04-02 | 2027-04-08 | 7 | Oklahoma City, Oklahoma | Jefferson City, Missouri | 69.8/day | 3080/day | 488.6 | 21557 | graphhopper | Avg High: 62.6-67.7°F, Low: 40.7-45.3°F (meteostat) |  |
+| 2027-04-09 | 2027-04-19 | 11 | Jefferson City, Missouri | Charleston, West Virginia | 68.3/day | 3024/day | 751.0 | 33266 | graphhopper | Avg High: 65.1-73.5°F, Low: 42.3-47.4°F (meteostat) |  |
+| 2027-04-20 | 2027-04-23 | 4 | Charleston, West Virginia | Frankfort, Kentucky | 63.9/day | 4850/day | 255.7 | 19398 | graphhopper | Avg High: 65.3-68.7°F, Low: 43.6-47.6°F (meteostat) |  |
+| 2027-04-24 | 2027-04-27 | 4 | Frankfort, Kentucky | Nashville, Tennessee | 57.0/day | 3529/day | 227.8 | 14115 | graphhopper | Avg High: 70.2-75.9°F, Low: 50.6-53.4°F (meteostat) |  |
+| 2027-04-28 | 2027-05-03 | 6 | Nashville, Tennessee | Little Rock, Arkansas | 69.6/day | 2804/day | 417.8 | 16826 | graphhopper | Avg High: 75.2-81.0°F, Low: 57.6-62.6°F (meteostat) |  |
+| 2027-05-04 | 2027-05-11 | 8 | Little Rock, Arkansas | Topeka, Kansas | 61.3/day | 2856/day | 490.0 | 22847 | graphhopper | Avg High: 62.6-83.3°F, Low: 49.5-59.0°F (meteostat) |  |
+| 2027-05-12 | 2027-05-20 | 9 | Topeka, Kansas | Chicago, Illinois | 68.6/day | 2943/day | 617.7 | 26485 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
 
 </details>
 
 ---
 
 ### Alternative 4
-**Feasible**: Yes
-- **Start Date**: 2027-03-26
-- **Total Distance**: 4227.5 miles
+**Feasible**: No ❌
+- **Start Date**: 2027-04-09
+- **Total Distance**: 3701.5 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 187044 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.176
-  - Distance Score: 0.261
-  - Climbing Score: 0.483
-  - **Total Desirability Score**: 0.278
+- **Total Climbing**: 171494 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-01: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-02: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-03: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-07 | 13 | Austin, Texas | Jefferson City, Missouri | 67.7/day | 2731/day | 880.2 | 35506 | graphhopper | Avg High: 79.8-85.8°F, Low: 33.7-43.8°F (wikipedia) |  |
-| 2027-04-08 | 2027-04-14 | 7 | Jefferson City, Missouri | Frankfort, Kentucky | 69.0/day | 3435/day | 482.7 | 24043 | graphhopper | Avg High: 82.7°F, Low: 44.8°F (wikipedia) |  |
-| 2027-04-15 | 2027-04-18 | 4 | Frankfort, Kentucky | Nashville, Tennessee | 57.0/day | 3529/day | 227.8 | 14115 | graphhopper | Avg High: 85.3°F, Low: 48.9°F (wikipedia) |  |
-| 2027-04-19 | 2027-04-24 | 6 | Nashville, Tennessee | Little Rock, Arkansas | 69.6/day | 2804/day | 417.8 | 16826 | graphhopper | Avg High: 86.2°F, Low: 50.1°F (wikipedia) |  |
-| 2027-04-25 | 2027-04-30 | 6 | Little Rock, Arkansas | Oklahoma City, Oklahoma | 62.5/day | 3322/day | 375.0 | 19932 | graphhopper | Avg High: 86.9°F, Low: 47.5°F (wikipedia) |  |
-| 2027-05-01 | 2027-05-06 | 6 | Oklahoma City, Oklahoma | Topeka, Kansas | 62.4/day | 2085/day | 374.5 | 12509 | graphhopper | Avg High: 90.8°F, Low: 55.0°F (wikipedia) |  |
-| 2027-05-07 | 2027-05-20 | 14 | Topeka, Kansas | Charleston, West Virginia | 68.6/day | 2970/day | 960.7 | 41584 | graphhopper | Avg High: 88.8°F, Low: 53.2°F (wikipedia) |  |
-| 2027-05-21 | 2027-05-28 | 8 | Charleston, West Virginia | Chicago, Illinois | 63.6/day | 2816/day | 509.0 | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (wikipedia) |  |
+ROUTE INFEASIBLE
+
 
 </details>
 
@@ -158,16 +149,13 @@ ROUTE INFEASIBLE
 ### Alternative 5
 **Feasible**: No ❌
 - **Start Date**: 2027-04-09
-- **Total Distance**: 3799.2 miles
+- **Total Distance**: 3705.5 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 191836 ft
+- **Total Climbing**: 183824 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-01: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-02: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-03: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-04: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-05: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-06: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -181,19 +169,18 @@ ROUTE INFEASIBLE
 
 ### Alternative 6
 **Feasible**: No ❌
-- **Start Date**: 2027-04-09
-- **Total Distance**: 4083.1 miles
+- **Start Date**: 2027-04-23
+- **Total Distance**: 3530.8 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 193949 ft
+- **Total Climbing**: 173828 ft
 - **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-03: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-04: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-05: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-06: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-07: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-08: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-09: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-10: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-11: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-12: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-13: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-14: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-15: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-16: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -206,6 +193,7 @@ ROUTE INFEASIBLE
 ---
 
 ## Data Attribution
+- Weather data provided by [Meteostat](https://meteostat.net/) under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Data has been transformed into itinerary-level schedule summaries.
 - Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/) using [OpenStreetMap](https://www.openstreetmap.org/copyright) data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 
 

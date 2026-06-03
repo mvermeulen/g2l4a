@@ -99,6 +99,19 @@ class SQLiteCacheManager:
                     PRIMARY KEY (city_lat, city_lon, travel_date, is_forecast, provider_key)
                 )
             """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS meteostat_climatology (
+                    city_lat REAL,
+                    city_lon REAL,
+                    month INTEGER,
+                    day INTEGER,
+                    avg_high_f REAL,
+                    avg_low_f REAL,
+                    station_id TEXT,
+                    station_distance_m REAL,
+                    PRIMARY KEY (city_lat, city_lon, month, day)
+                )
+            """)
 
     def close(self):
         """Closes the thread-local database connection if it exists."""
@@ -278,3 +291,52 @@ class SQLiteCacheManager:
                 c_lat, c_lon, date_str, is_forecast,
                 provider_key, metrics["high_temp_f"], metrics["low_temp_f"]
             ))
+
+    def get_meteostat_day_average(self, lat: float, lon: float, month: int, day: int) -> Optional[Dict[str, float]]:
+        """Retrieves cached day-of-year average temperatures from Meteostat climatology."""
+        conn = self._get_conn()
+        lat_rounded = round_coord(lat)
+        lon_rounded = round_coord(lon)
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT avg_high_f, avg_low_f
+            FROM meteostat_climatology
+            WHERE city_lat = ? AND city_lon = ? AND month = ? AND day = ?
+            """,
+            (lat_rounded, lon_rounded, month, day)
+        )
+        row = cursor.fetchone()
+        if row:
+            return {
+                "high_temp_f": row["avg_high_f"],
+                "low_temp_f": row["avg_low_f"]
+            }
+        return None
+
+    def save_meteostat_climatology(self, lat: float, lon: float, climatology: list):
+        """Saves daily climatology list (e.g. 366 days) in a single transaction."""
+        conn = self._get_conn()
+        lat_rounded = round_coord(lat)
+        lon_rounded = round_coord(lon)
+        with conn:
+            conn.executemany(
+                """
+                INSERT OR REPLACE INTO meteostat_climatology (
+                    city_lat, city_lon, month, day, avg_high_f, avg_low_f, station_id, station_distance_m
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                [
+                    (
+                        lat_rounded,
+                        lon_rounded,
+                        item["month"],
+                        item["day"],
+                        item["avg_high_f"],
+                        item["avg_low_f"],
+                        item["station_id"],
+                        item["station_distance_m"]
+                    )
+                    for item in climatology
+                ]
+            )

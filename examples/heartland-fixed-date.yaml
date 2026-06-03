@@ -18,7 +18,7 @@ weather_constraints:
   min_avg_low_f: 24
 
 weather_provider:
-  name: state_capital_monthly_normals
+  name: meteostat
 
 routing_provider:
   name: graphhopper

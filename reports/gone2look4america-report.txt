@@ -5,7 +5,8 @@
 | Option                  | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference                                   |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+--------------------------------------------------+
 | **Best Recommendation** | 2023-04-15 | No ❌      | N/A         | N/A           | N/A            | N/A         | 6791.3 mi      | graphhopper     | 319321 ft   | Baseline / Optimal Route                         |
-| Alternative 1           | 2023-04-29 | No ❌      | N/A         | N/A           | N/A            | N/A         | 6791.3 mi      | graphhopper     | 319321 ft   | Different start date (2023-04-29), same sequence |
+| Alternative 1           | 2023-05-13 | No ❌      | N/A         | N/A           | N/A            | N/A         | 6791.3 mi      | graphhopper     | 319321 ft   | Different start date (2023-05-13), same sequence |
+| Alternative 2           | 2023-04-29 | No ❌      | N/A         | N/A           | N/A            | N/A         | 6791.3 mi      | graphhopper     | 319321 ft   | Different start date (2023-04-29), same sequence |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+--------------------------------------------------+
 
 ## Detailed Recommendations
@@ -60,6 +61,58 @@ ROUTE INFEASIBLE
 ---
 
 ### Alternative 1
+**Feasible**: No ❌
+- **Start Date**: 2023-05-13
+- **Total Distance**: 6791.3 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 319321 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Hartford, Connecticut on 2023-05-20: observed 90.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Hartford, Connecticut on 2023-05-21: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Springfield, Illinois on 2023-06-26: observed 97.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Springfield, Illinois.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-29: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-30: observed 95.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-01: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-02: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-03: observed 97.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-04: observed 99.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-05: observed 98.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-06: observed 98.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-07: observed 96.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-08: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-09: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at St. Paul, Minnesota on 2023-07-15: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass St. Paul, Minnesota.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-06: observed 92.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-07: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-08: observed 96.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-09: observed 95.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-10: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-11: observed 95.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-12: observed 95.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-13: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-14: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-15: observed 90.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-16: observed 90.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-17: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-18: observed 100.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-19: observed 100.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-20: observed 90.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-28: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-29: observed 95.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-30: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+ROUTE INFEASIBLE
+
+
+</details>
+
+---
+
+### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2023-04-29
 - **Total Distance**: 6791.3 miles

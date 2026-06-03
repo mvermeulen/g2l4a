@@ -3,48 +3,80 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2027-01-02 | Yes | 0.7525 | 0.7426 | 0.5611 | 1.0000 | 2500.9 mi | graphhopper | 116207 ft | Baseline / Optimal Route |
-| Alternative 1 | 2026-12-19 | No ❌ | N/A | N/A | N/A | N/A | 2500.9 mi | graphhopper | 116207 ft | Different start date (2026-12-19), same sequence |
-| Alternative 2 | 2027-01-16 | Yes | 0.7303 | 0.6932 | 0.5611 | 1.0000 | 2500.9 mi | graphhopper | 116207 ft | Different start date (2027-01-16), same sequence |
-| Alternative 3 | 2027-01-02 | Yes | 0.4835 | 0.7767 | 0.1418 | 0.3656 | 4974.0 mi | graphhopper | 222636 ft | Alternative via-city sequence, same date |
-| Alternative 4 | 2027-01-02 | Yes | 0.4713 | 0.7723 | 0.1460 | 0.3200 | 4902.8 mi | graphhopper | 230284 ft | Alternative via-city sequence, same date |
-| Alternative 5 | 2026-12-19 | Yes | 0.4700 | 0.7469 | 0.1418 | 0.3656 | 4974.0 mi | graphhopper | 222636 ft | Different start date (2026-12-19) & alternative sequence |
-| Alternative 6 | 2026-12-19 | Yes | 0.4644 | 0.7568 | 0.1470 | 0.3191 | 4886.3 mi | graphhopper | 230433 ft | Different start date (2026-12-19) & alternative sequence |
+| **Best Recommendation** | 2027-01-16 | Yes | 0.5779 | 0.3545 | 0.5611 | 1.0000 | 2500.9 mi | graphhopper | 116207 ft | Baseline / Optimal Route |
+| Alternative 1 | 2027-01-02 | Yes | 0.5725 | 0.3427 | 0.5611 | 1.0000 | 2500.9 mi | graphhopper | 116207 ft | Different start date (2027-01-02), same sequence |
+| Alternative 2 | 2026-12-19 | No ❌ | N/A | N/A | N/A | N/A | 2500.9 mi | graphhopper | 116207 ft | Different start date (2026-12-19), same sequence |
+| Alternative 3 | 2027-01-02 | Yes | 0.5665 | 0.3804 | 0.5227 | 0.9541 | 2590.9 mi | graphhopper | 123593 ft | Different start date (2027-01-02) & alternative sequence |
+| Alternative 4 | 2027-01-16 | Yes | 0.5613 | 0.5332 | 0.3498 | 0.8657 | 3167.4 mi | graphhopper | 137806 ft | Alternative via-city sequence, same date |
+| Alternative 5 | 2027-01-16 | Yes | 0.5350 | 0.5307 | 0.3304 | 0.7884 | 3259.1 mi | graphhopper | 150248 ft | Alternative via-city sequence, same date |
+| Alternative 6 | 2027-01-16 | Yes | 0.5143 | 0.5105 | 0.3016 | 0.7763 | 3411.0 mi | graphhopper | 152191 ft | Alternative via-city sequence, same date |
 
 ## Detailed Recommendations
 ### Best Recommendation
 **Feasible**: Yes
-- **Start Date**: 2027-01-02
+- **Start Date**: 2027-01-16
 - **Total Distance**: 2500.9 miles
 - **Distance Source**: graphhopper
 - **Total Climbing**: 116207 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.743
+  - Weather Preference: 0.354
   - Distance Score: 0.561
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.752
+  - **Total Desirability Score**: 0.578
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-01-02 | 2027-01-10 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 2027-01-11 | 2027-01-13 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 2027-01-14 | 2027-01-17 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 2027-01-18 | 2027-01-21 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 78.4°F, Low: 40.5°F (wikipedia) |  |
-| 2027-01-22 | 2027-01-26 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 2027-01-27 | 2027-01-30 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 2027-01-31 | 2027-02-03 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 71.9-74.4°F, Low: 31.8-34.2°F (wikipedia) |  |
-| 2027-02-04 | 2027-02-06 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 2027-02-07 | 2027-02-08 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 2027-02-09 | 2027-02-11 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
+| 2027-01-16 | 2027-01-24 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 44.6-71.2°F, Low: 29.8-46.4°F (meteostatweatherprovider) |  |
+| 2027-01-25 | 2027-01-27 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 43.5-45.9°F, Low: 26.7-28.2°F (meteostatweatherprovider) |  |
+| 2027-01-28 | 2027-01-31 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 58.3-61.9°F, Low: 35.6-37.5°F (meteostatweatherprovider) |  |
+| 2027-02-01 | 2027-02-04 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 65.7-66.9°F, Low: 42.2-44.3°F (meteostatweatherprovider) |  |
+| 2027-02-05 | 2027-02-09 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 55.1-58.7°F, Low: 35.5-37.6°F (meteostatweatherprovider) |  |
+| 2027-02-10 | 2027-02-13 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 58.3-60.1°F, Low: 38.2-42.0°F (meteostatweatherprovider) |  |
+| 2027-02-14 | 2027-02-17 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 53.0-56.7°F, Low: 32.2-35.9°F (meteostatweatherprovider) |  |
+| 2027-02-18 | 2027-02-20 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 51.2-52.4°F, Low: 28.3-31.5°F (meteostatweatherprovider) |  |
+| 2027-02-21 | 2027-02-22 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 49.0-52.7°F, Low: 33.3-35.2°F (meteostatweatherprovider) |  |
+| 2027-02-23 | 2027-02-25 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 46.2-47.1°F, Low: 27.9-28.5°F (meteostatweatherprovider) |  |
 
 </details>
 
 ---
 
 ### Alternative 1
+**Feasible**: Yes
+- **Start Date**: 2027-01-02
+- **Total Distance**: 2500.9 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 116207 ft
+- **Desirability Scores**:
+  - Weather Preference: 0.343
+  - Distance Score: 0.561
+  - Climbing Score: 1.000
+  - **Total Desirability Score**: 0.573
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2027-01-02 | 2027-01-10 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 60.4-69.8°F, Low: 37.0-46.4°F (meteostatweatherprovider) |  |
+| 2027-01-11 | 2027-01-13 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 45.9-49.5°F, Low: 29.2-32.5°F (meteostatweatherprovider) |  |
+| 2027-01-14 | 2027-01-17 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 55.9-59.1°F, Low: 34.7-36.8°F (meteostatweatherprovider) |  |
+| 2027-01-18 | 2027-01-21 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 63.0-66.2°F, Low: 36.0-39.7°F (meteostatweatherprovider) |  |
+| 2027-01-22 | 2027-01-26 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 49.7-55.0°F, Low: 32.4-35.3°F (meteostatweatherprovider) |  |
+| 2027-01-27 | 2027-01-30 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 56.8-58.8°F, Low: 35.3-38.3°F (meteostatweatherprovider) |  |
+| 2027-01-31 | 2027-02-03 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 52.6-56.2°F, Low: 31.4-34.5°F (meteostatweatherprovider) |  |
+| 2027-02-04 | 2027-02-06 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 49.1-52.8°F, Low: 29.3-31.2°F (meteostatweatherprovider) |  |
+| 2027-02-07 | 2027-02-08 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 48.7-48.9°F, Low: 32.2-32.3°F (meteostatweatherprovider) |  |
+| 2027-02-09 | 2027-02-11 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 40.2-42.1°F, Low: 24.0-25.5°F (meteostatweatherprovider) |  |
+
+</details>
+
+---
+
+### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2026-12-19
 - **Total Distance**: 2500.9 miles
@@ -52,8 +84,8 @@
 - **Total Climbing**: 116207 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-26: observed 23.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-27: observed 23.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-28: observed 23.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-27: observed 23.2 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-28: observed 23.5 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -65,65 +97,33 @@ ROUTE INFEASIBLE
 
 ---
 
-### Alternative 2
-**Feasible**: Yes
-- **Start Date**: 2027-01-16
-- **Total Distance**: 2500.9 miles
-- **Distance Source**: graphhopper
-- **Total Climbing**: 116207 ft
-- **Desirability Scores**:
-  - Weather Preference: 0.693
-  - Distance Score: 0.561
-  - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.730
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-01-16 | 2027-01-24 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 77.5°F, Low: 41.6°F (wikipedia) |  |
-| 2027-01-25 | 2027-01-27 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 75.2°F, Low: 36.6°F (wikipedia) |  |
-| 2027-01-28 | 2027-01-31 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 2027-02-01 | 2027-02-04 | 4 | Montgomery, Alabama | Tallahassee, Florida | 55.5/day | 2540/day | 222.0 | 10161 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 2027-02-05 | 2027-02-09 | 5 | Tallahassee, Florida | Atlanta, Georgia | 63.0/day | 2864/day | 315.0 | 14321 | graphhopper | Avg High: 73.5°F, Low: 38.9°F (wikipedia) |  |
-| 2027-02-10 | 2027-02-13 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 78.0°F, Low: 37.3°F (wikipedia) |  |
-| 2027-02-14 | 2027-02-17 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 74.4°F, Low: 34.2°F (wikipedia) |  |
-| 2027-02-18 | 2027-02-20 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 72.6°F, Low: 30.4°F (wikipedia) |  |
-| 2027-02-21 | 2027-02-22 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 68.1°F, Low: 31.8°F (wikipedia) |  |
-| 2027-02-23 | 2027-02-25 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 61.4°F, Low: 24.7°F (wikipedia) |  |
-
-</details>
-
----
-
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-01-02
-- **Total Distance**: 4974.0 miles
+- **Total Distance**: 2590.9 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 222636 ft
+- **Total Climbing**: 123593 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.777
-  - Distance Score: 0.142
-  - Climbing Score: 0.366
-  - **Total Desirability Score**: 0.483
+  - Weather Preference: 0.380
+  - Distance Score: 0.523
+  - Climbing Score: 0.954
+  - **Total Desirability Score**: 0.567
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-01-02 | 2027-01-17 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 2027-01-18 | 2027-01-21 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 2027-01-22 | 2027-01-28 | 7 | Columbia, South Carolina | Richmond, Virginia | 60.2/day | 2990/day | 421.2 | 20928 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 2027-01-29 | 2027-01-30 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 2027-01-31 | 2027-02-04 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9-74.4°F, Low: 31.8-34.2°F (wikipedia) |  |
-| 2027-02-05 | 2027-02-14 | 10 | Raleigh, North Carolina | Montgomery, Alabama | 67.6/day | 2543/day | 675.5 | 25430 | graphhopper | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 2027-02-15 | 2027-02-18 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 2027-02-19 | 2027-02-21 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 2027-02-22 | 2027-03-01 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4-86.0°F, Low: 43.5-48.6°F (wikipedia) |  |
-| 2027-03-02 | 2027-03-17 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 72.7°F, Low: 32.3°F (wikipedia) |  |
+| 2027-01-02 | 2027-01-10 | 9 | Austin, Texas | Baton Rouge, Louisiana | 64.5/day | 1974/day | 580.1 | 17769 | graphhopper | Avg High: 60.4-69.8°F, Low: 37.0-46.4°F (meteostatweatherprovider) |  |
+| 2027-01-11 | 2027-01-13 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 45.9-49.5°F, Low: 29.2-32.5°F (meteostatweatherprovider) |  |
+| 2027-01-14 | 2027-01-20 | 7 | Jackson, Mississippi | Tallahassee, Florida | 68.0/day | 3262/day | 476.3 | 22832 | graphhopper | Avg High: 62.7-66.2°F, Low: 36.0-39.0°F (meteostatweatherprovider) |  |
+| 2027-01-21 | 2027-01-24 | 4 | Tallahassee, Florida | Montgomery, Alabama | 55.5/day | 2539/day | 221.9 | 10156 | graphhopper | Avg High: 54.0-59.2°F, Low: 35.8-39.0°F (meteostatweatherprovider) |  |
+| 2027-01-25 | 2027-01-27 | 3 | Montgomery, Alabama | Atlanta, Georgia | 66.4/day | 3698/day | 199.3 | 11095 | graphhopper | Avg High: 54.6-55.0°F, Low: 34.1-36.5°F (meteostatweatherprovider) |  |
+| 2027-01-28 | 2027-01-31 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 56.4-58.8°F, Low: 35.3-36.3°F (meteostatweatherprovider) |  |
+| 2027-02-01 | 2027-02-04 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 54.2-56.2°F, Low: 33.5-34.5°F (meteostatweatherprovider) |  |
+| 2027-02-05 | 2027-02-07 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 49.1-53.8°F, Low: 29.3-31.8°F (meteostatweatherprovider) |  |
+| 2027-02-08 | 2027-02-09 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 48.0-48.7°F, Low: 30.8-32.2°F (meteostatweatherprovider) |  |
+| 2027-02-10 | 2027-02-12 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 40.2-41.3°F, Low: 24.6-25.5°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -131,31 +131,31 @@ ROUTE INFEASIBLE
 
 ### Alternative 4
 **Feasible**: Yes
-- **Start Date**: 2027-01-02
-- **Total Distance**: 4902.8 miles
+- **Start Date**: 2027-01-16
+- **Total Distance**: 3167.4 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 230284 ft
+- **Total Climbing**: 137806 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.772
-  - Distance Score: 0.146
-  - Climbing Score: 0.320
-  - **Total Desirability Score**: 0.471
+  - Weather Preference: 0.533
+  - Distance Score: 0.350
+  - Climbing Score: 0.866
+  - **Total Desirability Score**: 0.561
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-01-02 | 2027-01-17 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3°F, Low: 35.6°F (wikipedia) |  |
-| 2027-01-18 | 2027-01-24 | 7 | Atlanta, Georgia | Raleigh, North Carolina | 68.6/day | 4304/day | 480.1 | 30128 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 2027-01-25 | 2027-01-27 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 2027-01-28 | 2027-01-29 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 2027-01-30 | 2027-02-06 | 8 | Washington, DC | Columbia, South Carolina | 67.1/day | 3437/day | 536.7 | 27494 | graphhopper | Avg High: 74.5-78.0°F, Low: 34.6-37.3°F (wikipedia) |  |
-| 2027-02-07 | 2027-02-12 | 6 | Columbia, South Carolina | Montgomery, Alabama | 64.0/day | 3098/day | 383.8 | 18590 | graphhopper | Avg High: 78.8°F, Low: 40.4°F (wikipedia) |  |
-| 2027-02-13 | 2027-02-16 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 2027-02-17 | 2027-02-19 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 2027-02-20 | 2027-02-27 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 2027-02-28 | 2027-03-15 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
+| 2027-01-16 | 2027-01-31 | 16 | Austin, Texas | Tallahassee, Florida | 66.3/day | 2173/day | 1060.5 | 34772 | graphhopper | Avg High: 63.0-66.3°F, Low: 36.0-42.2°F (meteostatweatherprovider) |  |
+| 2027-02-01 | 2027-02-08 | 8 | Tallahassee, Florida | Baton Rouge, Louisiana | 65.5/day | 2248/day | 523.9 | 17982 | graphhopper | Avg High: 61.2-75.2°F, Low: 44.7-54.6°F (meteostatweatherprovider) |  |
+| 2027-02-09 | 2027-02-11 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 43.8-47.3°F, Low: 28.5-29.7°F (meteostatweatherprovider) |  |
+| 2027-02-12 | 2027-02-15 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 59.7-63.0°F, Low: 36.0-42.6°F (meteostatweatherprovider) |  |
+| 2027-02-16 | 2027-02-18 | 3 | Montgomery, Alabama | Atlanta, Georgia | 66.4/day | 3698/day | 199.3 | 11095 | graphhopper | Avg High: 57.6-58.2°F, Low: 36.2-38.0°F (meteostatweatherprovider) |  |
+| 2027-02-19 | 2027-02-22 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 59.0-65.9°F, Low: 37.2-45.0°F (meteostatweatherprovider) |  |
+| 2027-02-23 | 2027-02-26 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 56.5-60.3°F, Low: 36.1-38.3°F (meteostatweatherprovider) |  |
+| 2027-02-27 | 2027-03-01 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 53.8-55.7°F, Low: 32.6-34.7°F (meteostatweatherprovider) |  |
+| 2027-03-02 | 2027-03-03 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 50.4-53.2°F, Low: 33.5-36.0°F (meteostatweatherprovider) |  |
+| 2027-03-04 | 2027-03-06 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 44.8-48.4°F, Low: 27.9-28.3°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -163,31 +163,31 @@ ROUTE INFEASIBLE
 
 ### Alternative 5
 **Feasible**: Yes
-- **Start Date**: 2026-12-19
-- **Total Distance**: 4974.0 miles
+- **Start Date**: 2027-01-16
+- **Total Distance**: 3259.1 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 222636 ft
+- **Total Climbing**: 150248 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.747
-  - Distance Score: 0.142
-  - Climbing Score: 0.366
-  - **Total Desirability Score**: 0.470
+  - Weather Preference: 0.531
+  - Distance Score: 0.330
+  - Climbing Score: 0.788
+  - **Total Desirability Score**: 0.535
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-12-19 | 2027-01-03 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3-71.5°F, Low: 35.6-38.4°F (wikipedia) |  |
-| 2027-01-04 | 2027-01-07 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 2027-01-08 | 2027-01-14 | 7 | Columbia, South Carolina | Richmond, Virginia | 60.2/day | 2990/day | 421.2 | 20928 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 2027-01-15 | 2027-01-16 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 2027-01-17 | 2027-01-21 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 2027-01-22 | 2027-01-31 | 10 | Raleigh, North Carolina | Montgomery, Alabama | 67.6/day | 2543/day | 675.5 | 25430 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 2027-02-01 | 2027-02-04 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 78.6°F, Low: 39.8°F (wikipedia) |  |
-| 2027-02-05 | 2027-02-07 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 2027-02-08 | 2027-02-15 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 2027-02-16 | 2027-03-03 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
+| 2027-01-16 | 2027-01-31 | 16 | Austin, Texas | Tallahassee, Florida | 66.3/day | 2173/day | 1060.5 | 34772 | graphhopper | Avg High: 63.0-66.3°F, Low: 36.0-42.2°F (meteostatweatherprovider) |  |
+| 2027-02-01 | 2027-02-04 | 4 | Tallahassee, Florida | Montgomery, Alabama | 55.5/day | 2539/day | 221.9 | 10156 | graphhopper | Avg High: 59.6-63.5°F, Low: 39.2-40.9°F (meteostatweatherprovider) |  |
+| 2027-02-05 | 2027-02-10 | 6 | Montgomery, Alabama | Baton Rouge, Louisiana | 68.0/day | 2922/day | 408.1 | 17534 | graphhopper | Avg High: 67.5-75.2°F, Low: 45.6-54.6°F (meteostatweatherprovider) |  |
+| 2027-02-11 | 2027-02-13 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 43.8-47.3°F, Low: 27.1-28.7°F (meteostatweatherprovider) |  |
+| 2027-02-14 | 2027-02-20 | 7 | Jackson, Mississippi | Atlanta, Georgia | 65.1/day | 3721/day | 455.4 | 26045 | graphhopper | Avg High: 56.9-58.2°F, Low: 32.6-38.0°F (meteostatweatherprovider) |  |
+| 2027-02-21 | 2027-02-24 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 64.3-66.5°F, Low: 41.2-45.5°F (meteostatweatherprovider) |  |
+| 2027-02-25 | 2027-02-28 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 56.5-59.0°F, Low: 35.1-37.1°F (meteostatweatherprovider) |  |
+| 2027-03-01 | 2027-03-03 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 53.6-57.8°F, Low: 33.2-35.6°F (meteostatweatherprovider) |  |
+| 2027-03-04 | 2027-03-05 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 50.0-52.5°F, Low: 33.5-33.8°F (meteostatweatherprovider) |  |
+| 2027-03-06 | 2027-03-08 | 3 | Washington, DC | Harrisburg, Pennsylvania | 43.6/day | 3519/day | 130.7 | 10556 | graphhopper | Avg High: 48.4-53.5°F, Low: 27.9-30.2°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -195,37 +195,38 @@ ROUTE INFEASIBLE
 
 ### Alternative 6
 **Feasible**: Yes
-- **Start Date**: 2026-12-19
-- **Total Distance**: 4886.3 miles
+- **Start Date**: 2027-01-16
+- **Total Distance**: 3411.0 miles
 - **Distance Source**: graphhopper
-- **Total Climbing**: 230433 ft
+- **Total Climbing**: 152191 ft
 - **Desirability Scores**:
-  - Weather Preference: 0.757
-  - Distance Score: 0.147
-  - Climbing Score: 0.319
-  - **Total Desirability Score**: 0.464
+  - Weather Preference: 0.510
+  - Distance Score: 0.302
+  - Climbing Score: 0.776
+  - **Total Desirability Score**: 0.514
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-12-19 | 2027-01-03 | 16 | Austin, Texas | Atlanta, Georgia | 68.7/day | 2966/day | 1099.5 | 47452 | graphhopper | Avg High: 70.3-71.5°F, Low: 35.6-38.4°F (wikipedia) |  |
-| 2027-01-04 | 2027-01-13 | 10 | Atlanta, Georgia | Richmond, Virginia | 65.0/day | 4009/day | 649.8 | 40092 | graphhopper | Avg High: 70.1°F, Low: 28.8°F (wikipedia) |  |
-| 2027-01-14 | 2027-01-15 | 2 | Richmond, Virginia | Washington, DC | 63.3/day | 3792/day | 126.5 | 7584 | graphhopper | Avg High: 66.7°F, Low: 30.1°F (wikipedia) |  |
-| 2027-01-16 | 2027-01-20 | 5 | Washington, DC | Raleigh, North Carolina | 62.9/day | 3629/day | 314.6 | 18143 | graphhopper | Avg High: 71.9°F, Low: 31.8°F (wikipedia) |  |
-| 2027-01-21 | 2027-01-24 | 4 | Raleigh, North Carolina | Columbia, South Carolina | 57.9/day | 2585/day | 231.6 | 10341 | graphhopper | Avg High: 74.5°F, Low: 34.6°F (wikipedia) |  |
-| 2027-01-25 | 2027-01-30 | 6 | Columbia, South Carolina | Montgomery, Alabama | 64.0/day | 3098/day | 383.8 | 18590 | graphhopper | Avg High: 75.6°F, Low: 36.5°F (wikipedia) |  |
-| 2027-01-31 | 2027-02-03 | 4 | Montgomery, Alabama | Jackson, Mississippi | 69.8/day | 2986/day | 279.0 | 11944 | graphhopper | Avg High: 75.2-78.6°F, Low: 36.6-39.8°F (wikipedia) |  |
-| 2027-02-04 | 2027-02-06 | 3 | Jackson, Mississippi | Baton Rouge, Louisiana | 57.6/day | 2454/day | 172.9 | 7362 | graphhopper | Avg High: 80.3°F, Low: 45.3°F (wikipedia) |  |
-| 2027-02-07 | 2027-02-14 | 8 | Baton Rouge, Louisiana | Tallahassee, Florida | 65.5/day | 2252/day | 524.0 | 18020 | graphhopper | Avg High: 80.4°F, Low: 43.5°F (wikipedia) |  |
-| 2027-02-15 | 2027-03-02 | 16 | Tallahassee, Florida | Harrisburg, Pennsylvania | 69.0/day | 3181/day | 1104.5 | 50903 | graphhopper | Avg High: 61.4-72.7°F, Low: 24.7-32.3°F (wikipedia) |  |
+| 2027-01-16 | 2027-01-31 | 16 | Austin, Texas | Tallahassee, Florida | 66.3/day | 2173/day | 1060.5 | 34772 | graphhopper | Avg High: 63.0-66.3°F, Low: 36.0-42.2°F (meteostatweatherprovider) |  |
+| 2027-02-01 | 2027-02-08 | 8 | Tallahassee, Florida | Baton Rouge, Louisiana | 65.5/day | 2248/day | 523.9 | 17982 | graphhopper | Avg High: 61.2-75.2°F, Low: 44.7-54.6°F (meteostatweatherprovider) |  |
+| 2027-02-09 | 2027-02-11 | 3 | Baton Rouge, Louisiana | Jackson, Mississippi | 57.6/day | 2527/day | 172.8 | 7581 | graphhopper | Avg High: 43.8-47.3°F, Low: 28.5-29.7°F (meteostatweatherprovider) |  |
+| 2027-02-12 | 2027-02-15 | 4 | Jackson, Mississippi | Montgomery, Alabama | 67.6/day | 3054/day | 270.3 | 12216 | graphhopper | Avg High: 59.7-63.0°F, Low: 36.0-42.6°F (meteostatweatherprovider) |  |
+| 2027-02-16 | 2027-02-18 | 3 | Montgomery, Alabama | Atlanta, Georgia | 66.4/day | 3698/day | 199.3 | 11095 | graphhopper | Avg High: 57.6-58.2°F, Low: 36.2-38.0°F (meteostatweatherprovider) |  |
+| 2027-02-19 | 2027-02-22 | 4 | Atlanta, Georgia | Columbia, South Carolina | 64.1/day | 3717/day | 256.3 | 14869 | graphhopper | Avg High: 59.0-65.9°F, Low: 37.2-45.0°F (meteostatweatherprovider) |  |
+| 2027-02-23 | 2027-02-26 | 4 | Columbia, South Carolina | Raleigh, North Carolina | 57.8/day | 2586/day | 231.3 | 10345 | graphhopper | Avg High: 56.5-60.3°F, Low: 36.1-38.3°F (meteostatweatherprovider) |  |
+| 2027-02-27 | 2027-03-03 | 5 | Raleigh, North Carolina | Washington, DC | 62.8/day | 3545/day | 314.1 | 17727 | graphhopper | Avg High: 50.4-53.2°F, Low: 33.3-36.0°F (meteostatweatherprovider) |  |
+| 2027-03-04 | 2027-03-05 | 2 | Washington, DC | Richmond, Virginia | 62.8/day | 3773/day | 125.6 | 7545 | graphhopper | Avg High: 54.6-54.8°F, Low: 32.6-32.9°F (meteostatweatherprovider) |  |
+| 2027-03-06 | 2027-03-09 | 4 | Richmond, Virginia | Harrisburg, Pennsylvania | 64.2/day | 4515/day | 257.0 | 18058 | graphhopper | Avg High: 48.4-53.5°F, Low: 27.9-32.9°F (meteostatweatherprovider) |  |
 
 </details>
 
 ---
 
 ## Data Attribution
+- Weather data provided by [Meteostat](https://meteostat.net/) under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Data has been transformed into itinerary-level schedule summaries.
 - Routing and elevation data powered by [GraphHopper](https://www.graphhopper.com/) using [OpenStreetMap](https://www.openstreetmap.org/copyright) data licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 
 
