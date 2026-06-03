@@ -17,26 +17,24 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2027-02-15
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MIN_LOW] at Jefferson City, Missouri on 2027-02-28: observed 21.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2027-02-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Desirability Scores**:
@@ -45,8 +43,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.676
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -70,33 +67,30 @@ ROUTE INFEASIBLE
 | 2027-04-19 | 2027-04-21 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel) | 10127           | graphhopper     | Avg High: 58.8-76.9°F, Low: 49.3-60.0°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-01-18
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MIN_LOW] at Topeka, Kansas on 2027-01-26: observed 20.4 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6833.7 miles
+- **Total Distance**: 6833.7 miles (6457.1 mi paved, 376.6 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 362377 ft
 - **Desirability Scores**:
@@ -105,8 +99,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.520
   - **Total Desirability Score**: 0.482
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                           | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -130,14 +123,13 @@ ROUTE INFEASIBLE
 | 2027-06-01 | 2027-06-03 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel)   | 10127           | graphhopper     | Avg High: 79.2-82.2°F, Low: 54.1-66.2°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 4
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6995.2 miles
+- **Total Distance**: 6995.2 miles (6638.5 mi paved, 356.8 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 369458 ft
 - **Desirability Scores**:
@@ -146,8 +138,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.486
   - **Total Desirability Score**: 0.465
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                           | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -171,14 +162,13 @@ ROUTE INFEASIBLE
 | 2027-06-03 | 2027-06-05 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel)   | 10127           | graphhopper     | Avg High: 79.2-89.0°F, Low: 54.1-71.2°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 5
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6923.8 miles
+- **Total Distance**: 6923.8 miles (6463.8 mi paved, 460.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 371196 ft
 - **Desirability Scores**:
@@ -187,8 +177,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.477
   - **Total Desirability Score**: 0.461
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                           | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -212,14 +201,13 @@ ROUTE INFEASIBLE
 | 2027-06-02 | 2027-06-04 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel)   | 10127           | graphhopper     | Avg High: 79.2-89.0°F, Low: 54.1-61.0°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 6
 **Feasible**: Yes
 - **Start Date**: 2027-02-01
-- **Total Distance**: 7118.0 miles
+- **Total Distance**: 7118.0 miles (6816.5 mi paved, 301.5 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 374305 ft
 - **Desirability Scores**:
@@ -228,8 +216,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.463
   - **Total Desirability Score**: 0.457
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                           | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -253,7 +240,6 @@ ROUTE INFEASIBLE
 | 2027-05-22 | 2027-05-24 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel)   | 10127           | graphhopper     | Avg High: 75.5-84.4°F, Low: 51.6-60.2°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+---------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 

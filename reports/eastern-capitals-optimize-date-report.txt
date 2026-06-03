@@ -17,27 +17,25 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2026-03-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MIN_LOW] at Jefferson City, Missouri on 2026-03-15: observed 22.2 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Jefferson City, Missouri on 2026-03-16: observed 20.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2026-11-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -45,20 +43,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-15: observed 14.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-16: observed 16.7 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-10-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Desirability Scores**:
@@ -67,8 +63,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.637
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -92,14 +87,13 @@ ROUTE INFEASIBLE
 | 2026-12-17 | 2026-12-19 | 3    | Harrisburg, Pennsylvania  | Washington, DC            | 43.1/day          | 3376/day        | 129.2 mi (116.6 mi paved, 12.6 mi gravel) | 10127           | graphhopper     | Avg High: 43.8-50.2°F, Low: 31.9-36.8°F (open-meteo) |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 3
 **Feasible**: No ❌
 - **Start Date**: 2026-09-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -110,20 +104,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Little Rock, Arkansas on 2026-09-20: observed 90.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Little Rock, Arkansas.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Jackson, Mississippi on 2026-09-23: observed 90.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Jackson, Mississippi.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 4
 **Feasible**: No ❌
 - **Start Date**: 2026-04-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -135,20 +127,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2026-06-17: observed 92.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2026-06-19: observed 92.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 5
 **Feasible**: No ❌
 - **Start Date**: 2026-02-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -162,20 +152,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MIN_LOW] at Topeka, Kansas on 2026-02-13: observed 19.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Jefferson City, Missouri on 2026-02-14: observed 14.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Jefferson City, Missouri.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 6
 **Feasible**: No ❌
 - **Start Date**: 2026-12-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -188,13 +176,11 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2027-01-27: observed 9.5 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Columbia, South Carolina on 2027-01-28: observed 22.1 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Columbia, South Carolina.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 

@@ -13,7 +13,8 @@ via_cities:
   - Columbia, South Carolina
   - Raleigh, North Carolina
   - Richmond, Virginia
-  - Washington, DC
+  - name: Washington, DC
+    rest_days: 3
 
 daily_constraints:
   max_miles_per_day: 60.0

@@ -15,7 +15,7 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2026-03-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -35,7 +35,7 @@ ROUTE INFEASIBLE
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2026-11-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -56,7 +56,7 @@ ROUTE INFEASIBLE
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-10-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Desirability Scores**:
@@ -95,7 +95,7 @@ ROUTE INFEASIBLE
 ### Alternative 3
 **Feasible**: No ❌
 - **Start Date**: 2026-09-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -119,7 +119,7 @@ ROUTE INFEASIBLE
 ### Alternative 4
 **Feasible**: No ❌
 - **Start Date**: 2026-04-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -144,7 +144,7 @@ ROUTE INFEASIBLE
 ### Alternative 5
 **Feasible**: No ❌
 - **Start Date**: 2026-02-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -171,7 +171,7 @@ ROUTE INFEASIBLE
 ### Alternative 6
 **Feasible**: No ❌
 - **Start Date**: 2026-12-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:

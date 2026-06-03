@@ -15,7 +15,7 @@
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
@@ -45,7 +45,7 @@
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2027-04-09
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
@@ -75,7 +75,7 @@
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-04-23
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Violated Constraints**:
@@ -98,7 +98,7 @@ ROUTE INFEASIBLE
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3397.5 miles
+- **Total Distance**: 3397.5 miles (3118.8 mi paved, 278.6 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 166515 ft
 - **Desirability Scores**:
@@ -128,7 +128,7 @@ ROUTE INFEASIBLE
 ### Alternative 4
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3600.1 miles
+- **Total Distance**: 3600.1 miles (3344.8 mi paved, 255.4 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 179798 ft
 - **Desirability Scores**:
@@ -158,7 +158,7 @@ ROUTE INFEASIBLE
 ### Alternative 5
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3701.5 miles
+- **Total Distance**: 3701.5 miles (3514.4 mi paved, 187.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 171494 ft
 - **Desirability Scores**:
@@ -188,7 +188,7 @@ ROUTE INFEASIBLE
 ### Alternative 6
 **Feasible**: No ❌
 - **Start Date**: 2027-04-09
-- **Total Distance**: 3701.5 miles
+- **Total Distance**: 3701.5 miles (3514.4 mi paved, 187.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 171494 ft
 - **Violated Constraints**:

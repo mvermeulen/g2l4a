@@ -83,6 +83,24 @@ class ValidationError(Exception):
             "location": self.location
         }
 
+def extract_city_info(val: Any) -> Tuple[str, int]:
+    if isinstance(val, dict):
+        name = val.get("name")
+        if not name or not isinstance(name, str):
+            raise ValidationError("INVALID_CITY_FORMAT", "City dictionary must contain a 'name' string.")
+        rest_days = val.get("rest_days", 0)
+        try:
+            rest_days = int(rest_days)
+            if rest_days < 0:
+                raise ValueError()
+        except (ValueError, TypeError):
+            raise ValidationError("INVALID_REST_DAYS", f"Rest days must be a non-negative integer, got {rest_days}")
+        return name, rest_days
+    elif isinstance(val, str):
+        return val, 0
+    else:
+        raise ValidationError("INVALID_CITY_FORMAT", "City must be a string or a dictionary.")
+
 
 class RequestParser:
     """Parses, deep-merges, and validates planning requests into Itineraries."""
@@ -196,27 +214,53 @@ class RequestParser:
         """Parses a dictionary request payload, resolves types, and enforces constraints."""
         
         # 1. Check required top-level parameters
-        start_name = payload.get("start_city")
-        comp_name = payload.get("completion_city")
-        
-        if not start_name:
+        start_val = payload.get("start_city")
+        comp_val = payload.get("completion_city")
+
+        if not start_val:
             raise ValidationError("MISSING_START_CITY", "A starting city must be specified.")
-        if not comp_name:
+        if not comp_val:
             raise ValidationError("MISSING_COMPLETION_CITY", "A completion city must be specified.")
-            
+
         # 4. Hierarchical configuration load & merge
         effective_config = self.config_manager.get_effective_config(user_overrides=payload)
         db_path = effective_config.get("cache", {}).get("db_path", ".g2l4a_cache.db")
 
+        # Extract name and rest days
+        start_name, start_rest_days = extract_city_info(start_val)
+        comp_name, comp_rest_days = extract_city_info(comp_val)
+
         # 2. Resolve geocoding for cities
-        start_city = self._resolve_city(start_name, db_path=db_path)
-        completion_city = self._resolve_city(comp_name, db_path=db_path)
-        
-        via_names = payload.get("via_cities", [])
-        if not isinstance(via_names, list):
-            raise ValidationError("INVALID_VIA_CITIES", "via_cities must be a list of city name strings.")
-            
-        via_cities = [self._resolve_city(name, db_path=db_path) for name in via_names]
+        start_city_resolved = self._resolve_city(start_name, db_path=db_path)
+        start_city = City(
+            name=start_city_resolved.name,
+            latitude=start_city_resolved.latitude,
+            longitude=start_city_resolved.longitude,
+            rest_days=start_rest_days
+        )
+
+        completion_city_resolved = self._resolve_city(comp_name, db_path=db_path)
+        completion_city = City(
+            name=completion_city_resolved.name,
+            latitude=completion_city_resolved.latitude,
+            longitude=completion_city_resolved.longitude,
+            rest_days=comp_rest_days
+        )
+
+        via_vals = payload.get("via_cities", [])
+        if not isinstance(via_vals, list):
+            raise ValidationError("INVALID_VIA_CITIES", "via_cities must be a list of city name strings or dictionaries.")
+
+        via_cities = []
+        for val in via_vals:
+            v_name, v_rest_days = extract_city_info(val)
+            v_resolved = self._resolve_city(v_name, db_path=db_path)
+            via_cities.append(City(
+                name=v_resolved.name,
+                latitude=v_resolved.latitude,
+                longitude=v_resolved.longitude,
+                rest_days=v_rest_days
+            ))
         
         # 3. Parse date (fixed-date vs optimize-date)
         start_date: Optional[date] = None

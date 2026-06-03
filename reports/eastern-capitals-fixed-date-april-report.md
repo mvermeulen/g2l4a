@@ -11,7 +11,7 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2027-03-18
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -30,7 +30,7 @@ ROUTE INFEASIBLE
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2027-04-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -50,7 +50,7 @@ ROUTE INFEASIBLE
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-04-15
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:

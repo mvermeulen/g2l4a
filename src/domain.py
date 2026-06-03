@@ -7,6 +7,7 @@ class City:
     name: str
     latitude: float
     longitude: float
+    rest_days: int = 0
 
     def __post_init__(self):
         # Validate coordinate boundaries

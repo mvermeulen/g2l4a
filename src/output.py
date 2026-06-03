@@ -53,6 +53,17 @@ class OutputFormatter:
 
         while i < len(in_lines):
             line = in_lines[i]
+            stripped_line = line.strip()
+            if stripped_line == "<details>" or stripped_line == "</details>":
+                i += 1
+                continue
+
+            if stripped_line.startswith("<summary>") and stripped_line.endswith("</summary>"):
+                summary_text = stripped_line[len("<summary>"): -len("</summary>")]
+                out_lines.append(f"=== {summary_text} ===")
+                i += 1
+                continue
+
             if (
                 line.strip().startswith("|")
                 and line.strip().endswith("|")
@@ -120,46 +131,51 @@ class OutputFormatter:
 
             leg_dist = first.distance_miles * days
             leg_dist_str = f"{leg_dist:.1f}"
+            notes_str = ""
 
-            # Find matching leg to extract surface breakdown
-            matching_leg = None
-            for leg in itinerary.legs:
-                if leg.origin.name == first.origin.name and leg.destination.name == first.destination.name:
-                    matching_leg = leg
-                    break
+            if first.is_rest_day:
+                notes_str = f"Rest Day at {first.origin.name}"
+                leg_dist_str = "0.0"
+            else:
+                # Find matching leg to extract surface breakdown
+                matching_leg = None
+                for leg in itinerary.legs:
+                    if leg.origin.name == first.origin.name and leg.destination.name == first.destination.name:
+                        matching_leg = leg
+                        break
 
-            if matching_leg and matching_leg.surface_breakdown:
-                paved_keys = {'paved', 'asphalt', 'concrete', 'paving_stones', 'cobblestone', 'grade1'}
-                unpaved_keys = {'unpaved', 'compacted', 'fine_gravel', 'gravel', 'ground', 'dirt', 'grass', 'sand', 'grade2', 'grade3', 'grade4', 'grade5'}
+                if matching_leg and matching_leg.surface_breakdown:
+                    paved_keys = {'paved', 'asphalt', 'concrete', 'paving_stones', 'cobblestone', 'grade1'}
+                    unpaved_keys = {'unpaved', 'compacted', 'fine_gravel', 'gravel', 'ground', 'dirt', 'grass', 'sand', 'grade2', 'grade3', 'grade4', 'grade5'}
 
-                paved_miles = 0.0
-                gravel_miles = 0.0
-                for k, val in matching_leg.surface_breakdown.items():
-                    k_low = k.lower()
-                    if k_low in paved_keys:
-                        paved_miles += val
-                    elif k_low in unpaved_keys:
-                        gravel_miles += val
-                    else:
-                        if any(x in k_low for x in ['gravel', 'dirt', 'sand', 'unpaved', 'ground', 'grass', 'grade', 'compacted']):
-                            gravel_miles += val
-                        elif any(x in k_low for x in ['paved', 'asphalt', 'concrete', 'stone']):
+                    paved_miles = 0.0
+                    gravel_miles = 0.0
+                    for k, val in matching_leg.surface_breakdown.items():
+                        k_low = k.lower()
+                        if k_low in paved_keys:
                             paved_miles += val
+                        elif k_low in unpaved_keys:
+                            gravel_miles += val
+                        else:
+                            if any(x in k_low for x in ['gravel', 'dirt', 'sand', 'unpaved', 'ground', 'grass', 'grade', 'compacted']):
+                                gravel_miles += val
+                            elif any(x in k_low for x in ['paved', 'asphalt', 'concrete', 'stone']):
+                                paved_miles += val
 
-                if paved_miles > 0 or gravel_miles > 0:
-                    total_classified = paved_miles + gravel_miles
-                    if total_classified > 0:
-                        scale = leg_dist / total_classified
-                        paved_miles *= scale
-                        gravel_miles *= scale
+                    if paved_miles > 0 or gravel_miles > 0:
+                        total_classified = paved_miles + gravel_miles
+                        if total_classified > 0:
+                            scale = leg_dist / total_classified
+                            paved_miles *= scale
+                            gravel_miles *= scale
 
-                    parts = []
-                    if paved_miles >= 0.05:
-                        parts.append(f"{paved_miles:.1f} mi paved")
-                    if gravel_miles >= 0.05:
-                        parts.append(f"{gravel_miles:.1f} mi gravel")
-                    if parts:
-                        leg_dist_str = f"{leg_dist:.1f} mi ({', '.join(parts)})"
+                        parts = []
+                        if paved_miles >= 0.05:
+                            parts.append(f"{paved_miles:.1f} mi paved")
+                        if gravel_miles >= 0.05:
+                            parts.append(f"{gravel_miles:.1f} mi gravel")
+                        if parts:
+                            leg_dist_str = f"{leg_dist:.1f} mi ({', '.join(parts)})"
 
             grouped_rows.append([
                 first.date.strftime('%Y-%m-%d'),
@@ -173,7 +189,7 @@ class OutputFormatter:
                 f"{first.ascent_feet * days:.0f}",
                 distance_source,
                 weather_str,
-                "",
+                notes_str,
             ])
 
         current_group: List[Any] = [itinerary.schedule[0]]
@@ -193,7 +209,7 @@ class OutputFormatter:
         flush_group(current_group)
 
         for row in grouped_rows:
-            notes = ""
+            notes = row[11]
             lines.append(
                 f"| {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]} | {row[5]} | {row[6]} | {row[7]} | {row[8]} | {row[9]} | {row[10]} | {notes} |"
             )
@@ -215,7 +231,43 @@ class OutputFormatter:
 
         start_date_str = itinerary.start_date.isoformat() if itinerary.start_date else "N/A"
         lines.append(f"- **Start Date**: {start_date_str}")
-        lines.append(f"- **Total Distance**: {total_dist:.1f} miles")
+
+        # Aggregate surface breakdown
+        total_paved = 0.0
+        total_gravel = 0.0
+        paved_keys = {'paved', 'asphalt', 'concrete', 'paving_stones', 'cobblestone', 'grade1'}
+        unpaved_keys = {'unpaved', 'compacted', 'fine_gravel', 'gravel', 'ground', 'dirt', 'grass', 'sand', 'grade2', 'grade3', 'grade4', 'grade5'}
+
+        for leg in itinerary.legs:
+            if leg.surface_breakdown:
+                for k, val in leg.surface_breakdown.items():
+                    k_low = k.lower()
+                    if k_low in paved_keys:
+                        total_paved += val
+                    elif k_low in unpaved_keys:
+                        total_gravel += val
+                    else:
+                        if any(x in k_low for x in ['gravel', 'dirt', 'sand', 'unpaved', 'ground', 'grass', 'grade', 'compacted']):
+                            total_gravel += val
+                        elif any(x in k_low for x in ['paved', 'asphalt', 'concrete', 'stone']):
+                            total_paved += val
+
+        dist_str = f"{total_dist:.1f} miles"
+        if total_paved > 0 or total_gravel > 0:
+            total_classified = total_paved + total_gravel
+            if total_classified > 0:
+                scale = total_dist / total_classified
+                total_paved *= scale
+                total_gravel *= scale
+            parts = []
+            if total_paved >= 0.05:
+                parts.append(f"{total_paved:.1f} mi paved")
+            if total_gravel >= 0.05:
+                parts.append(f"{total_gravel:.1f} mi gravel")
+            if parts:
+                dist_str = f"{total_dist:.1f} miles ({', '.join(parts)})"
+
+        lines.append(f"- **Total Distance**: {dist_str}")
         lines.append(f"- **Distance Source**: {itinerary.routing_distance_source or 'unknown'}")
         lines.append(f"- **Total Climbing**: {total_climb:.0f} ft")
         

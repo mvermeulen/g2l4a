@@ -5,7 +5,8 @@ completion_city: Elgin, Texas
 start_date: "2026-05-30"
 
 via_cities:
-  - Manor, Texas
+  - name: Manor, Texas
+    rest_days: 2
 
 daily_constraints:
   max_miles_per_day: 60.0

@@ -17,7 +17,7 @@
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
@@ -26,8 +26,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.720
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                                    | Notes |
@@ -42,14 +41,13 @@
 | 2027-05-01 | 2027-05-08 | 8    | Charleston, West Virginia | Chicago, Illinois         | 63.6/day          | 2816/day        | 509.0 mi (507.6 mi paved, 1.3 mi gravel)  | 22529           | graphhopper     | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider)           |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2027-04-09
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Desirability Scores**:
@@ -58,8 +56,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.712
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                                    | Notes |
@@ -74,14 +71,13 @@
 | 2027-05-15 | 2027-05-22 | 8    | Charleston, West Virginia | Chicago, Illinois         | 63.6/day          | 2816/day        | 509.0 mi (507.6 mi paved, 1.3 mi gravel)  | 22529           | graphhopper     | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider)           |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-04-23
-- **Total Distance**: 2813.1 miles
+- **Total Distance**: 2813.1 miles (2673.0 mi paved, 140.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 139401 ft
 - **Violated Constraints**:
@@ -91,20 +87,18 @@
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-04: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-05: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3397.5 miles
+- **Total Distance**: 3397.5 miles (3118.8 mi paved, 278.6 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 166515 ft
 - **Desirability Scores**:
@@ -113,8 +107,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.641
   - **Total Desirability Score**: 0.570
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                                    | Notes |
@@ -129,14 +122,13 @@ ROUTE INFEASIBLE
 | 2027-05-10 | 2027-05-17 | 8    | Charleston, West Virginia | Chicago, Illinois         | 63.6/day          | 2816/day        | 509.0 mi (507.6 mi paved, 1.3 mi gravel)  | 22529           | graphhopper     | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider)           |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 4
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3600.1 miles
+- **Total Distance**: 3600.1 miles (3344.8 mi paved, 255.4 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 179798 ft
 - **Desirability Scores**:
@@ -145,8 +137,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.465
   - **Total Desirability Score**: 0.515
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                                    | Notes |
@@ -161,14 +152,13 @@ ROUTE INFEASIBLE
 | 2027-05-13 | 2027-05-20 | 8    | Charleston, West Virginia | Chicago, Illinois         | 63.6/day          | 2816/day        | 509.0 mi (507.6 mi paved, 1.3 mi gravel)  | 22529           | graphhopper     | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider)           |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 5
 **Feasible**: Yes
 - **Start Date**: 2027-03-26
-- **Total Distance**: 3701.5 miles
+- **Total Distance**: 3701.5 miles (3514.4 mi paved, 187.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 171494 ft
 - **Desirability Scores**:
@@ -177,8 +167,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.575
   - **Total Desirability Score**: 0.510
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                    | Destination               | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                         | Leg Ascent (ft) | Distance Source | Weather Context                                                    | Notes |
@@ -193,14 +182,13 @@ ROUTE INFEASIBLE
 | 2027-05-12 | 2027-05-20 | 9    | Topeka, Kansas            | Chicago, Illinois         | 68.6/day          | 2943/day        | 617.7 mi (563.6 mi paved, 54.1 mi gravel) | 26485           | graphhopper     | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider)           |       |
 +------------+------------+------+---------------------------+---------------------------+-------------------+-----------------+-------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 6
 **Feasible**: No ❌
 - **Start Date**: 2027-04-09
-- **Total Distance**: 3701.5 miles
+- **Total Distance**: 3701.5 miles (3514.4 mi paved, 187.1 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 171494 ft
 - **Violated Constraints**:
@@ -208,13 +196,11 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-02: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Chicago, Illinois on 2027-06-03: observed 93.9 vs threshold 92. Hint: Consider traveling during a cooler season or modifying the route to bypass Chicago, Illinois.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 

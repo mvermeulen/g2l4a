@@ -13,7 +13,7 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2023-04-15
-- **Total Distance**: 6791.3 miles
+- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 319321 ft
 - **Violated Constraints**:
@@ -50,20 +50,18 @@
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-27: observed 102.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2023-05-13
-- **Total Distance**: 6791.3 miles
+- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 319321 ft
 - **Violated Constraints**:
@@ -102,20 +100,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-29: observed 95.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-30: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2023-04-29
-- **Total Distance**: 6791.3 miles
+- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 319321 ft
 - **Violated Constraints**:
@@ -148,13 +144,11 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-08: observed 106.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-09: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 

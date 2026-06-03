@@ -13,46 +13,42 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2027-03-18
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-25: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2027-04-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-29: observed 92.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-06-05: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-04-15
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -68,13 +64,11 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2027-06-25: observed 95.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-07-03: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 

@@ -13,7 +13,7 @@
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -37,7 +37,7 @@
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -61,7 +61,7 @@
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -85,7 +85,7 @@
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -109,7 +109,7 @@
 ### Alternative 4
 **Feasible**: No ❌
 - **Start Date**: 2026-06-13
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Violated Constraints**:

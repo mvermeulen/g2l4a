@@ -17,26 +17,24 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2026-11-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-12-05: observed 19.6 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2026-02-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Desirability Scores**:
@@ -45,8 +43,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.638
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                 | Destination            | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                          | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -58,14 +55,13 @@ ROUTE INFEASIBLE
 | 2026-03-08 | 2026-03-19 | 12   | Santa Fe, New Mexico   | Austin, Texas          | 69.3/day          | 1956/day        | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472           | graphhopper     | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |       |
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-02-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Desirability Scores**:
@@ -74,8 +70,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.638
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                 | Destination            | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                          | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -87,14 +82,13 @@ ROUTE INFEASIBLE
 | 2026-03-08 | 2026-03-19 | 12   | Santa Fe, New Mexico   | Austin, Texas          | 69.3/day          | 1956/day        | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472           | graphhopper     | Avg High: 42.9-75.0°F, Low: 27.9-65.1°F (open-meteo) |       |
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 3
 **Feasible**: No ❌
 - **Start Date**: 2026-03-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Violated Constraints**:
@@ -102,20 +96,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-03-30: observed 18.9 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-03-31: observed 20.2 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 4
 **Feasible**: Yes
 - **Start Date**: 2026-10-01
-- **Total Distance**: 3053.6 miles
+- **Total Distance**: 3053.6 miles (2566.7 mi paved, 487.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 179914 ft
 - **Desirability Scores**:
@@ -124,8 +116,7 @@ ROUTE INFEASIBLE
   - Climbing Score: 0.915
   - **Total Desirability Score**: 0.610
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                 | Destination            | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)                          | Leg Ascent (ft) | Distance Source | Weather Context                                      | Notes |
@@ -137,14 +128,13 @@ ROUTE INFEASIBLE
 | 2026-11-07 | 2026-11-18 | 12   | Santa Fe, New Mexico   | Austin, Texas          | 69.3/day          | 1956/day        | 831.8 mi (683.3 mi paved, 148.5 mi gravel) | 23472           | graphhopper     | Avg High: 72.5-80.8°F, Low: 50.5-59.5°F (open-meteo) |       |
 +------------+------------+------+------------------------+------------------------+-------------------+-----------------+--------------------------------------------+-----------------+-----------------+------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 5
 **Feasible**: No ❌
 - **Start Date**: 2026-10-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Violated Constraints**:
@@ -157,20 +147,18 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Phoenix, Arizona on 2026-10-15: observed 93.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Phoenix, Arizona.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-10-28: observed 20.1 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
 ### Alternative 6
 **Feasible**: No ❌
 - **Start Date**: 2026-01-01
-- **Total Distance**: 2960.4 miles
+- **Total Distance**: 2960.4 miles (2454.4 mi paved, 506.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 162407 ft
 - **Violated Constraints**:
@@ -183,13 +171,11 @@ ROUTE INFEASIBLE
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-02-03: observed 6.2 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
   - [INFEASIBLE_WEATHER_MIN_LOW] at Santa Fe, New Mexico on 2026-02-04: observed -1.1 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Santa Fe, New Mexico.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 

@@ -15,7 +15,7 @@
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2027-02-15
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -34,7 +34,7 @@ ROUTE INFEASIBLE
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2027-02-01
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Desirability Scores**:
@@ -73,7 +73,7 @@ ROUTE INFEASIBLE
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2027-01-18
-- **Total Distance**: 4880.0 miles
+- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
@@ -92,7 +92,7 @@ ROUTE INFEASIBLE
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6833.7 miles
+- **Total Distance**: 6833.7 miles (6457.1 mi paved, 376.6 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 362377 ft
 - **Desirability Scores**:
@@ -131,7 +131,7 @@ ROUTE INFEASIBLE
 ### Alternative 4
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6995.2 miles
+- **Total Distance**: 6995.2 miles (6638.5 mi paved, 356.8 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 369458 ft
 - **Desirability Scores**:
@@ -170,7 +170,7 @@ ROUTE INFEASIBLE
 ### Alternative 5
 **Feasible**: Yes
 - **Start Date**: 2027-02-15
-- **Total Distance**: 6923.8 miles
+- **Total Distance**: 6923.8 miles (6463.8 mi paved, 460.0 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 371196 ft
 - **Desirability Scores**:
@@ -209,7 +209,7 @@ ROUTE INFEASIBLE
 ### Alternative 6
 **Feasible**: Yes
 - **Start Date**: 2027-02-01
-- **Total Distance**: 7118.0 miles
+- **Total Distance**: 7118.0 miles (6816.5 mi paved, 301.5 mi gravel)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 374305 ft
 - **Desirability Scores**:

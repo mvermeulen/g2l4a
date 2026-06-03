@@ -15,7 +15,7 @@
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -24,8 +24,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.628
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                                            | Destination                                       | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)       | Leg Ascent (ft) | Distance Source | Weather Context                                          | Notes |
@@ -34,14 +33,13 @@
 | 2026-05-17 | 2026-05-17 | 1    | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States       | 12.6/day          | 335/day         | 12.6 mi (12.6 mi paved) | 335             | graphhopper     | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |       |
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -50,8 +48,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.628
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                                            | Destination                                       | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)       | Leg Ascent (ft) | Distance Source | Weather Context                                          | Notes |
@@ -60,14 +57,13 @@
 | 2026-05-17 | 2026-05-17 | 1    | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States       | 12.6/day          | 335/day         | 12.6 mi (12.6 mi paved) | 335             | graphhopper     | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |       |
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -76,8 +72,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.601
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                                            | Destination                                       | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)       | Leg Ascent (ft) | Distance Source | Weather Context                                          | Notes |
@@ -86,14 +81,13 @@
 | 2026-05-31 | 2026-05-31 | 1    | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States       | 12.6/day          | 335/day         | 12.6 mi (12.6 mi paved) | 335             | graphhopper     | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |       |
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Desirability Scores**:
@@ -102,8 +96,7 @@
   - Climbing Score: 1.000
   - **Total Desirability Score**: 0.601
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 | Start Date | End Date   | Days | Origin                                            | Destination                                       | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi)       | Leg Ascent (ft) | Distance Source | Weather Context                                          | Notes |
@@ -112,27 +105,24 @@
 | 2026-05-31 | 2026-05-31 | 1    | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States       | 12.6/day          | 335/day         | 12.6 mi (12.6 mi paved) | 335             | graphhopper     | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |       |
 +------------+------------+------+---------------------------------------------------+---------------------------------------------------+-------------------+-----------------+-------------------------+-----------------+-----------------+----------------------------------------------------------+-------+
 
-</details>
 
 ---
 
 ### Alternative 4
 **Feasible**: No ❌
 - **Start Date**: 2026-06-13
-- **Total Distance**: 26.9 miles
+- **Total Distance**: 26.9 miles (26.9 mi paved)
 - **Distance Source**: graphhopper
 - **Total Climbing**: 1189 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Manor, Travis County, Texas, 78653, United States on 2026-06-13: observed 93.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Manor, Travis County, Texas, 78653, United States.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Elgin, Bastrop County, Texas, United States on 2026-06-14: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Elgin, Bastrop County, Texas, United States.
 
-<details>
-<summary>Click to view daily travel schedule</summary>
+=== Click to view daily travel schedule ===
 
 ROUTE INFEASIBLE
 
 
-</details>
 
 ---
 
