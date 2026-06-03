@@ -4,12 +4,12 @@
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
 | **Best Recommendation** | 2026-03-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Baseline / Optimal Route |
-| Alternative 1 | 2026-10-01 | Yes | 0.6285 | 0.4715 | 0.5545 | 1.0000 | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-10-01), same sequence |
-| Alternative 2 | 2026-04-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-04-01), same sequence |
+| Alternative 1 | 2026-11-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-11-01), same sequence |
+| Alternative 2 | 2026-10-01 | Yes | 0.6368 | 0.4715 | 0.5545 | 1.0000 | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-10-01), same sequence |
 | Alternative 3 | 2026-09-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-09-01), same sequence |
-| Alternative 4 | 2026-02-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-02-01), same sequence |
-| Alternative 5 | 2026-08-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-08-01), same sequence |
-| Alternative 6 | 2026-01-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-01-01), same sequence |
+| Alternative 4 | 2026-04-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-04-01), same sequence |
+| Alternative 5 | 2026-02-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-02-01), same sequence |
+| Alternative 6 | 2026-12-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2026-12-01), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
@@ -33,6 +33,27 @@ ROUTE INFEASIBLE
 ---
 
 ### Alternative 1
+**Feasible**: No ❌
+- **Start Date**: 2026-11-01
+- **Total Distance**: 4880.0 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 262682 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-13: observed 22.6 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-15: observed 14.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Harrisburg, Pennsylvania on 2027-01-16: observed 16.7 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Harrisburg, Pennsylvania.
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+ROUTE INFEASIBLE
+
+
+</details>
+
+---
+
+### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-10-01
 - **Total Distance**: 4880.0 miles
@@ -42,7 +63,7 @@ ROUTE INFEASIBLE
   - Weather Preference: 0.471
   - Distance Score: 0.554
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.628
+  - **Total Desirability Score**: 0.637
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -66,30 +87,6 @@ ROUTE INFEASIBLE
 | 2026-12-10 | 2026-12-12 | 3 | Raleigh, North Carolina | Richmond, Virginia | 65.2/day | 3602/day | 195.7 | 10806 | graphhopper | Avg High: 56.5-63.1°F, Low: 31.8-46.7°F (open-meteo) |  |
 | 2026-12-13 | 2026-12-16 | 4 | Richmond, Virginia | Harrisburg, Pennsylvania | 64.2/day | 4515/day | 257.0 | 18058 | graphhopper | Avg High: 36.7-50.2°F, Low: 30.0-38.0°F (open-meteo) |  |
 | 2026-12-17 | 2026-12-19 | 3 | Harrisburg, Pennsylvania | Washington, DC | 43.1/day | 3376/day | 129.2 | 10127 | graphhopper | Avg High: 43.8-50.2°F, Low: 31.9-36.8°F (open-meteo) |  |
-
-</details>
-
----
-
-### Alternative 2
-**Feasible**: No ❌
-- **Start Date**: 2026-04-01
-- **Total Distance**: 4880.0 miles
-- **Distance Source**: graphhopper
-- **Total Climbing**: 262682 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Nashville, Tennessee on 2026-05-18: observed 93.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Nashville, Tennessee.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2026-06-06: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2026-06-07: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2026-06-12: observed 91.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Harrisburg, Pennsylvania on 2026-06-13: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Harrisburg, Pennsylvania.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2026-06-19: observed 92.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-ROUTE INFEASIBLE
-
 
 </details>
 
@@ -121,6 +118,31 @@ ROUTE INFEASIBLE
 
 ### Alternative 4
 **Feasible**: No ❌
+- **Start Date**: 2026-04-01
+- **Total Distance**: 4880.0 miles
+- **Distance Source**: graphhopper
+- **Total Climbing**: 262682 ft
+- **Violated Constraints**:
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Nashville, Tennessee on 2026-05-18: observed 93.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Nashville, Tennessee.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2026-06-06: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2026-06-07: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2026-06-12: observed 91.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Harrisburg, Pennsylvania on 2026-06-13: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Harrisburg, Pennsylvania.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2026-06-17: observed 92.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2026-06-19: observed 92.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
+
+<details>
+<summary>Click to view daily travel schedule</summary>
+
+ROUTE INFEASIBLE
+
+
+</details>
+
+---
+
+### Alternative 5
+**Feasible**: No ❌
 - **Start Date**: 2026-02-01
 - **Total Distance**: 4880.0 miles
 - **Distance Source**: graphhopper
@@ -146,60 +168,21 @@ ROUTE INFEASIBLE
 
 ---
 
-### Alternative 5
-**Feasible**: No ❌
-- **Start Date**: 2026-08-01
-- **Total Distance**: 4880.0 miles
-- **Distance Source**: graphhopper
-- **Total Climbing**: 262682 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-01: observed 104.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-02: observed 106.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-03: observed 105.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-04: observed 106.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-05: observed 109.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-06: observed 107.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Oklahoma City, Oklahoma on 2026-08-07: observed 100.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Oklahoma City, Oklahoma.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Topeka, Kansas on 2026-08-08: observed 101.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Topeka, Kansas.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Topeka, Kansas on 2026-08-09: observed 102.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Topeka, Kansas.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Topeka, Kansas on 2026-08-10: observed 100.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Topeka, Kansas.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Topeka, Kansas on 2026-08-11: observed 97.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Topeka, Kansas.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Jefferson City, Missouri on 2026-08-16: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Jefferson City, Missouri.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Jackson, Mississippi on 2026-08-23: observed 96.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Jackson, Mississippi.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Jackson, Mississippi on 2026-08-24: observed 92.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Jackson, Mississippi.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Jackson, Mississippi on 2026-08-25: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Jackson, Mississippi.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Baton Rouge, Louisiana on 2026-08-28: observed 91.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Baton Rouge, Louisiana.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2026-09-04: observed 90.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2026-09-05: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Frankfort, Kentucky on 2026-09-21: observed 90.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Frankfort, Kentucky.
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-ROUTE INFEASIBLE
-
-
-</details>
-
----
-
 ### Alternative 6
 **Feasible**: No ❌
-- **Start Date**: 2026-01-01
+- **Start Date**: 2026-12-01
 - **Total Distance**: 4880.0 miles
 - **Distance Source**: graphhopper
 - **Total Climbing**: 262682 ft
 - **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Topeka, Kansas on 2026-01-08: observed 21.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Topeka, Kansas.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Little Rock, Arkansas on 2026-01-22: observed 22.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Little Rock, Arkansas.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Atlanta, Georgia on 2026-02-14: observed 20.9 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Atlanta, Georgia.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Nashville, Tennessee on 2026-02-19: observed 13.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Nashville, Tennessee.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2026-02-20: observed -6.0 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2026-02-21: observed 10.3 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2026-02-22: observed -7.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2026-02-23: observed 22.9 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2026-02-25: observed 20.1 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
-  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2026-02-27: observed 23.8 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2027-01-20: observed 22.6 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2027-01-22: observed 16.4 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Frankfort, Kentucky on 2027-01-23: observed 4.3 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Frankfort, Kentucky.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2027-01-24: observed -0.5 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2027-01-25: observed 15.9 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2027-01-26: observed 15.2 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Charleston, West Virginia on 2027-01-27: observed 9.5 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Charleston, West Virginia.
+  - [INFEASIBLE_WEATHER_MIN_LOW] at Columbia, South Carolina on 2027-01-28: observed 22.1 vs threshold 24. Hint: Consider traveling during a warmer season or modifying the route to bypass Columbia, South Carolina.
 
 <details>
 <summary>Click to view daily travel schedule</summary>

@@ -5,10 +5,10 @@
 | Option                  | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference                                           |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+----------------------------------------------------------+
 | **Best Recommendation** | 2026-11-01 | No ❌      | N/A         | N/A           | N/A            | N/A         | 2960.4 mi      | graphhopper     | 162407 ft   | Baseline / Optimal Route                                 |
-| Alternative 1           | 2026-02-01 | Yes       | 0.6395      | 0.5249        | 0.5110         | 1.0000      | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-02-01), same sequence         |
-| Alternative 2           | 2026-02-01 | Yes       | 0.6395      | 0.5249        | 0.5110         | 1.0000      | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-02-01), same sequence         |
+| Alternative 1           | 2026-02-01 | Yes       | 0.6381      | 0.5249        | 0.5110         | 1.0000      | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-02-01), same sequence         |
+| Alternative 2           | 2026-02-01 | Yes       | 0.6381      | 0.5249        | 0.5110         | 1.0000      | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-02-01), same sequence         |
 | Alternative 3           | 2026-03-01 | No ❌      | N/A         | N/A           | N/A            | N/A         | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-03-01), same sequence         |
-| Alternative 4           | 2026-10-01 | Yes       | 0.6162      | 0.5408        | 0.4803         | 0.9149      | 3053.6 mi      | graphhopper     | 179914 ft   | Different start date (2026-10-01) & alternative sequence |
+| Alternative 4           | 2026-10-01 | Yes       | 0.6101      | 0.5408        | 0.4803         | 0.9149      | 3053.6 mi      | graphhopper     | 179914 ft   | Different start date (2026-10-01) & alternative sequence |
 | Alternative 5           | 2026-10-01 | No ❌      | N/A         | N/A           | N/A            | N/A         | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-10-01), same sequence         |
 | Alternative 6           | 2026-01-01 | No ❌      | N/A         | N/A           | N/A            | N/A         | 2960.4 mi      | graphhopper     | 162407 ft   | Different start date (2026-01-01), same sequence         |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+----------------------------------------------------------+
@@ -43,7 +43,7 @@ ROUTE INFEASIBLE
   - Weather Preference: 0.525
   - Distance Score: 0.511
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.639
+  - **Total Desirability Score**: 0.638
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -72,7 +72,7 @@ ROUTE INFEASIBLE
   - Weather Preference: 0.525
   - Distance Score: 0.511
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.639
+  - **Total Desirability Score**: 0.638
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -122,7 +122,7 @@ ROUTE INFEASIBLE
   - Weather Preference: 0.541
   - Distance Score: 0.480
   - Climbing Score: 0.915
-  - **Total Desirability Score**: 0.616
+  - **Total Desirability Score**: 0.610
 
 <details>
 <summary>Click to view daily travel schedule</summary>

@@ -27,8 +27,8 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostat) |  |
-| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostat) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostatweatherprovider) |  |
+| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -51,8 +51,8 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostat) |  |
-| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostat) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostatweatherprovider) |  |
+| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -75,8 +75,8 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostat) |  |
-| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostat) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostatweatherprovider) |  |
+| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -99,8 +99,8 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostat) |  |
-| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostat) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostatweatherprovider) |  |
+| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.7/day | 336/day | 12.7 | 336 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |  |
 
 </details>
 

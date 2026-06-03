@@ -601,7 +601,7 @@
         "weather": 0.5249,
         "distance": 0.511,
         "hills": 1.0,
-        "total": 0.6395
+        "total": 0.6381
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -1177,7 +1177,7 @@
         "weather": 0.5249,
         "distance": 0.511,
         "hills": 1.0,
-        "total": 0.6395
+        "total": 0.6381
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -2354,7 +2354,7 @@
         "weather": 0.5408,
         "distance": 0.4803,
         "hills": 0.9149,
-        "total": 0.6162
+        "total": 0.6101
       },
       "routing_distance_source": "graphhopper",
       "legs": [
