@@ -29,14 +29,14 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostat, meteostatweatherprovider) |  |
+| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostatweatherprovider) |  |
 | 2027-04-03 | 2027-04-09 | 7 | Oklahoma City, Oklahoma | Topeka, Kansas | 53.5/day | 1787/day | 374.5 mi (356.5 mi paved, 18.0 mi gravel) | 12509 | graphhopper | Avg High: 55.4-73.4°F, Low: 32.6-44.6°F (meteostatweatherprovider) |  |
 | 2027-04-10 | 2027-04-13 | 4 | Topeka, Kansas | Jefferson City, Missouri | 57.7/day | 2910/day | 230.9 mi (167.1 mi paved, 63.9 mi gravel) | 11638 | graphhopper | Avg High: 67.4-70.3°F, Low: 44.2-47.7°F (meteostatweatherprovider) |  |
 | 2027-04-14 | 2027-04-19 | 6 | Jefferson City, Missouri | Little Rock, Arkansas | 57.1/day | 4152/day | 342.5 mi (311.5 mi paved, 31.1 mi gravel) | 24909 | graphhopper | Avg High: 74.2-81.8°F, Low: 53.5-61.5°F (meteostatweatherprovider) |  |
 | 2027-04-20 | 2027-04-26 | 7 | Little Rock, Arkansas | Nashville, Tennessee | 59.8/day | 2412/day | 418.5 mi (418.2 mi paved, 0.3 mi gravel) | 16882 | graphhopper | Avg High: 69.2-75.2°F, Low: 48.0-53.4°F (meteostatweatherprovider) |  |
 | 2027-04-27 | 2027-04-30 | 4 | Nashville, Tennessee | Frankfort, Kentucky | 57.1/day | 3572/day | 228.5 mi (228.5 mi paved) | 14287 | graphhopper | Avg High: 69.0-73.0°F, Low: 48.1-52.1°F (meteostatweatherprovider) |  |
 | 2027-05-01 | 2027-05-05 | 5 | Frankfort, Kentucky | Charleston, West Virginia | 51.3/day | 3929/day | 256.4 mi (256.0 mi paved, 0.3 mi gravel) | 19646 | graphhopper | Avg High: 70.9-76.8°F, Low: 50.3-51.7°F (meteostatweatherprovider) |  |
-| 2027-05-06 | 2027-05-14 | 9 | Charleston, West Virginia | Chicago, Illinois | 56.6/day | 2503/day | 509.0 mi (507.6 mi paved, 1.3 mi gravel) | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider, wikipedia) |  |
+| 2027-05-06 | 2027-05-14 | 9 | Charleston, West Virginia | Chicago, Illinois | 56.6/day | 2503/day | 509.0 mi (507.6 mi paved, 1.3 mi gravel) | 22529 | graphhopper | Avg High: 89.2°F, Low: 52.4°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -116,7 +116,7 @@ ROUTE INFEASIBLE
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostat, meteostatweatherprovider) |  |
+| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostatweatherprovider) |  |
 | 2027-04-03 | 2027-04-11 | 9 | Oklahoma City, Oklahoma | Jefferson City, Missouri | 54.3/day | 2395/day | 488.6 mi (471.9 mi paved, 16.7 mi gravel) | 21557 | graphhopper | Avg High: 62.6-70.3°F, Low: 40.7-47.7°F (meteostatweatherprovider) |  |
 | 2027-04-12 | 2027-04-24 | 13 | Jefferson City, Missouri | Charleston, West Virginia | 57.8/day | 2559/day | 751.0 mi (718.0 mi paved, 33.0 mi gravel) | 33266 | graphhopper | Avg High: 67.2-73.5°F, Low: 44.2-48.3°F (meteostatweatherprovider) |  |
 | 2027-04-25 | 2027-04-29 | 5 | Charleston, West Virginia | Frankfort, Kentucky | 51.1/day | 3880/day | 255.7 mi (255.3 mi paved, 0.3 mi gravel) | 19398 | graphhopper | Avg High: 69.0-71.0°F, Low: 48.1-52.0°F (meteostatweatherprovider) |  |
@@ -194,7 +194,7 @@ ROUTE INFEASIBLE
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostat, meteostatweatherprovider) |  |
+| 2027-03-26 | 2027-04-02 | 8 | Austin, Texas | Oklahoma City, Oklahoma | 56.6/day | 2125/day | 452.9 mi (446.9 mi paved, 6.0 mi gravel) | 17000 | graphhopper | Avg High: 65.3-71.5°F, Low: 43.1-46.9°F (meteostatweatherprovider) |  |
 | 2027-04-03 | 2027-04-09 | 7 | Oklahoma City, Oklahoma | Little Rock, Arkansas | 53.6/day | 2722/day | 375.4 mi (332.3 mi paved, 43.1 mi gravel) | 19054 | graphhopper | Avg High: 60.8-80.0°F, Low: 49.4-56.0°F (meteostatweatherprovider) |  |
 | 2027-04-10 | 2027-04-15 | 6 | Little Rock, Arkansas | Jefferson City, Missouri | 57.7/day | 4172/day | 346.2 mi (335.5 mi paved, 10.7 mi gravel) | 25032 | graphhopper | Avg High: 67.4-70.3°F, Low: 44.2-47.7°F (meteostatweatherprovider) |  |
 | 2027-04-16 | 2027-04-28 | 13 | Jefferson City, Missouri | Charleston, West Virginia | 57.8/day | 2559/day | 751.0 mi (718.0 mi paved, 33.0 mi gravel) | 33266 | graphhopper | Avg High: 67.2-73.5°F, Low: 44.2-48.3°F (meteostatweatherprovider) |  |
