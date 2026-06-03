@@ -112,6 +112,15 @@ class SQLiteCacheManager:
                     PRIMARY KEY (city_lat, city_lon, month, day)
                 )
             """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS geocoding_cache (
+                    query TEXT PRIMARY KEY,
+                    latitude REAL,
+                    longitude REAL,
+                    resolved_name TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
 
     def close(self):
         """Closes the thread-local database connection if it exists."""
@@ -339,4 +348,31 @@ class SQLiteCacheManager:
                     )
                     for item in climatology
                 ]
+            )
+
+    # --- Geocoding Cache Operations ---
+
+    def get_geocoding(self, query: str) -> Optional[Tuple[float, float, str]]:
+        """Retrieves a cached geocoding result if available."""
+        conn = self._get_conn()
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT latitude, longitude, resolved_name FROM geocoding_cache WHERE query = ?",
+            (query.strip().lower(),),
+        )
+        row = cursor.fetchone()
+        if row:
+            return row["latitude"], row["longitude"], row["resolved_name"]
+        return None
+
+    def save_geocoding(self, query: str, lat: float, lon: float, resolved_name: str):
+        """Saves a geocoding result into the cache."""
+        conn = self._get_conn()
+        with conn:
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO geocoding_cache (query, latitude, longitude, resolved_name)
+                VALUES (?, ?, ?, ?)
+                """,
+                (query.strip().lower(), lat, lon, resolved_name),
             )

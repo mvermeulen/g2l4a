@@ -49,12 +49,20 @@ def test_missing_required_fields():
     assert exc_info.value.code == "MISSING_COMPLETION_CITY"
 
 
-def test_invalid_cities_resolution():
+def test_invalid_cities_resolution(tmp_path, monkeypatch):
+    import io
+    def mock_urlopen(req, timeout=None):
+        return io.BytesIO(b"[]")
+    monkeypatch.setattr("urllib.request.urlopen", mock_urlopen)
+
     parser = RequestParser()
     
     payload_bad_city = {
         "start_city": "Atlantis",
-        "completion_city": "Washington, DC"
+        "completion_city": "Washington, DC",
+        "cache": {
+            "db_path": str(tmp_path / "test_invalid_cities_resolution.db")
+        }
     }
     with pytest.raises(ValidationError, match="City 'Atlantis' is not in the recognized geocoding registry") as exc_info:
         parser.parse_request_dict(payload_bad_city)
@@ -210,3 +218,53 @@ def test_validation_error_to_dict():
     assert d["code"] == "TEST_CODE"
     assert d["message"] == "test message"
     assert d["location"] == "test_loc"
+
+
+def test_dynamic_geocoding_success(tmp_path, monkeypatch):
+    import io
+    import json
+    from src.cache import SQLiteCacheManager
+
+    db_file = tmp_path / "test_geocoding.db"
+    payload = {
+        "start_city": "Elgin, Texas",
+        "completion_city": "Austin, Texas",
+        "cache": {
+            "db_path": str(db_file)
+        }
+    }
+
+    calls = []
+
+    def mock_urlopen(req, timeout=None):
+        url = req.full_url if hasattr(req, "full_url") else req
+        calls.append(url)
+        if "nominatim" in url:
+            res_content = json.dumps([
+                {
+                    "lat": "30.3495084",
+                    "lon": "-97.3711180",
+                    "display_name": "Elgin, Bastrop County, Texas, United States"
+                }
+            ])
+            return io.BytesIO(res_content.encode("utf-8"))
+        raise RuntimeError("Unexpected URL")
+
+    monkeypatch.setattr("urllib.request.urlopen", mock_urlopen)
+
+    parser = RequestParser()
+    itinerary, config = parser.parse_request_dict(payload)
+
+    assert itinerary.start_city.name == "Elgin, Bastrop County, Texas, United States"
+    assert itinerary.start_city.latitude == 30.3495084
+    assert itinerary.start_city.longitude == -97.3711180
+    assert len(calls) == 1
+
+    cache_mgr = SQLiteCacheManager(str(db_file))
+    cached = cache_mgr.get_geocoding("elgin, texas")
+    assert cached is not None
+    assert cached[0] == 30.3495084
+    assert cached[1] == -97.3711180
+    assert cached[2] == "Elgin, Bastrop County, Texas, United States"
+    cache_mgr.close()
+

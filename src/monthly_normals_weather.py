@@ -78,6 +78,40 @@ class StateCapitalMonthlyNormalsWeatherProvider(WeatherProvider):
                     "source": "wikipedia",
                 }
 
+        # Fallback to closest state capital
+        import math
+        from src.validation import CITY_REGISTRY
+
+        def cap_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+            R = 3958.8  # Earth radius in miles
+            phi1 = math.radians(lat1)
+            phi2 = math.radians(lat2)
+            dphi = math.radians(lat2 - lat1)
+            dlambda = math.radians(lon2 - lon1)
+            a = math.sin(dphi / 2.0)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2.0)**2
+            c = 2.0 * math.atan2(math.sqrt(a), math.sqrt(1.0 - a))
+            return R * c
+
+        closest_capital = None
+        min_dist = float("inf")
+        for cap_key, coords in CITY_REGISTRY.items():
+            if cap_key in self._monthly_by_alias:
+                dist = cap_distance(city.latitude, city.longitude, coords[0], coords[1])
+                if dist < min_dist:
+                    min_dist = dist
+                    closest_capital = cap_key
+
+        if closest_capital:
+            monthly = self._monthly_by_alias[closest_capital]
+            temps = monthly.get(travel_date.month)
+            if temps:
+                return {
+                    "high_temp_f": temps["high_temp_f"],
+                    "low_temp_f": temps["low_temp_f"],
+                    "is_forecast": False,
+                    "source": "wikipedia",
+                }
+
         return self.fallback_provider.get_weather_metrics(
             city, travel_date, current_time
         )

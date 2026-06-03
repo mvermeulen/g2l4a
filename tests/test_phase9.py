@@ -172,3 +172,28 @@ def test_open_meteo_falls_back_to_monthly_normals_before_mock(tmp_path, monkeypa
     assert metrics["high_temp_f"] == 105.1
     assert metrics["low_temp_f"] == 83.6
     assert metrics["is_forecast"] is False
+
+
+def test_state_capital_monthly_normals_provider_fallback_to_closest_capital(tmp_path):
+    dataset = {
+        "metadata": {"source": "test"},
+        "cities": {
+            "Phoenix, Arizona": {
+                "aliases": ["Phoenix, Arizona", "phoenix, arizona"],
+                "monthly": {
+                    "8": {"high_temp_f": 105.1, "low_temp_f": 83.6}
+                },
+            }
+        },
+    }
+    dataset_path = tmp_path / "state_capitals_monthly_normals.json"
+    dataset_path.write_text(json.dumps(dataset), encoding="utf-8")
+
+    provider = StateCapitalMonthlyNormalsWeatherProvider(dataset_path=str(dataset_path))
+    city = City(name="Tempe, Arizona", latitude=33.4255, longitude=-111.9400)
+
+    metrics = provider.get_weather_metrics(city, date(2026, 8, 18), date(2026, 8, 1))
+    assert metrics["high_temp_f"] == 105.1
+    assert metrics["low_temp_f"] == 83.6
+    assert metrics["is_forecast"] is False
+    assert metrics["source"] == "wikipedia"

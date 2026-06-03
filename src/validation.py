@@ -4,6 +4,7 @@ from datetime import datetime, date
 from typing import Dict, Any, List, Tuple, Optional
 from src.domain import City, Itinerary, ScoringWeights
 from src.config import ConfigManager
+from src.cache import SQLiteCacheManager
 
 # Standardized offline geocoding registry for test fixtures and state capitals
 CITY_REGISTRY: Dict[str, Tuple[float, float]] = {
@@ -89,16 +90,107 @@ class RequestParser:
     def __init__(self, system_defaults_path: Optional[str] = None):
         self.config_manager = ConfigManager(system_defaults_path=system_defaults_path)
 
-    def _resolve_city(self, name: str) -> City:
+    def _resolve_city(self, name: str, db_path: Optional[str] = None) -> City:
         normalized = name.strip().lower()
-        if normalized not in CITY_REGISTRY:
-            raise ValidationError(
-                code="INVALID_CITY",
-                message=f"City '{name}' is not in the recognized geocoding registry.",
-                location=name
-            )
-        lat, lon = CITY_REGISTRY[normalized]
-        return City(name=name, latitude=lat, longitude=lon)
+        if normalized in CITY_REGISTRY:
+            lat, lon = CITY_REGISTRY[normalized]
+            return City(name=name, latitude=lat, longitude=lon)
+
+        # Dynamic geocoding
+        actual_db_path = db_path or ".g2l4a_cache.db"
+        cache_mgr = SQLiteCacheManager(actual_db_path)
+        try:
+            cached = cache_mgr.get_geocoding(normalized)
+            if cached:
+                lat, lon, resolved_name = cached
+                return City(name=resolved_name, latitude=lat, longitude=lon)
+        finally:
+            cache_mgr.close()
+
+        import urllib.parse
+        import urllib.request
+        import json
+
+        lat, lon, resolved_name = None, None, None
+
+        # 1. Query Nominatim
+        try:
+            quoted_query = urllib.parse.quote(name.strip())
+            url = f"https://nominatim.openstreetmap.org/search?q={quoted_query}&format=json&limit=1"
+            req = urllib.request.Request(url, headers={"User-Agent": "g2l4a-client"})
+            with urllib.request.urlopen(req, timeout=5) as response:
+                data = json.loads(response.read().decode("utf-8"))
+                if data and isinstance(data, list):
+                    lat = float(data[0]["lat"])
+                    lon = float(data[0]["lon"])
+                    resolved_name = data[0].get("display_name", name)
+        except Exception:
+            pass
+
+        # 2. Fallback to Open-Meteo Geocoding
+        if lat is None or lon is None:
+            try:
+                parts = [p.strip() for p in name.split(",")]
+                city_part = parts[0]
+                quoted_city = urllib.parse.quote(city_part)
+                url = f"https://geocoding-api.open-meteo.com/v1/search?name={quoted_city}&count=20"
+                req = urllib.request.Request(url, headers={"User-Agent": "g2l4a-client"})
+                with urllib.request.urlopen(req, timeout=5) as response:
+                    res_data = json.loads(response.read().decode("utf-8"))
+                    results = res_data.get("results", [])
+                    if results:
+                        best_match = None
+                        if len(parts) > 1:
+                            state_query = parts[1].lower()
+                            US_STATES = {
+                                "al": "alabama", "ak": "alaska", "az": "arizona", "ar": "arkansas", "ca": "california",
+                                "co": "colorado", "ct": "connecticut", "de": "delaware", "fl": "florida", "ga": "georgia",
+                                "hi": "hawaii", "id": "idaho", "il": "illinois", "in": "indiana", "ia": "iowa",
+                                "ks": "kansas", "ky": "kentucky", "la": "louisiana", "me": "maine", "md": "maryland",
+                                "ma": "massachusetts", "mi": "michigan", "mn": "minnesota", "ms": "mississippi",
+                                "mo": "missouri", "mt": "montana", "ne": "nebraska", "nv": "nevada", "nh": "new hampshire",
+                                "nj": "new jersey", "nm": "new mexico", "ny": "new york", "nc": "north carolina",
+                                "nd": "north dakota", "oh": "ohio", "ok": "oklahoma", "or": "oregon", "pa": "pennsylvania",
+                                "ri": "rhode island", "sc": "south carolina", "sd": "south dakota", "tn": "tennessee",
+                                "tx": "texas", "ut": "utah", "vt": "vermont", "va": "virginia", "wa": "washington",
+                                "wv": "west virginia", "wi": "wisconsin", "wy": "wyoming", "dc": "district of columbia"
+                            }
+                            full_state_name = US_STATES.get(state_query, state_query)
+                            for res in results:
+                                admin1 = str(res.get("admin1", "")).lower()
+                                if (admin1 == full_state_name or admin1 == state_query) and res.get("country_code") == "US":
+                                    best_match = res
+                                    break
+                        if not best_match:
+                            best_match = results[0]
+                        lat = float(best_match["latitude"])
+                        lon = float(best_match["longitude"])
+                        admin1 = best_match.get("admin1")
+                        country = best_match.get("country")
+                        parts_resolved = [best_match["name"]]
+                        if admin1:
+                            parts_resolved.append(admin1)
+                        if country:
+                            parts_resolved.append(country)
+                        resolved_name = ", ".join(parts_resolved)
+            except Exception:
+                pass
+
+        if lat is not None and lon is not None:
+            if resolved_name is None:
+                resolved_name = name
+            cache_mgr = SQLiteCacheManager(actual_db_path)
+            try:
+                cache_mgr.save_geocoding(normalized, lat, lon, resolved_name)
+            finally:
+                cache_mgr.close()
+            return City(name=resolved_name, latitude=lat, longitude=lon)
+
+        raise ValidationError(
+            code="INVALID_CITY",
+            message=f"City '{name}' is not in the recognized geocoding registry and could not be resolved online.",
+            location=name
+        )
 
     def parse_request_dict(self, payload: Dict[str, Any]) -> Tuple[Itinerary, Dict[str, Any]]:
         """Parses a dictionary request payload, resolves types, and enforces constraints."""
@@ -112,15 +204,19 @@ class RequestParser:
         if not comp_name:
             raise ValidationError("MISSING_COMPLETION_CITY", "A completion city must be specified.")
             
+        # 4. Hierarchical configuration load & merge
+        effective_config = self.config_manager.get_effective_config(user_overrides=payload)
+        db_path = effective_config.get("cache", {}).get("db_path", ".g2l4a_cache.db")
+
         # 2. Resolve geocoding for cities
-        start_city = self._resolve_city(start_name)
-        completion_city = self._resolve_city(comp_name)
+        start_city = self._resolve_city(start_name, db_path=db_path)
+        completion_city = self._resolve_city(comp_name, db_path=db_path)
         
         via_names = payload.get("via_cities", [])
         if not isinstance(via_names, list):
             raise ValidationError("INVALID_VIA_CITIES", "via_cities must be a list of city name strings.")
             
-        via_cities = [self._resolve_city(name) for name in via_names]
+        via_cities = [self._resolve_city(name, db_path=db_path) for name in via_names]
         
         # 3. Parse date (fixed-date vs optimize-date)
         start_date: Optional[date] = None
@@ -143,9 +239,6 @@ class RequestParser:
                      message="Start date must be a YYYY-MM-DD date or string.",
                      location="start_date"
                  )
-        
-        # 4. Hierarchical configuration load & merge
-        effective_config = self.config_manager.get_effective_config(user_overrides=payload)
         
         # 5. Enforce Solver Constraints (City count limits)
         max_cities = effective_config.get("solver_constraints", {}).get("max_total_cities", 50)
