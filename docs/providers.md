@@ -147,6 +147,12 @@ Notes:
 - Distances come from `paths[0].distance` (meters) and are converted to miles.
 - Climbing comes from `paths[0].ascend` (meters) and is converted to feet.
 
+### Road Surface Classification & Gravel Avoidance
+
+The GraphHopper provider queries segment-level path details (`road_class`, `surface`, `track_type`) using HTTP POST requests.
+- **Segment Breakdown**: The daily travel schedule markdown and text reports display exact paved/gravel mileage breakdowns (e.g. `12.7 mi (12.0 mi paved, 0.6 mi gravel)`).
+- **Gravel Avoidance**: If the routing preference `avoid_gravel: true` is configured, the provider submits a custom routing model to GraphHopper that scales priority by `0.1` for unpaved surfaces and track grades 2–5, dynamically rerouting to favor paved roads.
+
 ### Route Cache Provenance and Purge
 
 Routing cache rows now store a `source` tag in addition to `routing_engine`.

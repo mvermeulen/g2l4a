@@ -61,8 +61,9 @@ Below is the absolute default schema used by the system when a setting is omitte
 | | `weights.hills` | float | `0.25` | Weight for lower elevation gain (must sum to 1). |
 | **Routing** | `avoid_highways` | bool | `true` | Mirror 'avoid highways' preference to exclude freeways. |
 | | `avoid_tolls` | bool | `true` | Disfavor toll roads by default to favor bike legal roads. |
+| | `avoid_gravel` | bool | `false` | Prefer paved surfaces by penalizing gravel and unpaved segments. |
 | | `allow_ferries` | bool | `true` | Permit necessary ferry connections when generating routes. |
-| | `allow_borders` | bool | `true` | Permit international border segments. |
+| | `allow_international_borders` | bool | `true` | Permit international border segments. |
 | **Output** | `alternatives_count` | int | `4` | Number of alternative itineraries to generate in addition to the best match. |
 | | `gpx` | bool | `true` | Write a GPX file for GraphHopper-backed routes into `gpx/`. |
 | | `gpx_timeout_seconds` | float | `90.0` | Hard timeout budget for GPX export before it is skipped. |
