@@ -19,8 +19,8 @@ defaults:
 
   scoring:
     weights:
-      weather: 0.45
-      distance: 0.30
+      weather: 0.35
+      distance: 0.40
       hills: 0.25
     comfort:
       ideal_temp_f: 70.0

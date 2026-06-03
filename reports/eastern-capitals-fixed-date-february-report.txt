@@ -5,12 +5,12 @@
 | Option                  | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference                                           |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+----------------------------------------------------------+
 | **Best Recommendation** | 2027-02-15 | No ❌      | N/A         | N/A           | N/A            | N/A         | 4880.0 mi      | graphhopper     | 262682 ft   | Baseline / Optimal Route                                 |
-| Alternative 1           | 2027-02-01 | Yes       | 0.6795      | 0.5847        | 0.5545         | 1.0000      | 4880.0 mi      | graphhopper     | 262682 ft   | Different start date (2027-02-01), same sequence         |
+| Alternative 1           | 2027-02-01 | Yes       | 0.6764      | 0.5847        | 0.5545         | 1.0000      | 4880.0 mi      | graphhopper     | 262682 ft   | Different start date (2027-02-01), same sequence         |
 | Alternative 2           | 2027-01-18 | No ❌      | N/A         | N/A           | N/A            | N/A         | 4880.0 mi      | graphhopper     | 262682 ft   | Different start date (2027-01-18), same sequence         |
-| Alternative 3           | 2027-02-15 | Yes       | 0.5385      | 0.6817        | 0.2828         | 0.5876      | 6833.7 mi      | graphhopper     | 362377 ft   | Alternative via-city sequence, same date                 |
-| Alternative 4           | 2027-02-15 | Yes       | 0.5231      | 0.6723        | 0.2699         | 0.5583      | 6995.2 mi      | graphhopper     | 369458 ft   | Alternative via-city sequence, same date                 |
-| Alternative 5           | 2027-02-15 | Yes       | 0.5184      | 0.6621        | 0.2755         | 0.5511      | 6923.8 mi      | graphhopper     | 371196 ft   | Alternative via-city sequence, same date                 |
-| Alternative 6           | 2027-02-01 | Yes       | 0.5175      | 0.6771        | 0.2606         | 0.5383      | 7118.0 mi      | graphhopper     | 374305 ft   | Different start date (2027-02-01) & alternative sequence |
+| Alternative 3           | 2027-02-15 | Yes       | 0.4817      | 0.6817        | 0.2828         | 0.5200      | 6833.7 mi      | graphhopper     | 362377 ft   | Alternative via-city sequence, same date                 |
+| Alternative 4           | 2027-02-15 | Yes       | 0.4647      | 0.6723        | 0.2699         | 0.4859      | 6995.2 mi      | graphhopper     | 369458 ft   | Alternative via-city sequence, same date                 |
+| Alternative 5           | 2027-02-15 | Yes       | 0.4613      | 0.6621        | 0.2755         | 0.4775      | 6923.8 mi      | graphhopper     | 371196 ft   | Alternative via-city sequence, same date                 |
+| Alternative 6           | 2027-02-01 | Yes       | 0.4568      | 0.6771        | 0.2606         | 0.4625      | 7118.0 mi      | graphhopper     | 374305 ft   | Different start date (2027-02-01) & alternative sequence |
 +-------------------------+------------+-----------+-------------+---------------+----------------+-------------+----------------+-----------------+-------------+----------------------------------------------------------+
 
 ## Detailed Recommendations
@@ -43,7 +43,7 @@ ROUTE INFEASIBLE
   - Weather Preference: 0.585
   - Distance Score: 0.554
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.679
+  - **Total Desirability Score**: 0.676
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -102,8 +102,8 @@ ROUTE INFEASIBLE
 - **Desirability Scores**:
   - Weather Preference: 0.682
   - Distance Score: 0.283
-  - Climbing Score: 0.588
-  - **Total Desirability Score**: 0.538
+  - Climbing Score: 0.520
+  - **Total Desirability Score**: 0.482
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -143,8 +143,8 @@ ROUTE INFEASIBLE
 - **Desirability Scores**:
   - Weather Preference: 0.672
   - Distance Score: 0.270
-  - Climbing Score: 0.558
-  - **Total Desirability Score**: 0.523
+  - Climbing Score: 0.486
+  - **Total Desirability Score**: 0.465
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -184,8 +184,8 @@ ROUTE INFEASIBLE
 - **Desirability Scores**:
   - Weather Preference: 0.662
   - Distance Score: 0.276
-  - Climbing Score: 0.551
-  - **Total Desirability Score**: 0.518
+  - Climbing Score: 0.477
+  - **Total Desirability Score**: 0.461
 
 <details>
 <summary>Click to view daily travel schedule</summary>
@@ -225,8 +225,8 @@ ROUTE INFEASIBLE
 - **Desirability Scores**:
   - Weather Preference: 0.677
   - Distance Score: 0.261
-  - Climbing Score: 0.538
-  - **Total Desirability Score**: 0.517
+  - Climbing Score: 0.463
+  - **Total Desirability Score**: 0.457
 
 <details>
 <summary>Click to view daily travel schedule</summary>

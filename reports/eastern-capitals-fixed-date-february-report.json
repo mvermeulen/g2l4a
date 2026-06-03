@@ -1072,7 +1072,7 @@
         "weather": 0.5847,
         "distance": 0.5545,
         "hills": 1.0,
-        "total": 0.6795
+        "total": 0.6764
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -3150,8 +3150,8 @@
       "scores": {
         "weather": 0.6817,
         "distance": 0.2828,
-        "hills": 0.5876,
-        "total": 0.5385
+        "hills": 0.52,
+        "total": 0.4817
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -4504,8 +4504,8 @@
       "scores": {
         "weather": 0.6723,
         "distance": 0.2699,
-        "hills": 0.5583,
-        "total": 0.5231
+        "hills": 0.4859,
+        "total": 0.4647
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -5880,8 +5880,8 @@
       "scores": {
         "weather": 0.6621,
         "distance": 0.2755,
-        "hills": 0.5511,
-        "total": 0.5184
+        "hills": 0.4775,
+        "total": 0.4613
       },
       "routing_distance_source": "graphhopper",
       "legs": [
@@ -7245,8 +7245,8 @@
       "scores": {
         "weather": 0.6771,
         "distance": 0.2606,
-        "hills": 0.5383,
-        "total": 0.5175
+        "hills": 0.4625,
+        "total": 0.4568
       },
       "routing_distance_source": "graphhopper",
       "legs": [
