@@ -17,6 +17,10 @@ weather_constraints:
   max_avg_high_f: 92
   min_avg_low_f: 24
 
+daily_constraints:
+  max_miles_per_day: 60.0
+  max_climb_ft_per_day: 5000.0
+
 weather_provider:
   name: meteostat
 
