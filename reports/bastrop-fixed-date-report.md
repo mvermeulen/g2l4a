@@ -3,29 +3,29 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2026-05-16 | Yes | 0.5746 | 0.2650 | 0.5797 | 1.0000 | 44.9 mi | graphhopper | 1737 ft | Baseline / Optimal Route |
-| Alternative 1 | 2026-05-30 | Yes | 0.5151 | 0.0950 | 0.5797 | 1.0000 | 44.9 mi | graphhopper | 1737 ft | Different start date (2026-05-30), same sequence |
-| Alternative 2 | 2026-06-13 | No ❌ | N/A | N/A | N/A | N/A | 44.9 mi | graphhopper | 1737 ft | Different start date (2026-06-13), same sequence |
+| **Best Recommendation** | 2026-05-16 | Yes | 0.6581 | 0.2650 | 0.7883 | 1.0000 | 38.5 mi | graphhopper | 1052 ft | Baseline / Optimal Route |
+| Alternative 1 | 2026-05-30 | Yes | 0.5986 | 0.0950 | 0.7883 | 1.0000 | 38.5 mi | graphhopper | 1052 ft | Different start date (2026-05-30), same sequence |
+| Alternative 2 | 2026-06-13 | No ❌ | N/A | N/A | N/A | N/A | 38.5 mi | graphhopper | 1052 ft | Different start date (2026-06-13), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 44.9 miles (44.9 mi paved)
+- **Total Distance**: 38.5 miles (38.5 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1737 ft
+- **Total Climbing**: 1052 ft
 - **Desirability Scores**:
   - Weather Preference: 0.265
-  - Distance Score: 0.580
+  - Distance Score: 0.788
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.575
+  - **Total Desirability Score**: 0.658
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1737/day | 44.9 mi (44.9 mi paved) | 1737 | graphhopper | Avg High: 84.7°F, Low: 66.7°F (meteostat) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 38.5/day | 1052/day | 38.5 mi (38.5 mi paved) | 1052 | graphhopper | Avg High: 84.7°F, Low: 66.7°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -34,21 +34,21 @@
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 44.9 miles (44.9 mi paved)
+- **Total Distance**: 38.5 miles (38.5 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1737 ft
+- **Total Climbing**: 1052 ft
 - **Desirability Scores**:
   - Weather Preference: 0.095
-  - Distance Score: 0.580
+  - Distance Score: 0.788
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.515
+  - **Total Desirability Score**: 0.599
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1737/day | 44.9 mi (44.9 mi paved) | 1737 | graphhopper | Avg High: 88.1°F, Low: 70.4°F (meteostat) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 38.5/day | 1052/day | 38.5 mi (38.5 mi paved) | 1052 | graphhopper | Avg High: 88.1°F, Low: 70.4°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -57,9 +57,9 @@
 ### Alternative 2
 **Feasible**: No ❌
 - **Start Date**: 2026-06-13
-- **Total Distance**: 44.9 miles (44.9 mi paved)
+- **Total Distance**: 38.5 miles (38.5 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1737 ft
+- **Total Climbing**: 1052 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Bastrop, Bastrop County, Texas, United States on 2026-06-13: observed 93.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bastrop, Bastrop County, Texas, United States.
 

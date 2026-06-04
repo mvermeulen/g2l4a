@@ -37,7 +37,7 @@ class GraphHopperRoutingProvider(RoutingProvider):
         return R * c
 
     def _build_post_body(self, origin: City, destination: City, preferences: Dict[str, Any], include_elevation: bool = True) -> Dict[str, Any]:
-        body = {
+        body: Dict[str, Any] = {
             "points": [
                 [origin.longitude, origin.latitude],
                 [destination.longitude, destination.latitude]
@@ -53,15 +53,22 @@ class GraphHopperRoutingProvider(RoutingProvider):
         else:
             body["elevation"] = False
 
+        priority = []
         if preferences.get("avoid_gravel", False):
+            priority.append({
+                "if": "surface == GRAVEL || surface == UNPAVED || surface == DIRT || surface == SAND || track_type == GRADE2 || track_type == GRADE3 || track_type == GRADE4 || track_type == GRADE5",
+                "multiply_by": 0.1
+            })
+        if preferences.get("avoid_highways", False):
+            priority.append({
+                "if": "road_class == MOTORWAY || road_class == TRUNK",
+                "multiply_by": 0.05
+            })
+
+        if priority:
             body["ch.disable"] = True
             body["custom_model"] = {
-                "priority": [
-                    {
-                        "if": "surface == GRAVEL || surface == UNPAVED || surface == DIRT || surface == SAND || track_type == GRADE2 || track_type == GRADE3 || track_type == GRADE4 || track_type == GRADE5",
-                        "multiply_by": 0.1
-                    }
-                ]
+                "priority": priority
             }
 
         return body
