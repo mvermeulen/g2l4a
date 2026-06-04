@@ -87,8 +87,48 @@ class GraphHopperRoutingProvider(RoutingProvider):
             ) from exc
         return json.loads(payload)
 
+    def _build_geodesic_fallback_leg(self, origin: City, destination: City, preferences: Dict[str, Any]) -> Leg:
+        distance_miles = max(1.0, self._haversine_miles(origin.latitude, origin.longitude, destination.latitude, destination.longitude))
+        return Leg(
+            origin=origin,
+            destination=destination,
+            distance_miles=distance_miles,
+            ascent_feet=0.0,
+            is_bicycle_legal=True,
+            avoided_highways=preferences.get("avoid_highways", True),
+            avoided_tolls=preferences.get("avoid_tolls", True),
+            allowed_ferries=preferences.get("allow_ferries", True),
+            allowed_borders=preferences.get("allow_international_borders", True),
+            road_class_breakdown={},
+            surface_breakdown={},
+        )
+
     def get_leg_metrics(self, origin: City, destination: City, preferences: Dict[str, Any]) -> Leg:
-        payload = self._route_request(origin, destination, preferences)
+        try:
+            payload = self._route_request(origin, destination, preferences)
+        except RuntimeError as exc:
+            err = str(exc)
+            if "PointDistanceExceededException" in err or "too far from" in err:
+                return self._build_geodesic_fallback_leg(origin, destination, preferences)
+            raise
+        except TimeoutError as exc:
+            # Fallback for long cross-country bike routes where custom-model expansion can time out.
+            if preferences.get("avoid_gravel", False):
+                fallback_preferences = dict(preferences)
+                fallback_preferences["avoid_gravel"] = False
+                try:
+                    payload = self._route_request(origin, destination, fallback_preferences)
+                except TimeoutError as retry_exc:
+                    raise RuntimeError(
+                        f"GraphHopper timed out for {origin.name} -> {destination.name} "
+                        f"(profile={self.profile}, timeout={self.timeout_seconds}s, "
+                        "including fallback without avoid_gravel)"
+                    ) from retry_exc
+            else:
+                raise RuntimeError(
+                    f"GraphHopper timed out for {origin.name} -> {destination.name} "
+                    f"(profile={self.profile}, timeout={self.timeout_seconds}s)"
+                ) from exc
         paths = payload.get("paths", [])
         if not paths:
             hints = payload.get("hints") or payload.get("message") or "unknown routing error"

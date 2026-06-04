@@ -3,154 +3,105 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2023-04-15 | No ❌ | N/A | N/A | N/A | N/A | 6791.3 mi | graphhopper | 319321 ft | Baseline / Optimal Route |
-| Alternative 1 | 2023-05-13 | No ❌ | N/A | N/A | N/A | N/A | 6791.3 mi | graphhopper | 319321 ft | Different start date (2023-05-13), same sequence |
-| Alternative 2 | 2023-04-29 | No ❌ | N/A | N/A | N/A | N/A | 6791.3 mi | graphhopper | 319321 ft | Different start date (2023-04-29), same sequence |
+| **Best Recommendation** | 2023-04-29 | Yes | 0.5841 | 0.3930 | 0.4915 | 1.0000 | 7262.6 mi | graphhopper | 318462 ft | Baseline / Optimal Route |
+| Alternative 1 | 2023-04-15 | Yes | 0.5737 | 0.3631 | 0.4915 | 1.0000 | 7262.6 mi | graphhopper | 318462 ft | Different start date (2023-04-15), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
-**Feasible**: No ❌
-- **Start Date**: 2023-04-15
-- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
+**Feasible**: Yes
+- **Start Date**: 2023-04-29
+- **Total Distance**: 7262.6 miles (7147.2 mi paved, 115.4 mi gravel)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 319321 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-23: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-24: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-06-25: observed 91.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-26: observed 102.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-27: observed 101.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-28: observed 94.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-06-29: observed 105.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-06-30: observed 91.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-01: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-02: observed 91.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-03: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-05: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-06: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-09: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-11: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-12: observed 96.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-13: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-14: observed 94.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-15: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-16: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-17: observed 97.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-18: observed 96.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-19: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-20: observed 98.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-21: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-22: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-23: observed 92.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-24: observed 92.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-07-25: observed 95.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-26: observed 104.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-27: observed 102.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-07-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+- **Total Climbing**: 318462 ft
+- **Desirability Scores**:
+  - Weather Preference: 0.393
+  - Distance Score: 0.491
+  - Climbing Score: 1.000
+  - **Total Desirability Score**: 0.584
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-ROUTE INFEASIBLE
-
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2023-04-29 | 2023-04-29 | 1 | Washington, DC | Annapolis, Maryland | 39.6/day | 2575/day | 39.6 mi (39.6 mi paved) | 2575 | graphhopper | Avg High: 55.9°F, Low: 45.3°F (open-meteo) |  |
+| 2023-04-30 | 2023-05-02 | 3 | Annapolis, Maryland | Dover, Delaware | 46.8/day | 2594/day | 140.3 mi (140.3 mi paved) | 7783 | graphhopper | Avg High: 60.0-69.9°F, Low: 44.5-47.1°F (open-meteo) |  |
+| 2023-05-03 | 2023-05-05 | 3 | Dover, Delaware | Trenton, New Jersey | 43.7/day | 1710/day | 131.0 mi (127.1 mi paved, 3.9 mi gravel) | 5129 | graphhopper | Avg High: 73.5-78.7°F, Low: 55.9-65.5°F (open-meteo) |  |
+| 2023-05-06 | 2023-05-09 | 4 | Trenton, New Jersey | Hartford, Connecticut | 51.0/day | 2602/day | 204.0 mi (203.6 mi paved, 0.3 mi gravel) | 10410 | graphhopper | Avg High: 65.6-80.2°F, Low: 45.2-59.9°F (open-meteo) |  |
+| 2023-05-10 | 2023-05-11 | 2 | Hartford, Connecticut | Providence, Rhode Island | 45.8/day | 2831/day | 91.6 mi (88.8 mi paved, 2.7 mi gravel) | 5663 | graphhopper | Avg High: 68.5-69.6°F, Low: 53.8-59.6°F (open-meteo) |  |
+| 2023-05-12 | 2023-05-12 | 1 | Providence, Rhode Island | Boston, Massachusetts | 48.6/day | 2415/day | 48.6 mi (48.6 mi paved) | 2415 | graphhopper | Avg High: 81.8°F, Low: 45.3°F (open-meteo) |  |
+| 2023-05-13 | 2023-05-14 | 2 | Boston, Massachusetts | Concord, New Hampshire | 39.4/day | 2499/day | 78.9 mi (78.9 mi paved) | 4998 | graphhopper | Avg High: 66.1-71.4°F, Low: 48.6-52.7°F (open-meteo) |  |
+| 2023-05-15 | 2023-05-17 | 3 | Concord, New Hampshire | Augusta, Maine | 53.8/day | 3372/day | 161.4 mi (161.4 mi paved) | 10115 | graphhopper | Avg High: 65.8-75.6°F, Low: 42.0-55.0°F (open-meteo) |  |
+| 2023-05-18 | 2023-05-21 | 4 | Augusta, Maine | Montpelier, Vermont | 50.6/day | 4638/day | 202.4 mi (201.5 mi paved, 0.9 mi gravel) | 18551 | graphhopper | Avg High: 73.8-86.3°F, Low: 43.1-59.1°F (open-meteo) |  |
+| 2023-05-22 | 2023-05-24 | 3 | Montpelier, Vermont | Albany, New York | 55.0/day | 4080/day | 165.0 mi (165.0 mi paved) | 12239 | graphhopper | Avg High: 65.6-73.3°F, Low: 43.5-62.4°F (open-meteo) |  |
+| 2023-05-25 | 2023-06-05 | 12 | Albany, New York | Lansing, Michigan | 57.3/day | 1796/day | 687.1 mi (665.1 mi paved, 22.0 mi gravel) | 21556 | graphhopper | Avg High: 71.8-86.1°F, Low: 51.0-71.5°F (open-meteo) |  |
+| 2023-06-06 | 2023-06-10 | 5 | Lansing, Michigan | Columbus, Ohio | 52.5/day | 1257/day | 262.3 mi (262.3 mi paved) | 6284 | graphhopper | Avg High: 80.7-84.1°F, Low: 59.4-68.8°F (open-meteo) |  |
+| 2023-06-11 | 2023-06-14 | 4 | Columbus, Ohio | Indianapolis, Indiana | 48.3/day | 1326/day | 193.3 mi (193.3 mi paved) | 5303 | graphhopper | Avg High: 85.2-87.3°F, Low: 71.8-73.6°F (open-meteo) |  |
+| 2023-06-15 | 2023-06-18 | 4 | Indianapolis, Indiana | Springfield, Illinois | 53.8/day | 1272/day | 215.1 mi (215.1 mi paved) | 5089 | graphhopper | Avg High: 86.2-87.7°F, Low: 73.4-75.8°F (open-meteo) |  |
+| 2023-06-19 | 2023-07-02 | 14 | Springfield, Illinois | Springfield, Illinois | 0.0/day | 0/day | 0.0 | 0 | graphhopper | Avg High: 80.6-102.7°F, Low: 60.5-79.8°F (open-meteo) | Rest Day at Springfield, Illinois |
+| 2023-07-03 | 2023-07-07 | 5 | Springfield, Illinois | Madison, Wisconsin | 54.5/day | 1754/day | 272.4 mi (272.4 mi paved) | 8768 | graphhopper | Avg High: 95.1-102.6°F, Low: 67.6-78.7°F (open-meteo) |  |
+| 2023-07-08 | 2023-07-13 | 6 | Madison, Wisconsin | Des Moines, Iowa | 54.7/day | 2489/day | 328.2 mi (304.9 mi paved, 23.4 mi gravel) | 14934 | graphhopper | Avg High: 85.7-93.7°F, Low: 70.6-76.8°F (open-meteo) |  |
+| 2023-07-14 | 2023-07-17 | 4 | Des Moines, Iowa | Lincoln, Nebraska | 54.8/day | 2928/day | 219.4 mi (216.8 mi paved, 2.6 mi gravel) | 11714 | graphhopper | Avg High: 92.7-103.1°F, Low: 73.5-77.4°F (open-meteo) |  |
+| 2023-07-18 | 2023-07-25 | 8 | Lincoln, Nebraska | St. Paul, Minnesota | 57.1/day | 2042/day | 456.5 mi (409.4 mi paved, 47.2 mi gravel) | 16334 | graphhopper | Avg High: 73.1-86.7°F, Low: 59.3-71.2°F (open-meteo) |  |
+| 2023-07-26 | 2023-08-03 | 9 | St. Paul, Minnesota | Bismarck, North Dakota | 57.8/day | 1378/day | 520.0 mi (520.0 mi paved) | 12402 | graphhopper | Avg High: 81.6-102.5°F, Low: 59.7-75.5°F (open-meteo) |  |
+| 2023-08-04 | 2023-08-07 | 4 | Bismarck, North Dakota | Pierre, South Dakota | 57.5/day | 1769/day | 230.0 mi (229.0 mi paved, 1.0 mi gravel) | 7077 | graphhopper | Avg High: 93.6-97.6°F, Low: 71.1-76.9°F (open-meteo) |  |
+| 2023-08-08 | 2023-08-17 | 10 | Pierre, South Dakota | Cheyenne, Wyoming | 56.8/day | 2586/day | 568.1 mi (567.9 mi paved, 0.2 mi gravel) | 25859 | graphhopper | Avg High: 73.3-90.0°F, Low: 57.6-63.5°F (open-meteo) |  |
+| 2023-08-18 | 2023-08-20 | 3 | Cheyenne, Wyoming | Denver, Colorado | 50.4/day | 1162/day | 151.3 mi (151.3 mi paved) | 3486 | graphhopper | Avg High: 77.3-92.8°F, Low: 52.4-60.3°F (open-meteo) |  |
+| 2023-08-21 | 2023-09-03 | 14 | Denver, Colorado | Denver, Colorado | 0.0/day | 0/day | 0.0 | 0 | graphhopper | Avg High: 71.0-91.1°F, Low: 52.7-63.2°F (open-meteo) | Rest Day at Denver, Colorado |
+| 2023-09-04 | 2023-09-15 | 12 | Denver, Colorado | Salt Lake City, Utah | 59.0/day | 3372/day | 708.0 mi (698.4 mi paved, 9.6 mi gravel) | 40461 | graphhopper | Avg High: 75.4-85.7°F, Low: 54.1-63.6°F (open-meteo) |  |
+| 2023-09-16 | 2023-09-24 | 9 | Salt Lake City, Utah | Boise, Idaho | 53.5/day | 2007/day | 481.1 mi (477.5 mi paved, 3.6 mi gravel) | 18063 | graphhopper | Avg High: 62.0-81.0°F, Low: 42.5-62.0°F (open-meteo) |  |
+| 2023-09-25 | 2023-10-03 | 9 | Boise, Idaho | Salem, Oregon | 57.9/day | 3310/day | 521.0 mi (521.0 mi paved) | 29787 | graphhopper | Avg High: 56.2-87.7°F, Low: 44.1-53.1°F (open-meteo) |  |
+| 2023-10-04 | 2023-10-07 | 4 | Salem, Oregon | Olympia, Washington | 46.5/day | 2867/day | 185.9 mi (185.8 mi paved, 0.1 mi gravel) | 11467 | graphhopper | Avg High: 59.2-63.4°F, Low: 41.9-50.7°F (open-meteo) |  |
 
 </details>
 
 ---
 
 ### Alternative 1
-**Feasible**: No ❌
-- **Start Date**: 2023-05-13
-- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
+**Feasible**: Yes
+- **Start Date**: 2023-04-15
+- **Total Distance**: 7262.6 miles (7147.2 mi paved, 115.4 mi gravel)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 319321 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Hartford, Connecticut on 2023-05-20: observed 90.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Hartford, Connecticut on 2023-05-21: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Hartford, Connecticut.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Springfield, Illinois on 2023-06-26: observed 97.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Springfield, Illinois.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-28: observed 90.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-29: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Madison, Wisconsin on 2023-06-30: observed 95.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Madison, Wisconsin.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-01: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-02: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-03: observed 97.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-04: observed 99.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Des Moines, Iowa on 2023-07-05: observed 98.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Des Moines, Iowa.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-06: observed 98.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-07: observed 96.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-08: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Lincoln, Nebraska on 2023-07-09: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Lincoln, Nebraska.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at St. Paul, Minnesota on 2023-07-15: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass St. Paul, Minnesota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-06: observed 92.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-07: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-08: observed 96.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-09: observed 95.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-10: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-11: observed 95.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-12: observed 95.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-13: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-14: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-15: observed 90.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-16: observed 90.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-17: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-18: observed 100.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-19: observed 100.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-20: observed 90.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-28: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-29: observed 95.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-30: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
+- **Total Climbing**: 318462 ft
+- **Desirability Scores**:
+  - Weather Preference: 0.363
+  - Distance Score: 0.491
+  - Climbing Score: 1.000
+  - **Total Desirability Score**: 0.574
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
-ROUTE INFEASIBLE
-
-
-</details>
-
----
-
-### Alternative 2
-**Feasible**: No ❌
-- **Start Date**: 2023-04-29
-- **Total Distance**: 6791.3 miles (5757.8 mi paved, 1033.4 mi gravel)
-- **Distance Source**: graphhopper
-- **Total Climbing**: 319321 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-03: observed 92.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-04: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Bismarck, North Dakota on 2023-07-05: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Bismarck, North Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-10: observed 92.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Pierre, South Dakota on 2023-07-13: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Pierre, South Dakota.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-14: observed 95.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-15: observed 93.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-16: observed 94.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-17: observed 91.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Cheyenne, Wyoming on 2023-07-20: observed 93.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Cheyenne, Wyoming.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-21: observed 94.7 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Denver, Colorado on 2023-07-22: observed 94.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Denver, Colorado.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-25: observed 92.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-26: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-27: observed 96.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-28: observed 95.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-29: observed 92.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-30: observed 92.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-07-31: observed 94.5 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-01: observed 94.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salt Lake City, Utah on 2023-08-02: observed 95.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salt Lake City, Utah.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-03: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-04: observed 97.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-05: observed 92.0 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-06: observed 99.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-07: observed 100.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Boise, Idaho on 2023-08-08: observed 106.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Boise, Idaho.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Salem, Oregon on 2023-08-09: observed 90.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Salem, Oregon.
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-ROUTE INFEASIBLE
-
+| Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2023-04-15 | 2023-04-15 | 1 | Washington, DC | Annapolis, Maryland | 39.6/day | 2575/day | 39.6 mi (39.6 mi paved) | 2575 | graphhopper | Avg High: 61.2°F, Low: 39.9°F (open-meteo) |  |
+| 2023-04-16 | 2023-04-18 | 3 | Annapolis, Maryland | Dover, Delaware | 46.8/day | 2594/day | 140.3 mi (140.3 mi paved) | 7783 | graphhopper | Avg High: 53.9-63.0°F, Low: 41.1-49.7°F (open-meteo) |  |
+| 2023-04-19 | 2023-04-21 | 3 | Dover, Delaware | Trenton, New Jersey | 43.7/day | 1710/day | 131.0 mi (127.1 mi paved, 3.9 mi gravel) | 5129 | graphhopper | Avg High: 64.0-69.4°F, Low: 40.2-45.9°F (open-meteo) |  |
+| 2023-04-22 | 2023-04-25 | 4 | Trenton, New Jersey | Hartford, Connecticut | 51.0/day | 2602/day | 204.0 mi (203.6 mi paved, 0.3 mi gravel) | 10410 | graphhopper | Avg High: 61.1-68.8°F, Low: 34.5-47.5°F (open-meteo) |  |
+| 2023-04-26 | 2023-04-27 | 2 | Hartford, Connecticut | Providence, Rhode Island | 45.8/day | 2831/day | 91.6 mi (88.8 mi paved, 2.7 mi gravel) | 5663 | graphhopper | Avg High: 64.1-69.0°F, Low: 48.5-56.5°F (open-meteo) |  |
+| 2023-04-28 | 2023-04-28 | 1 | Providence, Rhode Island | Boston, Massachusetts | 48.6/day | 2415/day | 48.6 mi (48.6 mi paved) | 2415 | graphhopper | Avg High: 59.4°F, Low: 38.6°F (open-meteo) |  |
+| 2023-04-29 | 2023-04-30 | 2 | Boston, Massachusetts | Concord, New Hampshire | 39.4/day | 2499/day | 78.9 mi (78.9 mi paved) | 4998 | graphhopper | Avg High: 51.5-53.8°F, Low: 29.2-31.3°F (open-meteo) |  |
+| 2023-05-01 | 2023-05-03 | 3 | Concord, New Hampshire | Augusta, Maine | 53.8/day | 3372/day | 161.4 mi (161.4 mi paved) | 10115 | graphhopper | Avg High: 49.9-72.2°F, Low: 29.5-52.5°F (open-meteo) |  |
+| 2023-05-04 | 2023-05-07 | 4 | Augusta, Maine | Montpelier, Vermont | 50.6/day | 4638/day | 202.4 mi (201.5 mi paved, 0.9 mi gravel) | 18551 | graphhopper | Avg High: 65.6-69.7°F, Low: 42.2-57.8°F (open-meteo) |  |
+| 2023-05-08 | 2023-05-10 | 3 | Montpelier, Vermont | Albany, New York | 55.0/day | 4080/day | 165.0 mi (165.0 mi paved) | 12239 | graphhopper | Avg High: 68.0-75.8°F, Low: 48.7-58.6°F (open-meteo) |  |
+| 2023-05-11 | 2023-05-22 | 12 | Albany, New York | Lansing, Michigan | 57.3/day | 1796/day | 687.1 mi (665.1 mi paved, 22.0 mi gravel) | 21556 | graphhopper | Avg High: 71.0-88.1°F, Low: 52.8-71.2°F (open-meteo) |  |
+| 2023-05-23 | 2023-05-27 | 5 | Lansing, Michigan | Columbus, Ohio | 52.5/day | 1257/day | 262.3 mi (262.3 mi paved) | 6284 | graphhopper | Avg High: 76.9-84.4°F, Low: 54.4-68.1°F (open-meteo) |  |
+| 2023-05-28 | 2023-05-31 | 4 | Columbus, Ohio | Indianapolis, Indiana | 48.3/day | 1326/day | 193.3 mi (193.3 mi paved) | 5303 | graphhopper | Avg High: 79.8-85.4°F, Low: 67.8-70.9°F (open-meteo) |  |
+| 2023-06-01 | 2023-06-04 | 4 | Indianapolis, Indiana | Springfield, Illinois | 53.8/day | 1272/day | 215.1 mi (215.1 mi paved) | 5089 | graphhopper | Avg High: 79.0-84.6°F, Low: 67.9-72.8°F (open-meteo) |  |
+| 2023-06-05 | 2023-06-18 | 14 | Springfield, Illinois | Springfield, Illinois | 0.0/day | 0/day | 0.0 | 0 | graphhopper | Avg High: 80.0-87.7°F, Low: 61.4-75.8°F (open-meteo) | Rest Day at Springfield, Illinois |
+| 2023-06-19 | 2023-06-23 | 5 | Springfield, Illinois | Madison, Wisconsin | 54.5/day | 1754/day | 272.4 mi (272.4 mi paved) | 8768 | graphhopper | Avg High: 75.8-81.0°F, Low: 55.8-65.6°F (open-meteo) |  |
+| 2023-06-24 | 2023-06-29 | 6 | Madison, Wisconsin | Des Moines, Iowa | 54.7/day | 2489/day | 328.2 mi (304.9 mi paved, 23.4 mi gravel) | 14934 | graphhopper | Avg High: 83.4-90.6°F, Low: 65.4-76.9°F (open-meteo) |  |
+| 2023-06-30 | 2023-07-03 | 4 | Des Moines, Iowa | Lincoln, Nebraska | 54.8/day | 2928/day | 219.4 mi (216.8 mi paved, 2.6 mi gravel) | 11714 | graphhopper | Avg High: 84.8-96.7°F, Low: 69.6-77.2°F (open-meteo) |  |
+| 2023-07-04 | 2023-07-11 | 8 | Lincoln, Nebraska | St. Paul, Minnesota | 57.1/day | 2042/day | 456.5 mi (409.4 mi paved, 47.2 mi gravel) | 16334 | graphhopper | Avg High: 86.7-99.8°F, Low: 69.4-84.2°F (open-meteo) |  |
+| 2023-07-12 | 2023-07-20 | 9 | St. Paul, Minnesota | Bismarck, North Dakota | 57.8/day | 1378/day | 520.0 mi (520.0 mi paved) | 12402 | graphhopper | Avg High: 81.4-101.7°F, Low: 60.2-75.4°F (open-meteo) |  |
+| 2023-07-21 | 2023-07-24 | 4 | Bismarck, North Dakota | Pierre, South Dakota | 57.5/day | 1769/day | 230.0 mi (229.0 mi paved, 1.0 mi gravel) | 7077 | graphhopper | Avg High: 78.7-86.6°F, Low: 64.1-69.9°F (open-meteo) |  |
+| 2023-07-25 | 2023-08-03 | 10 | Pierre, South Dakota | Cheyenne, Wyoming | 56.8/day | 2586/day | 568.1 mi (567.9 mi paved, 0.2 mi gravel) | 25859 | graphhopper | Avg High: 64.3-86.1°F, Low: 49.1-64.1°F (open-meteo) |  |
+| 2023-08-04 | 2023-08-06 | 3 | Cheyenne, Wyoming | Denver, Colorado | 50.4/day | 1162/day | 151.3 mi (151.3 mi paved) | 3486 | graphhopper | Avg High: 76.1-84.5°F, Low: 56.5-59.4°F (open-meteo) |  |
+| 2023-08-07 | 2023-08-20 | 14 | Denver, Colorado | Denver, Colorado | 0.0/day | 0/day | 0.0 | 0 | graphhopper | Avg High: 77.3-94.7°F, Low: 52.4-66.6°F (open-meteo) | Rest Day at Denver, Colorado |
+| 2023-08-21 | 2023-09-01 | 12 | Denver, Colorado | Salt Lake City, Utah | 59.0/day | 3372/day | 708.0 mi (698.4 mi paved, 9.6 mi gravel) | 40461 | graphhopper | Avg High: 74.6-90.8°F, Low: 57.1-67.5°F (open-meteo) |  |
+| 2023-09-02 | 2023-09-10 | 9 | Salt Lake City, Utah | Boise, Idaho | 53.5/day | 2007/day | 481.1 mi (477.5 mi paved, 3.6 mi gravel) | 18063 | graphhopper | Avg High: 78.4-91.2°F, Low: 52.3-65.1°F (open-meteo) |  |
+| 2023-09-11 | 2023-09-19 | 9 | Boise, Idaho | Salem, Oregon | 57.9/day | 3310/day | 521.0 mi (521.0 mi paved) | 29787 | graphhopper | Avg High: 61.2-85.6°F, Low: 50.4-61.2°F (open-meteo) |  |
+| 2023-09-20 | 2023-09-23 | 4 | Salem, Oregon | Olympia, Washington | 46.5/day | 2867/day | 185.9 mi (185.8 mi paved, 0.1 mi gravel) | 11467 | graphhopper | Avg High: 89.8-95.3°F, Low: 53.9-69.8°F (open-meteo) |  |
 
 </details>
 
