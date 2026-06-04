@@ -71,7 +71,153 @@ def _fetch_gpx_payload(url: str, request_timeout_seconds: float, total_timeout_s
         signal.signal(signal.SIGALRM, previous_handler)
 
 
-def _maybe_generate_gpx(example_path: Path, config: dict, itinerary) -> Optional[Path]:
+def _downsample_coordinates(coords: list, target_distance_km: float = 3.0) -> list:
+    if len(coords) <= 2:
+        return coords
+
+    def haversine_km(lat1, lon1, lat2, lon2):
+        import math
+        R = 6371.0 # Earth radius in km
+        lat1_rad = math.radians(lat1)
+        lon1_rad = math.radians(lon1)
+        lat2_rad = math.radians(lat2)
+        lon2_rad = math.radians(lon2)
+        dlat = lat2_rad - lat1_rad
+        dlon = lon2_rad - lon1_rad
+        a = math.sin(dlat / 2.0)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon / 2.0)**2
+        c = 2.0 * math.atan2(math.sqrt(a), math.sqrt(1.0 - a))
+        return R * c
+
+    sampled = [coords[0]]
+    last_pt = coords[0]
+    for pt in coords[1:]:
+        dist = haversine_km(last_pt[0], last_pt[1], pt[0], pt[1])
+        if dist >= target_distance_km:
+            sampled.append(pt)
+            last_pt = pt
+    if sampled[-1] != coords[-1]:
+        sampled.append(coords[-1])
+    return sampled
+
+
+def _fetch_itinerary_lodging(
+    coords: list,
+    radius_meters: int,
+    types: list,
+    cache_db_path: str,
+    is_mock: bool,
+) -> list:
+    if not coords:
+        return []
+
+    import urllib.request
+    import urllib.parse
+    import json
+    import logging
+    import hashlib
+
+    # Dynamic downsampling to target ~40 points maximum to prevent Overpass timeouts
+    target_points = 40
+    if len(coords) > target_points:
+        step = max(1, len(coords) // target_points)
+        sampled_coords = coords[::step]
+        # Ensure destination point is included
+        if sampled_coords[-1] != coords[-1]:
+            sampled_coords.append(coords[-1])
+    else:
+        sampled_coords = coords
+
+    # Compute stable route hash for itinerary level caching
+    rounded_coords = [(round(lat, 5), round(lon, 5)) for lat, lon in sampled_coords]
+    coord_str = json.dumps(rounded_coords)
+    types_str = ",".join(sorted(types))
+    hash_input = f"{coord_str}|{radius_meters}|{types_str}"
+    route_hash = hashlib.sha256(hash_input.encode('utf-8')).hexdigest()
+
+    from src.cache import SQLiteCacheManager
+    cache_mgr = SQLiteCacheManager(cache_db_path)
+    try:
+        cached = cache_mgr.get_itinerary_lodging(route_hash)
+        if cached is not None:
+            return cached
+    finally:
+        cache_mgr.close()
+
+    if is_mock:
+        hotels = []
+        if len(sampled_coords) >= 1:
+            hotels.append({
+                "name": "Mock Cozy Inn near Start",
+                "lat": sampled_coords[0][0] + 0.001,
+                "lon": sampled_coords[0][1] + 0.001,
+            })
+        if len(sampled_coords) >= 2:
+            hotels.append({
+                "name": "Mock Route Motel near End",
+                "lat": sampled_coords[-1][0] - 0.001,
+                "lon": sampled_coords[-1][1] - 0.001,
+            })
+        cache_mgr = SQLiteCacheManager(cache_db_path)
+        try:
+            cache_mgr.save_itinerary_lodging(route_hash, radius_meters, types, hotels)
+        finally:
+            cache_mgr.close()
+        return hotels
+
+    points_str = ", ".join(f"{lat},{lon}" for lat, lon in sampled_coords)
+    types_pattern = "|".join(types)
+
+    query = f"""
+    [out:json][timeout:40];
+    (
+      node["tourism"~"{types_pattern}"](around:{radius_meters}, {points_str});
+      way["tourism"~"{types_pattern}"](around:{radius_meters}, {points_str});
+    );
+    out body center;
+    """
+
+    url = "https://overpass-api.de/api/interpreter"
+    hotels = []
+    try:
+        data = urllib.parse.urlencode({"data": query}).encode("utf-8")
+        req = urllib.request.Request(
+            url,
+            data=data,
+            headers={"User-Agent": "g2l4a-client/1.0"},
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=45) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+            for element in payload.get("elements", []):
+                tags = element.get("tags", {})
+                name = tags.get("name")
+                lat = element.get("lat") or element.get("center", {}).get("lat")
+                lon = element.get("lon") or element.get("center", {}).get("lon")
+                if name and lat and lon:
+                    hotels.append({
+                        "name": str(name),
+                        "lat": float(lat),
+                        "lon": float(lon),
+                    })
+    except Exception as exc:
+        logging.warning(f"Lodging fetch via Overpass failed: {exc}")
+        return []
+
+    cache_mgr = SQLiteCacheManager(cache_db_path)
+    try:
+        cache_mgr.save_itinerary_lodging(route_hash, radius_meters, types, hotels)
+    finally:
+        cache_mgr.close()
+
+    return hotels
+
+
+def _maybe_generate_gpx(
+    example_path: Path,
+    config: dict,
+    itinerary,
+    cache_db_path: str = ".g2l4a_cache.db",
+) -> Optional[Path]:
     output_cfg = config.get("output", {})
     if not bool(output_cfg.get("gpx", False)):
         return None
@@ -118,6 +264,67 @@ def _maybe_generate_gpx(example_path: Path, config: dict, itinerary) -> Optional
     except (TimeoutError, OSError, ValueError) as exc:
         print(f"Skipped GPX for {example_path.name}: {exc}")
         return None
+
+    lodging_cfg = output_cfg.get("lodging_overlay", {})
+    if bool(lodging_cfg.get("enabled", False)):
+        import xml.etree.ElementTree as ET
+        try:
+            ET.register_namespace("", "http://www.topografix.com/GPX/1/1")
+            
+            radius = int(lodging_cfg.get("radius_meters", 800))
+            types = list(lodging_cfg.get("types", ["hotel"]))
+            is_mock = str(routing_cfg.get("name", "mock")).lower() == "mock"
+            
+            all_coords = []
+            for leg in itinerary.legs:
+                if leg.geometry:
+                    all_coords.extend(leg.geometry)
+
+            all_hotels = []
+            if all_coords:
+                all_hotels = _fetch_itinerary_lodging(
+                    coords=all_coords,
+                    radius_meters=radius,
+                    types=types,
+                    cache_db_path=cache_db_path,
+                    is_mock=is_mock
+                )
+
+            if all_hotels:
+                root = ET.fromstring(gpx_payload)
+                ns = "http://www.topografix.com/GPX/1/1"
+                if root.tag.startswith("{"):
+                    ns = root.tag.split("}")[0].strip("{")
+
+                # Find insertion index (before any trk or rte element)
+                insert_idx = 0
+                for idx, child in enumerate(root):
+                    tag_local = child.tag.split("}")[-1]
+                    if tag_local in ("trk", "rte"):
+                        insert_idx = idx
+                        break
+
+                seen = set()
+                for hotel in all_hotels:
+                    coord_key = (round(hotel["lat"], 5), round(hotel["lon"], 5))
+                    if coord_key in seen:
+                        continue
+                    seen.add(coord_key)
+
+                    wpt = ET.Element(f"{{{ns}}}wpt", lat=f"{hotel['lat']:.6f}", lon=f"{hotel['lon']:.6f}")
+                    name_elem = ET.SubElement(wpt, f"{{{ns}}}name")
+                    name_elem.text = hotel["name"]
+                    desc_elem = ET.SubElement(wpt, f"{{{ns}}}desc")
+                    desc_elem.text = "Hotel (Corridor Overlay)"
+                    sym_elem = ET.SubElement(wpt, f"{{{ns}}}sym")
+                    sym_elem.text = "Lodging"
+
+                    root.insert(insert_idx, wpt)
+                    insert_idx += 1
+
+                gpx_payload = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+        except Exception as exc:
+            print(f"Warning: Failed to inject lodging waypoints into GPX: {exc}")
 
     output_path.write_bytes(gpx_payload)
     return output_path
@@ -252,7 +459,7 @@ def generate_report_for_example(
     if not itineraries:
         raise RuntimeError(f"No recommendations were generated for {example_path}.")
 
-    gpx_output_path = _maybe_generate_gpx(example_path, config, itineraries[0])
+    gpx_output_path = _maybe_generate_gpx(example_path, config, itineraries[0], cache_db_path=cache_db_path)
 
     markdown = OutputFormatter.format_recommendations_markdown(itineraries)
     markdown = _apply_data_attribution(markdown, config)

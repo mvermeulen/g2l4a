@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Tuple
 from datetime import date
 
 @dataclass(frozen=True)
@@ -30,6 +30,7 @@ class Leg:
     allowed_borders: bool = True
     road_class_breakdown: Dict[str, float] = field(default_factory=dict)
     surface_breakdown: Dict[str, float] = field(default_factory=dict)
+    geometry: List[Tuple[float, float]] = field(default_factory=list)
 
 
 @dataclass(frozen=True)

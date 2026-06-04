@@ -38,3 +38,5 @@ routing_provider:
 output:
   alternatives_count: 6
   gpx: true
+  lodging_overlay:
+    enabled: true

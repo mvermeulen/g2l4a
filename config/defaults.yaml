@@ -51,6 +51,11 @@ defaults:
     alternatives_count: 4
     gpx: true
     gpx_timeout_seconds: 90.0
+    lodging_overlay:
+      enabled: false
+      radius_meters: 800
+      max_results: 50
+      types: ["hotel"]
 
   cache:
     db_path: ".g2l4a_cache.db"

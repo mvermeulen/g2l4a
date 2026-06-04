@@ -101,6 +101,7 @@ class GraphHopperRoutingProvider(RoutingProvider):
             allowed_borders=preferences.get("allow_international_borders", True),
             road_class_breakdown={},
             surface_breakdown={},
+            geometry=[(origin.latitude, origin.longitude), (destination.latitude, destination.longitude)],
         )
 
     def get_leg_metrics(self, origin: City, destination: City, preferences: Dict[str, Any]) -> Leg:
@@ -181,6 +182,8 @@ class GraphHopperRoutingProvider(RoutingProvider):
                     surf_val = surf or "missing"
                 surface_breakdown[surf_val] = surface_breakdown.get(surf_val, 0.0) + dist
 
+        geom = [(float(pt[1]), float(pt[0])) for pt in coordinates if len(pt) >= 2]
+
         return Leg(
             origin=origin,
             destination=destination,
@@ -193,5 +196,6 @@ class GraphHopperRoutingProvider(RoutingProvider):
             allowed_borders=preferences.get("allow_international_borders", True),
             road_class_breakdown=road_class_breakdown,
             surface_breakdown=surface_breakdown,
+            geometry=geom,
         )
 

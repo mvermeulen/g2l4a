@@ -65,6 +65,7 @@ class SQLiteCacheManager:
                     allowed_borders INTEGER,
                     road_class_breakdown TEXT,
                     surface_breakdown TEXT,
+                    geometry TEXT,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     PRIMARY KEY (origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash)
                 )
@@ -81,6 +82,8 @@ class SQLiteCacheManager:
                 conn.execute("ALTER TABLE routing_cache ADD COLUMN road_class_breakdown TEXT")
             if "surface_breakdown" not in cols:
                 conn.execute("ALTER TABLE routing_cache ADD COLUMN surface_breakdown TEXT")
+            if "geometry" not in cols:
+                conn.execute("ALTER TABLE routing_cache ADD COLUMN geometry TEXT")
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS weather_cache (
                     city_lat REAL,
@@ -128,6 +131,28 @@ class SQLiteCacheManager:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS lodging_cache (
+                    origin_lat REAL,
+                    origin_lon REAL,
+                    dest_lat REAL,
+                    dest_lon REAL,
+                    radius_meters INTEGER,
+                    lodging_types TEXT,
+                    lodging_data TEXT,
+                    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    PRIMARY KEY (origin_lat, origin_lon, dest_lat, dest_lon, radius_meters, lodging_types)
+                )
+            """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS itinerary_lodging_cache (
+                    route_hash TEXT PRIMARY KEY,
+                    radius_meters INTEGER,
+                    lodging_types TEXT,
+                    lodging_data TEXT,
+                    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
 
     def close(self):
         """Closes the thread-local database connection if it exists."""
@@ -157,7 +182,7 @@ class SQLiteCacheManager:
         if source is None:
             cursor.execute(
                 """
-                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown, geometry
                 FROM routing_cache
                 WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
                   AND routing_engine = ? AND profile_hash = ?
@@ -167,7 +192,7 @@ class SQLiteCacheManager:
         else:
             cursor.execute(
                 """
-                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown
+                SELECT distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls, allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown, geometry
                 FROM routing_cache
                 WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
                   AND routing_engine = ? AND profile_hash = ? AND source = ?
@@ -182,6 +207,9 @@ class SQLiteCacheManager:
             rc_breakdown = json.loads(rc_str) if rc_str else {}
             sf_str = row["surface_breakdown"]
             sf_breakdown = json.loads(sf_str) if sf_str else {}
+            geom_str = row["geometry"]
+            geom_list = json.loads(geom_str) if geom_str else []
+            geom = [(float(pt[0]), float(pt[1])) for pt in geom_list]
 
             return Leg(
                 origin=origin,
@@ -194,7 +222,8 @@ class SQLiteCacheManager:
                 allowed_ferries=bool(row["allowed_ferries"]),
                 allowed_borders=bool(row["allowed_borders"]),
                 road_class_breakdown=rc_breakdown,
-                surface_breakdown=sf_breakdown
+                surface_breakdown=sf_breakdown,
+                geometry=geom
             )
         return None
 
@@ -210,19 +239,20 @@ class SQLiteCacheManager:
         with conn:
             rc_str = json.dumps(leg.road_class_breakdown) if leg.road_class_breakdown else None
             sf_str = json.dumps(leg.surface_breakdown) if leg.surface_breakdown else None
+            geom_str = json.dumps(leg.geometry) if leg.geometry else None
             conn.execute("""
                 INSERT OR REPLACE INTO routing_cache (
                     origin_lat, origin_lon, dest_lat, dest_lon, routing_engine, profile_hash,
                     source, distance_miles, ascent_feet, is_bicycle_legal, avoided_highways, avoided_tolls,
-                    allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown, created_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                    allowed_ferries, allowed_borders, road_class_breakdown, surface_breakdown, geometry, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             """, (
                 o_lat, o_lon, d_lat, d_lon, routing_engine, p_hash,
                 source,
                 leg.distance_miles, leg.ascent_feet, int(leg.is_bicycle_legal),
                 int(leg.avoided_highways), int(leg.avoided_tolls),
                 int(leg.allowed_ferries), int(leg.allowed_borders),
-                rc_str, sf_str
+                rc_str, sf_str, geom_str
             ))
 
     def purge_routing_cache_by_engine(self, routing_engine: str) -> int:
@@ -318,6 +348,105 @@ class SQLiteCacheManager:
                 c_lat, c_lon, date_str, is_forecast,
                 provider_key, metrics["high_temp_f"], metrics["low_temp_f"]
             ))
+
+    # --- Lodging Cache Operations ---
+
+    def get_lodging(
+        self,
+        origin: City,
+        destination: City,
+        radius_meters: int,
+        lodging_types: List[str],
+    ) -> Optional[List[Dict[str, Any]]]:
+        """Retrieves cached lodging data if available."""
+        conn = self._get_conn()
+        o_lat = round_coord(origin.latitude)
+        o_lon = round_coord(origin.longitude)
+        d_lat = round_coord(destination.latitude)
+        d_lon = round_coord(destination.longitude)
+        types_key = ",".join(sorted(lodging_types))
+
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT lodging_data FROM lodging_cache
+            WHERE origin_lat = ? AND origin_lon = ? AND dest_lat = ? AND dest_lon = ?
+              AND radius_meters = ? AND lodging_types = ?
+            """,
+            (o_lat, o_lon, d_lat, d_lon, radius_meters, types_key)
+        )
+        row = cursor.fetchone()
+        if row:
+            return json.loads(row["lodging_data"])
+        return None
+
+    def save_lodging(
+        self,
+        origin: City,
+        destination: City,
+        radius_meters: int,
+        lodging_types: List[str],
+        lodging_data: List[Dict[str, Any]],
+    ):
+        """Saves lodging data into the cache."""
+        conn = self._get_conn()
+        o_lat = round_coord(origin.latitude)
+        o_lon = round_coord(origin.longitude)
+        d_lat = round_coord(destination.latitude)
+        d_lon = round_coord(destination.longitude)
+        types_key = ",".join(sorted(lodging_types))
+        data_str = json.dumps(lodging_data)
+
+        with conn:
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO lodging_cache (
+                    origin_lat, origin_lon, dest_lat, dest_lon, radius_meters, lodging_types, lodging_data, fetched_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+                """,
+                (o_lat, o_lon, d_lat, d_lon, radius_meters, types_key, data_str)
+            )
+
+    def get_itinerary_lodging(
+        self,
+        route_hash: str,
+    ) -> Optional[List[Dict[str, Any]]]:
+        """Retrieves cached itinerary lodging data if available."""
+        conn = self._get_conn()
+        cursor = conn.cursor()
+        cursor.execute(
+            """
+            SELECT lodging_data FROM itinerary_lodging_cache
+            WHERE route_hash = ?
+            """,
+            (route_hash,)
+        )
+        row = cursor.fetchone()
+        if row:
+            return json.loads(row["lodging_data"])
+        return None
+
+    def save_itinerary_lodging(
+        self,
+        route_hash: str,
+        radius_meters: int,
+        lodging_types: List[str],
+        lodging_data: List[Dict[str, Any]],
+    ):
+        """Saves itinerary lodging data into the cache."""
+        conn = self._get_conn()
+        types_key = ",".join(sorted(lodging_types))
+        data_str = json.dumps(lodging_data)
+
+        with conn:
+            conn.execute(
+                """
+                INSERT OR REPLACE INTO itinerary_lodging_cache (
+                    route_hash, radius_meters, lodging_types, lodging_data, fetched_at
+                ) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+                """,
+                (route_hash, radius_meters, types_key, data_str)
+            )
 
     def get_meteostat_day_average(self, lat: float, lon: float, month: int, day: int) -> Optional[Dict[str, float]]:
         """Retrieves cached day-of-year average temperatures from Meteostat climatology."""

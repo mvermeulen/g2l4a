@@ -1,12 +1,8 @@
-scenario_name: Manor Fixed Date Example
+scenario_name: Oak Hill to Bastrop Example
 
-start_city: Austin, Texas
-completion_city: Elgin, Texas
+start_city: Oak Hill, Austin, Texas
+completion_city: Bastrop, Bastrop County, Texas
 start_date: "2026-05-30"
-
-via_cities:
-  - name: Manor, Texas
-    rest_days: 2
 
 daily_constraints:
   max_miles_per_day: 60.0
@@ -31,4 +27,5 @@ output:
   gpx: true
   lodging_overlay:
     enabled: true
-    radius_meters: 2000
+    radius_meters: 3000
+    types: ["hotel", "motel", "guest_house", "hostel", "camp_site", "chalet"]

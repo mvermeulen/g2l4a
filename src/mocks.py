@@ -50,7 +50,8 @@ class MockRoutingProvider(RoutingProvider):
             allowed_ferries=preferences.get("allow_ferries", True),
             allowed_borders=preferences.get("allow_international_borders", True),
             road_class_breakdown={},
-            surface_breakdown={}
+            surface_breakdown={},
+            geometry=[(origin.latitude, origin.longitude), (destination.latitude, destination.longitude)],
         )
 
 
