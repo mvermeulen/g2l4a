@@ -14,7 +14,7 @@ services:
       # Example (very large): https://download.geofabrik.de/north-america/us-latest.osm.pbf
       GH_OSM_URL: "${GH_OSM_URL:-}"
       GH_GRAPH_LOCATION: "/opt/graphhopper/graph-cache"
-      JAVA_OPTS: "-Xms16g -Xmx64g"
+      JAVA_OPTS: "${GRAPHHOPPER_JAVA_OPTS:--Xms16g -Xmx64g}"
     volumes:
       - ./.graphhopper:/opt/graphhopper
     healthcheck:

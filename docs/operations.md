@@ -64,7 +64,7 @@ If `output.gpx` is enabled, report generation also exports a GPX file into `gpx/
 ### Startup and Readiness
 
 ```bash
-docker-compose -f docker-compose.graphhopper.yml up -d
+docker compose -f docker-compose.graphhopper.yml up -d
 curl -fsS http://localhost:8989/info | head -c 300 && echo
 ```
 
@@ -121,11 +121,11 @@ This allows repeated scenario runs with high route-cache hit rates in SQLite and
 Use this when you want newer road network data:
 
 ```bash
-docker-compose -f docker-compose.graphhopper.yml down
+docker compose -f docker-compose.graphhopper.yml down
 rm -rf .graphhopper/graph-cache
 rm -f .graphhopper/map.osm.pbf
 GH_OSM_URL=https://download.geofabrik.de/north-america-latest.osm.pbf \
-docker-compose -f docker-compose.graphhopper.yml up -d --build
+docker compose -f docker-compose.graphhopper.yml up -d --build
 ```
 
 Equivalent helper script (safe by default):

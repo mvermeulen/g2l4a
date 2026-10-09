@@ -28,7 +28,7 @@ pip install -r requirements.txt
 If you are running against GraphHopper-backed routing, make sure the local service is ready:
 
 ```bash
-docker-compose -f docker-compose.graphhopper.yml up -d
+docker compose -f docker-compose.graphhopper.yml up -d
 curl -fsS http://localhost:8989/info | head -c 300 && echo
 ```
 
