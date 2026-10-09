@@ -11,9 +11,14 @@ graphhopper:
     - name: bike
       custom_model_files: [bike.json, bike_elevation.json]
 
+  # CH serves plain requests. Any per-request custom model (avoid_highways,
+  # avoid_gravel; avoid_highways is on by default) disables CH, and LM keeps
+  # those requests fast instead of falling back to full A* on the US graph.
   profiles_ch:
     - profile: bike
-  profiles_lm: []
+  profiles_lm:
+    - profile: bike
+  prepare.lm.landmarks: 16
 
   # bike.json / bike_elevation.json need the bike_* values plus the rest of this list.
   # road_class, surface and track_type are also requested as path details and used
@@ -25,8 +30,10 @@ graphhopper:
   routing.snap_preventions_default: tunnel, bridge, ferry
   routing.non_ch.max_waypoint_distance: 1000000
 
-  # Non-motorized routing: keep cycleways and paths, drop motorways.
-  import.osm.ignored_highways: motorway,trunk
+  # Keep every highway class in the graph: bike access rules decide what is
+  # rideable (some western interstate shoulders are legal and the only option),
+  # and avoid_highways down-weights MOTORWAY/TRUNK per request.
+  import.osm.ignored_highways: construction
 
   # SRTM elevation for ascent (hill scoring). Tiles are downloaded on first import
   # and cached in the mounted volume.
