@@ -27,7 +27,7 @@ Each weight perturbed by +/- 0.10 and normalized to sum to 1.0.
 | Shift hills by +0.10 | 0.32 / 0.36 / 0.32 | 0.8366 | 0.8690 | +0.0324 |
 
 ## Solver Execution Performance
-- **Execution Duration**: 6556.2 ms
+- **Execution Duration**: 18365.4 ms
 - **Evaluated Candidates**: 5 recommendations returned
 
 ## Sequence Ordered Visits Comparison

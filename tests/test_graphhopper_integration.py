@@ -50,7 +50,7 @@ def test_graphhopper_provider_roundtrip_when_local_endpoint_available(tmp_path):
         dest_lat = min_lat + (0.55 * lat_span)
         dest_lon = min_lon + (0.55 * lon_span)
 
-    provider = GraphHopperRoutingProvider(base_url=base_url, profile="car", timeout_seconds=8.0)
+    provider = GraphHopperRoutingProvider(base_url=base_url, profile="bike", timeout_seconds=8.0)
     cache = SQLiteCacheManager(str(tmp_path / "graphhopper_integration_cache.db"))
     cached_provider = CachedRoutingProvider(
         provider,
