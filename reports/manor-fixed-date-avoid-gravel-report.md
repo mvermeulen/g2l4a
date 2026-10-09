@@ -3,32 +3,32 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2026-05-16 | Yes | 0.6284 | 0.2225 | 0.7513 | 1.0000 | 26.9 mi | graphhopper | 1189 ft | Baseline / Optimal Route |
-| Alternative 1 | 2026-05-16 | Yes | 0.6284 | 0.2225 | 0.7513 | 1.0000 | 26.9 mi | graphhopper | 1189 ft | Alternative metrics/scores, same date & sequence |
-| Alternative 2 | 2026-05-30 | Yes | 0.6013 | 0.1450 | 0.7513 | 1.0000 | 26.9 mi | graphhopper | 1189 ft | Different start date (2026-05-30), same sequence |
-| Alternative 3 | 2026-05-30 | Yes | 0.6013 | 0.1450 | 0.7513 | 1.0000 | 26.9 mi | graphhopper | 1189 ft | Different start date (2026-05-30), same sequence |
-| Alternative 4 | 2026-06-13 | No ❌ | N/A | N/A | N/A | N/A | 26.9 mi | graphhopper | 1189 ft | Different start date (2026-06-13), same sequence |
+| **Best Recommendation** | 2026-05-16 | Yes | 0.6305 | 0.2225 | 0.7565 | 1.0000 | 26.8 mi | graphhopper | 1111 ft | Baseline / Optimal Route |
+| Alternative 1 | 2026-05-16 | Yes | 0.6305 | 0.2225 | 0.7565 | 1.0000 | 26.8 mi | graphhopper | 1111 ft | Alternative metrics/scores, same date & sequence |
+| Alternative 2 | 2026-05-30 | Yes | 0.6034 | 0.1450 | 0.7565 | 1.0000 | 26.8 mi | graphhopper | 1111 ft | Different start date (2026-05-30), same sequence |
+| Alternative 3 | 2026-05-30 | Yes | 0.6034 | 0.1450 | 0.7565 | 1.0000 | 26.8 mi | graphhopper | 1111 ft | Different start date (2026-05-30), same sequence |
+| Alternative 4 | 2026-06-13 | No ❌ | N/A | N/A | N/A | N/A | 26.8 mi | graphhopper | 1111 ft | Different start date (2026-06-13), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles (26.9 mi paved)
+- **Total Distance**: 26.8 miles (26.8 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1189 ft
+- **Total Climbing**: 1111 ft
 - **Desirability Scores**:
   - Weather Preference: 0.223
-  - Distance Score: 0.751
+  - Distance Score: 0.756
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.628
+  - **Total Desirability Score**: 0.630
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 mi (14.4 mi paved) | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostatweatherprovider) |  |
-| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.6/day | 335/day | 12.6 mi (12.6 mi paved) | 335 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.3/day | 810/day | 14.3 mi (14.3 mi paved) | 810 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostat) |  |
+| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, 78621, United States | 12.6/day | 301/day | 12.6 mi (12.6 mi paved) | 301 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostat) |  |
 
 </details>
 
@@ -37,22 +37,22 @@
 ### Alternative 1
 **Feasible**: Yes
 - **Start Date**: 2026-05-16
-- **Total Distance**: 26.9 miles (26.9 mi paved)
+- **Total Distance**: 26.8 miles (26.8 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1189 ft
+- **Total Climbing**: 1111 ft
 - **Desirability Scores**:
   - Weather Preference: 0.223
-  - Distance Score: 0.751
+  - Distance Score: 0.756
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.628
+  - **Total Desirability Score**: 0.630
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 mi (14.4 mi paved) | 854 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostatweatherprovider) |  |
-| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.6/day | 335/day | 12.6 mi (12.6 mi paved) | 335 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostatweatherprovider) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.3/day | 810/day | 14.3 mi (14.3 mi paved) | 810 | graphhopper | Avg High: 84.3°F, Low: 65.8°F (meteostat) |  |
+| 2026-05-17 | 2026-05-17 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, 78621, United States | 12.6/day | 301/day | 12.6 mi (12.6 mi paved) | 301 | graphhopper | Avg High: 86.8°F, Low: 66.1°F (meteostat) |  |
 
 </details>
 
@@ -61,22 +61,22 @@
 ### Alternative 2
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles (26.9 mi paved)
+- **Total Distance**: 26.8 miles (26.8 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1189 ft
+- **Total Climbing**: 1111 ft
 - **Desirability Scores**:
   - Weather Preference: 0.145
-  - Distance Score: 0.751
+  - Distance Score: 0.756
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.601
+  - **Total Desirability Score**: 0.603
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 mi (14.4 mi paved) | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostatweatherprovider) |  |
-| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.6/day | 335/day | 12.6 mi (12.6 mi paved) | 335 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.3/day | 810/day | 14.3 mi (14.3 mi paved) | 810 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostat) |  |
+| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, 78621, United States | 12.6/day | 301/day | 12.6 mi (12.6 mi paved) | 301 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostat) |  |
 
 </details>
 
@@ -85,22 +85,22 @@
 ### Alternative 3
 **Feasible**: Yes
 - **Start Date**: 2026-05-30
-- **Total Distance**: 26.9 miles (26.9 mi paved)
+- **Total Distance**: 26.8 miles (26.8 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1189 ft
+- **Total Climbing**: 1111 ft
 - **Desirability Scores**:
   - Weather Preference: 0.145
-  - Distance Score: 0.751
+  - Distance Score: 0.756
   - Climbing Score: 1.000
-  - **Total Desirability Score**: 0.601
+  - **Total Desirability Score**: 0.603
 
 <details>
 <summary>Click to view daily travel schedule</summary>
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.4/day | 854/day | 14.4 mi (14.4 mi paved) | 854 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostatweatherprovider) |  |
-| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, United States | 12.6/day | 335/day | 12.6 mi (12.6 mi paved) | 335 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostatweatherprovider) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Austin, Texas | Manor, Travis County, Texas, 78653, United States | 14.3/day | 810/day | 14.3 mi (14.3 mi paved) | 810 | graphhopper | Avg High: 87.8°F, Low: 70.0°F (meteostat) |  |
+| 2026-05-31 | 2026-05-31 | 1 | Manor, Travis County, Texas, 78653, United States | Elgin, Bastrop County, Texas, 78621, United States | 12.6/day | 301/day | 12.6 mi (12.6 mi paved) | 301 | graphhopper | Avg High: 86.4°F, Low: 69.8°F (meteostat) |  |
 
 </details>
 
@@ -109,12 +109,12 @@
 ### Alternative 4
 **Feasible**: No ❌
 - **Start Date**: 2026-06-13
-- **Total Distance**: 26.9 miles (26.9 mi paved)
+- **Total Distance**: 26.8 miles (26.8 mi paved)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 1189 ft
+- **Total Climbing**: 1111 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Manor, Travis County, Texas, 78653, United States on 2026-06-13: observed 93.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Manor, Travis County, Texas, 78653, United States.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Elgin, Bastrop County, Texas, United States on 2026-06-14: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Elgin, Bastrop County, Texas, United States.
+  - [INFEASIBLE_WEATHER_MAX_HIGH] at Elgin, Bastrop County, Texas, 78621, United States on 2026-06-14: observed 92.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Elgin, Bastrop County, Texas, 78621, United States.
 
 <details>
 <summary>Click to view daily travel schedule</summary>

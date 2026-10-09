@@ -25,7 +25,7 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-16 | 2026-05-16 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1507/day | 44.9 mi (39.2 mi paved, 5.7 mi gravel) | 1507 | graphhopper | Avg High: 84.7°F, Low: 66.7°F (meteostat) |  |
+| 2026-05-16 | 2026-05-16 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1507/day | 44.9 mi (39.2 mi paved, 5.7 mi gravel) | 1507 | graphhopper | Avg High: 84.7°F, Low: 66.7°F (meteostatweatherprovider) |  |
 
 </details>
 
@@ -48,7 +48,7 @@
 
 | Start Date | End Date | Days | Origin | Destination | Distance (mi/day) | Ascent (ft/day) | Leg Distance (mi) | Leg Ascent (ft) | Distance Source | Weather Context | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-05-30 | 2026-05-30 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1507/day | 44.9 mi (39.2 mi paved, 5.7 mi gravel) | 1507 | graphhopper | Avg High: 88.1°F, Low: 70.4°F (meteostat) |  |
+| 2026-05-30 | 2026-05-30 | 1 | Oak Hill, West US Highway 290, Austin, Travis County, Texas, 78749, United States | Bastrop, Bastrop County, Texas, United States | 44.9/day | 1507/day | 44.9 mi (39.2 mi paved, 5.7 mi gravel) | 1507 | graphhopper | Avg High: 88.1°F, Low: 70.4°F (meteostatweatherprovider) |  |
 
 </details>
 

@@ -3,17 +3,16 @@
 ## Overview Comparison
 | Option | Start Date | Feasible? | Total Score | Weather Score | Distance Score | Hills Score | Total Distance | Distance Source | Total Climb | Key Difference |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Best Recommendation** | 2027-03-18 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Baseline / Optimal Route |
-| Alternative 1 | 2027-04-01 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2027-04-01), same sequence |
-| Alternative 2 | 2027-04-15 | No ❌ | N/A | N/A | N/A | N/A | 4880.0 mi | graphhopper | 262682 ft | Different start date (2027-04-15), same sequence |
+| **Best Recommendation** | 2027-03-18 | No ❌ | N/A | N/A | N/A | N/A | 4885.7 mi | graphhopper | 235567 ft | Baseline / Optimal Route |
+| Alternative 1 | 2027-04-01 | No ❌ | N/A | N/A | N/A | N/A | 4885.7 mi | graphhopper | 235567 ft | Different start date (2027-04-01), same sequence |
 
 ## Detailed Recommendations
 ### Best Recommendation
 **Feasible**: No ❌
 - **Start Date**: 2027-03-18
-- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
+- **Total Distance**: 4885.7 miles (4570.3 mi paved, 315.5 mi gravel)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 262682 ft
+- **Total Climbing**: 235567 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-05-25: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
 
@@ -30,41 +29,12 @@ ROUTE INFEASIBLE
 ### Alternative 1
 **Feasible**: No ❌
 - **Start Date**: 2027-04-01
-- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
+- **Total Distance**: 4885.7 miles (4570.3 mi paved, 315.5 mi gravel)
 - **Distance Source**: graphhopper
-- **Total Climbing**: 262682 ft
+- **Total Climbing**: 235567 ft
 - **Violated Constraints**:
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-05-29: observed 92.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
   - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-06-05: observed 91.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-
-<details>
-<summary>Click to view daily travel schedule</summary>
-
-ROUTE INFEASIBLE
-
-
-</details>
-
----
-
-### Alternative 2
-**Feasible**: No ❌
-- **Start Date**: 2027-04-15
-- **Total Distance**: 4880.0 miles (4645.1 mi paved, 234.9 mi gravel)
-- **Distance Source**: graphhopper
-- **Total Climbing**: 262682 ft
-- **Violated Constraints**:
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Baton Rouge, Louisiana on 2027-05-12: observed 92.1 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Baton Rouge, Louisiana.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Baton Rouge, Louisiana on 2027-05-13: observed 92.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Baton Rouge, Louisiana.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Baton Rouge, Louisiana on 2027-05-14: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Baton Rouge, Louisiana.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Montgomery, Alabama on 2027-05-15: observed 90.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Montgomery, Alabama.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Nashville, Tennessee on 2027-06-01: observed 90.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Nashville, Tennessee.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Columbia, South Carolina on 2027-06-16: observed 91.6 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Columbia, South Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-06-22: observed 94.2 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Raleigh, North Carolina on 2027-06-23: observed 93.8 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Raleigh, North Carolina.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2027-06-24: observed 99.3 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Richmond, Virginia on 2027-06-25: observed 95.9 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Richmond, Virginia.
-  - [INFEASIBLE_WEATHER_MAX_HIGH] at Washington, DC on 2027-07-03: observed 90.4 vs threshold 90. Hint: Consider traveling during a cooler season or modifying the route to bypass Washington, DC.
 
 <details>
 <summary>Click to view daily travel schedule</summary>

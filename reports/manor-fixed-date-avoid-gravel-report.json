@@ -4,31 +4,31 @@
     {
       "is_feasible": true,
       "start_city": "Austin, Texas",
-      "completion_city": "Elgin, Bastrop County, Texas, United States",
+      "completion_city": "Elgin, Bastrop County, Texas, 78621, United States",
       "via_cities": [
         "Manor, Travis County, Texas, 78653, United States"
       ],
       "start_date": "2026-05-16",
       "scores": {
         "weather": 0.2225,
-        "distance": 0.7513,
+        "distance": 0.7565,
         "hills": 1.0,
-        "total": 0.6284
+        "total": 0.6305
       },
       "routing_distance_source": "graphhopper",
       "legs": [
         {
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "distance_source": "graphhopper"
         },
         {
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "distance_source": "graphhopper"
         }
       ],
@@ -38,8 +38,8 @@
           "date": "2026-05-16",
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "high_temp_f": 84.3,
           "low_temp_f": 65.8,
           "is_rest_day": false
@@ -48,9 +48,9 @@
           "day_number": 2,
           "date": "2026-05-17",
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "high_temp_f": 86.8,
           "low_temp_f": 66.1,
           "is_rest_day": false
@@ -61,31 +61,31 @@
     {
       "is_feasible": true,
       "start_city": "Austin, Texas",
-      "completion_city": "Elgin, Bastrop County, Texas, United States",
+      "completion_city": "Elgin, Bastrop County, Texas, 78621, United States",
       "via_cities": [
         "Manor, Travis County, Texas, 78653, United States"
       ],
       "start_date": "2026-05-16",
       "scores": {
         "weather": 0.2225,
-        "distance": 0.7513,
+        "distance": 0.7565,
         "hills": 1.0,
-        "total": 0.6284
+        "total": 0.6305
       },
       "routing_distance_source": "graphhopper",
       "legs": [
         {
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "distance_source": "graphhopper"
         },
         {
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "distance_source": "graphhopper"
         }
       ],
@@ -95,8 +95,8 @@
           "date": "2026-05-16",
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "high_temp_f": 84.3,
           "low_temp_f": 65.8,
           "is_rest_day": false
@@ -105,9 +105,9 @@
           "day_number": 2,
           "date": "2026-05-17",
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "high_temp_f": 86.8,
           "low_temp_f": 66.1,
           "is_rest_day": false
@@ -118,31 +118,31 @@
     {
       "is_feasible": true,
       "start_city": "Austin, Texas",
-      "completion_city": "Elgin, Bastrop County, Texas, United States",
+      "completion_city": "Elgin, Bastrop County, Texas, 78621, United States",
       "via_cities": [
         "Manor, Travis County, Texas, 78653, United States"
       ],
       "start_date": "2026-05-30",
       "scores": {
         "weather": 0.145,
-        "distance": 0.7513,
+        "distance": 0.7565,
         "hills": 1.0,
-        "total": 0.6013
+        "total": 0.6034
       },
       "routing_distance_source": "graphhopper",
       "legs": [
         {
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "distance_source": "graphhopper"
         },
         {
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "distance_source": "graphhopper"
         }
       ],
@@ -152,8 +152,8 @@
           "date": "2026-05-30",
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "high_temp_f": 87.8,
           "low_temp_f": 70.0,
           "is_rest_day": false
@@ -162,9 +162,9 @@
           "day_number": 2,
           "date": "2026-05-31",
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "high_temp_f": 86.4,
           "low_temp_f": 69.8,
           "is_rest_day": false
@@ -175,31 +175,31 @@
     {
       "is_feasible": true,
       "start_city": "Austin, Texas",
-      "completion_city": "Elgin, Bastrop County, Texas, United States",
+      "completion_city": "Elgin, Bastrop County, Texas, 78621, United States",
       "via_cities": [
         "Manor, Travis County, Texas, 78653, United States"
       ],
       "start_date": "2026-05-30",
       "scores": {
         "weather": 0.145,
-        "distance": 0.7513,
+        "distance": 0.7565,
         "hills": 1.0,
-        "total": 0.6013
+        "total": 0.6034
       },
       "routing_distance_source": "graphhopper",
       "legs": [
         {
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "distance_source": "graphhopper"
         },
         {
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "distance_source": "graphhopper"
         }
       ],
@@ -209,8 +209,8 @@
           "date": "2026-05-30",
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "high_temp_f": 87.8,
           "low_temp_f": 70.0,
           "is_rest_day": false
@@ -219,9 +219,9 @@
           "day_number": 2,
           "date": "2026-05-31",
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "high_temp_f": 86.4,
           "low_temp_f": 69.8,
           "is_rest_day": false
@@ -232,7 +232,7 @@
     {
       "is_feasible": false,
       "start_city": "Austin, Texas",
-      "completion_city": "Elgin, Bastrop County, Texas, United States",
+      "completion_city": "Elgin, Bastrop County, Texas, 78621, United States",
       "via_cities": [
         "Manor, Travis County, Texas, 78653, United States"
       ],
@@ -248,15 +248,15 @@
         {
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "distance_source": "graphhopper"
         },
         {
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "distance_source": "graphhopper"
         }
       ],
@@ -266,8 +266,8 @@
           "date": "2026-06-13",
           "origin": "Austin, Texas",
           "destination": "Manor, Travis County, Texas, 78653, United States",
-          "distance_miles": 14.372454242225404,
-          "ascent_feet": 854.4369467871094,
+          "distance_miles": 14.273705932355046,
+          "ascent_feet": 809.7423101708985,
           "high_temp_f": 93.3,
           "low_temp_f": 72.0,
           "is_rest_day": false
@@ -276,9 +276,9 @@
           "day_number": 2,
           "date": "2026-06-14",
           "origin": "Manor, Travis County, Texas, 78653, United States",
-          "destination": "Elgin, Bastrop County, Texas, United States",
-          "distance_miles": 12.553001098584268,
-          "ascent_feet": 334.70094805664064,
+          "destination": "Elgin, Bastrop County, Texas, 78621, United States",
+          "distance_miles": 12.55874008291577,
+          "ascent_feet": 301.26217181640624,
           "high_temp_f": 92.3,
           "low_temp_f": 73.3,
           "is_rest_day": false
@@ -295,11 +295,11 @@
         },
         {
           "code": "INFEASIBLE_WEATHER_MAX_HIGH",
-          "location": "Elgin, Bastrop County, Texas, United States",
+          "location": "Elgin, Bastrop County, Texas, 78621, United States",
           "date": "2026-06-14",
           "observed_value": 92.3,
           "threshold_limit": 90,
-          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Elgin, Bastrop County, Texas, United States."
+          "remediation_hint": "Consider traveling during a cooler season or modifying the route to bypass Elgin, Bastrop County, Texas, 78621, United States."
         }
       ]
     }
