@@ -1,0 +1,61 @@
+# GraphHopper server config for g2l4a (GraphHopper 11.x).
+#
+# This file is mounted read-only into the container. Changing it causes the
+# entrypoint to discard the existing graph-cache and re-import on next start,
+# because profiles, encoded values and elevation are baked into the graph.
+graphhopper:
+  datareader.file: ""
+  graph.location: graph-cache
+
+  profiles:
+    - name: bike
+      custom_model_files: [bike.json, bike_elevation.json]
+
+  profiles_ch:
+    - profile: bike
+  profiles_lm: []
+
+  # bike.json / bike_elevation.json need the bike_* values plus the rest of this list.
+  # road_class, surface and track_type are also requested as path details and used
+  # in per-request custom models (avoid_gravel / avoid_highways) by src/graphhopper_routing.py.
+  graph.encoded_values: bike_access, bike_priority, bike_average_speed, bike_road_access, roundabout, mtb_rating, hike_rating, country, road_class, road_environment, surface, track_type, average_slope, max_slope
+
+  prepare.min_network_size: 200
+  prepare.subnetworks.threads: 1
+  routing.snap_preventions_default: tunnel, bridge, ferry
+  routing.non_ch.max_waypoint_distance: 1000000
+
+  # Non-motorized routing: keep cycleways and paths, drop motorways.
+  import.osm.ignored_highways: motorway,trunk
+
+  # SRTM elevation for ascent (hill scoring). Tiles are downloaded on first import
+  # and cached in the mounted volume.
+  graph.elevation.provider: srtm
+  graph.elevation.cache_dir: /opt/graphhopper/srtm-cache
+  graph.elevation.dataaccess: MMAP
+  graph.elevation.interpolate: bilinear
+  graph.elevation.long_edge_sampling_distance: 60
+  graph.elevation.way_point_max_distance: 10
+  graph.elevation.edge_smoothing: ramer
+  graph.elevation.edge_smoothing.ramer.max_elevation: 5
+
+  graph.dataaccess.default_type: RAM_STORE
+
+server:
+  application_connectors:
+    - type: http
+      port: 8989
+      bind_host: 0.0.0.0
+      max_request_header_size: 50k
+  request_log:
+    appenders: []
+  admin_connectors:
+    - type: http
+      port: 8990
+      bind_host: 0.0.0.0
+
+logging:
+  appenders:
+    - type: console
+      time_zone: UTC
+      log_format: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"

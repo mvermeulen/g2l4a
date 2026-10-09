@@ -8,15 +8,16 @@ services:
       - "8989:8989"
     environment:
       GH_VERSION: "11.0"
-      GH_CONFIG_FILE: "/opt/graphhopper/config.yml"
+      GH_CONFIG_FILE: "/etc/graphhopper/config.yml"
       GH_OSM_FILE: "/opt/graphhopper/map.osm.pbf"
-      # Set this to a URL for first-time bootstrap if map.osm.pbf is not present in the volume.
-      # Example (very large): https://download.geofabrik.de/north-america/us-latest.osm.pbf
-      GH_OSM_URL: "${GH_OSM_URL:-}"
+      # Downloaded only if map.osm.pbf is not already in .graphhopper/ (~11 GB for the US).
+      GH_OSM_URL: "${GH_OSM_URL:-https://download.geofabrik.de/north-america/us-latest.osm.pbf}"
       GH_GRAPH_LOCATION: "/opt/graphhopper/graph-cache"
-      JAVA_OPTS: "${GRAPHHOPPER_JAVA_OPTS:--Xms16g -Xmx64g}"
+      # Default sized for a 64 GB host; override with GRAPHHOPPER_JAVA_OPTS or --mem-preset.
+      JAVA_OPTS: "${GRAPHHOPPER_JAVA_OPTS:--Xms24g -Xmx48g}"
     volumes:
       - ./.graphhopper:/opt/graphhopper
+      - ./docker/graphhopper/config.yml:/etc/graphhopper/config.yml:ro
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:8989/info"]
       interval: 15s

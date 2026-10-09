@@ -18,9 +18,20 @@ if [[ ! -f "$GH_JAR" ]]; then
 fi
 
 if [[ ! -f "$GH_CONFIG_FILE" ]]; then
-  echo "Creating GraphHopper config from upstream template..."
-  curl -fsSL "https://raw.githubusercontent.com/graphhopper/graphhopper/11.x/config-example.yml" -o "$GH_CONFIG_FILE"
+  echo "ERROR: GraphHopper config not found at $GH_CONFIG_FILE."
+  echo "It is mounted from docker/graphhopper/config.yml by docker-compose.graphhopper.yml."
+  exit 1
 fi
+
+# Profiles, encoded values and elevation are baked into the graph at import time,
+# so a graph built from a different config is unusable. Re-import when it changes.
+CONFIG_HASH="$(sha256sum "$GH_CONFIG_FILE" | cut -d' ' -f1)"
+CONFIG_HASH_FILE="$GH_GRAPH_LOCATION/.g2l4a-config.sha256"
+if [[ -n "$(ls -A "$GH_GRAPH_LOCATION")" ]] && [[ "$(cat "$CONFIG_HASH_FILE" 2>/dev/null)" != "$CONFIG_HASH" ]]; then
+  echo "GraphHopper config changed since graph-cache was built; discarding graph-cache to re-import."
+  find "$GH_GRAPH_LOCATION" -mindepth 1 -delete
+fi
+echo "$CONFIG_HASH" > "$CONFIG_HASH_FILE"
 
 if [[ ! -f "$GH_OSM_FILE" ]]; then
   if [[ -z "$GH_OSM_URL" ]]; then
@@ -31,10 +42,6 @@ if [[ ! -f "$GH_OSM_FILE" ]]; then
   echo "Downloading OSM extract from GH_OSM_URL..."
   curl -fsSL "$GH_OSM_URL" -o "$GH_OSM_FILE"
 fi
-
-# The upstream sample config binds HTTP connectors to localhost, which is not reachable
-# through Docker port publishing. Rewrite bind_host entries for container use.
-sed -i 's/bind_host:[[:space:]]*localhost/bind_host: 0.0.0.0/g' "$GH_CONFIG_FILE"
 
 # Defensive normalization: fix malformed heap flags like "-Xms4g-Xmx12g".
 JAVA_OPTS="$(echo "$JAVA_OPTS" | sed -E 's/(-Xms[^[:space:]]+)(-Xmx)/\1 \2/g')"

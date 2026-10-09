@@ -136,14 +136,14 @@ Notes:
 routing_provider:
     name: graphhopper
     base_url: "http://localhost:8989"
-    profile: "car"
+    profile: "bike"
     timeout_seconds: 12.0
     purge_mock_cache: false
 ```
 
 Notes:
-- `profile` maps directly to the GraphHopper route profile. The Compose bootstrap uses upstream config defaults, which include `car`.
-- Use `bike` only if your GraphHopper config enables a bike profile.
+- `profile` maps directly to the GraphHopper route profile. The server config lives in `docker/graphhopper/config.yml` and defines a single `bike` profile with SRTM elevation.
+- Editing `docker/graphhopper/config.yml` makes the container discard `.graphhopper/graph-cache` and re-import on next start.
 - Distances come from `paths[0].distance` (meters) and are converted to miles.
 - Climbing comes from `paths[0].ascend` (meters) and is converted to feet.
 
